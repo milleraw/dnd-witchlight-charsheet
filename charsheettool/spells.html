@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=791, initial-scale=1.0" />
+  <meta name="data-root" content="./data/">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+
+  <title>D&D — Spells Page (Per Character)</title>
+
+  
+    <!-- Performance: preconnect to font hosts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin>
+
+  <!-- Web fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/6854ad6e85145a7dce4321ea90bc9b57?family=Saber-Regular" rel="stylesheet">
+
+  <!-- Shared CSS (order matters) -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/tooltip.css">
+  <link rel="stylesheet" href="assets/css/sheet-base.css">
+   <link rel="stylesheet" href="assets/css/spells.css">
+</head>
+
+<body>
+<!-- Keep this same HTML block on every sheet that uses the toolbar -->
+<div id="toolbar">
+  <strong>Character:</strong>
+  <select id="char-select" title="Choose a character JSON"></select>
+  <input id="char-input" type="text" placeholder="or type a JSON file name (e.g., direcris.json)" style="flex:1;" />
+  <button id="char-load">Load</button>
+  <button id="save-char" style="margin-left:auto">Save Character</button>
+  <span id="status" style="font-size:12px; color:#666;"></span>
+</div>
+
+
+  <div id="wrapper">
+    <div id="sheet">
+    <img id="bg" src="Feywild_spells.png" alt="Spell Page Background"/>
+
+    <!-- Name / Class / Level -->
+    <div id="field-class" class="field"></div>
+    <div id="field-level" class="field"></div>
+    <div id="field-name" class="field">
+      <svg viewBox="0 0 276 85" aria-label="Character Name">
+        <defs>
+          <path id="name-curve-top" d="M 8 34 Q 138 71 268 34" />
+          <path id="name-curve-bottom" d="M 8 56 Q 138 92 268 56" />
+        </defs>
+        <text id="name-top" class="saber" font-size="16" text-anchor="middle" dy="-2">
+          <textPath id="name-top-tp" href="#name-curve-top" startOffset="50%"></textPath>
+        </text>
+        <text id="name-bottom" class="saber" font-size="28" text-anchor="middle" dy="2">
+          <textPath id="name-bottom-tp" href="#name-curve-bottom" startOffset="50%"></textPath>
+        </text>
+      </svg>
+    </div>
+
+<div id="global-tooltip" aria-hidden="true"></div>
+
+    <!-- Curved Spell Ability (same position/curve as equipment.html Background) -->
+    <div id="field-ability" class="field">
+      <svg viewBox="0 0 118 93" aria-label="Spellcasting Ability">
+        <defs>
+          <path id="ability-curve" d="M 15 59 C 60 57 63 24 104 22" />
+        </defs>
+        <text id="ability-text" class="saber" font-size="22" text-anchor="middle">
+          <textPath id="ability-tp" href="#ability-curve" startOffset="50%"></textPath>
+        </text>
+      </svg>
+    </div>
+
+    <!-- Spellcasting header quick stats -->
+    <div id="spell-head" class="field">
+
+      <div id="sc-prep" class="pill hidden" title="Daily prepared spells (excludes always-prepared)">⭐ <span id="prep-count">0</span>/<span id="prep-limit">0</span></div>
+      <div class="grow"></div>
+    </div>
+    <div id="field-spell-attack" class="field" style="position:absolute; top:88px; left:540px; width:74px; height:40px;"></div>
+<div id="field-spell-dc"     class="field" style="position:absolute; top:88px; left:624px; width:79px; height:40px;"></div>
+
+
+    <!-- Resources -->
+    <div id="resources" class="field">
+      <div id="res-cd" class="pill" style="display:none">
+        <span>Channel Divinity</span>
+        <div class="resource-dots" id="cd-dots"></div>
+      </div>
+      <div id="res-ki" class="pill" style="display:none">
+        <span>Ki</span>
+        <div class="pips" id="ki-pips"></div>
+      </div>
+      <div id="res-ws" class="pill" style="display:none">
+        <span>Wild Shape</span>
+        <div class="pips" id="ws-pips"></div>
+      </div>
+      <label id="res-se" class="pill toggle" style="display:none" title="Consumes a Wild Shape use">
+        <input type="checkbox" id="se-toggle">
+        <span>Symbiotic Entity</span>
+      </label>
+    </div>
+
+    <div id="rests" class="field">
+      <button id="short-rest">Short Rest</button>
+      <button id="long-rest">Long Rest</button>
+      <button id="reprepare" title="Clear prepared (keeps always-prepared)">Re-prepare</button>
+    </div>
+
+    <!-- Level blocks -->
+    <section id="lvl-cantrips" class="lvl">
+      <div class="title">Cantrips</div>
+      <div class="list"></div>
+    </section>
+    <section id="lvl-1" class="lvl">
+      <div class="title">1st-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="slot-dots"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-2" class="lvl">
+      <div class="title">2nd-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="slot-dots"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-3" class="lvl">
+      <div class="title">3rd-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="slot-dots"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-4" class="lvl">
+      <div class="title">4th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="slot-dots"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-5" class="lvl">
+      <div class="title">5th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="slot-dots"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-6" class="lvl">
+      <div class="title">6th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="slot-dots"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-7" class="lvl">
+      <div class="title">7th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="slot-dots"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-8" class="lvl">
+      <div class="title">8th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="slot-dots"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-9" class="lvl">
+      <div class="title">9th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="slot-dots"></div><button class="reset">↻</button></div>
+    </section>
+    </div>
+  </div>
+
+
+<!-- Shared libs (as you already had for the character sheet) -->
+<script src="./assets/js/common/textfit.js"></script>
+<script src="./assets/js/common/dom.js"></script>
+<script src="./assets/js/common/tooltip.js"></script>
+<script src="./assets/js/common/storage.js"></script>
+<script src="./assets/js/common/name-curves.js"></script>
+<script src="./assets/js/common/toolbar.js"></script>
+<script src="./assets/js/common/ribbon-button.js"></script>
+
+<!-- NEW: the tiny compatibility bridge -->
+<script src="./assets/js/common/rules.js"></script>
+<script src="./assets/js/common/data.js"></script>
+<script src="./assets/js/glue-spells.js"></script>
+
+<script src="./assets/js/spells-page.js"></script>

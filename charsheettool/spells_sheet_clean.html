@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=791, initial-scale=1.0" />
+  <meta name="data-root" content="./data/">
+  <title>D&D Spells Sheet</title>
+  <link rel="stylesheet" href="assets/css/sheet-base.css">
+</head>
+<body>
+  <div id="toolbar" class="toolbar"></div>
+
+  <div id="wrapper">
+    <div id="sheet">
+      <img id="bg" src="Feywild_Green1.png" alt="Spells Sheet" />
+    </div>
+
+    <div id="global-tooltip" aria-hidden="true"></div>
+
+    <div id="field-name" class="field">
+      <svg id="name-svg" viewBox="0 0 276 85" aria-label="Character Name">
+        <defs>
+          <path id="name-curve-top" d="M 8 34 Q 138 71 268 34" />
+          <path id="name-curve-bottom" d="M 8 56 Q 138 92 268 56" />
+        </defs>
+        <text id="name-top" class="saber" font-size="16" text-anchor="middle" dy="-2">
+          <textPath id="name-top-tp" href="#name-curve-top" startOffset="50%"></textPath>
+        </text>
+        <text id="name-bottom" class="saber" font-size="28" text-anchor="middle" dy="2">
+          <textPath id="name-bottom-tp" href="#name-curve-bottom" startOffset="50%"></textPath>
+        </text>
+      </svg>
+    </div>
+
+    <div id="field-spells" class="field"></div>
+  </div>
+
+  <!-- Shared JS -->
+  <script src="assets/js/common/textfit.js"></script>
+  <script src="assets/js/common/name-curves.js"></script>
+  <script src="assets/js/common/tooltip.js"></script>
+  <script src="assets/js/common/storage.js"></script>
+  <script src="assets/js/common/toolbar.js"></script>
+
+  <!-- Page-specific bootstrap (loads character JSON from ./data/) -->
+  <script>
+  (function(){
+    const DATA_ROOT = (document.querySelector('meta[name=\"data-root\"]').content || './data/').trim();
+
+    function setURLParam(key, val) {
+      const url = new URL(window.location);
+      if (val) url.searchParams.set(key, val);
+      else url.searchParams.delete(key);
+      window.history.replaceState({}, "", url);
+    }
+    function getURLParam(key, def='') {
+      const url = new URL(window.location);
+      return url.searchParams.get(key) || def;
+    }
+    async function safeGetJSON(url) {
+      try { const r = await fetch(url, { cache:'no-store' }); if (!r.ok) return null; return await r.json(); }
+      catch { return null; }
+    }
+    async function loadCharacterJSON(filename) {
+      return (await safeGetJSON(`${DATA_ROOT}${filename}`)) || (await safeGetJSON(`./${filename}`));
+    }
+
+    // Minimal "render spells" proof — just list known/prepared array from character.spells
+    function renderSpells(c){
+      const box = document.getElementById('field-spells');
+      box.innerHTML = '';
+      const title = document.createElement('div');
+      title.textContent = 'Spells:';
+      title.className = 'base-text';
+      box.appendChild(title);
+
+      const ul = document.createElement('ul');
+      (c.spells || []).forEach(name => {
+        const li = document.createElement('li');
+        li.textContent = name;
+        ul.appendChild(li);
+      });
+      box.appendChild(ul);
+
+      // Name render
+      const parts = String(c.name||'').trim().split(/\s+/);
+      const bottom = parts.pop() || '';
+      const top = parts.join(' ');
+      NameCurves.renderCurvedName({ topText: top, bottomText: bottom, svgId: 'name-svg' });
+    }
+
+    // Toolbar
+    const selectEl = document.createElement('select');
+    selectEl.id = 'char-select';
+    const inputEl  = document.createElement('input'); inputEl.id = 'char-input'; inputEl.placeholder = 'e.g., illanis.json';
+    const loadBtn  = document.createElement('button'); loadBtn.id = 'char-load'; loadBtn.textContent = 'Load';
+    const statusEl = document.createElement('span'); statusEl.id = 'status'; statusEl.style.marginLeft = 'auto';
+    const bar = document.getElementById('toolbar');
+    bar.appendChild(selectEl); bar.appendChild(inputEl); bar.appendChild(loadBtn); bar.appendChild(statusEl);
+
+    const CHAR_LIST = ['direcris.json','rathen.json','rabbert.json','orchid.json','illanis.json','psalm.json'];
+    let current = getURLParam('char', 'illanis.json');
+
+    async function doLoad(file){
+      const data = await loadCharacterJSON(file);
+      if (!data) { alert(`Could not load ${file} from ${DATA_ROOT}`); return; }
+      window.__char = data; window.__charFile = file;
+      setURLParam('char', file);
+      renderSpells(data);
+      StorageShim.maybeLoadSavedSnapshot(file, (snap) => console.log('Loaded snapshot for spells:', snap));
+    }
+
+    Tooltip.initGlobalTooltip();
+    Toolbar.init({
+      selectEl, inputEl, loadBtn, statusEl,
+      charList: CHAR_LIST,
+      onLoadCharacter: doLoad,
+      currentCharFile: current
+    });
+
+    doLoad(current);
+  })();
+  </script>
+</body>
+</html>

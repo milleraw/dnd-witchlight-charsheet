@@ -1,0 +1,188 @@
+/* assets/css/spells.css */
+
+/* --- Page Layout --- */
+#spell-head { position:absolute; top:46px; left:52px; width:696px; height:40px; display:flex; gap:10px; align-items:center; }
+#spell-head .pill { font-family:var(--font-body); font-size:14px; padding:4px 8px; border:1px solid var(--c-panel-border); border-radius:8px; background:#fff; }
+#spell-head .grow { flex:1; }
+#sc-prep.hidden { display:none; }
+
+#field-ability { position:absolute; top:150px; left:580px; width:118px; height:93px; background:transparent; padding:0; border-radius:0; }
+#field-ability svg { width:100%; height:100%; }
+
+#field-spell-attack, #field-spell-dc {
+  position:absolute;
+  display:flex; align-items:center; justify-content:center;
+  font: 22px/1.0 var(--font-body, 'IM FELL DW Pica SC'), serif;
+  letter-spacing: .3px;
+  color: var(--c-ink, #2e1503);
+  user-select: none;
+}
+#field-spell-attack { top:88px; left:540px; width:74px; height:40px; }
+#field-spell-dc { top:88px; left:624px; width:79px; height:40px; }
+
+/* --- Resources & Rests --- */
+#resources { position:absolute; top:86px; left:52px; width:696px; height:26px; display:flex; gap:10px; align-items:center; }
+#resources .pill { font-family:var(--font-body); font-size:13px; padding:2px 8px; border:1px solid var(--c-panel-border); border-radius:8px; background:#fff; display:flex; align-items:center; gap:6px; }
+.toggle { display:flex; align-items:center; gap:6px; cursor:pointer; user-select:none; }
+.toggle input { transform:translateY(1px); }
+
+#rests { position:absolute; top:46px; right:52px; display:flex; gap:6px; }
+#rests button { font-family:var(--font-body); font-size:12px; padding:4px 8px; border:1px solid #bca; background:#fff; border-radius:8px; cursor:pointer; }
+#rests button:hover { background:#fffaf2; }
+
+/* --- Spell Level Boxes --- */
+.lvl {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.lvl .title {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--c-ink);
+  text-align: center;
+  padding: 2px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-variant: small-caps;
+  letter-spacing: .02em;
+  margin-bottom: 2px;
+}
+
+.lvl .list {
+  position: absolute;
+  inset: 31px 8px 32px 8px;
+  overflow: auto;
+}
+
+/* --- Spell/Infusion Items --- */
+.Item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 1px 0;
+  padding: 1px 2px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  background: rgba(255,255,255,.85);
+  border-radius: 4px;
+  cursor: help;
+}
+
+.Item .name {
+  flex: 1;
+}
+
+.Item .star {
+  font-size: 12px;
+  width: 16px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Item[data-locked="1"] .star {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+.Item .badge {
+  font-size: 10px;
+  padding: 0 4px;
+  border: 1px solid #cdb;
+  border-radius: 4px;
+  background: #fff8e6;
+}
+
+.infusion-active .infusion-target {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* --- Infusion Specific Styles --- */
+.infusion-known { cursor: pointer; }
+.infusion-known:hover { background-color: rgba(255, 255, 255, 0.1); }
+.infusion-known.active .name { color: var(--rb-accent-1, #f7de3a); font-weight: bold; }
+
+.title.infusion-header {
+  font-size: 14px;
+  position: relative;
+  left: 20px;
+  font-variant: all-small-caps;
+}
+
+.infusion-header button {
+  font-size: 10px;
+  margin-left: 10px;
+  padding: 1px 4px;
+  cursor: pointer;
+}
+
+/* --- Spell Slots --- */
+.lvl .slots { position:absolute; bottom:6px; left:8px; display:flex; align-items:center; gap:6px; }
+.slots .slot-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  height: 12px; /* Ensure container has height */
+}
+.slots .slot-dot {
+  position: static; /* Override the absolute positioning from sheet-base.css */
+  display: inline-block; /* Be explicit */
+  flex-shrink: 0; /* Prevent shrinking */
+  width:10px; height:10px; border-radius:50%; border:1px solid #654; background:#fff; cursor:pointer;
+}
+.slots .slot-dot.spent { background:#654; }
+.slots .reset { margin-left:8px; font-size:11px; padding:1px 6px; border:1px solid #bca; border-radius:6px; background:#fff; cursor:pointer; }
+
+/* --- Resource Dots (Ki, Wild Shape) --- */
+#resources .pips { display:flex; gap:4px; align-items:center; }
+.resource-dot {
+  width:10px; height:10px; border-radius:50%; border:1px solid #654; background:#fff; cursor:pointer;
+}
+.resource-dot.spent {
+  background:#654;
+}
+
+/* --- Spell Box Positions --- */
+#lvl-cantrips { top: 97px; left: 55px; width: 215px; height: 186px; }
+#lvl-1 { top: 296px; left: 56px; width: 211px; height: 237px; }
+#lvl-2 { top: 284px; left: 283px; width: 228px; height: 249px; }
+#lvl-3 { top: 286px; left: 523px; width: 208px; height: 249px; }
+#lvl-4 { top: 545px; left: 55px; width: 214px; height: 237px; }
+#lvl-5 { top: 543px; left: 285px; width: 226px; height: 237px; }
+#lvl-6 { top: 546px; left: 523px; width: 210px; height: 233px; }
+#lvl-7 { top: 795px; left: 58px; width: 210px; height: 189px; }
+#lvl-8 { top: 795px; left: 286px; width: 226px; height: 187px; }
+#lvl-9 { top: 793px; left: 525px; width: 207px; height: 190px; }
+
+/* --- Infusion Manager Modal --- */
+#modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#infusion-manager-modal {
+  background: #fff8f0;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid var(--c-ink);
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.modal-title { margin-top: 0; font-family: var(--font-display); }
+.modal-subtitle { margin-top: -10px; margin-bottom: 15px; font-family: var(--font-body); }
+.infusion-list { overflow-y: auto; border: 1px solid #ccc; padding: 10px; flex-grow: 1; background: #fff; }
+.infusion-choice { display: block; padding: 5px; cursor: pointer; border-radius: 4px; font-family: var(--font-body); }
+.infusion-choice:hover { background: #f0f8ff; }
+.modal-actions { margin-top: 20px; text-align: right; }

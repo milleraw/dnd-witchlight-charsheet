@@ -1,0 +1,172 @@
+[
+  {
+    "index": "kusari-gama",
+    "name": "Kusari-gama",
+    "equipment_category": { "index": "weapon", "name": "Weapon", "url": "/api/custom/equipment-categories/weapon" },
+    "weapon_category": "Martial",
+    "weapon_range": "Melee",
+    "category_range": "Martial Melee",
+    "cost": { "quantity": 10, "unit": "gp" },
+    "damage": {
+      "damage_dice": "1d8",
+      "damage_type": { "index": "slashing", "name": "Slashing", "url": "/api/2014/damage-types/slashing" }
+    },
+    "range": { "normal": 5, "long": 5 },
+    "weight": 3,
+    "properties": [
+      { "index": "finesse", "name": "Finesse", "url": "/api/2014/weapon-properties/finesse" },
+      { "index": "reach",   "name": "Reach",   "url": "/api/2014/weapon-properties/reach" },
+      { "index": "monk",    "name": "Monk",    "url": "/api/custom/weapon-properties/monk" }
+    ],
+    "url": "/api/custom/equipment/kusari-gama",
+    "contents": []
+  },
+  {
+    "index": "yklwa",
+    "name": "Yklwa",
+    "equipment_category": { "index": "weapon", "name": "Weapon", "url": "/api/custom/equipment-categories/weapon" },
+    "weapon_category": "Simple",
+    "weapon_range": "Melee",
+    "category_range": "Simple Melee",
+    "cost": { "quantity": 1, "unit": "gp" },
+    "damage": {
+      "damage_dice": "1d8",
+      "damage_type": { "index": "piercing", "name": "Piercing", "url": "/api/2014/damage-types/slashing" }
+    },
+    "range": { "normal": 10, "long": 30 },
+    "weight": 3,
+    "properties": [
+      { "index": "thrown", "name": "Thrown", "url": "/api/2014/weapon-properties/thrown" }
+    ],
+    "special": "Pronounced YICK-ul-wah",
+    "url": "/api/custom/equipment/yklwa",
+    "contents": []
+  },
+    {
+  "index": "harpoon",
+  "name": "Harpoon",
+  "equipment_category": { "index": "weapon", "name": "Weapon", "url": "/api/custom/equipment-categories/weapon" },
+  "weapon_category": "Simple",
+  "weapon_range": "Melee",
+  "category_range": "Simple Melee",
+  "cost": { "quantity": 5, "unit": "gp" },
+  "damage": {
+    "damage_dice": "1d6",
+    "damage_type": { "index": "piercing", "name": "Piercing", "url": "/api/2014/damage-types/piercing" }
+  },
+  "range": { "normal": 5, "long": 5 },
+  "throw_range": { "normal": 15, "long": 45 },
+  "weight": 6,
+  "properties": [
+    { "index": "thrown", "name": "Thrown", "url": "/api/2014/weapon-properties/thrown" },
+    { "index": "special", "name": "Special", "url": "/api/2014/weapon-properties/special" }
+  ],
+  "special": [
+    "When you hit a Large or smaller creature with this weapon, you can attempt to impale it.",
+    "The target must succeed on a Strength saving throw (DC = 8 + your Strength modifier + your proficiency bonus) or be impaled.",
+    "While impaled, the target’s movement is reduced to 0 unless it breaks free, and you can use a bonus action to try to reel it in.",
+    "The target can use its action to make a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check to free itself."
+  ]
+}
+,
+  {
+    "index": "dagger",
+    "name": "Dagger",
+    "equipment_category": { "index": "weapon", "name": "Weapon", "url": "/api/2014/equipment-categories/weapon" },
+    "weapon_category": "Simple",
+    "weapon_range": "Melee",
+    "category_range": "Simple Melee",
+    "cost": { "quantity": 2, "unit": "gp" },
+    "damage": {
+      "damage_dice": "1d4",
+      "damage_type": { "index": "piercing", "name": "Piercing", "url": "/api/2014/damage-types/piercing" }
+    },
+    "range": { "normal": 5, "long": 5 },
+    "weight": 1,
+    "properties": [
+      { "index": "finesse", "name": "Finesse", "url": "/api/2014/weapon-properties/finesse" },
+      { "index": "light",   "name": "Light",   "url": "/api/2014/weapon-properties/light" },
+      { "index": "thrown",  "name": "Thrown",  "url": "/api/2014/weapon-properties/thrown" }
+    ],
+    "url": "/api/2014/equipment/dagger",
+    "contents": []
+  },
+   {
+    "index": "+1 dagger",
+    "name": "+1 Dagger",
+    "equipment_category": { "index": "weapon", "name": "Weapon", "url": "/api/2014/equipment-categories/weapon" },
+    "weapon_category": "Simple",
+    "weapon_range": "Melee",
+    "category_range": "Simple Melee",
+    "cost": { "quantity": 2, "unit": "gp" },
+    "damage": {
+      "damage_dice": "1d4",
+      "damage_type": { "index": "piercing", "name": "Piercing", "url": "/api/2014/damage-types/piercing" }
+    },
+    "range": { "normal": 5, "long": 5 },
+    "weight": 1,
+    "properties": [
+      { "index": "finesse", "name": "Finesse", "url": "/api/2014/weapon-properties/finesse" },
+      { "index": "light",   "name": "Light",   "url": "/api/2014/weapon-properties/light" },
+      { "index": "thrown",  "name": "Thrown",  "url": "/api/2014/weapon-properties/thrown" }
+    ],
+    "url": "/api/2014/equipment/dagger",
+    "contents": [],
+    "attack_bonus" : 1,
+    "damage_bonus" : 1
+  },
+  {
+    "index": "crossbow-light",
+    "name": "Crossbow, light",
+    "equipment_category": { "index": "weapon", "name": "Weapon", "url": "/api/2014/equipment-categories/weapon" },
+    "weapon_category": "Simple",
+    "weapon_range": "Ranged",
+    "category_range": "Simple Ranged",
+    "cost": { "quantity": 25, "unit": "gp" },
+    "damage": {
+      "damage_dice": "1d8",
+      "damage_type": { "index": "piercing", "name": "Piercing", "url": "/api/2014/damage-types/piercing" }
+    },
+    "range": { "normal": 80, "long": 320 },
+    "weight": 5,
+    "properties": [
+      { "index": "ammunition", "name": "Ammunition", "url": "/api/2014/weapon-properties/ammunition" },
+      { "index": "loading",    "name": "Loading",    "url": "/api/2014/weapon-properties/loading" },
+      { "index": "two-handed", "name": "Two-Handed", "url": "/api/2014/weapon-properties/two-handed" }
+    ],
+    "url": "/api/2014/equipment/crossbow-light",
+    "updated_at": "2025-08-16T00:00:00.000Z",
+    "contents": []
+  },
+  {
+    "name": "Boomerang",
+    "index": "boomerang",
+    "equipment_category": { "index": "weapon", "name": "Weapon" },
+    "weapon_category": "Simple",
+    "weapon_range": "Ranged",
+    "damage": {
+      "damage_dice": "1d4",
+      "damage_type": { "index": "bludgeoning", "name": "Bludgeoning" }
+    },
+    "range": { "normal": 60, "long": 120 },
+    "throw_range": { "normal": 60, "long": 120 },
+    "properties": [
+      { "index": "thrown", "name": "Thrown" }
+    ],
+    "special": "If you miss your target, the boomerang returns to your hand."
+  },
+  {
+    "name": "Light Hammer",
+    "index": "light-hammer",
+    "equipment_category": { "index": "weapon", "name": "Weapon" },
+    "weapon_category": "Simple",
+    "weapon_range": "Melee",
+    "damage": {
+      "damage_dice": "1d4",
+      "damage_type": { "index": "bludgeoning", "name": "Bludgeoning" }
+    },
+    "range": { "normal": 5 },
+    "throw_range": { "normal": 20, "long": 60 },
+    "properties": [ { "index": "light", "name": "Light" }, { "index": "thrown", "name": "Thrown" } ]
+  }
+]

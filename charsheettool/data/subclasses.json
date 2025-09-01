@@ -1,0 +1,423 @@
+[
+    {
+        "name": "Circle of Spores",
+        "class": "Druid",
+        "source": "TCoE / GGtR",
+        "features": {
+            "2": [
+                {
+                    "name": "Circle Spells",
+                    "desc": "Always prepared. Adds necrotic/utility spells themed around decay and control."
+                },
+                {
+                    "name": "Halo of Spores",
+                    "desc": "You are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level."
+                },
+                {
+                    "name": "Symbiotic Entity",
+                    "desc": "You gain the ability to channel magic into your spores. As an action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4 temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits:\\n\\n\u2022 When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total.\\n\u2022 Your melee weapons deal an extra 1d6 necrotic damage to any target they hit.\\n\\nThese benefits last for 10 minutes, until you lose all these temporary hit points, or until you use your Wild Shape again."
+                }
+            ],
+            "6": [
+                {
+                    "name": "Fungal Infestation",
+                    "desc": "Your spores gain the ability to infest a corpse and animate it. If a Small or Medium beast or humanoid dies within 10 feet of you, you can use your reaction to animate it, causing it to stand up immediately with 1 hit point. The creature uses the Zombie stat block. It remains animate for 1 hour, then collapses. In combat, the zombie acts immediately after you; it obeys your mental commands and can only take the Attack action (one melee attack). You can use this a number of times equal to your Wisdom modifier (minimum of once) and regain all uses on a long rest."
+                }
+            ],
+            "10": [
+                {
+                    "name": "Spreading Spores",
+                    "desc": "You gain the ability to seed an area with deadly spores. As a bonus action while your Symbiotic Entity feature is active, you can hurl spores up to 30 feet, where they swirl in a 10-foot cube for 1 minute. The spores disappear early if you use this feature again, dismiss them as a bonus action, or Symbiotic Entity ends. Whenever a creature moves into the cube or starts its turn there, it takes your Halo of Spores damage unless it succeeds on a Constitution save against your spell save DC (once per turn). While the cube persists, you can\u2019t use your Halo of Spores reaction."
+                }
+            ],
+            "14": [
+                {
+                    "name": "Fungal Body",
+                    "desc": "The spores in your body alter you: you can\u2019t be blinded, deafened, frightened, or poisoned, and any critical hit against you becomes a normal hit unless you are incapacitated."
+                }
+            ]
+        },
+        "alwaysPreparedSpells": {
+            "3": [
+                "Blindness/Deafness",
+                "Gentle Repose"
+            ],
+            "5": [
+                "Animate Dead",
+                "Gaseous Form"
+            ],
+            "7": [
+                "Blight",
+                "Confusion"
+            ],
+            "9": [
+                "Cloudkill",
+                "Contagion"
+            ]
+        },
+        "bonusCantrips": {
+            "2": [
+                "Chill Touch"
+            ]
+        },
+        "actions": [
+            {
+                "name": "Halo of Spores",
+                "type": "reaction",
+                "level": 2,
+                "desc": "When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level.",
+                "source": "Circle of Spores Lvl 2"
+            },
+            {
+                "name": "Symbiotic Entity",
+                "type": "action",
+                "level": 2,
+                "desc": "As an action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4 temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits:\n\n\u2022 When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total.\n\u2022 Your melee weapons deal an extra 1d6 necrotic damage to any target they hit.\n\nThese benefits last for 10 minutes, until you lose all these temporary hit points, or until you use your Wild Shape again.",
+                "source": "Circle of Spores Lvl 2"
+            }
+        ]
+    },
+    {
+        "name": "Artillerist",
+        "class": "Artificer",
+        "source": "TCoE",
+        "features": {
+            "3": [
+                {
+                    "name": "Tool Proficiency",
+                    "desc": "Gain proficiency with woodcarver\u2019s tools; you use them for your arcane creations."
+                },
+                {
+                    "name": "Artillerist Spells",
+                    "desc": "Always prepared blasting/utility spells themed around force and fire."
+                },
+                {
+                    "name": "Eldritch Cannon",
+                    "desc": "Create a Small or Tiny cannon (flamethrower, force ballista, or protector). Bonus action to command; scales with level."
+                }
+            ],
+            "5": [
+                {
+                    "name": "Arcane Firearm",
+                    "desc": "You can turn a wand, staff, or rod into an arcane firearm as a spellcasting focus. When you cast an artificer spell through it, roll a d8 and add the result to one of the spell\u2019s damage rolls."
+                }
+            ],
+            "9": [
+                {
+                    "name": "Explosive Cannon",
+                    "desc": "Your eldritch cannons are more destructive:\\n\\n\u2022 The cannon\u2019s damage rolls increase by 1d8.\\n\\n\u2022 As an action, you can detonate the cannon (destroying it). Each creature within 20 feet makes a Dexterity save vs your spell save DC, taking 3d8 force damage on a failure or half on a success."
+                }
+            ],
+            "15": [
+                {
+                    "name": "Fortified Position",
+                    "desc": "You and allies near your cannon have half cover. You can maintain two cannons at once; you can create two with the same action (but not the same slot) and activate both with the same bonus action. You can\u2019t create a third while you have two."
+                }
+            ]
+        },
+        "alwaysPreparedSpells": {
+            "3": [
+                "Shield",
+                "Thunderwave"
+            ],
+            "5": [
+                "Scorching Ray",
+                "Shatter"
+            ],
+            "9": [
+                "Fireball",
+                "Wind Wall"
+            ],
+            "13": [
+                "Ice Storm",
+                "Wall of Fire"
+            ],
+            "17": [
+                "Cone of Cold",
+                "Wall of Force"
+            ]
+        },
+        "actions": [
+            {
+                "name": "Summon Eldritch Cannon",
+                "type": "action",
+                "level": 3,
+                "desc": "As an action, you can magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you.",
+                "source": "Artillerist Lvl 3"
+            },
+            {
+                "name": "Activate Eldritch Cannon",
+                "type": "bonus",
+                "level": 3,
+                "desc": "As a bonus action, command the cannon to activate. Choose one: Force Ballista (ranged spell attack, {DMG} force), Flamethrower (15-ft cone, {DMG} fire, DEX save), or Protector (grant {HP} temp HP).",
+                "source": "Artillerist Lvl 3"
+            },
+            {
+                "name": "Move Eldritch Cannon",
+                "type": "bonus",
+                "level": 3,
+                "desc": "As a bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs.",
+                "source": "Artillerist Lvl 3"
+            },
+            {
+                "name": "Detonate Cannon",
+                "type": "action",
+                "level": 9,
+                "desc": "As an action, you can detonate your cannon if you are within 60 feet of it. This destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking 3d8 force damage on a failed save or half as much damage on a successful one.",
+                "source": "Artillerist Lvl 9"
+            }
+        ]
+    },
+    {
+        "name": "Fey Wanderer",
+        "class": "Ranger",
+        "source": "TCoE",
+        "features": {
+            "3": [
+                {
+                    "name": "Fey Wanderer Magic",
+                    "desc": "Always prepared enchantment/mobility spells with fey flavor."
+                },
+                {
+                    "name": "Dreadful Strikes",
+                    "desc": "Once per turn, your weapon hit deals extra psychic damage."
+                },
+                {
+                    "name": "Otherworldly Glamour",
+                    "desc": "Whenever you make a Charisma check, add your Wisdom modifier (minimum +1). You also gain proficiency in Deception, Performance, or Persuasion (your choice)."
+                }
+            ],
+            "7": [
+                {
+                    "name": "Beguiling Twist",
+                    "desc": "Advantage on saves vs charmed or frightened. When a creature succeeds on such a save within 120 feet, you can use your reaction to force a different creature you see within 120 feet to make a Wisdom save vs your DC; on a failure it is charmed or frightened (your choice) for 1 minute (save ends each turn)."
+                }
+            ],
+            "11": [
+                {
+                    "name": "Fey Reinforcements",
+                    "desc": "You learn summon fey. It doesn\u2019t count against your known spells and doesn\u2019t require a material component. You can cast it once without a slot per long rest, and you can choose to make that casting not require concentration (duration 1 minute instead)."
+                }
+            ],
+            "15": [
+                {
+                    "name": "Misty Wanderer",
+                    "desc": "You can cast misty step without a spell slot a number of times equal to your Wisdom modifier (minimum once) per long rest. When you do, you can bring one willing creature within 5 feet; it appears within 5 feet of your destination."
+                }
+            ]
+        },
+        "alwaysPreparedSpells": {
+            "3": [
+                "Charm Person"
+            ],
+            "5": [
+                "Misty Step"
+            ],
+            "9": [
+                "Dispel Magic"
+            ],
+            "13": [
+                "Dimension Door"
+            ],
+            "17": [
+                "Mislead"
+            ]
+        }
+    },
+    {
+        "name": "Way of the Shadow",
+        "class": "Monk",
+        "source": "PHB",
+        "features": {
+            "3": [
+                {
+                    "name": "Shadow Arts",
+                    "desc": "You learn to draw on the Shadowfell. You can cast darkness, darkvision, pass without trace, and silence by spending ki points (as per PHB), and you learn the minor illusion cantrip."
+                }
+            ],
+            "6": [
+                {
+                    "name": "Shadow Step",
+                    "desc": "While in dim light or darkness, you can use a bonus action to teleport up to 60 feet to another dim light or darkness space you can see. You have advantage on the first melee attack you make before the end of the turn."
+                }
+            ],
+            "11": [
+                {
+                    "name": "Cloak of Shadows",
+                    "desc": "When in an area of dim light or darkness, you can use your action to become invisible until you make an attack, cast a spell, or are in bright light."
+                }
+            ],
+            "17": [
+                {
+                    "name": "Opportunist",
+                    "desc": "When a creature within 5 feet of you is hit by an attack by a third creature, you can use your reaction to make a melee attack against that creature."
+                }
+            ]
+        },
+        "bonusCantrips": {
+            "3": [
+                "Minor Illusion"
+            ]
+          },
+        "actions": [
+            {
+                "name": "Darkness",
+                "level": 3,
+                "badge": "2 Ki",
+                "desc": "As an action, you can spend 2 ki points to cast Darkness without providing material components."
+            },
+            {
+                "name": "Darkvision",
+                "level": 3,
+                "badge": "2 Ki",
+                "desc": "As an action, you can spend 2 ki points to cast Darkvision without providing material components."
+            },
+            {
+                "name": "Pass without Trace",
+                "level": 3,
+                "badge": "2 Ki",
+                "desc": "As an action, you can spend 2 ki points to cast Pass without Trace without providing material components."
+            },
+            {
+                "name": "Silence",
+                "level": 3,
+                "badge": "2 Ki",
+                "desc": "As an action, you can spend 2 ki points to cast Silence without providing material components."
+            }
+        ]
+    },
+    {
+        "name": "Path of the Zealot",
+        "class": "Barbarian",
+        "source": "XGtE",
+        "features": {
+            "3": [
+                {
+                    "name": "Divine Fury",
+                    "desc": "While raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to 1d6 + half your barbarian level (necrotic or radiant, your choice)."
+                },
+                {
+                    "name": "Warrior of the Gods",
+                    "desc": "If a spell such as raise dead has the sole effect of restoring you to life (but not undeath), the caster doesn\u2019t need material components to cast it on you."
+                }
+            ],
+            "6": [
+                {
+                    "name": "Fanatical Focus",
+                    "desc": "If you fail a saving throw while raging, you can reroll it (once per rage), and you must use the new roll."
+                }
+            ],
+            "10": [
+                {
+                    "name": "Zealous Presence",
+                    "desc": "As a bonus action, unleash a battle cry. Up to 10 creatures of your choice within 60 feet that can hear you gain advantage on attack rolls and saving throws until the start of your next turn. Once per long rest."
+                }
+            ],
+            "14": [
+                {
+                    "name": "Rage Beyond Death",
+                    "desc": "While raging, having 0 hit points doesn\u2019t knock you unconscious. You still make death saves and suffer normal effects at 0 hp; if you would die due to failed saves, you don\u2019t die until your rage ends and you still have 0 hp."
+                }
+            ]
+        },
+        "actions": [
+            {
+                "name": "Divine Fury",
+                "type": "special",
+                "level": 3,
+                "condition": "isRaging",
+                "desc": "While raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to 1d6 + half your barbarian level (necrotic or radiant). This is part of the Attack action.",
+                "source": "Path of the Zealot"
+            },
+            {
+                "name": "Zealous Presence",
+                "type": "bonus",
+                "level": 10,
+                "desc": "As a bonus action, you can unleash a battle cry. Up to 10 creatures of your choice within 60 feet that can hear you gain advantage on attack rolls and saving throws until the start of your next turn. Once per long rest.",
+                "source": "Path of the Zealot Lvl 10"
+            }
+        ]
+    },
+    {
+        "name": "Nature Domain",
+        "class": "Cleric",
+        "source": "PHB",
+        "features": {
+            "1": [
+                {
+                    "name": "Acolyte of Nature",
+                    "desc": "You learn one druid cantrip of your choice. You also gain proficiency in Animal Handling, Nature, or Survival (your choice)."
+                }
+            ],
+            "2": [
+                {
+                    "name": "Channel Divinity: Charm Animals and Plants",
+                    "desc": "As an action, present your holy symbol. Each beast or plant creature that can see you within 30 feet must make a Wisdom save or be charmed by you for 1 minute or until it takes damage. While charmed, it is friendly to you and your designated allies."
+                }
+            ],
+            "6": [
+                {
+                    "name": "Dampen Elements",
+                    "desc": "When you or a creature within 30 feet takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to that instance of the damage."
+                }
+            ],
+            "8": [
+                {
+                    "name": "Divine Strike",
+                    "desc": "Once on each of your turns when you hit with a weapon attack, deal an extra 1d8 cold, fire, or lightning damage (your choice). At 14th level this becomes 2d8."
+                }
+            ],
+            "17": [
+                {
+                    "name": "Master of Nature",
+                    "desc": "While creatures are charmed by your Charm Animals and Plants, you can use a bonus action to verbally command what each will do on its next turn."
+                }
+            ]
+        },
+        "alwaysPreparedSpells": {
+            "1": [
+                "Animal Friendship",
+                "Speak with Animals"
+            ],
+            "3": [
+                "Barkskin",
+                "Spike Growth"
+            ],
+            "5": [
+                "Plant Growth",
+                "Wind Wall"
+            ],
+            "7": [
+                "Dominate Beast",
+                "Grasping Vine"
+            ],
+            "9": [
+                "Insect Plague",
+                "Tree Stride"
+            ]
+        },
+        "bonusCantrips": {
+            "1": [
+                "Mold Earth"
+            ]
+        },
+        "cantrips": [ "Mold Earth" ],
+        "actions": [
+            {
+                "name": "Charm Animals and Plants",
+                "type": "action",
+                "level": 2,
+                "badge": "Channel Divinity",
+                "desc": "As an action, you present your holy symbol. Each beast or plant creature that can see you within 30 feet must make a Wisdom save or be charmed by you for 1 minute or until it takes damage. While charmed, it is friendly to you and your designated allies.",
+                "source": "Nature Domain Lvl 2"
+            },
+            {
+                "name": "Dampen Elements",
+                "type": "reaction",
+                "level": 6,
+                "desc": "When you or a creature within 30 feet takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to that instance of the damage.",
+                "source": "Nature Domain Lvl 6"
+            }
+        ]
+    }
+]

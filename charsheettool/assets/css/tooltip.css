@@ -1,0 +1,63 @@
+/* Floating tooltip element (for JS-driven global bubble) */
+#global-tooltip {
+  position: fixed; z-index: 9999; max-width: 320px;
+  padding: 6px 8px; border-radius: 6px;
+  background: var(--tt-bg); color: var(--tt-ink);
+  font: 12px/1.25 var(--font-body, serif);
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+  pointer-events: none; opacity: 0; transform: translate(-50%, -110%);
+  transition: opacity .08s ease;
+  white-space: pre-wrap; word-wrap: break-word;
+}
+#global-tooltip::before{
+  content:"";
+  position:absolute;
+  left:12px;
+  top:100%;
+  border:6px solid transparent;
+  border-top-color: var(--tt-bg);
+}
+
+/* Generic tooltip hosts */
+.tooltip, [data-desc] { position: relative; }
+.tooltip { --tt-max: var(--tt-cap); }
+
+/* Baseline tooltip bubble */
+.tooltip[data-tooltip]:hover::after,
+[data-desc]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+  display: inline-block; box-sizing: border-box; width: auto; max-width: var(--tt-max);
+  white-space: pre-wrap; overflow-wrap: break-word; word-wrap: break-word;
+  background: var(--tt-bg); color: var(--tt-ink); padding: var(--tt-pad);
+  border-radius: var(--tt-radius); box-shadow: var(--tt-shadow);
+  font-size: var(--tt-size); line-height: var(--tt-line);
+  z-index: var(--z-tooltip); pointer-events: none;
+}
+/* Arrow */
+.tooltip[data-tooltip]:hover::before,
+[data-desc]:hover::before {
+  content: ""; position: absolute; bottom: calc(100% - 2px); left: 50%; transform: translateX(-50%);
+  border: 6px solid transparent; border-top-color: var(--tt-bg);
+  z-index: calc(var(--z-tooltip) + 1);
+}
+
+/* “Mega” tooltip for long features — fixed & centered */
+#field-features .feature-item { position: relative; overflow: visible; }
+#field-features .tooltip[data-tooltip]:hover::after {
+  position: fixed; top: 12vh; left: 50vw; transform: translateX(-50%); bottom: auto;
+  max-width: min(85vw, 110ch); z-index: var(--z-tooltip-mega);
+}
+#field-features .tooltip[data-tooltip]:hover::before { display: none; }
+
+/* Disable element-anchored CSS bubbles now that the global tooltip is live */
+.tooltip::after,
+.tooltip::before {
+  content: none !important;
+  display: none !important;
+}
+
+.tooltip[data-tooltip]:hover,
+[data-desc]:hover {
+  cursor: help;
+}

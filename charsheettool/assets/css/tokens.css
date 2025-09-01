@@ -1,0 +1,141 @@
+ @font-face {
+  font-family: "Saber-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* prevent invisible text */
+}
+
+:root {
+  /* Colors */
+  --c-page-bg: #f8f8f8;
+  --c-ink: #2e1503;
+  --c-panel: #ffffff;
+  --c-panel-border: #e2e2e2;
+  
+  /* Tooltip theme */
+  --tt-bg: rgba(34,34,34,0.95);
+  --tt-ink: #ffffff;
+  --tt-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  --tt-radius: 6px;
+  --tt-pad: 6px 8px;
+  --tt-size: 12px;
+  --tt-line: 1.3;
+  --tt-cap: min(200vw, 90ch);
+  
+  /*ribbon button*/
+   --rb-ink: #2e1503;         /* line/stroke */
+  --rb-parch-1: #fffdf5;     /* light parchment */
+  --rb-parch-2: #efe2c5;     /* warm mid */
+  --rb-accent-1: #f7de3a;    /* hover top */
+  --rb-accent-2: #e2c65c;    /* hover bottom */
+
+  /* Fonts */
+  --font-display: "Saber-Regular","Saber",Georgia,serif;
+  --font-body: 'IM Fell DW Pica SC', serif;
+
+  /* Z-layers */
+  --z-bg: 0;
+  --z-field: 20;
+  --z-hp-buttons: 200;
+  --z-toolbar: 9000;
+  --z-tooltip: 5000;
+  --z-tooltip-mega: 7000;
+}
+
+/* Shared header positions */
+
+/* let fields inherit by default */
+.field .autofit { font-family: inherit; }
+
+/* utility to force Saber on any autofit text */
+.autofit.saber {
+  font-family: "Saber","Saber-Regular", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.1px; /* optional: matches your other fields */
+}
+
+/* Fancy navigation button */
+.nav-btn {
+  font-family: "Saber-Regular", Georgia, serif;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  padding: 8px 20px;
+  border: 2px solid var(--c-ink, #2e1503);
+  border-radius: 12px;
+  background: linear-gradient(145deg, var(--c-panel, #fff) 0%, #f1e6d0 100%);
+  color: var(--c-ink, #2e1503);
+  cursor: pointer;
+  box-shadow: 2px 3px 6px rgba(0,0,0,0.35);
+  transition: all 0.25s ease;
+   position: absolute;
+  top: 205px;
+  left: 676px;
+  width: 110px;
+  height: 52px;
+
+}
+
+.nav-btn:hover {
+  background: linear-gradient(145deg, #f7de3a, #e2c65c); /* your yellow token */
+  color: #2e1503;
+  transform: translateY(-2px);
+  box-shadow: 3px 5px 10px rgba(0,0,0,0.45);
+}
+
+.nav-btn:active {
+  transform: translateY(1px);
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+}
+
+.ribbon-btn { position:absolute; cursor:pointer; transition:transform .2s ease; }
+.ribbon-btn:focus-visible { outline:2px dashed var(--rb-ink); outline-offset:4px; }
+.ribbon-btn:hover { transform: translateY(-2px); }
+.ribbon-btn:active { transform: translateY(1px); }
+
+
+.rb-label {
+  font-family: "Saber-Regular","Saber", Georgia, serif;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  fill: #2b1d0e;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.35);
+  pointer-events: none; /* clicks pass to the SVG */
+}
+
+/* ensure #sheet is a positioned stacking context */
+#sheet { position: relative; }
+
+/* shared classes for autofit spans */
+.display-text { font-family: var(--font-display); }
+.body-text    { font-family: var(--font-body);    }
+
+/* keep this so spans inherit when no class is given */
+.field .autofit { font-family: inherit; }
+
+
+#field-class { top:137px; left:331px; width:126px; height:38px;
+  padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; }
+#field-class .autofit { font-family: var(--font-display); white-space: nowrap; line-height: 1; display: inline-block; }
+
+#field-level { top:96px; left:381px; width:26px; height:28px;
+  padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; }
+#field-level .autofit { font-family: var(--font-display); white-space: nowrap; line-height: 1; display: inline-block; }
+
+/* ensure these containers actually provide the body font */
+#field-languages,
+#field-proficiencies {
+  font-family: var(--font-body);
+}
+
+/* Curved name / race / background ribbons */
+#field-name { position:absolute; top:160px; left:256px; width:276px; height:85px; background:transparent; padding:0; border-radius:0; }
+#field-name svg { width:100%; height:100%; }
+
+#field-background {
+  position:absolute; background:transparent; padding:0; border-radius:0;  top:150px; left:580px; width:118px; height:93px;
+}
+
+#field-background svg { width:100%; height:100%; }
+
+#field-background .saber { font-family: var(--font-display); fill: var(--c-ink); }
+

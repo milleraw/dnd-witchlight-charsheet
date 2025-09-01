@@ -1,0 +1,279 @@
+/* Centered class & level */
+#field-class { top:137px; left:331px; width:126px; height:38px;
+  padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; }
+#field-class .autofit { font-family: var(--font-display); white-space: nowrap; line-height: 1; display: inline-block; }
+
+#field-level { top:96px; left:381px; width:26px; height:28px;
+  padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; }
+#field-level .autofit { font-family: var(--font-display); white-space: nowrap; line-height: 1; display: inline-block; }
+
+/* Force base text on specific elements */
+#field-level .autofit,
+#field-currenthp .autofit,
+#field-temphp   .autofit,
+#field-maxhp    .autofit,
+#field-hitdie   .autofit {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+#field-currenthp .autofit, #field-temphp .autofit, #field-maxhp .autofit, #field-hitdie .autofit { font-weight: 600; }
+
+/* Curved name / race / background ribbons */
+#field-name { position:absolute; top:160px; left:256px; width:276px; height:85px; background:transparent; padding:0; border-radius:0; }
+#field-name svg { width:100%; height:100%; }
+#field-race, #field-background {
+  position:absolute; background:transparent; padding:0; border-radius:0;
+}
+#field-race { top:165px; left:85px; width:127px; height:88px; }
+#field-background { top:150px; left:580px; width:118px; height:93px; }
+#field-race svg, #field-background svg { width:100%; height:100%; }
+#field-race .saber, #field-background .saber { font-family: var(--font-display); fill: var(--c-ink); }
+
+/* Cheat sheet positions */
+#field-currenthp { position:absolute; top:285px; left:294px; width:62px; height:38px; text-align:center; }
+#field-temphp    { position:absolute; top:285px; left:368px; width:62px; height:38px; text-align:center; }
+#field-maxhp     { position:absolute; top:341px; left:294px; width:62px; height:35px; text-align:center; }
+#field-hitdie    { position:absolute; top:341px; left:368px; width:62px; height:33px; text-align:center; }
+
+#field-initiative { position:absolute; top:551px; left:389px; width:51px; height:35px;
+  background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; font-family: var(--font-body)}
+
+#field-languages { position:absolute; top:362px; left:58px; width:170px; height:49px;
+  background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; }
+
+#field-proficiencies { position:absolute; top:445px; left:58px; width:202px; height:56px;
+  background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; }
+
+#field-build { position:absolute; top:74px; left:167px; width:87px; height:29px;
+  background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; }
+
+/* Force display (Saber) font for these specific fields */
+#field-build,
+#field-eyeshair,
+#field-gender,
+#field-playername,
+#field-alignment {
+  font-family: var(--font-display), "Saber", "Saber-Regular", Georgia, serif;
+  
+}
+
+
+#field-eyeshair { position:absolute; top:103px; left:88px; width:160px; height:27px; display:flex; align-items:center; justify-content:flex-end; text-align:right; background:transparent; padding:0; border-radius:0; }
+#field-gender   { position:absolute; top:134px; left:131px; width:120px; height:23px; display:flex; align-items:center; justify-content:flex-end; text-align:right; background:transparent; padding:0; border-radius:0; }
+#field-playername { position:absolute; top:78px; left:541px; width:167px; height:23px; display:flex; align-items:center; justify-content:flex-start; text-align:left; background:transparent; padding:0; border-radius:0; }
+#field-alignment  { position:absolute; top:109px; left:541px; width:162px; height:20px; display:flex; align-items:center; justify-content:flex-start; text-align:left; background:transparent; padding:0; border-radius:0; }
+
+/* Attributes positions */
+#field-cha-base { position:absolute; top:282px; left:489px; width:36px; height:31px; }
+#field-wis-base { position:absolute; top:370px; left:489px; width:36px; height:31px; }
+#field-int-base { position:absolute; top:450px; left:489px; width:36px; height:31px; }
+#field-dex-base { position:absolute; top:534px; left:489px; width:36px; height:31px; }
+#field-str-base { position:absolute; top:626px; left:489px; width:36px; height:31px; }
+#field-con-base { position:absolute; top:710px; left:489px; width:36px; height:31px; }
+#field-cha-mod  { position:absolute; top:313px; left:490px; width:31px; height:29px; }
+#field-wis-mod  { position:absolute; top:399px; left:490px; width:31px; height:29px; }
+#field-int-mod  { position:absolute; top:478px; left:490px; width:31px; height:29px; }
+#field-dex-mod  { position:absolute; top:565px; left:490px; width:31px; height:29px; }
+#field-str-mod  { position:absolute; top:656px; left:490px; width:31px; height:29px; }
+#field-con-mod  { position:absolute; top:740px; left:490px; width:31px; height:29px; }
+
+/* Ability score bases & modifiers use the body font */
+#field-cha-base,
+#field-wis-base,
+#field-int-base,
+#field-dex-base,
+#field-str-base,
+#field-con-base,
+#field-cha-mod,
+#field-wis-mod,
+#field-int-mod,
+#field-dex-mod,
+#field-str-mod,
+#field-con-mod {
+  font-family: var(--font-body);
+}
+
+/* AC + armor name */
+#field-ac { position:absolute; top:551px; left:300px; width:38px; height:33px;
+  background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; font-family: var(--font-body)}
+#field-armor-name { position:absolute; top:600px; left:281px; width:73px; height:50px;
+  background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center;
+  line-height:1.1; overflow:hidden; }
+
+/* Speed */
+#field-speed { position:absolute; top:603px; left:386px; width:59px; height:41px;
+  background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; font-family: var(--font-body)}
+
+/* HP buttons — positions */
+#hp-minus   { top:301px; left:276px; }
+#hp-plus    { top:301px; left:360px; }
+#temp-grant { top:301px; left:434px; }
+#temp-clear { top:301px; left:414px; }
+
+/* Let clicks pass through HP fields (keep local due to IDs) */
+#field-currenthp, #field-temphp, #field-maxhp, #field-hitdie { pointer-events: none; }
+
+/* Features list */
+#field-features {
+  position:absolute; top:579px; left:58px; width:186px; height:308px;
+  background:transparent; padding:4px; border-radius:0; display:block;
+  overflow: visible; z-index: calc(var(--z-field) + 1000);
+}
+#field-features .feature-item { margin: 0 0 2px 0; } /* (could stay here or live in tooltip.css) */
+
+/* Proficiency bonus */
+#field-proficiency { position:absolute; top:252px; left:701px; width:36px; height:37px;
+  background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; font-family: var(--font-body)}
+
+/* Attack area */
+#field-attackbonus { position:absolute; top:924px; left:285px; width:72px; height:58px;
+  background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; font-family: var(--font-body)}
+
+#field-attacks { position:absolute; top:693px; left:285px; width:160px; height:224px;
+  background:transparent; padding:0; border-radius:0; overflow: hidden; }
+#field-attacks .attack-row { white-space:normal; overflow-wrap:anywhere; word-break:keep-all; line-height:1.05; margin-bottom:3px; cursor:help; }
+#field-attacks .line1 { font-size:11px; font-variant:small-caps; font-weight:600; }
+#field-attacks .line2 { font-size:11px; opacity:.95; }
+/* Make rage indicators more specific to override base styles */
+#field-attacks .rage-damage {
+  color: #900;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+.raging-stat {
+  color: #900 !important;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+
+/* Disadvantage indicators from conditions */
+#field-attacks .attack-row.has-disadvantage .line1,
+#field-attacks .attack-row.has-disadvantage .line2 {
+  color: #a52a2a; /* A muted, brownish-red */
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+
+.attr-mod.has-disadvantage {
+  color: #a52a2a !important; /* Override other styles like rage */
+  font-style: italic;
+  text-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+/* Spell Save DC */
+#field-spellsavedc { position:absolute; top:923px; left:372px; width:67px; height:48px;
+  background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; font-family: var(--font-body)}
+
+/* Passive Perception */
+#field-passive-perception {
+  position:absolute; left:646px; top:807px; width:55px; height:42px;
+  font-family: var(--font-body); font-size:36px; color: var(--c-ink);
+  display:flex; align-items:center; justify-content:center; text-align:center;
+}
+
+/* Gear box */
+#field-gear {
+  position:absolute; top: 857px; left: 582px; width: 150px; height: 110px;
+  font-family: var(--font-body, inherit); font-size:11px; line-height:1.15; color: var(--c-ink, #2e1503);
+  padding: 4px 8px 4px 6px; /* Right padding for scrollbar */
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  word-break: break-word; /* Ensure long item names wrap */
+}
+#field-gear .row { white-space: normal; overflow: visible; text-overflow: clip; word-break: break-word; }
+#field-gear .more { opacity: 0.75; font-style: italic; }
+#field-gear .coins { font-weight: 600; margin-bottom: 2px; }
+#field-gear .itm { cursor: help; }
+#field-gear .itm.infused-item {
+  font-weight: bold;
+}
+#field-gear .sep { opacity: .6; }
+
+/* Minimalist scrollbar for the gear box */
+#field-gear::-webkit-scrollbar { width: 4px; }
+#field-gear::-webkit-scrollbar-track { background: transparent; }
+#field-gear::-webkit-scrollbar-thumb { background: #888; border-radius: 2px; }
+#field-gear::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* Currency */
+#field-currency {
+  position:absolute; top:890px; left:490px; width:60px; height:85px;
+  background:transparent; padding:0; border-radius:0; display:flex; flex-direction:column;
+  justify-content:flex-start; row-gap:4px; text-align:left;
+  font-family: var(--font-body); font-size:12px; line-height:1.05;
+}
+#field-currency .row { display:flex; justify-content:space-between; }
+#field-currency .lbl { font-variant: small-caps; cursor: help; }
+#field-currency .val { font-weight:600; margin-left:auto; text-align:right; }
+#field-currency .coin-row { display:flex; justify-content:space-between; align-items:baseline; margin:0; padding:0; }
+
+/* Conditions Tracker */
+#field-conditions {
+  position: absolute;
+  top: 423px;
+  left: 319px;
+  width: 119px;
+  height: 62px;
+  /* Make the box a scrollable container */
+  overflow-y: auto;
+  padding: 2px 6px 2px 2px; /* Add padding for scrollbar */
+  box-sizing: border-box;
+  /* Simple block layout for vertical scrolling */
+  display: block;
+}
+.condition-pill {
+  font-family: var(--font-body, "IM Fell DW Pica SC", serif);
+  font-size: 10px;
+  padding: 2px 5px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.1s ease-in-out;
+  display: block; /* Stack vertically */
+  margin-bottom: 2px; /* Space between pills */
+  text-align: center;
+}
+.condition-pill.active { background: var(--accent-color, #8B0000); color: white; border-color: rgba(0,0,0,0.5); font-weight: bold; }
+
+/* Minimalist scrollbar for the conditions box */
+#field-conditions::-webkit-scrollbar { width: 4px; }
+#field-conditions::-webkit-scrollbar-track { background: transparent; }
+#field-conditions::-webkit-scrollbar-thumb { background: #888; border-radius: 2px; }
+#field-conditions::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* Death Saves */
+.death-save-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--c-ink, #2e1503);
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.15s ease-in-out;
+  z-index: var(--z-field);
+}
+.death-save-circle.filled {
+  background: var(--c-ink, #2e1503);
+}
+
+/* Incapacitated Overlay */
+#incapacitated-overlay {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  font-size: 80px;
+  font-family: var(--font-body, "IM Fell DW Pica SC", serif);
+  color: var(--accent-color, #8B0000);
+  background: rgba(139, 0, 0, 0.1);
+  padding: 20px 40px;
+  border: 5px solid var(--accent-color, #8B0000);
+  border-radius: 15px;
+  z-index: 100;
+  pointer-events: none;
+  user-select: none;
+}

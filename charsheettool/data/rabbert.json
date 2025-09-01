@@ -1,0 +1,51 @@
+{
+  "name": "Rabbert Carrotson",
+  "class": "Ranger",
+  "level": 3,
+  "maxHP": 31,
+  "currentHP": 31,
+  "hit_die": "d10",
+  "tempHP": 0,
+  "race": "Harengon",
+    "abilities": {
+    "CHA": 16,
+  "WIS": 11,
+  "INT": 15,
+  "DEX": 16,
+  "STR": 8,
+  "CON": 14
+  },
+  "spells": [],
+  "background": "Witchlight Hand",
+  "build":"Fey Wanderer",
+  "eyes_hair": "",
+  "gender": "Male",
+  "player_name": "Deegan",
+  "alignment":"Neutral Good"
+  ,
+  "armor": "Scale Mail",
+  "traits": [
+    { "name": "Fighting Style: Archery", "desc": "You gain a +2 bonus to attack rolls you make with ranged weapons." },
+    { "name": "Favored Enemy: Fey", "desc": "You have advantage on Wisdom (Survival) checks to track fey, as well as on Intelligence checks to recall information about them. You also learn one language of your choice that is spoken by your favored enemies. You chose Sylvan." },
+    { "name": "Natural Explorer: Grassland", "desc": "You are adept at traveling and surviving in grasslands. When you make an Intelligence or Wisdom check related to grasslands, your proficiency bonus is doubled if you are using a skill that you’re proficient in. While traveling for an hour or more in grasslands, you gain several benefits: your group isn't slowed by difficult terrain and can't get lost by non-magical means; you remain alert to danger even when doing other things; you find double food when foraging; and you learn more information when tracking." },
+    { "name": "Dreadful Strikes", "desc": "Once per turn when you hit a creature with a weapon, you can deal an extra 1d4 psychic damage to the target. This increases to 1d6 at level 11." }
+  ],
+  "languages": ["Common","Dwarven","Elvish","Sylvan"],
+   "proficiencies": {
+    "tools":   ["Thieves' Tools", "Woodcarver’s Tools"],
+    "weapons": ["Simple weapons", "Shortswords"],
+    "armor":   ["Light armor"]          
+      },
+        "skill_proficiencies": {"saving throws":["Dex","Str"],
+  "skills":["Performance","Persuasion","Animal Handling","Perception","Investigation","Nature","Sleight of Hand"]},
+  "gear": [
+  { "name": "Explorer's Pack" },
+  { "name": "Bagpipes", "desc": "A musical instrument chosen from the Witchlight Hand background." },
+  { "name": "Deck of Cards" },
+  { "name": "Carnival Costume", "desc": "Uniform or costume from the Witchlight Carnival." },
+  { "name": "Feywild Trinket" }
+],
+"coins": { "gp": 8, "sp": 0, "cp": 0, "pp": 0 }
+
+
+}

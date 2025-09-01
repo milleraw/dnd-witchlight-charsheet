@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Artificer",
+    "index": "artificer",
+    "hit_die": 8,
+    "saving_throws": [
+      { "name": "CON" },
+      { "name": "INT" }
+    ],
+    "proficiencies": {
+      "armor": ["Light", "Medium", "Shields"],
+      "weapons": ["Simple weapons", "Firearms"],
+      "tools": ["Thieves' Tools", "Tinker's Tools", "one type of artisan's tools"]
+    }
+  },
+  {
+    "name": "Barbarian",
+    "source": "PHB",
+    "actions": [
+      {
+        "name": "Rage",
+        "type": "bonus",
+        "level": 1,
+        "desc": "As a bonus action, you can enter a rage. It lasts for 1 minute, ending early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.",
+        "source": "Barbarian Lvl 1"
+      },
+      {
+        "name": "Reckless Attack",
+        "type": "special",
+        "level": 2,
+        "desc": "When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
+        "source": "Barbarian Lvl 2"
+      }
+    ]
+  },
+  {
+    "name": "Cleric",
+    "source": "PHB",
+    "actions": [
+      {
+        "name": "Turn Undead",
+        "type": "action",
+        "level": 2,
+        "badge": "Channel Divinity",
+        "desc": "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
+        "source": "Cleric Lvl 2"
+      }
+    ]
+  },
+  {
+    "name": "Druid",
+    "source": "PHB",
+    "actions": [
+      {
+        "name": "Wild Shape",
+        "type": "action",
+        "level": 2,
+        "desc": "As an action, you can magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.",
+        "source": "Druid Lvl 2"
+      }
+    ]
+  },
+  {
+    "name": "Monk",
+    "source": "PHB",
+    "actions": [
+      {
+        "name": "Martial Arts",
+        "type": "bonus",
+        "level": 1,
+        "desc": "After you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action.",
+        "source": "Monk Lvl 1"
+      },
+      {
+        "name": "Flurry of Blows",
+        "type": "bonus",
+        "level": 2,
+        "badge": "1 Ki",
+        "desc": "Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.",
+        "source": "Monk Lvl 2 (1 Ki)"
+      },
+      {
+        "name": "Patient Defense",
+        "type": "bonus",
+        "level": 2,
+        "badge": "1 Ki",
+        "desc": "You can spend 1 ki point to take the Dodge action as a bonus action on your turn.",
+        "source": "Monk Lvl 2 (1 Ki)"
+      },
+      {
+        "name": "Step of the Wind",
+        "type": "bonus",
+        "level": 2,
+        "badge": "1 Ki",
+        "desc": "You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.",
+        "source": "Monk Lvl 2 (1 Ki)"
+      },
+      {
+        "name": "Stunning Strike",
+        "type": "special",
+        "level": 5,
+        "badge": "1 Ki",
+        "desc": "When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.",
+        "source": "Monk Lvl 5 (1 Ki)"
+      }
+    ]
+  }
+]

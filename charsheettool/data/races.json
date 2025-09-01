@@ -1,0 +1,118 @@
+[
+  {
+    "index": "Moon Elf",
+    "name": "Moon Elf",
+    "speed": 30,
+    "ability_bonuses": [
+      {
+        "ability_score": { "index": "dex", "name": "DEX", "url": "/api/2014/ability-scores/dex" },
+        "bonus": 2
+      }
+    ],
+    "age": "Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old.",
+    "alignment": "Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not.",
+    "size": "Medium",
+    "size_description": "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium.",
+    "starting_proficiencies": [
+      { "index": "skill-perception", "name": "Skill: Perception", "url": "/api/2014/proficiencies/skill-perception" }
+    ],
+    "languages": [
+      { "index": "common", "name": "Common", "url": "/api/2014/languages/common" },
+      { "index": "elvish", "name": "Elvish", "url": "/api/2014/languages/elvish" }
+    ],
+    "language_desc": "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.",
+    "traits": [
+      { "index": "darkvision", "name": "Darkvision", "url": "/api/2014/traits/darkvision" },
+      { "index": "fey-ancestry", "name": "Fey Ancestry", "url": "/api/2014/traits/fey-ancestry" },
+      { "index": "trance", "name": "Trance", "url": "/api/2014/traits/trance" },
+      { "index": "keen-senses", "name": "Keen Senses", "url": "/api/2014/traits/keen-senses" }
+    ],
+    "subraces": [
+      { "index": "high-elf", "name": "High Elf", "url": "/api/2014/subraces/high-elf" }
+    ],
+    "url": "/api/2014/races/elf",
+    "updated_at": "2025-04-08T21:14:12.834Z"
+  },
+  {
+    "index": "Harengon",
+    "name": "Harengon",
+    "speed": 30,
+    "ability_bonuses": [],
+    "age": "Harengons reach adulthood in their late teens and typically live under a century.",
+    "alignment": "Curious, quick, and free-spirited. Harengons tend toward good and often lean chaotic.",
+    "size": "Medium or Small",
+    "size_description": "You choose your size when you select this race: Medium (average build) or Small (shorter and lighter).",
+    "starting_proficiencies": [
+      { "index": "skill-perception", "name": "Skill: Perception", "url": "/api/2014/proficiencies/skill-perception" }
+    ],
+    "languages": [
+      { "index": "common", "name": "Common", "url": "/api/2014/languages/common" },
+      { "index": "sylvan", "name": "Sylvan", "url": "/api/2014/languages/sylvan" }
+    ],
+    "language_desc": "You can speak, read, and write Common and Sylvan.",
+    "traits": [
+      { "index": "hare-trigger", "name": "Hare-Trigger", "desc": "You can add your proficiency bonus to your initiative rolls." },
+      { "index": "leporine-senses", "name": "Leporine Senses", "desc": "You have proficiency in the Perception skill." },
+      { "index": "lucky-footwork", "name": "Lucky Footwork", "desc": "When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the save, potentially turning it into a success. You can’t use this reaction if your speed is 0." },
+      { "index": "rabbit-hop", "name": "Rabbit Hop", "desc": "As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait a number of times equal to your proficiency bonus per long rest." }
+    ],
+    "subraces": [],
+    "actions": [
+      {
+        "name": "Rabbit Hop",
+        "type": "bonus",
+        "desc": "As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait a number of times equal to your proficiency bonus per long rest.",
+        "source": "Harengon Racial"
+      },
+      {
+        "name": "Lucky Footwork",
+        "type": "reaction",
+        "desc": "When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the save, potentially turning it into a success. You can’t use this reaction if your speed is 0.",
+        "source": "Harengon Racial"
+      }
+    ],
+    "url": "/api/2014/races/harengon",
+    "updated_at": "2025-08-14T00:00:00.000Z"
+  },
+  {
+    "index": "dragonborn",
+    "name": "Dragonborn",
+    "speed": 30,
+    "traits": [
+      { "name": "Draconic Ancestry", "desc": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type." },
+      { "name": "Damage Resistance", "desc": "You have resistance to the damage type associated with your draconic ancestry." }
+    ],
+    "actions": [
+      {
+        "name": "Breath Weapon",
+        "type": "action",
+        "level": 1,
+        "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.\n\nWhen you use your breath weapon, each creature in the area of the exhalation must make a saving throw (DC {DC}). A creature takes {DMG} damage on a failed save, and half as much damage on a successful one.\n\nAfter you use your breath weapon, you can’t use it again until you complete a short or long rest.",
+        "source": "Dragonborn Racial"
+      }
+    ]
+  },
+  {
+    "index": "Tiefling",
+    "name": "Tiefling",
+    "speed": 30,
+    "ability_bonuses": [
+      { "ability_score": { "index": "int", "name": "INT" }, "bonus": 1 },
+      { "ability_score": { "index": "cha", "name": "CHA" }, "bonus": 2 }
+    ],
+    "age": "Tieflings mature at the same rate as humans but live a few years longer.",
+    "alignment": "Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.",
+    "size": "Medium",
+    "size_description": "Tieflings are about the same size and build as humans. Your size is Medium.",
+    "languages": [
+      { "index": "common", "name": "Common" },
+      { "index": "infernal", "name": "Infernal" }
+    ],
+    "traits": [
+      { "name": "Darkvision", "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray." },
+      { "name": "Hellish Resistance", "desc": "You have resistance to fire damage." },
+      { "name": "Infernal Legacy", "desc": "You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells." }
+    ],
+    "url": "/api/2014/races/tiefling"
+  }
+]

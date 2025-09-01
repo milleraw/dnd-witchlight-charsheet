@@ -1,0 +1,127 @@
+[
+  {
+    "index": "burglars-pack",
+    "name": "Burglar's Pack",
+    "items": [
+      { "name": "Backpack", "qty": 1 },
+      { "name": "Ball bearings (bag of 1,000)", "qty": 1 },
+      { "name": "String (10 feet)", "qty": 1 },
+      { "name": "Bell", "qty": 1 },
+      { "name": "Candle", "qty": 5 },
+      { "name": "Crowbar", "qty": 1 },
+      { "name": "Hammer", "qty": 1 },
+      { "name": "Piton", "qty": 10 },
+      { "name": "Lantern, hooded", "qty": 1 },
+      { "name": "Oil (flask)", "qty": 2 },
+      { "name": "Rations (1 day)", "qty": 5 },
+      { "name": "Tinderbox", "qty": 1 },
+      { "name": "Waterskin", "qty": 1 },
+      { "name": "Rope, hempen (50 feet)", "qty": 1 }
+    ]
+  },
+  {
+    "index": "diplomats-pack",
+    "name": "Diplomat's Pack",
+    "items": [
+      { "name": "Chest", "qty": 1 },
+      { "name": "Case, map or scroll", "qty": 2 },
+      { "name": "Clothes, fine", "qty": 1 },
+      { "name": "Ink (bottle)", "qty": 1 },
+      { "name": "Ink pen", "qty": 1 },
+      { "name": "Lamp", "qty": 1 },
+      { "name": "Oil (flask)", "qty": 2 },
+      { "name": "Paper (sheet)", "qty": 5 },
+      { "name": "Perfume (vial)", "qty": 1 },
+      { "name": "Sealing wax", "qty": 1 },
+      { "name": "Soap", "qty": 1 }
+    ]
+  },
+  {
+    "index": "dungeoneers-pack",
+    "name": "Dungeoneer's Pack",
+    "items": [
+      { "name": "Backpack", "qty": 1 },
+      { "name": "Crowbar", "qty": 1 },
+      { "name": "Hammer", "qty": 1 },
+      { "name": "Piton", "qty": 10 },
+      { "name": "Torch", "qty": 10 },
+      { "name": "Tinderbox", "qty": 1 },
+      { "name": "Rations (1 day)", "qty": 10 },
+      { "name": "Waterskin", "qty": 1 },
+      { "name": "Rope, hempen (50 feet)", "qty": 1 }
+    ]
+  },
+  {
+    "index": "entertainers-pack",
+    "name": "Entertainer's Pack",
+    "items": [
+      { "name": "Backpack", "qty": 1 },
+      { "name": "Bedroll", "qty": 1 },
+      { "name": "Costume", "qty": 2 },
+      { "name": "Candle", "qty": 5 },
+      { "name": "Rations (1 day)", "qty": 5 },
+      { "name": "Waterskin", "qty": 1 },
+      { "name": "Disguise kit", "qty": 1 }
+    ]
+  },
+  {
+    "index": "explorers-pack",
+    "name": "Explorer's Pack",
+    "items": [
+      { "name": "Backpack", "qty": 1 },
+      { "name": "Bedroll", "qty": 1 },
+      { "name": "Mess kit", "qty": 1 },
+      { "name": "Tinderbox", "qty": 1 },
+      { "name": "Torch", "qty": 10 },
+      { "name": "Rations (1 day)", "qty": 10 },
+      { "name": "Waterskin", "qty": 1 },
+      { "name": "Rope, hempen (50 feet)", "qty": 1 }
+    ]
+  },
+  {
+    "index": "priests-pack",
+    "name": "Priest's Pack",
+    "items": [
+      { "name": "Backpack", "qty": 1 },
+      { "name": "Blanket", "qty": 1 },
+      { "name": "Candle", "qty": 10 },
+      { "name": "Tinderbox", "qty": 1 },
+      { "name": "Alms box", "qty": 1 },
+      { "name": "Block of incense", "qty": 2 },
+      { "name": "Censer", "qty": 1 },
+      { "name": "Vestments", "qty": 1 },
+      { "name": "Rations (1 day)", "qty": 2 },
+      { "name": "Waterskin", "qty": 1 }
+    ]
+  },
+  {
+    "index": "scholars-pack",
+    "name": "Scholar's Pack",
+    "items": [
+      { "name": "Backpack", "qty": 1 },
+      { "name": "Book of lore", "qty": 1 },
+      { "name": "Ink (bottle)", "qty": 1 },
+      { "name": "Ink pen", "qty": 1 },
+      { "name": "Parchment (sheet)", "qty": 10 },
+      { "name": "Sand (bag)", "qty": 1 },
+      { "name": "Small knife", "qty": 1 }
+    ]
+  },
+  {
+    "index": "monster-hunters-pack",
+    "name": "Monster Hunter's Pack",
+    "items": [
+      { "name": "Chest", "qty": 1 },
+      { "name": "Crowbar", "qty": 1 },
+      { "name": "Hammer", "qty": 1 },
+      { "name": "Wooden stake", "qty": 3 },
+      { "name": "Holy symbol", "qty": 1 },
+      { "name": "Holy water (flask)", "qty": 1 },
+      { "name": "Manacles", "qty": 1 },
+      { "name": "Steel mirror", "qty": 1 },
+      { "name": "Oil (flask)", "qty": 1 },
+      { "name": "Tinderbox", "qty": 1 },
+      { "name": "Torch", "qty": 3 }
+    ]
+  }
+]

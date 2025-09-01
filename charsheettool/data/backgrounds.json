@@ -1,0 +1,476 @@
+[
+  {
+    "name": "Urban Bounty Hunter",
+    "source": "SCAG",
+    "description": "Before you became an adventurer, your life was already full of conflict and excitement, because you made a living tracking down people for pay. Unlike some people who collect bounties, though, you aren't a savage who follows quarry into or through the wilderness. You're involved in a lucrative trade, in the place where you live, that routinely tests your skills and survival instincts. What's more, you aren't alone, as a bounty hunter in the wild would be: you routinely interact with both the criminal subculture and other bounty hunters, maintaining contacts in both areas to help you succeed.\n\nYou might be a cunning thief-catcher, prowling the rooftops to catch one of the myriad burglars of the city. Perhaps you are someone who has your ear to the street, aware of the doings of thieves' guilds and street gangs. You might be a 'velvet mask' bounty hunter, one who blends in with high society and noble circles in order to catch the criminals that prey on the rich, whether pickpockets or con artists. The community where you plied your trade might have been one of Faerûn's great metropolises, such as Waterdeep or Baldur's Gate, or a less populous location, perhaps Luskan or Yartar—any place that's large enough to have a steady supply of potential quarries.\n\nAs a member of an adventuring party, you might find it more difficult to pursue a personal agenda that doesn't fit with the group's objectives—but on the other hand, you can take down much more formidable targets with the help of your companions.",
+    "features": [
+      {
+        "name": "Ear to the Ground",
+        "desc": "You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area."
+      }
+    ],
+    "proficiencies": {
+      "skills": [
+        "Choose two from Deception, Insight, Persuasion, and Stealth"
+      ],
+      "tools": [
+        "Choose two from among one type of gaming set, one musical instrument, and thieves’ tools"
+      ],
+      "languages": []
+    },
+    "equipment": [
+      "A set of clothes appropriate to your duties and a pouch containing 20 gp"
+    ],
+    "suggested_characteristics": {
+      "personality_traits": [
+        "I always have a plan for what to do when things go wrong.",
+        "I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.",
+        "The first thing I do in a new place is note the locations of everything valuable – or where such things could be hidden.",
+        "I would rather make a new friend than a new enemy.",
+        "I am incredibly slow to trust. Those who seem the fairest often have the most to hide.",
+        "I don't pay attention to the risks in a situation. Never tell me the odds.",
+        "The best way to get me to do something is to tell me I can't do it.",
+        "I blow up at the slightest insult."
+      ],
+      "ideals": [
+        {
+          "name": "Honor",
+          "desc": "I don't steal from others in the trade. (Lawful)"
+        },
+        {
+          "name": "Freedom",
+          "desc": "Chains are meant to be broken, as are those who would forge them. (Chaotic)"
+        },
+        {
+          "name": "Charity",
+          "desc": "I steal from the wealthy so that I can help people in need. (Good)"
+        },
+        {
+          "name": "Greed",
+          "desc": "I will do whatever it takes to become wealthy. (Evil)"
+        },
+        {
+          "name": "People",
+          "desc": "I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)"
+        },
+        {
+          "name": "Redemption",
+          "desc": "There's a spark of good in everyone. (Good)"
+        }
+      ],
+      "bonds": [
+        "I'm trying to pay off an old debt I owe to a generous benefactor.",
+        "My ill-gotten gains go to support my family.",
+        "Something important was taken from me, and I aim to steal it back.",
+        "I will become the greatest thief that ever lived.",
+        "I'm guilty of a terrible crime. I hope I can redeem myself for it.",
+        "Someone I loved died because of a mistake I made. That will never happen again."
+      ],
+      "flaws": [
+        "When I see something valuable, I can't think about anything but how to steal it.",
+        "When faced with a choice between money and my friends, I usually choose the money.",
+        "If there's a plan, I'll forget it. If I don't forget it, I'll ignore it.",
+        "I have a 'tell' that reveals when I'm lying.",
+        "I turn tail and run when things look bad.",
+        "An innocent person is in prison for a crime that I committed. I'm okay with that."
+      ]
+    }
+  },
+  {
+    "name": "Acolyte",
+    "source": "PHB",
+    "description": "You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest's instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.",
+    "features": [
+      {
+        "name": "Shelter of the Faithful",
+        "desc": "You command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.\n\nYou might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple."
+      }
+    ],
+    "proficiencies": {
+      "skills": [
+        "Insight",
+        "Religion"
+      ],
+      "tools": [],
+      "languages": [
+        "Two of your choice"
+      ]
+    },
+    "equipment": [
+      "A holy symbol",
+      "A prayer book or prayer wheel",
+      "5 sticks of incense",
+      "Vestments",
+      "A set of common clothes",
+      "A pouch containing 15 gp"
+    ],
+    "suggested_characteristics": {
+      "personality_traits": [
+        "I idolize a particular hero of my faith, and constantly refer to that person's deeds and example.",
+        "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.",
+        "I see omens in every event and action. The gods try to speak to us, we just need to listen.",
+        "Nothing can shake my optimistic attitude.",
+        "I quote (or misquote) sacred texts and proverbs in almost every situation.",
+        "I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.",
+        "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me.",
+        "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."
+      ],
+      "ideals": [
+        {
+          "name": "Tradition",
+          "desc": "The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)"
+        },
+        {
+          "name": "Charity",
+          "desc": "I always try to help those in need, no matter what the personal cost. (Good)"
+        },
+        {
+          "name": "Change",
+          "desc": "We must help bring about the changes the gods are constantly working in the world. (Chaotic)"
+        },
+        {
+          "name": "Power",
+          "desc": "I hope to one day rise to the top of my faith's religious hierarchy. (Lawful)"
+        },
+        {
+          "name": "Faith",
+          "desc": "I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)"
+        },
+        {
+          "name": "Aspiration",
+          "desc": "I seek to prove myself worthy of my god's favor by matching my actions against their teachings. (Any)"
+        }
+      ],
+      "bonds": [
+        "I would die to recover an ancient relic of my faith that was lost long ago.",
+        "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic.",
+        "I owe my life to the priest who took me in when my parents died.",
+        "Everything I do is for the common people.",
+        "I will do anything to protect the temple where I served.",
+        "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy."
+      ],
+      "flaws": [
+        "I judge others harshly, and myself even more severely.",
+        "I put too much trust in those who wield power within my temple's hierarchy.",
+        "My piety sometimes leads me to blindly trust those that profess faith in my god.",
+        "I am inflexible in my thinking.",
+        "I am suspicious of strangers and expect the worst of them.",
+        "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life."
+      ]
+    }
+  },
+  {
+    "name": "Haunted One",
+    "source": "COS",
+    "description": "You are haunted by something so terrible that you dare not speak of it. You've tried to bury it and run away from it, to no avail. Whatever this thing is that haunts you can't be slain with a sword or banished with a spell. It might come to you as a shadow on the wall, a bloodcurdling nightmare, a memory that refuses to die, or a demonic whisper in the dark. The burden has taken its toll, isolating you from most people and making you question your sanity. You must find a way to overcome it before it destroys you.",
+    "features": [
+      {
+        "name": "Heart of Darkness",
+        "desc": "Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+      }
+    ],
+    "proficiencies": {
+      "skills": [
+        "Choose two from among Arcana, Investigation, Religion, or Survival"
+      ],
+      "tools": [],
+      "languages": [
+        "Choose two, one of which must be Abyssal, Celestial, Deep Speech, Draconic, Infernal, Primordial, Sylvan, or Undercommon"
+      ]
+    },
+    "equipment": [
+      "Chest",
+      "Crowbar",
+      "Hammer",
+      "Wooden Stakes (3)",
+      "Holy symbol",
+      "Flask of Holy Water",
+      "Set of Manacles",
+      "Steel Mirror",
+      "Flask of Oil",
+      "Tinderbox",
+      "Torches(3)",
+      "A set of common clothes",
+      "A trinket of special significance",
+      "1 sp"
+    ],
+    "suggested_characteristics": {
+      "personality_traits": [
+        "I had an encounter that I believe gives me a special affinity with a supernatural creature or event.",
+        "A signature piece of clothing or distinct weapon serves as an emblem of who I am.",
+        "I never accept that I'm out of my depth.",
+        "I must know the answer to every secret. No door remains unopened in my presence.",
+        "I let people underestimate me, revealing my full competency only to those close to me.",
+        "I compulsively seek to collect trophies of my travels and victories.",
+        "It doesn't matter if the whole world's against me. I'll always do what I think is right.",
+        "I have morbid interests and a macabre aesthetic.",
+        "I have a personal ritual, mantra, or relaxation method I use to deal with stress.",
+        "Nothing is more important than life, and I never leave anyone in danger.",
+        "I'm quick to jump to extreme solutions. Why risk a lesser option not working?",
+        "I'm easily startled, but I'm not a coward."
+      ],
+      "ideals": [
+        {
+          "name": "Adrenaline",
+          "desc": "I've experienced such strangeness that now I feel alive only in extreme situations."
+        },
+        {
+          "name": "Balance",
+          "desc": "I strive to counter the deeds of someone for whom I feel responsible."
+        },
+        {
+          "name": "Bound",
+          "desc": "I've wronged someone and must work their will to avoid their curse."
+        },
+        {
+          "name": "Escape",
+          "desc": "I believe there is something beyond the world I know, and I need to find it."
+        },
+        {
+          "name": "Legacy",
+          "desc": "I must do something great so that I'm remembered, and my time is running out."
+        },
+        {
+          "name": "Misdirection",
+          "desc": "I work vigorously to keep others from realizing my flaws or misdeeds."
+        },
+        {
+          "name": "Obsession",
+          "desc": "I've lived this way for so long that I can't imagine another way."
+        },
+        {
+          "name": "Obligation",
+          "desc": "I owe it to my people, faith, family, or teacher to continue a vaunted legacy."
+        },
+        {
+          "name": "Promise",
+          "desc": "My life is no longer my own. I must fulfill the dream of someone who's gone."
+        },
+        {
+          "name": "Revelation",
+          "desc": "I need to know what lies beyond the mysteries of death, the world, or the Mists."
+        },
+        {
+          "name": "Sanctuary",
+          "desc": "I know the forces at work in the world and strive to create islands apart from them."
+        },
+        {
+          "name": "Truth",
+          "desc": "I care about the truth above all else, even if it doesn't benefit anyone."
+        }
+      ],
+      "bonds": [
+        "I desperately need to get back to someone or someplace, but I lost them in the Mists.",
+        "Everything I do is in the service of a powerful master, one I must keep a secret from everyone.",
+        "I owe much to my vanished mentor. I seek to continue their work even as I search to find them.",
+        "I've seen great darkness, and I'm committed to being a light against it—the light of all lights.",
+        "Someone I love has become a monster, murderer, or other threat. It's up to me to redeem them.",
+        "The world has been convinced of a terrible lie. It's up to me to reveal the truth.",
+        "I deeply miss someone and am quick to adopt people who remind me of them.",
+        "A great evil dwells within me. I will fight against it and the world's other evils for as long as I can.",
+        "I'm desperately seeking a cure to an affliction or a curse, either for someone close to me for myself.",
+        "Spirits are drawn to me. I do all I can to help them find peace.",
+        "I use my cunning mind to solve mysteries and find justice for those who've been wronged.",
+        "I lost someone I care about, but I still see them in guilty visions, recurring dreams, or as a spirit."
+      ],
+      "flaws": [
+        "I believe doom follows me and that anyone who gets close to me will face a tragic end.",
+        "I'm convinced something is after me, appearing in mirrors, dreams, and places where no one could.",
+        "I'm especially superstitious and live life seeking to avoid bad luck, wicked spirits, or the Mists.",
+        "I've done unspeakable evil and will do anything to prevent others from finding out.",
+        "I am exceptionally credulous and believe any story or legend immediately.",
+        "I'm a skeptic and don't believe in the power of rituals, religion, superstition, or spirits.",
+        "I know my future is written and that anything I do will lead to a prophesied end.",
+        "I need to find the best in everyone and everything, even when that means denying obvious malice.",
+        "I've seen the evil of a type of place—like forests, cities, or graveyards—and resist going there.",
+        "I'm exceptionally cautious, planning laboriously and devising countless contingencies.",
+        "I have a reputation for defeating a great evil, but that's a lie and the wicked force knows.",
+        "I know the ends always justify the means and am quick to make sacrifices to attain my goals."
+      ]
+    }
+  },
+  {
+    "name": "Witchlight Hand",
+    "source": "WBtW",
+    "description": "You crept into the Witchlight Carnival as a child or youth and never looked back, earning a place among those who work behind the scenes to keep the carnival in business. As a hand, you work hard and party hard. The carnival has borne you to many fantastic worlds, circling back around to your home world once every eight years, but you know almost nothing about these worlds because you spend all your time in the carnival. You know the other hands well, but the carnival's owners—Mister Witch and Mister Light—remain mysterious to you even after all these years.\n\nMaybe you joined the carnival to escape a dismal life at home, or maybe you were enchanted by the idea of visiting new places or the dream of becoming one of the carnival's star attractions. Now that you're older, carnival life has lost some of its appeal. The daily routine has grown tedious, the cyclical nature of the carnival's journey monotonous. The carnival no longer fills your heart with a sense of wonder. Perhaps greater adventures await you beyond the carnival's gates.",
+    "features": [
+      {
+        "name": "Carnival Fixture",
+        "desc": "The Witchlight Carnival provides you with free, modest lodging and food. In addition, you may wander about the carnival and partake of its many wonders at no cost to you, provided you don't disrupt its shows or cause any other trouble.."
+      }
+    ],
+    "proficiencies": {
+      "skills": [
+        "Performance",
+        "Sleight of Hand"
+      ],
+      "tools": [
+        "Disguise kit or one type of musical Instrument"
+      ],
+      "languages": [
+        "One of your choice"
+      ]
+    },
+    "equipment": [
+      "A disguise kit or a musical instrument of your choice",
+      "Deck of cards",
+      "Carnival uniform or costume",
+      "Feywild Trinket",
+      "Pouch containing 8gp"
+    ],
+    "suggested_characteristics": {
+      "personality_traits": [
+        "I'm haunted by fey laughter that only I can hear, though I know it's just my mind playing tricks on me.",
+        "Like a nomad, I can't settle down in one place for very long.",
+        "Good music makes me weep like a baby.",
+        "Wherever I go, I try to bring a little of the warmth and tranquility of home with me.",
+        "I have never lost my childlike sense of wonder.",
+        "When I have a new idea, I get wildly excited about it until I come up with another, better idea.",
+        "I live by my own set of weird and wonderful rules.",
+        "I can't bring myself to trust most adults."
+      ],
+      "ideals": [
+        {
+          "name": "Friendship",
+          "desc": "I never leave a friend behind. (Good)"
+        },
+        {
+          "name": "Empathy",
+          "desc": "No creature should be made to suffer. (Good)"
+        },
+        {
+          "name": "Wanderlust",
+          "desc": "I prefer to take the less traveled path. (Chaotic)"
+        },
+        {
+          "name": "Changeability",
+          "desc": "Change is good, which is why I live by an ever-changing set of rules. (Chaotic)"
+        },
+        {
+          "name": "Honor",
+          "desc": "A deal is a deal, and I would never break one. (Lawful)"
+        },
+        {
+          "name": "Rule of Three",
+          "desc": "Everything in the multiverse happens in threes. I see the 'rule of three' everywhere. (Lawful)"
+        },
+        {
+          "name": "Obsession",
+          "desc": "I won't let go of a grudge. (Evil)"
+        },
+        {
+          "name": "Greed",
+          "desc": "I will do whatever it takes to get what I want, regardless of the harm it might cause. (Evil)"
+        }
+      ],
+      "bonds": [
+        "I would never break my word.",
+        "I find magic in all its forms to be compelling. The more magical a place, the more I am drawn to it.",
+        "I do what I can to protect the natural world.",
+        "A trusted friend is the most important thing in the multiverse to me.",
+        "I can't bring myself to harm a Fey creature, either because I consider myself one or because I fear the repercussions.",
+        "The Witchlight Carnival feels like home to me.",
+        "I'm drawn to the Feywild and long to return there, if only for a short while.",
+        "I feel indebted to Mister Witch and Mister Light for giving me a home and a purpose."
+      ],
+      "flaws": [
+        "I easily lose track of time. My poor sense of time means I'm always late.",
+        "I think the whole multiverse is out to get me.",
+        "I'm always operating under a tight timeline, and I'm obsessed with keeping everything on schedule.",
+        "I'm a kleptomaniac who covets shiny, sparkling treasure.",
+        "I'm forgetful. Sometimes I can't remember even the simplest things.",
+        "I never give away anything for free and always expect something in return.",
+        "I have many vices and tend to indulge them.",
+        "I'm always changing my mind—well, almost always."
+      ]
+    }
+  },
+  {
+    "name": "Hermit",
+    "source": "PHB",
+    "description": "You lived in seclusion – either in a sheltered community such as a monastery, or entirely alone – for a formative part of your life. In your time apart from the clamor of society, you found quiet, solitude, and perhaps some of the answers you were looking for.",
+    "features": [
+      {
+        "name": "Life of Seclusion",
+        "desc": "What was the reason for your isolation, and what changed to allow you to end your solitude? You can work with your DM to determine the exact nature of your seclusion, or you can choose to roll on the table below to determine the reason behind your seclusion.\n\nTable:\n1. I was searching for spiritual enlightenment.\n2. I was partaking of communal living in accordance with the dictates of a religious order.\n3. I was exiled for a crime I didn’t commit.\n4. I retreated from society after a life-altering event.\n5. I needed a quiet place to work on my art, literature, music, or manifesto.\n6. I needed to commune with nature, far from civilization.\n7. I was the caretaker of an ancient ruin or relic.\n8. I was a pilgrim in search of a person, place, or relic of spiritual significance."
+      },
+      {
+        "name": "Discovery",
+        "desc": "The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society.\n\nWork with your DM to determine the details of your discovery and its impact on the campaign."
+      }
+    ],
+    "proficiencies": {
+      "skills": [
+        "Medicine",
+        "Religion"
+      ],
+      "tools": [
+        "Herbalism Kit"
+      ],
+      "languages": [
+        "One of your choice"
+      ]
+    },
+    "equipment": [
+      "Scroll case stuffed full of notes from your studies or prayers",
+      "Winter Blanket",
+      "Set of common clothes",
+      "Herbalism kit",
+      "5gp"
+    ],
+    "suggested_characteristics": {
+      "personality_traits": [
+        "I've been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.",
+        "I am utterly serene, even in the face of disaster.",
+        "The leader of my community had something wise to say on every topic, and I am eager to share that wisdom.",
+        "I feel tremendous empathy for all who suffer.",
+        "I'm oblivious to etiquette and social expectations.",
+        "I connect everything that happens to me to a grand, cosmic plan.",
+        "I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.",
+        "I am working on a grand philosophical theory and love sharing my ideas."
+      ],
+      "ideals": [
+        {
+          "name": "Greater Good",
+          "desc": "My gifts are meant to be shared with all, not used for my own benefit. (Good)"
+        },
+        {
+          "name": "Logic",
+          "desc": "Emotions must not cloud our sense of what is right and true, or our logical thinking. (Lawful)"
+        },
+        {
+          "name": "Free Thinking",
+          "desc": "Inquiry and curiosity are the pillars of progress. (Chaotic)"
+        },
+        {
+          "name": "Power",
+          "desc": "Solitude and contemplation are paths toward mystical or magical power. (Evil)"
+        },
+        {
+          "name": "Live and Let Live",
+          "desc": "Meddling in the affairs of others only causes trouble. (Neutral)"
+        },
+        {
+          "name": "Self-Knowledge",
+          "desc": "If you know yourself, there's nothing left to know. (Any)"
+        }
+      ],
+      "bonds": [
+        "Nothing is more important than the other members of my hermitage, order, or association.",
+        "I entered seclusion to hide from the ones who might still be hunting me. I must someday confront them.",
+        "I'm still seeking the enlightenment I pursued in my seclusion, and it still eludes me.",
+        "I entered seclusion because I loved someone I could not have.",
+        "Should my discovery come to light, it could bring ruin to the world.",
+        "My isolation gave me great insight into a great evil that only I can destroy."
+      ],
+      "flaws": [
+        "Now that I've returned to the world, I enjoy its delights a little too much.",
+        "I harbor dark, bloodthirsty thoughts that my isolation and meditation failed to quell.",
+        "I am dogmatic in my thoughts and philosophy.",
+        "I let my need to win arguments overshadow friendships and harmony.",
+        "I'd risk too much to uncover a lost bit of knowledge.",
+        "I like keeping secrets and won't share them with anyone."
+      ]
+    }
+  }
+]

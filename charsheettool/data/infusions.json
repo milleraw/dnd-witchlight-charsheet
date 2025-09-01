@@ -1,0 +1,205 @@
+[
+  {
+    "name": "Enhanced Arcane Focus",
+    "level": 2,
+    "item_type": "rod, staff, or wand",
+    "desc": "While holding this item, a creature gains a +1 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack."
+  },
+  {
+    "name": "Enhanced Defense",
+    "level": 2,
+    "item_type": "armor or a shield",
+    "desc": "A suit of armor or a shield you touch gains a +1 bonus to Armor Class. The bonus increases to +2 when you reach 10th level in this class."
+  },
+  {
+    "name": "Enhanced Weapon",
+    "level": 2,
+    "item_type": "simple or martial weapon",
+    "desc": "This magic weapon grants a +1 bonus to attack and damage rolls made with it. The bonus increases to +2 when you reach 10th level in this class."
+  },
+  {
+    "name": "Repeating Shot",
+    "level": 2,
+    "item_type": "simple or martial weapon with the ammunition property (requires attunement)",
+    "desc": "This magic weapon grants a +1 bonus to attack and damage rolls made with it when it's used to make a ranged attack, and it ignores the loading property if it has it.\n\nIf you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you make a ranged attack with it. The ammunition created by the weapon vanishes the instant after it hits or misses a target."
+  },
+  {
+    "name": "Replicate Magic Item (Bag of Holding)",
+    "level": 2,
+    "item_type": "Bag",
+    "replicates": "Bag of Holding",
+    "desc": "This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action."
+  },
+  {
+    "name": "Homunculus Servant",
+    "level": 2,
+    "item_type": "A gem or crystal worth at least 100 gp",
+    "desc": "You learn how to create a homunculus servant. The homunculus is a special companion that can assist you in and out of combat."
+  },
+  {
+    "name": "Replicate Magic Item (Alchemy Jug)",
+    "level": 2,
+    "item_type": "Jug",
+    "replicates": "Alchemy Jug",
+    "desc": "This ceramic jug appears to be able to hold a gallon of liquid and weighs 12 pounds whether full or empty. You can use an action and name one liquid from the table below to cause the jug to produce the chosen liquid. Afterward, you can uncork the jug and pour out the liquid, up to 2 gallons per minute."
+  },
+  {
+    "name": "Replicate Magic Item (Cap of Water Breathing)",
+    "level": 2,
+    "item_type": "Cap",
+    "replicates": "Cap of Water Breathing",
+    "desc": "While wearing this cap underwater, you can speak its command word as an action to create a bubble of air around your head. It allows you to breathe underwater for up to 1 hour."
+  },
+  {
+    "name": "Replicate Magic Item (Rope of Climbing)",
+    "level": 2,
+    "item_type": "Rope",
+    "replicates": "Rope of Climbing",
+    "desc": "This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds. If you hold one end of the rope and use an action to speak the command word, the rope animates. As a bonus action, you can command the rope to move on its own up to 20 feet."
+  },
+  {
+    "name": "Replicate Magic Item (Wand of Magic Detection)",
+    "level": 2,
+    "item_type": "Wand",
+    "replicates": "Wand of Magic Detection",
+    "desc": "This wand has 3 charges. While holding it, you can use an action to expend 1 of its charges, and if a magical effect is within 30 feet of you, the wand pulses and points to the one nearest to you. The wand regains 1d3 expended charges daily at dawn."
+  },
+  {
+    "name": "Replicate Magic Item (Goggles of Night)",
+    "level": 2,
+    "item_type": "Goggles",
+    "replicates": "Goggles of Night",
+    "desc": "While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet."
+  },
+  {
+    "name": "Replicate Magic Item (Sending Stones)",
+    "level": 2,
+    "item_type": "Two smooth stones",
+    "replicates": "Sending Stones",
+    "desc": "You receive two stones. While you hold one stone, you can use an action to cast the sending spell from it. The target is the bearer of the other stone. If no creature bears the other stone, you know that fact as soon as you use the stone and don't cast the spell."
+  },
+  {
+    "name": "Replicate Magic Item (Wand of Secrets)",
+    "level": 2,
+    "item_type": "Wand",
+    "replicates": "Wand of Secrets",
+    "desc": "The wand has 3 charges. While holding it, you can use an action to expend 1 of its charges, and if a secret door or trap is within 30 feet of you, the wand pulses and points to the one nearest to you. The wand regains 1d3 expended charges daily at dawn."
+  },
+  {
+    "name": "Mind Sharpener",
+    "level": 2,
+    "item_type": "A suit of armor or a set of robes",
+    "desc": "The infused item has 4 charges. When the wearer fails a Constitution saving throw to maintain concentration on a spell, they can use their reaction to expend 1 charge to succeed instead. The item regains 1d4 expended charges daily at dawn."
+  },
+  {
+    "name": "Returning Weapon",
+    "level": 2,
+    "item_type": "A simple or martial weapon with the thrown property",
+    "desc": "This magic weapon grants a +1 bonus to attack and damage rolls made with it, and it returns to the wielder's hand immediately after it is used to make a ranged attack."
+  },
+  {
+    "name": "Resistant Armor",
+    "level": 6,
+    "item_type": "A suit of armor (requires attunement)",
+    "desc": "While wearing this armor, a creature has resistance to one of the following damage types, which you choose when you infuse the item: acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder."
+  },
+  {
+    "name": "Replicate Magic Item (Boots of Elvenkind)",
+    "level": 6,
+    "item_type": "Boots (requires attunement)",
+    "replicates": "Boots of Elvenkind",
+    "desc": "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently."
+  },
+  {
+    "name": "Replicate Magic Item (Pipes of Haunting)",
+    "level": 6,
+    "item_type": "Pipes (requires attunement)",
+    "replicates": "Pipes of Haunting",
+    "desc": "You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that can hear you must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute."
+  },
+  {
+    "name": "Replicate Magic Item (Gauntlets of Ogre Power)",
+    "level": 10,
+    "item_type": "Gauntlets (requires attunement)",
+    "replicates": "Gauntlets of Ogre Power",
+    "desc": "Your Strength score is 19 while you wear these gauntlets. They have no effect on you if your Strength is already 19 or higher."
+  },
+  {
+    "name": "Replicate Magic Item (Cloak of Elvenkind)",
+    "level": 6,
+    "item_type": "Cloak (requires attunement)",
+    "replicates": "Cloak of Elvenkind",
+    "desc": "While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you."
+  },
+  {
+    "name": "Radiant Weapon",
+    "level": 6,
+    "item_type": "A simple or martial weapon (requires attunement)",
+    "desc": "This magic weapon grants a +1 bonus to attack and damage rolls made with it. While holding it, the wielder can take a bonus action to cause it to shed bright light in a 30-foot radius and dim light for an additional 30 feet. The wielder can use a reaction to blind an attacker until the end of the attacker's next turn."
+  },
+  {
+    "name": "Spell-Refueling Ring",
+    "level": 6,
+    "item_type": "A ring (requires attunement)",
+    "desc": "While wearing this ring, the creature can recover one expended spell slot as an action. The spell slot can be of 3rd level or lower. Once used, the ring can't be used again until the next dawn."
+  },
+  {
+    "name": "Helm of Awareness",
+    "level": 10,
+    "item_type": "A helmet (requires attunement)",
+    "desc": "While wearing this helmet, a creature has advantage on initiative rolls. In addition, the wearer can't be surprised, provided it isn't incapacitated."
+  },
+  {
+    "name": "Replicate Magic Item (Amulet of Health)",
+    "level": 10,
+    "item_type": "Amulet (requires attunement)",
+    "replicates": "Amulet of Health",
+    "desc": "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution is already 19 or higher."
+  },
+  {
+    "name": "Replicate Magic Item (Belt of Hill Giant Strength)",
+    "level": 10,
+    "item_type": "Belt (requires attunement)",
+    "replicates": "Belt of Hill Giant Strength",
+    "desc": "Your Strength score is 21 while you wear this belt. It has no effect on you if your Strength is already 21 or higher."
+  },
+  {
+    "name": "Replicate Magic Item (Bracers of Archery)",
+    "level": 10,
+    "item_type": "Bracers (requires attunement)",
+    "replicates": "Bracers of Archery",
+    "desc": "While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons."
+  },
+  {
+    "name": "Replicate Magic Item (Winged Boots)",
+    "level": 10,
+    "item_type": "Boots (requires attunement)",
+    "replicates": "Winged Boots",
+    "desc": "While you wear these boots, you have a flying speed equal to your walking speed. You can use the boots to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land."
+  },
+  {
+    "name": "Arcane Propulsion Armor",
+    "level": 14,
+    "item_type": "A suit of armor (requires attunement)",
+    "desc": "The wearer of this armor gains these benefits:\n• The wearer's Strength score is 18, unless it is already higher.\n• The armor has gauntlets that are magic melee weapons, with which the wearer is proficient. They deal 1d8 force damage on a hit.\n• The armor has integrated boots that give a flying speed of 5 feet, allowing the wearer to hover. The wearer can't be knocked prone against their will."
+  },
+  {
+    "name": "Replicate Magic Item (Amulet of the Planes)",
+    "level": 14,
+    "item_type": "Amulet (requires attunement)",
+    "replicates": "Amulet of the Planes",
+    "desc": "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination."
+  },
+  {
+    "name": "Armor of Magical Strength",
+    "level": 6,
+    "item_type": "A suit of armor (requires attunement)",
+    "desc": "While wearing this armor, you can use your Intelligence modifier in place of your Strength modifier when making Strength checks and Strength saving throws."
+  },
+  {
+    "name": "Boots of the Winding Path",
+    "level": 6,
+    "item_type": "A pair of boots (requires attunement)",
+    "desc": "While wearing these boots, you can teleport up to 15 feet as a bonus action to an unoccupied space you can see. You must have occupied that space at some point during the current turn."
+  }
+]

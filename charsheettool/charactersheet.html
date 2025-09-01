@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=791, initial-scale=1.0" />
+  <meta name="data-root" content="./data/">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+  <title>D&D Character Sheet (Switcher Enabled)</title>
+  
+  <!-- Web fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/6854ad6e85145a7dce4321ea90bc9b57?family=Saber-Regular" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/tooltip.css">
+  <link rel="stylesheet" href="assets/css/sheet-base.css">
+  <link rel="stylesheet" href="assets/css/character.css">
+</head>
+<body>
+  <div id="toolbar">
+    <strong>Character:</strong>
+    <select id="char-select" title="Choose a character JSON">
+      <!-- populated by JS -->
+    </select>
+    <input id="char-input" type="text" placeholder="or type a JSON file name (e.g., direcris.json)" style="flex:1;" />
+    <button id="char-load">Load</button>
+    <button id="save-char" style="margin-left:auto">Save Character</button>
+    <span id="status" style="margin-left:auto; font-size:12px; color:#666;"></span>
+  </div>
+
+  <div id="wrapper">
+    <div id="sheet">
+      <img id="bg" src="Feywild_Green1.png" alt="Character Sheet" />
+      <div id="pip-layer" aria-hidden="true"></div>
+      <div id="hotspot-layer" aria-hidden="false"></div>
+    </div>
+    <!-- Curved Name (SVG overlaid) -->
+    <div id="field-name" class="field">
+      <svg id="name-svg" viewBox="0 0 276 85" aria-label="Character Name">
+        <defs>
+          <path id="name-curve-top" d="M 8 34 Q 138 71 268 34" />
+          <path id="name-curve-bottom" d="M 8 56 Q 138 92 268 56" />
+        </defs>
+        <text id="name-top" class="saber" font-size="16" text-anchor="middle" dy="-2">
+          <textPath id="name-top-tp" href="#name-curve-top" startOffset="50%"></textPath>
+        </text>
+        <text id="name-bottom" class="saber" font-size="28" text-anchor="middle" dy="2">
+          <textPath id="name-bottom-tp" href="#name-curve-bottom" startOffset="50%"></textPath>
+        </text>
+      </svg>
+    </div>
+
+    <!--- Tooltips --->
+    <div id="global-tooltip" aria-hidden="true"></div>
+
+    <!-- Other Character Fields -->
+    <div id="field-class" class="field"></div>
+    <div id="field-level" class="field"></div>
+    <div id="field-maxhp" class="field"></div>
+    <div id="field-currenthp" class="field"></div>
+    <div id="field-temphp" class="field"></div>
+    <div id="field-hitdie" class="field"></div>
+    <div id="field-initiative" class="field"></div>
+    <div id="field-languages" class="field"></div>
+    <div id="field-speed" class="field"></div>
+    <div id="field-proficiencies" class="field"></div>
+    <div id="field-proficiency" class="field"></div>
+    <div id="field-attackbonus" class="field"></div>
+    <div id="field-attacks" class="field"></div>
+    <div id="field-spellsavedc" class="field"></div>
+    <div id="field-passive-perception" class="field"></div>
+    <div id="field-currency" class="field base-text"></div>
+    <div id="field-conditions" class="field"></div>
+    <div id="death-saves"></div>
+    <div id="incapacitated-overlay" class="hidden">INCAPACITATED</div>
+
+    <!-- Current HP adjusters -->
+    <button id="hp-minus" class="nudge-btn" type="button" aria-label="Damage 1">−</button>
+    <button id="hp-plus"  class="nudge-btn" type="button" aria-label="Heal 1">+</button>
+    <button id="temp-grant" class="nudge-btn" type="button" title="Grant Temp HP">T+</button>
+    <button id="temp-clear" class="nudge-btn" type="button" title="Clear Temp HP">×</button>
+
+    <!-- Build (upper-left box) -->
+    <div id="field-build" class="field"></div>
+    <div id="field-eyeshair" class="field"></div>
+    <div id="field-gender" class="field"></div>
+    <div id="field-playername" class="field"></div>
+    <div id="field-alignment" class="field"></div>
+
+    <!-- Curved Race (left ribbon) -->
+    <div id="field-race" class="field">
+      <svg viewBox="0 0 127 88" aria-label="Race">
+        <defs>
+          <path id="race-curve" d="M 17 17 C 55 18 65 54 113 67" />
+        </defs>
+        <text id="race-text" class="saber" font-size="22" text-anchor="middle">
+          <textPath id="race-tp" href="#race-curve" startOffset="50%"></textPath>
+        </text>
+      </svg>
+    </div>
+
+    <!-- Curved Background (right ribbon) -->
+    <div id="field-background" class="field">
+      <svg viewBox="0 0 118 93" aria-label="Background">
+        <defs>
+          <path id="background-curve" d="M 15 59 C 60 57 63 24 104 22" />
+        </defs>
+        <text id="background-text" class="saber" font-size="22" text-anchor="middle">
+          <textPath id="background-tp" href="#background-curve" startOffset="50%"></textPath>
+        </text>
+      </svg>
+    </div>
+
+    <!-- Ability Scores -->
+    <div id="field-cha-base" class="field attr-base"></div>
+    <div id="field-wis-base" class="field attr-base"></div>
+    <div id="field-int-base" class="field attr-base"></div>
+    <div id="field-dex-base" class="field attr-base"></div>
+    <div id="field-str-base" class="field attr-base"></div>
+    <div id="field-con-base" class="field attr-base"></div>
+    <div id="field-cha-mod" class="field attr-mod"></div>
+    <div id="field-wis-mod" class="field attr-mod"></div>
+    <div id="field-int-mod" class="field attr-mod"></div>
+    <div id="field-dex-mod" class="field attr-mod"></div>
+    <div id="field-str-mod" class="field attr-mod"></div>
+    <div id="field-con-mod" class="field attr-mod"></div>
+
+    <!-- Armor & AC -->
+    <div id="field-ac" class="field"></div>
+    <div id="field-armor-name" class="field base-text"></div>
+
+    <!-- Features / Spells / Gear -->
+    <div id="field-features" class="field"></div>
+    <div id="field-spells" class="field"></div>
+    <div id="field-gear" class="field"></div>
+  </div>
+
+  <!-- Shared JS Libraries -->
+  <script src="assets/js/common/textfit.js"></script>
+  <script src="assets/js/common/dom.js"></script>
+  <script src="assets/js/common/tooltip.js"></script>
+  <script src="assets/js/common/storage.js"></script>
+  <script src="assets/js/common/name-curves.js"></script>
+  <script src="assets/js/common/toolbar.js"></script>
+  <script src="assets/js/common/ribbon-button.js"></script>
+  <script src="assets/js/common/glue.js"></script>
+  <script src="assets/js/common/rules.js"></script>
+
+  <!-- Page-Specific JS -->
+  <script src="assets/js/sheet-character.js"></script>
+  <script src="assets/js/sheet-boot.js"></script>
+</body>
+</html>

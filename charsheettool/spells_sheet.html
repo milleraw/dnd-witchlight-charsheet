@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=791, initial-scale=1.0" />
+  <meta name="data-root" content="./data/">
+  <title>D&D — Spells Page (Per Character)</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/sheet-base.css">
+</head>
+<body>
+  <div id="toolbar">
+    <strong>Character:</strong>
+    <select id="char-select"></select>
+    <input id="char-input" type="text" placeholder="or type a JSON file (e.g., psalm.json)" style="flex:1;">
+    <button id="char-load">Load</button>
+    <button id="save-char" style="margin-left:auto">Save Character</button>
+    <span id="status" style="font-size:12px; color:#666;"></span>
+  </div>
+
+  <div id="wrapper">
+    <img id="bg" src="Feywild_spells.png" alt="Spell Page Background"/>
+
+    <!-- Name / Class / Level -->
+    <div id="field-class" class="field"></div>
+    <div id="field-level" class="field"></div>
+    <div id="field-name" class="field">
+      <svg viewBox="0 0 276 85" aria-label="Character Name">
+        <defs>
+          <path id="name-curve-top" d="M 8 34 Q 138 71 268 34" />
+          <path id="name-curve-bottom" d="M 8 56 Q 138 92 268 56" />
+        </defs>
+        <text id="name-top" class="saber" font-size="16" text-anchor="middle" dy="-2">
+          <textPath id="name-top-tp" href="#name-curve-top" startOffset="50%"></textPath>
+        </text>
+        <text id="name-bottom" class="saber" font-size="28" text-anchor="middle" dy="2">
+          <textPath id="name-bottom-tp" href="#name-curve-bottom" startOffset="50%"></textPath>
+        </text>
+      </svg>
+    </div>
+
+<div id="global-tooltip" aria-hidden="true"></div>
+
+    <!-- Curved Spell Ability (same position/curve as equipment.html Background) -->
+    <div id="field-ability" class="field">
+      <svg viewBox="0 0 118 93" aria-label="Spellcasting Ability">
+        <defs>
+          <path id="ability-curve" d="M 15 59 C 60 57 63 24 104 22" />
+        </defs>
+        <text id="ability-text" class="saber" font-size="22" text-anchor="middle">
+          <textPath id="ability-tp" href="#ability-curve" startOffset="50%"></textPath>
+        </text>
+      </svg>
+    </div>
+
+    <!-- Spellcasting header quick stats -->
+    <div id="spell-head" class="field">
+
+      <div id="sc-prep" class="pill hidden" title="Daily prepared spells (excludes always-prepared)">⭐ <span id="prep-count">0</span>/<span id="prep-limit">0</span></div>
+      <div class="grow"></div>
+    </div>
+    <div id="field-spell-attack" class="field" style="position:absolute; top:88px; left:540px; width:74px; height:40px;"></div>
+<div id="field-spell-dc"     class="field" style="position:absolute; top:88px; left:624px; width:79px; height:40px;"></div>
+
+
+    <!-- Resources -->
+    <div id="resources" class="field">
+      <div id="res-ki" class="pill" style="display:none">
+        <span>Ki</span>
+        <div class="pips" id="ki-pips"></div>
+      </div>
+      <div id="res-ws" class="pill" style="display:none">
+        <span>Wild Shape</span>
+        <div class="pips" id="ws-pips"></div>
+      </div>
+      <label id="res-se" class="pill toggle" style="display:none" title="Consumes a Wild Shape use">
+        <input type="checkbox" id="se-toggle">
+        <span>Symbiotic Entity</span>
+      </label>
+    </div>
+
+    <div id="rests" class="field">
+      <button id="short-rest">Short Rest</button>
+      <button id="long-rest">Long Rest</button>
+      <button id="reprepare" title="Clear prepared (keeps always-prepared)">Re-prepare</button>
+    </div>
+
+    <!-- Level blocks -->
+    <section id="lvl-cantrips" class="lvl">
+      <div class="title">Cantrips</div>
+      <div class="list"></div>
+    </section>
+    <section id="lvl-1" class="lvl">
+      <div class="title">1st-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="pips"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-2" class="lvl">
+      <div class="title">2nd-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="pips"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-3" class="lvl">
+      <div class="title">3rd-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="pips"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-4" class="lvl">
+      <div class="title">4th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="pips"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-5" class="lvl">
+      <div class="title">5th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="pips"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-6" class="lvl">
+      <div class="title">6th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="pips"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-7" class="lvl">
+      <div class="title">7th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="pips"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-8" class="lvl">
+      <div class="title">8th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="pips"></div><button class="reset">↻</button></div>
+    </section>
+    <section id="lvl-9" class="lvl">
+      <div class="title">9th-level</div>
+      <div class="list"></div>
+      <div class="slots"><span>Slots:</span><div class="pips"></div><button class="reset">↻</button></div>
+    </section>
+  </div>
+
+  <script>
+  (function(){
+    const DATA_ROOT = (document.querySelector('meta[name="data-root"]')?.content?.trim()) || './data/';
+    const CHAR_LIST = ["direcris.json","rathen.json","rabbert.json","orchid.json","illanis.json","psalm.json"];
+
+    // ===== DOM refs
+    const $ = sel => document.querySelector(sel);
+    const F = {
+      select:  () => $("#char-select"),
+      input:   () => $("#char-input"),
+      btnLoad: () => $("#char-load"),
+      status:  () => $("#status"),
+      klass:   () => $("#field-class"),
+      level:   () => $("#field-level"),
+      nameTop: () => $("#name-top-tp"),
+      nameBot: () => $("#name-bottom-tp"),
+      nameBox: () => $("#field-name"),
+      abilityTP: () => $("#ability-tp"),
+      scAbil:  () => $("#sc-ability"),
+      scDC:    () => $("#sc-dc"),
+      scAtk:   () => $("#sc-atk"),
+      scPrepBox: ()=> $("#sc-prep"),
+      scPrepCount:()=> $("#prep-count"),
+      scPrepLimit:()=> $("#prep-limit"),
+      short:   () => $("#short-rest"),
+      long:    () => $("#long-rest"),
+      reprep:  () => $("#reprepare"),
+      lvlBox:  (n) => n===0 ? $("#lvl-cantrips") : $("#lvl-"+n),
+      // Resources
+      resKi:   () => $("#res-ki"),
+      resKiP:  () => $("#ki-pips"),
+      resWS:   () => $("#res-ws"),
+      resWSP:  () => $("#ws-pips"),
+      resSE:   () => $("#res-se"),
+      seToggle:() => $("#se-toggle"),
+    };
+
+    // ===== Curved name renderer (split exactly on two words) =====
+    function growFitTextToPath(textEl, pathEl, maxH, startSize, minSize) {
+      if (!textEl || !pathEl) return;
+      const pathLen = pathEl.getTotalLength();
+      let size = startSize;
+      const tooBig = () => {
+        let long=false, tall=false;
+        try{ long = textEl.getComputedTextLength() > pathLen * 0.985; }catch{}
+        try{ tall = textEl.getBBox().height > maxH; }catch{}
+        return long || tall;
+      };
+      while(!tooBig()){ size += 1; textEl.setAttribute('font-size', size); if(size>200) break; }
+      size = Math.max(minSize, size - 1);
+      textEl.setAttribute('font-size', size);
+    }
+    
+else {
+    topText.style.display = 'none';
+    botText.style.display = '';
+    botTP.textContent = parts[0] || '';
+    botText.style.letterSpacing = '-0.5px';
+    botText.setAttribute('font-size', '28');
+    growFitTextToPath(botText, botPath, maxH * 0.90, 28, 12);
+  }
+}
+
+
+    // ===== Utils
+    span.textContent = text ?? '';
+      const w=container.clientWidth||0, h=container.clientHeight||0;
+      let size = 28; span.style.fontSize=size+'px'; span.style.whiteSpace='nowrap';
+      while(size>10 && (span.scrollWidth>w || span.scrollHeight>h)){ size-=1; span.style.fontSize=size+'px'; }
+    }
+    function abilityMod(score){
+      const s = Number(score)||10;
+      return Math.floor((s-10)/2);
+    }
+    function proficiencyFromLevel(level){
+      const L = Number(level)||1;
+      return Math.min(6, Math.max(2, Math.ceil((L + 7) / 4)));
+    }
+    const FULL = {
+      1:{1:2}, 2:{1:3}, 3:{1:4,2:2}, 4:{1:4,2:3}, 5:{1:4,2:3,3:2},
+      6:{1:4,2:3,3:3}, 7:{1:4,2:3,3:3,4:1}, 8:{1:4,2:3,3:3,4:2},
+      9:{1:4,2:3,3:3,4:3,5:1}, 10:{1:4,2:3,3:3,4:3,5:2},
+      11:{1:4,2:3,3:3,4:3,5:2,6:1}, 12:{1:4,2:3,3:3,4:3,5:2,6:1},
+      13:{1:4,2:3,3:3,4:3,5:2,6:1,7:1}, 14:{1:4,2:3,3:3,4:3,5:2,6:1,7:1},
+      15:{1:4,2:3,3:3,4:3,5:2,6:1,7:1,8:1}, 16:{1:4,2:3,3:3,4:3,5:2,6:1,7:1,8:1},
+      17:{1:4,2:3,3:3,4:3,5:2,6:1,7:1,8:1,9:1}, 18:{1:4,2:3,3:3,4:3,5:3,6:1,7:1,8:1,9:1},
+      19:{1:4,2:3,3:3,4:3,5:3,6:2,7:1,8:1,9:1}, 20:{1:4,2:3,3:3,4:3,5:3,6:2,7:2,8:1,9:1}
+    };
+    function slotsFor(cls, level){
+      const C = String(cls||'').toLowerCase();
+      let eff = 0;
+      if (C==='cleric' || C==='druid') eff = level;
+      else if (C==='artificer' || C==='ranger') eff = Math.max(1, Math.floor(level/2));
+      else eff = 0;
+      return FULL[eff] || {};
+    }
+    function pickCastingAbility(character){
+      const cls = String(character.class||'').toLowerCase();
+      if (cls==='artificer') return 'INT';
+      if (cls==='cleric' || cls==='druid' || cls==='ranger') return 'WIS';
+      if (cls==='bard' || cls==='sorcerer' || cls==='warlock' || cls==='paladin') return 'CHA';
+      return null;
+    }
+    function abilityFullName(abbr){
+      if (!abbr) return '';
+      const m = {INT:'Intelligence', WIS:'Wisdom', CHA:'Charisma'};
+      return m[abbr] || abbr;
+    }
+    function storageKeyFor(c){ return 'spells:'+String(c?.name||'').toLowerCase(); }
+    // Highest spell level by class level (single-class only)
+function _fullCasterMax(level){
+  // 1→1st, 3→2nd, 5→3rd, … 17+→9th
+  const map = [0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,9,9]; // index = level (0..20)
+  return map[Math.max(0, Math.min(20, level))];
+}
+
+function _halfCasterMax(level){
+  // Paladin/Ranger/Artificer: 1→0, 2–4→1, 5–8→2, 9–12→3, 13–16→4, 17–20→5
+  if (level <= 1) return 0;
+  if (level <= 4) return 1;
+  if (level <= 8) return 2;
+  if (level <= 12) return 3;
+  if (level <= 16) return 4;
+  return 5;
+}
+
+function _thirdCasterMax(level){
+  // Eldritch Knight / Arcane Trickster: 1–2→0, 3–6→1, 7–12→2, 13–18→3, 19–20→4
+  if (level <= 2) return 0;
+  if (level <= 6) return 1;
+  if (level <= 12) return 2;
+  if (level <= 18) return 3;
+  return 4;
+}
+
+function _warlockPactMax(level){
+  // Pact Magic slot level tops out at 5th; Mystic Arcanum are special-cased (11/13/15/17)
+  if (level <= 2) return 1;
+  if (level <= 4) return 2;
+  if (level <= 6) return 3;
+  if (level <= 8) return 4;
+  return 5; // 9–20 via slots; Arcanum handled separately if you support it
+}
+
+function getMaxSpellLevelFor(character){
+  const cls = String(character?.class||'').toLowerCase();
+  const L = Number(character?.level)||1;
+
+  // Full casters
+  if (['cleric','druid','wizard','bard','sorcerer'].includes(cls)) {
+    return _fullCasterMax(L);
+  }
+
+  // Half casters
+  if (['paladin','ranger','artificer'].includes(cls)) {
+    return _halfCasterMax(L);
+  }
+
+  // Pact Magic
+  if (cls === 'warlock') {
+    return _warlockPactMax(L);
+  }
+
+  // Third casters (if you ever load them on this sheet)
+  if (cls === 'fighter-eldritch knight' || cls === 'rogue-arcane trickster') {
+    return _thirdCasterMax(L);
+  }
+
+  // Default: no slots
+  return 0;
+}
+
+    
+    /* ===== Global tooltip (fixed, no clipping) ===== */
+(function(){
+  const TIP = document.getElementById('global-tooltip') || (()=>{
+    const d=document.createElement('div'); d.id='global-tooltip'; document.body.appendChild(d); return d;
+  })();
+
+  let activeEl = null;
+
+  function showTip(text, x, y){
+    if (!text) return hideTip();
+    TIP.textContent = "";                 // reset
+    // convert newlines to <br> while avoiding unsafe HTML
+    const parts = String(text).split(/\n/);
+    for (let i=0;i<parts.length;i++){
+      if (i) TIP.appendChild(document.createElement('br'));
+      TIP.appendChild(document.createTextNode(parts[i]));
+    }
+    TIP.style.display = 'block';
+    positionTip(x, y);
+  }
+  function positionTip(mouseX, mouseY){
+    const pad = 12;                       // cursor offset
+    const rect = TIP.getBoundingClientRect();
+    const vw = window.innerWidth, vh = window.innerHeight;
+
+    let left = mouseX + pad;
+    let top  = mouseY - rect.height - pad;
+
+    // keep on-screen
+    if (left + rect.width + 8 > vw) left = Math.max(8, vw - rect.width - 8);
+    if (top  < 8) top = Math.min(vh - rect.height - 8, mouseY + pad);
+
+    TIP.style.left = left + 'px';
+    TIP.style.top  = top  + 'px';
+  }
+  function hideTip(){
+    TIP.style.display = 'none';
+    activeEl = null;
+  }
+
+  // Delegate: any element with data-desc shows a tooltip
+  const ROOT = document.getElementById('wrapper') || document;
+  ROOT.addEventListener('mouseenter', e=>{
+    const t = e.target.closest('[data-desc]');
+    if (!t) return;
+    activeEl = t;
+    const text = t.getAttribute('data-desc') || '';
+    // initial position from current mouse coords (will update on move)
+    // Note: first move event after enter will position precisely
+  }, true);
+
+  ROOT.addEventListener('mousemove', e=>{
+    if (!activeEl) return;
+    const text = activeEl.getAttribute('data-desc') || '';
+    if (!text) { hideTip(); return; }
+    showTip(text, e.clientX, e.clientY);
+  }, true);
+
+  ROOT.addEventListener('mouseleave', e=>{
+    if (e.target === activeEl || (activeEl && !e.relatedTarget?.closest('[data-desc]'))) {
+      hideTip();
+    }
+  }, true);
+
+  // also hide on scroll/resize to avoid stale placement
+  window.addEventListener('scroll', hideTip, true);
+  window.addEventListener('resize', hideTip, true);
+})();
+
+// FETCH HELPERS    
+    /* =======================
+   Tooltip description helpers (local → D&D5e → Open5e)
+   ======================= */
+const SPELL_DESC_CACHE = new Map();
+
+function spellSlug(name){
+  return String(name||'')
+    .toLowerCase()
+    .replace(/[\u2019'’]/g,'')        // drop apostrophes
+    .replace(/[^a-z0-9\s-]/g,'')      // remove punctuation
+    .trim()
+    .replace(/\s+/g,'-');             // spaces → hyphens (dnd5e index format)
+}
+
+// --- Fallback: fetch class spell list (name + level) from D&D5e API -----
+const CLASS_LIST_CACHE = new Map();
+
+async function getClassSpellList(className){
+  const key = String(className||'').toLowerCase();
+  if (!key) return [];
+  if (CLASS_LIST_CACHE.has(key)) return CLASS_LIST_CACHE.get(key);
+
+  // Pull list of spell indexes for the class
+  const base = await fetchJSON(`https://www.dnd5eapi.co/api/classes/${encodeURIComponent(key)}/spells`)
+                      .catch(()=>null);
+  if (!base || !Array.isArray(base.results)) { CLASS_LIST_CACHE.set(key, []); return []; }
+
+  // Get details for each to learn level (kept minimal)
+  const out = [];
+  for (const it of base.results) {
+    const idx = it.index || it.url?.split('/').pop();
+    if (!idx) continue;
+    const d = await fetchJSON(`https://www.dnd5eapi.co/api/spells/${idx}`).catch(()=>null);
+    if (!d || !d.name) continue;
+    // 5e API "level" is numeric 0-9
+    out.push({ name: d.name, level: Number(d.level)||0 });
+  }
+  CLASS_LIST_CACHE.set(key, out);
+  return out;
+}
+
+async function fetchJSON(url, {timeoutMs=7000} = {}){
+  const ctrl = new AbortController();
+  const t = setTimeout(()=>ctrl.abort(), timeoutMs);
+  try{
+    const r = await fetch(url, {signal: ctrl.signal});
+    if(!r.ok) throw new Error(`HTTP ${r.status}`);
+    return await r.json();
+  } finally { clearTimeout(t); }
+}
+
+function cacheGet(name){
+  const key = `spell:desc:${name.toLowerCase()}`;
+  if (SPELL_DESC_CACHE.has(key)) return SPELL_DESC_CACHE.get(key);
+  const ls = localStorage.getItem(key);
+  if (ls) { SPELL_DESC_CACHE.set(key, ls); return ls; }
+  return null;
+}
+function cacheSet(name, text){
+  const key = `spell:desc:${name.toLowerCase()}`;
+  SPELL_DESC_CACHE.set(key, text);
+  try{ localStorage.setItem(key, text); }catch{}
+}
+
+/** Returns a plain-text description (string) or "" if not found. */
+async function getSpellDescription(name, localIndex){
+  const n = String(name||'').trim();
+  if (!n) return "";
+
+  // 0) local index (your spells.json)
+  const local = localIndex && localIndex[n];
+  const fromLocal = local && (local.desc || local.description || local.full || local.text);
+  if (fromLocal) return String(Array.isArray(fromLocal) ? fromLocal.join('\n\n') : fromLocal);
+
+  // 1) cached
+  const cached = cacheGet(n);
+  if (cached) return cached;
+
+  // 2) D&D 5e API (CORS-friendly): https://www.dnd5eapi.co
+  try{
+    // Try direct by index first
+    const idx = spellSlug(n); // e.g., "ray-of-frost"
+    let data = await fetchJSON(`https://www.dnd5eapi.co/api/spells/${idx}`);
+    // Fallback: search by name if direct misses
+    if (!data || !data.name){
+      const q = await fetchJSON(`https://www.dnd5eapi.co/api/spells?name=${encodeURIComponent(n)}`);
+      const first = q && q.results && q.results[0];
+      if (first && first.index){
+        data = await fetchJSON(`https://www.dnd5eapi.co/api/spells/${first.index}`);
+      }
+    }
+    if (data && data.name){
+      const descParts = []
+        .concat(data.desc || [])
+        .concat((data.higher_level || []));
+      const text = descParts.join('\n\n').trim();
+      if (text){
+        cacheSet(n, text);
+        return text;
+      }
+    }
+  }catch(e){ /* ignore and try next source */ }
+
+  // 3) Open5e (also CORS-friendly): https://api.open5e.com/spells/
+  try{
+    const r = await fetchJSON(`https://api.open5e.com/spells/?search=${encodeURIComponent(n)}`);
+    const first = r && r.results && r.results[0];
+    if (first){
+      const text = [first.desc, first.higher_level].filter(Boolean).join('\n\n').trim();
+      if (text){
+        cacheSet(n, text);
+        return text;
+      }
+    }
+  }catch(e){ console.warn("Spell API fetch failed", e); }
+
+  return "";
+}
+
+function _charKey(character){
+  // Prefer ?char=… if present; fallback to name
+  const urlKey = new URLSearchParams(location.search).get('char');
+  return `spells.prepared::${urlKey || (character?.name||'unknown')}`;
+}
+
+function loadPreparedFromStorage(character){
+  try {
+    const raw = localStorage.getItem(_charKey(character));
+    if (!raw) return [];
+    const { names } = JSON.parse(raw);
+    return Array.isArray(names) ? names : [];
+  } catch { return []; }
+}
+
+function savePreparedToStorage(character, names){
+  try {
+    localStorage.setItem(_charKey(character), JSON.stringify({
+      names: Array.from(new Set(names)), // de-dupe
+      ts: Date.now()
+    }));
+  } catch {}
+}
+
+
+
+    // ===== Data loads
+    async function safeGetJSON(url){ try{ const r=await fetch(url); if(!r.ok) return null; return await r.json(); }catch{ return null; } }
+    async function loadCharacterJSON(filename){ return (await safeGetJSON(DATA_ROOT+filename)) || (await safeGetJSON('./'+filename)) || null; }
+    async function loadSpells(){ return (await safeGetJSON(DATA_ROOT+'spells.json')) || (await safeGetJSON('./spells.json')) || {}; }
+    
+    // --- Spells loader (local-first, optional API fallback) --------------------
+let _spellsCache = null;
+let _spellIndex = null; // { className: { level: Spell[] } }
+
+function normalizeClassName(x=''){
+  return String(x).trim().toLowerCase();
+}
+
+
+
+// Adjust if your project’s data path is different
+const SPELLS_URL_LOCAL =
+  ((document.querySelector('meta[name="data-root"]')?.content?.trim()) || './data/') + 'spells.json';
+
+// Optional fallback (leave null to disable)
+const SPELLS_URL_API = null; 
+// e.g. 'https://www.dnd5eapi.co/api/spells'  // (not recommended unless you want it)
+
+async function loadAllSpells() {
+  if (_spellsCache) return _spellsCache;
+
+  // 1) Try local
+  try {
+    const r = await fetch(SPELLS_URL_LOCAL, { cache: 'no-store' });
+    if (!r.ok) throw new Error(`Local spells.json not found (${r.status})`);
+    _spellsCache = await r.json();
+  } catch (e) {
+    console.warn('[spells] local fetch failed:', e.message);
+
+    // 2) Optional API fallback
+    if (SPELLS_URL_API) {
+      const r2 = await fetch(SPELLS_URL_API);
+      if (!r2.ok) throw new Error(`API spells fetch failed (${r2.status})`);
+      const apiList = await r2.json();
+      // NOTE: the public API format differs—mapping is left to you if you enable this.
+      _spellsCache = apiList.results || [];
+    } else {
+      _spellsCache = [];
+    }
+  }
+
+  buildSpellIndex(_spellsCache);
+  return _spellsCache;
+}
+
+// Expected spell shape (flexible):
+// {
+//   "name": "Cure Wounds",
+//   "level": 1,
+//   "classes": ["Cleric","Bard","Druid"],
+//   "school": "Evocation",
+//   "casting_time": "1 action",
+//   "range": "Touch",
+//   "components": "V, S",
+//   "duration": "Instantaneous",
+//   "ritual": false,
+//   "concentration": false,
+//   "desc": "..."
+// }
+
+
+function buildSpellIndex(spells) {
+  _spellIndex = {};
+  const list = Array.isArray(spells) ? spells : Object.values(spells || {});
+  for (const s of list) {
+    const level = Number(s.level ?? s.level_int ?? 0) || 0;
+    const clsList = Array.isArray(s.classes)
+      ? s.classes
+      : (typeof s.class === 'string' ? [s.class] : []);
+    for (const c of clsList) {
+      const key = normalizeClassName(c);
+      _spellIndex[key] ??= {};
+      _spellIndex[key][level] ??= [];
+      _spellIndex[key][level].push(s);
+    }
+  }
+}
+
+// Public query helpers
+// opts: { character?: CharacterObj, maxSpellLevel?: number }
+async function getSpellsForClassLevel(className, minLevel=0, maxLevel=9, opts){
+  await loadAllSpells();
+
+  // Decide the true cap: explicit override > character-derived > passed maxLevel
+  let cap = maxLevel;
+  if (opts && typeof opts.maxSpellLevel === 'number') {
+    cap = Math.min(maxLevel, Math.max(0, opts.maxSpellLevel));
+  } else {
+    const ch = opts?.character ?? (window.currentCharacter || null);
+    if (ch) cap = Math.min(maxLevel, getMaxSpellLevelFor(ch));
+  }
+
+  const key = normalizeClassName(className);
+  const byLevel = _spellIndex?.[key] || {};
+  const out = [];
+  const start = Math.max(0, minLevel);
+  for (let L = start; L <= cap; L++) {
+    const arr = byLevel[L] || [];
+    for (const s of arr) out.push(s);
+  }
+  out.sort((a,b) => (Number(a.level||0) - Number(b.level||0)) || String(a.name).localeCompare(b.name));
+  return out;
+}
+
+async function getSpellsForExactLevel(className, level, opts){
+  // Respect the same cap logic; return [] if asking above cap
+  const list = await getSpellsForClassLevel(className, level, level, opts);
+  return list;
+}
+
+
+    function computeSpellStats(character){
+  const ab = pickCastingAbility(character);
+  if (!ab) return null;
+
+  const score = Number(
+    character?.abilities?.[ab] ??
+    character?.abilities?.[ab.toLowerCase()]
+  ) || 10;
+
+  const mod = abilityMod(score);
+  const pb  = proficiencyFromLevel(Number(character?.level) || 1);
+
+  // Optional per-character overrides if you ever add them
+  const atk = pb + mod + (Number(character?.spellAttackBonusMod) || 0);
+  const dc  = 8 + pb + mod + (Number(character?.spellSaveDCMod) || 0);
+
+  return { ab, mod, pb, atk, dc };
+}
+
+    
+    
+
+    // ===== Racial/Subclass hooks =====
+    function racialSpells(character){
+      const out = { cantrips:[], leveled:[] };
+      const race = String(character?.race||'').toLowerCase();
+      if (race.includes('tiefling')){
+        out.cantrips.push({ name:'Thaumaturgy', level:0, badge:'Racial', locked:true });
+        if ((character.level||1) >= 3) out.leveled.push({ name:'Hellish Rebuke', level:1, badge:'Racial', locked:true });
+        if ((character.level||1) >= 5) out.leveled.push({ name:'Darkness', level:2, badge:'Racial', locked:true });
+      }
+      return out;
+    }
+    function subclassAlwaysPrepared(character){
+      const sub = String(character.build||'').toLowerCase();
+      const out = [];
+      if (sub.includes('nature') && String(character.class||'').toLowerCase()==='cleric'){
+        out.push({ name:'Animal Friendship', level:1, badge:'Domain', locked:true });
+        out.push({ name:'Speak with Animals', level:1, badge:'Domain', locked:true });
+      }
+      if (sub.includes('artillerist') && String(character.class||'').toLowerCase()==='artificer' && (character.level||1)>=3){
+        out.push({ name:'Shield', level:1, badge:'Artillerist', locked:true });
+        out.push({ name:'Thunderwave', level:1, badge:'Artillerist', locked:true });
+      }
+      if (sub.includes('fey wanderer') && String(character.class||'').toLowerCase()==='ranger' && (character.level||1)>=3){
+        out.push({ name:'Charm Person', level:1, badge:'Fey', locked:true });
+      }
+      return out;
+    }
+/// begin new add
+// --- Cleric prepared-spell capacity (PHB rule) ----------------------------
+// Prepared each day = Cleric level + WIS modifier (min 1)
+function clericPreparedCapacity(character) {
+  const L = Number(character?.level)||1;
+  const wis = Number(character?.abilities?.WIS ?? character?.abilities?.Wis ?? character?.abilities?.wis ?? 10);
+  const wisMod = Math.floor((wis - 10) / 2);
+  return Math.max(1, L + wisMod);
+}
+
+// --- Minimal render into a target box -------------------------------------
+// Usage: await renderClassSpellPicker(character, '#field-spells', {className:'Cleric', maxLevel: 9})
+async function renderClassSpellPicker(character, containerSel, {
+  className,
+  minLevel = 0,
+  maxLevel = 9,
+  preparedMode = (String(className).toLowerCase()==='cleric') // auto-on for cleric
+}={}) {
+
+  const el = document.querySelector(containerSel);
+  if (!el) return;
+
+const spells = await getSpellsForClassLevel(character.class, 0, 9, { character });
+
+
+  // Keep existing selections if you store them on the character
+  const preparedSet = new Set(
+    Array.isArray(character?.spells?.prepared) ? character.spells.prepared : []
+  );
+
+  // Header with count (for cleric-style prepared casters)
+  let cap = null;
+  if (preparedMode) {
+    cap = clericPreparedCapacity(character);
+  }
+
+  el.innerHTML = `
+    <div class="spell-picker">
+      <div class="spell-picker__controls">
+        <input type="search" id="spell-search" placeholder="Search ${className} spells…">
+        ${preparedMode ? `<div id="prep-counter">Prepared: <span id="prep-now">${preparedSet.size}</span> / <span id="prep-cap">${cap}</span></div>` : ''}
+      </div>
+      <div class="spell-picker__list" id="spell-list"></div>
+    </div>
+  `;
+
+  // Basic styles (or merge into your CSS)
+  const style = document.createElement('style');
+  style.textContent = `
+    .spell-picker { font: 12px/1.2 var(--font-body, system-ui, sans-serif); }
+    .spell-picker__controls { display:flex; gap:8px; align-items:center; margin-bottom:8px; }
+    .spell-card { padding:6px 8px; border:1px solid #ddd; border-radius:8px; margin-bottom:6px; position:relative; }
+    .spell-card__row { display:flex; justify-content:space-between; gap:8px; }
+    .spell-card__meta { opacity:0.75; font-size:11px; }
+    .spell-card input[type="checkbox"] { transform: scale(1.1); }
+  `;
+  document.head.appendChild(style);
+
+  const list = el.querySelector('#spell-list');
+  const search = el.querySelector('#spell-search');
+  const prepNow = el.querySelector('#prep-now');
+
+  function rowHTML(s) {
+    const level = Number(s.level)||0;
+    const id = `spell-${(s.name||'').toLowerCase().replace(/[^a-z0-9]+/g,'-')}`;
+    const checked = preparedSet.has(s.name) ? 'checked' : '';
+    const meta = [
+      `Level ${level}`,
+      (s.school ? s.school : null),
+      (s.ritual ? 'Ritual' : null),
+      (s.concentration ? 'Conc.' : null),
+      (s.range ? `Range: ${s.range}` : null),
+      (s.casting_time ? `Cast: ${s.casting_time}` : null)
+    ].filter(Boolean).join(' • ');
+
+    // Attach your tooltip system with title or data-tip; replace as needed
+    const tip = (s.desc && Array.isArray(s.desc)) ? s.desc.join('\n\n')
+              : (typeof s.desc === 'string' ? s.desc : '');
+
+    return `
+      <label class="spell-card" data-level="${level}" title="${tip.replace(/"/g,'&quot;')}">
+        <div class="spell-card__row">
+          <div><strong>${s.name}</strong></div>
+          <div>
+            ${preparedMode ? `<input type="checkbox" data-spell="${s.name}" ${checked}>` : ''}
+          </div>
+        </div>
+        <div class="spell-card__meta">${meta}</div>
+      </label>
+    `;
+  }
+
+  function applyFilter() {
+    const q = (search?.value || '').toLowerCase().trim();
+    const html = spells
+      .filter(s => !q || String(s.name||'').toLowerCase().includes(q))
+      .map(rowHTML)
+      .join('');
+    list.innerHTML = html;
+
+    if (preparedMode) {
+      list.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        cb.addEventListener('change', () => {
+          const name = cb.getAttribute('data-spell');
+          if (cb.checked) {
+            // enforce capacity
+            if (preparedSet.size >= cap) {
+              cb.checked = false;
+              // you can replace alert with your toast / tooltip
+              alert(`You can prepare up to ${cap} spells.`);
+              return;
+            }
+            preparedSet.add(name);
+          } else {
+            preparedSet.delete(name);
+          }
+          if (prepNow) prepNow.textContent = preparedSet.size;
+          persistPrepared(character, Array.from(preparedSet));
+        });
+      });
+    }
+  }
+
+  function persistPrepared(character, names){
+    // Store on your character object in-memory:
+    character.spells = character.spells || {};
+    character.spells.prepared = names;
+
+    // If you have a save-to-JSON routine, call it here.
+    // saveCharacter(character);
+  }
+
+  search?.addEventListener('input', applyFilter);
+  applyFilter();
+}
+/// end new add
+
+    // ===== Build model
+    async function buildModel(character){
+      const spellsIndex = await loadSpells();
+      const cls = String(character.class||'');
+      const level = Number(character.level)||1;
+
+      const abilKey = pickCastingAbility(character); // null for monk/none
+      const abilMod = abilKey ? abilityMod(character?.abilities?.[abilKey] ?? character?.abilities?.[abilKey.toLowerCase()] ?? 10) : 0;
+      const pb = proficiencyFromLevel(level);
+      const dc = abilKey ? (8 + pb + abilMod) : '—';
+      const atk = abilKey ? (pb + abilMod) : '—';
+
+      const baseKnown = Array.isArray(character.spells) ? character.spells.slice() : [];
+      const racial = racialSpells(character);
+      const always = subclassAlwaysPrepared(character);
+
+
+
+      // Build entries
+      const allEntries = [];
+      for (const n of baseKnown) {
+        const idx = spellsIndex[n];
+        if (idx && typeof idx==='object' && Number.isInteger(idx.level)){
+          const lvl = idx.level;
+          if (lvl===0) allEntries.push({ name:n, level:0, badge:null, locked:false });
+          else allEntries.push({ name:n, level:lvl, badge:null, locked:false });
+        } else {
+          allEntries.push({ name:n, level:1, badge:null, locked:false });
+        }
+      }
+      for (const it of racial.cantrips) allEntries.push(it);
+      for (const it of racial.leveled) allEntries.push(it);
+      for (const it of always) allEntries.push(it);
+
+//begin new add      
+      // === Merge dynamic class list (e.g., Cleric can prepare any spell on the list)
+const className = String(character.class||'');
+let dynamic = [];
+
+try {
+  // First try local spells.json if it includes classes/levels (via _spellIndex)
+  // If you loaded buildSpellIndex elsewhere, we can try getSpellsForClassLevel.
+  // We'll guard it in case your local file lacks class/level data.
+  if (typeof getSpellsForClassLevel === 'function') {
+const upTo = Math.min(9, getMaxSpellLevelFor(character));
+const locals = await getSpellsForClassLevel(className, 0, 9, { character });
+
+    if (Array.isArray(locals) && locals.length) {
+      dynamic = locals.map(s => ({ name: s.name, level: Number(s.level)||0, badge:'Class', locked:false }));
+    }
+  }
+} catch {}
+
+if (!dynamic.length) {
+  // Fallback to 5e API (fast + cached)
+const upTo = Math.min(9, getMaxSpellLevelFor(character));
+const viaAPI = await getClassSpellList(className);
+dynamic = viaAPI
+  .filter(s => s.level <= upTo)
+  .map(s => ({ name: s.name, level: s.level, badge:'Class', locked:false }));
+
+}
+
+// Add to the entries list so they render in per-level boxes
+for (const s of dynamic) { allEntries.push(s); }
+///end new add
+
+      // De-dup
+      const key = (s)=> (s.level+'|'+s.name.toLowerCase());
+      const map = new Map();
+      for (const s of allEntries){
+        const k=key(s);
+        if (!map.has(k)) map.set(k, s);
+        else {
+          const prev = map.get(k);
+          map.set(k, { ...prev, locked:(prev.locked||s.locked), badge: prev.badge||s.badge });
+        }
+      }
+      const byLevel = Array.from({length:10},()=>[]);
+      for (const s of map.values()){
+        if (s.level>=0 && s.level<=9) byLevel[s.level].push(s);
+      }
+
+      const slots = slotsFor(cls, level);
+
+      // Prepared limits
+      const caster = String(cls).toLowerCase();
+      let prepLimit = 0;
+      if (caster==='cleric' || caster==='druid') prepLimit = Math.max(1, abilMod + level);
+      else if (caster==='artificer') prepLimit = Math.max(1, abilMod + Math.floor(level/2));
+
+      // Ki / Wild Shape
+      const hasKi = (String(cls).toLowerCase()==='monk');
+      const kiMax = hasKi ? level : 0;
+      const hasWildShape = (String(cls).toLowerCase()==='druid');
+      const wildMax = hasWildShape ? 2 : 0;
+
+      return {
+        character, cls, level, abilKey, dc, atk, spellsIndex, byLevel, slots,
+        prepLimit, hasKi, kiMax, hasWildShape, wildMax
+      };
+    }
+
+    // ===== State (persisted)
+    function readState(c){
+      try{ return JSON.parse(localStorage.getItem(storageKeyFor(c))||'{}'); }catch{ return {}; }
+    }
+    function writeState(c, obj){
+      localStorage.setItem(storageKeyFor(c), JSON.stringify(obj||{}));
+    }
+    function storageKeyFor(c){ return 'spells:'+String(c?.name||'').toLowerCase(); }
+    const ST = {
+      getPrepared: s => s.preparedByLevel || {},
+      setPrepared: (s,v)=>{ s.preparedByLevel=v; },
+      getSlotsSpent: s=> s.slotsSpent || {},
+      setSlotsSpent: (s,v)=>{ s.slotsSpent=v; },
+      getKi: s => Number(s.kiSpent||0),
+      setKi: (s,v)=>{ s.kiSpent = Math.max(0, Number(v)||0); },
+      getWS: s => Number(s.wildShapeUsed||0),
+      setWS: (s,v)=>{ s.wildShapeUsed = Math.max(0, Number(v)||0); },
+      getSE: s => !!s.symbioticActive,
+      setSE: (s,v)=>{ s.symbioticActive = !!v; },
+    };
+
+
+async function renderSpellcastingNumbers(character){
+  const atkEl = document.querySelector('#field-spell-attack');
+  const dcEl  = document.querySelector('#field-spell-dc');
+  if (!atkEl || !dcEl) return;
+
+  const stats = computeSpellStats(character);
+  if (!stats){
+    atkEl.textContent = '—';
+    dcEl.textContent  = '—';
+    return;
+  }
+
+  const sign = n => (n>=0?`+${n}`:`${n}`);
+  atkEl.textContent = sign(stats.atk);
+  dcEl.textContent  = String(stats.dc);
+
+  // simple tooltip; swap to your tooltip system if you prefer
+  atkEl.setAttribute('title', `Spell Attack = PB ${sign(stats.pb)} + ${stats.ab} mod ${sign(stats.mod)}`);
+  dcEl.setAttribute('title',  `Spell Save DC = 8 + PB ${sign(stats.pb)} + ${stats.ab} mod ${sign(stats.mod)}`);
+
+  // try your autofit if available
+  try {
+    if (typeof window.autofit === 'function') { window.autofit(atkEl); window.autofit(dcEl); }
+    else if (typeof window.fitTextInBox === 'function') { window.fitTextInBox(atkEl); window.fitTextInBox(dcEl); }
+  } catch {}
+}
+
+
+
+    // ===== Renderers
+    
+    
+    
+    function paintHeader(model){
+      // Name / Class / Level
+      autoFit(F.klass(), model.cls);
+      autoFit(F.level(), String(model.level));
+      (F.nameTop()).textContent = '';
+      (F.nameBot()).textContent = String(model.character.name||'');
+      renderCurvedName(model.character.name||'');
+
+      // Spell ability curved + quick stats
+      const abilWord = abilityFullName(model.abilKey);
+      F.abilityTP().textContent = abilWord || '';
+    //  F.scAbil().textContent = model.abilKey || '—';
+    //  F.scDC().textContent   = model.dc;
+    //  F.scAtk().textContent  = (typeof model.atk==='number' ? (model.atk>=0?'+':'')+model.atk : '—');
+
+      // Prepared counter pill
+      if (model.prepLimit>0){
+        F.scPrepBox().classList.remove('hidden');
+        const state = readState(model.character);
+        const prepared = ST.getPrepared(state);
+        const totalPrepared = countPreparedAcrossLevels(model, prepared);
+        F.scPrepCount().textContent = String(totalPrepared);
+        F.scPrepLimit().textContent = String(model.prepLimit);
+      } else {
+        F.scPrepBox().classList.add('hidden');
+      }
+    }
+
+    function clearLists(){
+      for(let L=0; L<=9; L++){
+        const box = F.lvlBox(L);
+        if (!box) continue;
+        const list = box.querySelector('.list');
+        if (list) list.innerHTML = '';
+        const p = box.querySelector('.pips');
+        if (p) p.innerHTML = '';
+      }
+    }
+
+    function countPreparedAcrossLevels(model, prepared){
+      let n=0;
+      for (let L=1; L<=9; L++){
+        if (!Array.isArray(prepared[L])) continue;
+        n += prepared[L].length;
+      }
+      return n;
+    }
+
+
+    function paintLevels(model){
+      const state = readState(model.character);
+      const prepared = ST.getPrepared(state);
+      const spent = ST.getSlotsSpent(state);
+
+      if (model.prepLimit>0){
+        F.scPrepCount().textContent = String(countPreparedAcrossLevels(model, prepared));
+      }
+      
+
+
+      for(let L=0; L<=9; L++){
+        const box = F.lvlBox(L);
+        if (!box) continue;
+        const list = box.querySelector('.list');
+        if (!list) continue;
+
+        // sort: prepared/locked first, then alpha
+        const spells = (model.byLevel[L]||[]).slice().sort((a,b)=>{
+          const ap = (prepared[L]?.includes(a.name) || a.locked) ? 0 : 1;
+          const bp = (prepared[L]?.includes(b.name) || b.locked) ? 0 : 1;
+          if (ap!==bp) return ap-bp;
+          return a.name.localeCompare(b.name);
+        });
+
+        list.innerHTML='';
+        for (const s of spells){
+          const el = document.createElement('div');
+          el.className = 'Item';
+          el.dataset.locked = s.locked ? '1' : '0';
+
+          const idx = model.spellsIndex[s.name];
+let desc = (idx && (idx.desc || idx.description || idx.full || idx.text)) || '';
+
+if (desc) {
+  el.setAttribute('data-desc', String(Array.isArray(desc) ? desc.join('\n\n') : desc));
+} else {
+  // lazy-load on first hover; also set a friendly placeholder immediately
+  el.setAttribute('data-desc', 'Looking up description…');
+  const onHover = async () => {
+    el.removeEventListener('mouseenter', onHover);
+    try{
+      const text = await getSpellDescription(s.name, model.spellsIndex);
+      el.setAttribute('data-desc', text || 'No description found.');
+    }catch{
+      el.setAttribute('data-desc', 'No description found.');
+    }
+  };
+  el.addEventListener('mouseenter', onHover, { once: true });
+}
+
+
+          const star = document.createElement('div');
+          star.className = 'star';
+          const isPrepared = !!(prepared[L]?.includes(s.name) || s.locked);
+          star.textContent = isPrepared ? '⭐' : '☆';
+          star.title = s.locked ? 'Always prepared' : (model.prepLimit>0 ? 'Toggle prepared' : 'Known spell');
+
+          const name = document.createElement('div');
+          name.className = 'name';
+          name.textContent = s.name;
+
+          el.appendChild(star);
+          el.appendChild(name);
+          if (s.badge){
+            const badge = document.createElement('span');
+            badge.className = 'badge';
+            badge.textContent = s.badge;
+            el.appendChild(badge);
+          }
+          list.appendChild(el);
+
+          // Toggle prepared (for classes with prep)
+          if (!s.locked){
+            const allowPrep = (model.prepLimit>0);
+            if (!allowPrep){
+              star.style.opacity = .35;
+              star.style.cursor = 'not-allowed';
+            } else {
+              star.addEventListener('click', ()=>{
+                const st = readState(model.character);
+                const prep = ST.getPrepared(st);
+                prep[L] = Array.isArray(prep[L]) ? prep[L] : [];
+                const i = prep[L].indexOf(s.name);
+                if (i>=0){
+                  prep[L].splice(i,1);
+                } else {
+                  const total = countPreparedAcrossLevels(model, prep);
+                  if (total >= model.prepLimit){
+                    F.status().textContent = `Prepared limit reached (${model.prepLimit}). Unprepare another spell first.`;
+                    setTimeout(()=>F.status().textContent='',1500);
+                    return;
+                  }
+                  prep[L].push(s.name);
+                }
+                ST.setPrepared(st, prep);
+                writeState(model.character, st);
+                paintLevels(model);
+                paintHeader(model);
+              });
+            }
+          }
+        }
+
+        // slots pips
+        const pipBox = box.querySelector('.pips');
+        const resetBtn = box.querySelector('.reset');
+        if (L>0 && pipBox){
+          const max = Number(model.slots[L]||0);
+          pipBox.innerHTML='';
+          const curr = Number(spent[L]||0);
+          for(let i=0;i<max;i++){
+            const dot = document.createElement('div');
+            dot.className='pip'+(i<curr?' spent':'');
+            dot.title = 'Spell slot';
+            dot.addEventListener('click', (ev)=>{
+              const st = readState(model.character);
+              const sl = ST.getSlotsSpent(st);
+              const c = Number(sl[L]||0);
+              if (!ev.shiftKey){
+                sl[L] = (i < c) ? i : (i+1);
+              } else {
+                sl[L] = (c>=max) ? 0 : max;
+              }
+              ST.setSlotsSpent(st, sl);
+              writeState(model.character, st);
+              paintLevels(model);
+            });
+            pipBox.appendChild(dot);
+          }
+          if (resetBtn){
+            resetBtn.onclick = ()=>{
+              const st = readState(model.character);
+              const sl = ST.getSlotsSpent(st);
+              sl[L]=0; ST.setSlotsSpent(st, sl); writeState(model.character, st);
+              paintLevels(model);
+            };
+          }
+        } else if (L===0 && pipBox){
+          pipBox.parentElement.style.display='none';
+        }
+      }
+    }
+
+    function paintResources(model){
+      const st = readState(model.character);
+      // Ki
+      if (model.hasKi){
+        F.resKi().style.display = '';
+        F.resKiP().innerHTML = '';
+        const used = ST.getKi(st);
+        for (let i=0;i<model.kiMax;i++){
+          const d=document.createElement('div');
+          d.className='pip'+(i<used?' spent':''); d.title='Ki point';
+          d.addEventListener('click', (ev)=>{
+            const curr = ST.getKi(readState(model.character));
+            if (!ev.shiftKey){
+              ST.setKi(st, (i < curr) ? i : (i+1));
+            } else {
+              ST.setKi(st, (curr>=model.kiMax) ? 0 : model.kiMax);
+            }
+            writeState(model.character, st);
+            paintResources(model);
+          });
+          F.resKiP().appendChild(d);
+        }
+      } else {
+        F.resKi().style.display = 'none';
+      }
+      // Wild Shape
+      if (model.hasWildShape){
+        F.resWS().style.display = '';
+        F.resWSP().innerHTML = '';
+        const used = ST.getWS(st);
+        for (let i=0;i<model.wildMax;i++){
+          const d=document.createElement('div');
+          d.className='pip'+(i<used?' spent':''); d.title='Wild Shape use';
+          d.addEventListener('click', (ev)=>{
+            const curr = ST.getWS(readState(model.character));
+            if (!ev.shiftKey){
+              ST.setWS(st, (i < curr) ? i : (i+1));
+            } else {
+              ST.setWS(st, (curr>=model.wildMax) ? 0 : model.wildMax);
+            }
+            if (ST.getWS(st) < 1 && ST.getSE(st)) ST.setSE(st,false);
+            writeState(model.character, st);
+            paintResources(model);
+          });
+          F.resWSP().appendChild(d);
+        }
+        // Symbiotic Entity toggle
+        F.resSE().style.display = '';
+        F.seToggle().checked = ST.getSE(st);
+        F.seToggle().onchange = ()=>{
+          const st2 = readState(model.character);
+          const onNow = !!F.seToggle().checked;
+          if (onNow){
+            if (ST.getWS(st2) >= model.wildMax){
+              F.seToggle().checked = false;
+              F.status().textContent = 'No Wild Shape uses remaining.';
+              setTimeout(()=>F.status().textContent='',1500);
+              return;
+            }
+            ST.setWS(st2, ST.getWS(st2)+1); // consume one
+            ST.setSE(st2, true);
+          } else {
+            ST.setSE(st2, false);
+          }
+          writeState(model.character, st2);
+          paintResources(model);
+        };
+      } else {
+        F.resWS().style.display = 'none';
+        F.resSE().style.display = 'none';
+      }
+    }
+
+    function wireRests(model){
+      F.short().onclick = ()=>{
+        const st = readState(model.character);
+        if (model.hasKi) ST.setKi(st,0);
+        if (model.hasWildShape){ ST.setWS(st,0); ST.setSE(st,false); }
+        writeState(model.character, st);
+        paintResources(model);
+        F.status().textContent = 'Short Rest applied.';
+        setTimeout(()=>F.status().textContent='',1200);
+      };
+      F.long().onclick = ()=>{
+        const st = readState(model.character);
+        ST.setSlotsSpent(st, {});
+        if (model.hasKi) ST.setKi(st,0);
+        if (model.hasWildShape){ ST.setWS(st,0); ST.setSE(st,false); }
+        writeState(model.character, st);
+        paintLevels(model);
+        paintResources(model);
+        F.status().textContent = 'Long Rest: all slots/resources restored.';
+        setTimeout(()=>F.status().textContent='',1200);
+      };
+      F.reprep().onclick = ()=>{
+        const st = readState(model.character);
+        const prep = ST.getPrepared(st);
+        for(let L=0; L<=9; L++){ if (Array.isArray(prep[L])) prep[L]=[]; }
+        ST.setPrepared(st, prep);
+        writeState(model.character, st);
+        paintLevels(model);
+        paintHeader(model);
+        F.status().textContent = 'Prepared spells cleared (always-prepared remain).';
+        setTimeout(()=>F.status().textContent='',1200);
+      };
+    }
+
+    
+    // ===== Export / Snapshot (local-only; no backend required)
+    function _charIdentity(c){
+      const urlKey = new URLSearchParams(location.search).get('char');
+      return (urlKey || (c?.name||'unknown')).toLowerCase();
+    }
+    function _savedKey(id){ return `spells.saved::${id}`; }
+    function _manifestKey(id){ return `spells.manifest::${id}`; }
+
+    function _flattenPrepared(prepByLevel){
+      const names = new Set();
+      for (let L=1; L<=9; L++){
+        const arr = prepByLevel && Array.isArray(prepByLevel[L]) ? prepByLevel[L] : [];
+        for (const n of arr) names.add(n);
+      }
+      return Array.from(names);
+    }
+
+    function _timestampStamp(){
+      const d = new Date();
+      const pad = n=> String(n).padStart(2,'0');
+      return `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}`;
+    }
+
+    function _safeSlug(s){
+      return String(s||'').trim().replace(/[^a-z0-9]+/gi,'-').replace(/^-+|-+$/g,'') || 'character';
+    }
+
+    function buildExportObject(character){
+      const st = readState(character);
+      const prepByLevel = ST.getPrepared(st);
+      const preparedFlat = _flattenPrepared(prepByLevel);
+
+      const out = JSON.parse(JSON.stringify(character));
+      out.prepared = preparedFlat;
+      out._sheet = out._sheet || {};
+      out._sheet.spells = {
+        preparedByLevel: prepByLevel,
+        slotsSpent: ST.getSlotsSpent(st),
+        kiSpent: ST.getKi(st),
+        wildShapeUsed: ST.getWS(st),
+        symbioticActive: ST.getSE(st)
+      };
+      return out;
+    }
+
+    function StorageShim.exportCharacter(character){
+      const id = _charIdentity(character);
+      const snap = buildExportObject(character);
+      const ts = _timestampStamp();
+      const name = _safeSlug(character.name);
+      const klass = _safeSlug(character.class);
+      const fileName = `${name}-${klass}${character.level}-${ts}.json`;
+
+      try {
+        localStorage.setItem(_savedKey(id), JSON.stringify({ ts, fileName, data: snap }));
+        localStorage.setItem(_manifestKey(id), JSON.stringify({ ts, fileName }));
+      } catch {}
+
+      const blob = new Blob([JSON.stringify(snap, null, 2)], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = fileName;
+      document.body.appendChild(a); a.click();
+      URL.revokeObjectURL(url); a.remove();
+
+      F.status().textContent = `Exported ${fileName}`;
+      setTimeout(()=>F.status().textContent='', 2000);
+    }
+
+    async function maybeLoadSavedSnapshot(baseCharObj){
+      const id = _charIdentity(baseCharObj);
+      let savedRaw = null;
+      try { savedRaw = JSON.parse(localStorage.getItem(_savedKey(id))||'null'); } catch {}
+      if (!savedRaw || !savedRaw.data) return baseCharObj;
+      const useIt = confirm(`A saved snapshot exists: ${savedRaw.fileName || 'latest'}. Load it now?`);
+      return useIt ? savedRaw.data : baseCharObj;
+    }
+async function render(character){
+      window._currentCharacter = character;
+      const model = await buildModel(character);
+      paintHeader(model);
+      clearLists();
+      paintLevels(model);
+      paintResources(model);
+      wireRests(model);
+      await renderSpellcastingNumbers(character);
+
+    }
+
+    function setURLParam(key,val){
+      const url=new URL(window.location); if(val) url.searchParams.set(key,val); else url.searchParams.delete(key);
+      window.history.replaceState({},'',url);
+    }
+
+    async function boot(){
+      const sel = F.select(); sel.innerHTML='';
+      for (const f of CHAR_LIST){ const o=document.createElement('option'); o.value=f; o.textContent=f; sel.appendChild(o); }
+
+      const params = new URLSearchParams(location.search);
+      const qChar = params.get('char');
+      if (qChar && !CHAR_LIST.includes(qChar)) {
+        const o=document.createElement('option'); o.value=qChar; o.textContent=qChar; sel.appendChild(o);
+      }
+      if (qChar) sel.value = qChar;
+
+      F.btnLoad().onclick = async ()=>{
+        const pick = F.input().value.trim() || F.select().value;
+        if (!pick) return;
+        const c = await loadCharacterJSON(pick);
+        if (!c){ F.status().textContent='Could not load '+pick; return; }
+        setURLParam('char', pick);
+        const c2 = await maybeLoadSavedSnapshot(c); await render(c2);
+      };
+
+      const first = qChar || CHAR_LIST[0];
+      const c = await loadCharacterJSON(first);
+      if (c){ setURLParam('char', first); const c2 = await maybeLoadSavedSnapshot(c); await render(c2); }
+    }
+
+    boot();
+  })();
+  </script>
+
+  <script src="assets/js/common/textfit.js"></script>
+  <script src="assets/js/common/name-curves.js"></script>
+  <script src="assets/js/common/tooltip.js"></script>
+  <script src="assets/js/common/storage.js"></script>
+  <script src="assets/js/common/toolbar.js"></script>
+
+
+<!-- Common modules bootstrap (auto-wiring) -->
+<script>
+(function(){ 
+  // Map shared TextFit to legacy autoFit if present
+  if (window.TextFit && typeof window.TextFit.autoFit === 'function') {
+    window.autoFit = window.autoFit || window.TextFit.autoFit;
+    window.fitTextInBox = window.fitTextInBox || window.TextFit.autoFit;
+  }
+
+  // Render name via shared NameCurves if available and local not defined
+  if (!window.renderCurvedName && window.NameCurves && typeof window.NameCurves.renderCurvedName === 'function') {
+    window.renderCurvedName = function(fullName) {
+      try {
+        var root = document.getElementById('field-name');
+        return window.NameCurves.renderCurvedName(root, fullName);
+      } catch(e){ /* noop */ }
+    };
+  }
+
+  // Helper: load & render character (tries local sheet functions)
+  window.__loadAndRender = async function(fileName) {
+    try {
+      if (typeof loadCharacterJSON === 'function') {
+        const c = await loadCharacterJSON(fileName);
+        if (!c) return;
+        const c2 = (window.StorageShim && StorageShim.maybeLoadSavedSnapshot) ? StorageShim.maybeLoadSavedSnapshot(c) : c;
+        if (typeof render === 'function') { await render(c2); }
+        window._currentCharacter = c2;
+      } else if (typeof window.loadCharacter === 'function') {
+        const c = await window.loadCharacter(fileName);
+        window._currentCharacter = c;
+      }
+    } catch(e){ console.warn('Load&Render failed:', e); }
+  };
+
+  // Wire toolbar
+  window.addEventListener('DOMContentLoaded', function(){
+    try {
+      if (!window.Toolbar || typeof Toolbar.init !== 'function') return;
+      var sel = document.getElementById('char-select');
+      var opts = Array.from(sel ? sel.options : []).map(o => o.value).filter(Boolean);
+      var charList = opts.length ? opts : ["direcris.json","rathen.json","rabbert.json","orchid.json","illanis.json","psalm.json"];
+      Toolbar.init({
+        charList: charList,
+        onLoad: async (file) => { await window.__loadAndRender(file); },
+        onExport: (character, buildSnapshot) => {
+          if (!character) character = window._currentCharacter;
+          if (!character) return;
+          if (window.StorageShim && typeof StorageShim.exportCharacter === 'function') {
+            var build = (typeof window.buildExportObject === 'function') ? window.buildExportObject : null;
+            StorageShim.exportCharacter(character, buildSnapshot || build);
+          }
+        }
+      });
+    } catch(e){ console.warn('Toolbar wiring failed:', e); }
+  });
+})();
+</script>
+
+</body>
+</html>
