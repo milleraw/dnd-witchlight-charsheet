@@ -1,0 +1,622 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    color: #2d2d2d;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #1c1e21;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- Setup View --- */
+.setup-forms {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.setup-forms form {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#add-party-container {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.start-button {
+    background-color: #28a745;
+    padding: 15px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+.start-button:hover {
+    background-color: #218838;
+}
+
+#setup-list .combatant-setup-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#setup-list .combatant-setup-item span {
+    flex-grow: 1;
+}
+
+#setup-list .combatant-setup-item input {
+    width: 80px;
+    margin: 0;
+}
+
+.initiative-bonus {
+    font-style: italic;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.party-selection-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.party-selection-item input {
+    width: auto;
+    margin: 0;
+}
+
+.party-button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; /* Pushes buttons to the bottom */
+}
+
+/* --- Combat View --- */
+.encounter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.turn-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.turn-controls button {
+    width: auto;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+#combat-tracker {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+/* --- Stat Block (Tetra Cube style) --- */
+.stat-block {
+    background: #FDF1DC;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    font-family: 'Libre Baskerville', serif;
+    transition: box-shadow 0.3s ease;
+}
+
+.stat-block.active-turn {
+    box-shadow: 0 0 15px 3px #007bff;
+}
+
+.stat-block.concentrating {
+    border-color: #8a2be2; /* Blue-Violet */
+    box-shadow: 0 0 12px rgba(138, 43, 226, 0.6);
+}
+
+.stat-block.active-turn.concentrating {
+    /* The active turn shadow is stronger and will layer on top */
+    box-shadow: 0 0 15px 3px #007bff, 0 0 12px 3px #8a2be2;
+}
+
+.stat-block.dead {
+    background: #4a4a4a;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
+    border-color: #222;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-block.down {
+    opacity: 0.6;
+    filter: grayscale(80%);
+}
+
+.stat-block .bar {
+    height: 3px;
+    background-image: linear-gradient(90deg, #922610 0%, #922610 75%, #FDF1DC 75%);
+    background-size: 5px 3px;
+    border-bottom: 2px solid #000;
+    margin: 0 5px;
+}
+
+.stat-block-content {
+    padding: 0 15px 15px 15px;
+}
+
+.stat-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: #922610;
+    padding: 10px 0;
+}
+
+.stat-block-name {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.stat-block-init {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.stat-block-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0;
+    font-family: sans-serif;
+}
+
+.stat-block-subtitle {
+    font-style: italic;
+    color: #5e5e5e;
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+.stat-block-secondary-stats {
+    font-family: sans-serif;
+    font-size: 0.9em;
+    line-height: 1.4;
+    padding: 5px 0;
+    border-bottom: 2px solid #000;
+}
+
+
+.ability-scores {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    padding: 10px 0;
+    font-family: sans-serif;
+}
+
+.ability-scores > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.ability-scores strong {
+    color: #922610;
+}
+
+.property-block {
+    font-family: sans-serif;
+    font-size: 0.95em;
+    line-height: 1.4;
+    padding: 5px 0;
+    text-indent: -1em;
+    margin-left: 1em;
+}
+
+.property-block p {
+    margin: 0;
+}
+
+.stat-block-image-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.stat-block-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.injected-html p {
+    font-family: sans-serif;
+    font-size: 0.95em;
+    line-height: 1.4;
+    padding: 5px 0;
+    text-indent: -1em;
+    margin-left: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.property-block strong {
+    color: #2d2d2d;
+    font-weight: bold;
+}
+
+.spellcasting-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.spellcasting-block li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+.spellcasting-block li em {
+    font-style: italic;
+}
+
+.conditions {
+    padding: 10px 0 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.condition-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffc107;
+    color: #212529;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+.remove-condition-btn {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 0 6px;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.remove-condition-btn:hover {
+    color: #c82333;
+    background: none;
+}
+
+.actions-header {
+    font-size: 1.2em;
+    color: #922610;
+    border-bottom: 1px solid #922610;
+    padding-bottom: 2px;
+    margin: 15px 0 5px 0;
+}
+
+.hp-bar-container {
+    padding: 5px 0;
+}
+
+.hp-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.hp-bar-fill {
+    height: 100%;
+    background-color: #28a745;
+    transition: width 0.3s ease;
+}
+
+.stat-block-stats strong {
+    color: #922610;
+    font-weight: bold;
+}
+
+.stat-block-controls {
+    display: flex;
+    justify-content: flex-end; /* Push status controls to the right */
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hp-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+
+.status-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.concentration-btn {
+    background-color: #8a2be2; /* Blue-Violet */
+    width: auto;
+    padding: 5px 15px;
+    margin: 0;
+}
+
+.add-condition-btn {
+    background-color: #17a2b8;
+    width: auto;
+    padding: 5px 15px;
+    margin: 0;
+}
+.fungal-infestation-btn {
+    background-color: #2f7d4a;
+    width: auto;
+    padding: 5px 15px;
+    margin: 0;
+}
+.fungal-infestation-btn:hover {
+    background-color: #246238;
+}
+.remove-combatant-btn {
+    background-color: #6c757d;
+    width: auto;
+    padding: 5px 15px;
+    margin: 0;
+}
+.remove-combatant-btn:hover {
+    background-color: #5a6268;
+}
+
+
+.hp-change-btn {
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    font-size: 1.1em;
+    flex-shrink: 0;
+}
+
+.hp-change-btn.damage {
+    background-color: #c82333;
+}
+
+.hp-change-btn.heal {
+    background-color: #218838;
+}
+
+#end-encounter-btn {
+    background-color: #dc3545;
+}
+#end-encounter-btn:hover {
+    background-color: #c82333;
+}
+
+/* HP Change Indicator */
+.hp-change-indicator {
+    display: inline-block;
+    margin-left: 8px;
+    font-weight: bold;
+    font-family: sans-serif;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.hp-change-indicator.damage {
+    color: #c82333;
+}
+
+.hp-change-indicator.heal {
+    color: #218838;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* --- Modal --- */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#wild-shape-modal {
+    max-width: 800px; /* Wider for stat blocks */
+}
+
+#modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0; /* This is the key fix */
+}
+
+#modal-title {
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.modal-body { /* Use class selector to apply to both modals */
+    margin: 15px 0;
+    overflow: hidden; /* Let child elements handle their own scrolling */
+    flex-grow: 1;
+    display: flex;
+    min-height: 0; /* Allow flex children to shrink and scroll */
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.modal-actions button {
+    width: auto;
+    padding: 10px 20px;
+}
+
+#modal-cancel-btn {
+    background-color: #6c757d;
+}
+#modal-cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+.modal-actions button.primary-btn {
+    background-color: #007bff;
+}
+
+.modal-actions button.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+.modal-actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Condition Selection in Modal */
+.condition-selection-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.condition-selection-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.condition-selection-item:hover {
+    background-color: #f0f2f5;
+}
+
+.condition-selection-item input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.condition-selection-item label {
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+/* Dead Combatant Card */
+.dead-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.dead-icon {
+    font-size: 3em;
+    line-height: 1;
+}
+
+.dead-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Illanis Siannodel",
+  "class": "Cleric",
+  "level": 3,
+  "maxHP": 27,  
+  "currentHP": 27,
+  "hit_die": "d8",
+  "tempHP": 0,
+  "race": "Moon Elf",
+  "abilities": {
+    "CHA": 10,
+    "WIS": 17,
+    "INT": 15,
+    "DEX": 14,
+    "STR": 16,
+    "CON": 17
+  },
+  "spells": [
+    "Cure Wounds",
+    "Guiding Bolt"
+  ],
+  "background": "Acolyte",
+  "build": "Nature Domain",
+  "eyes_hair": "",
+  "gender": "Female",
+  "player_name": "Rosie Longfield",
+  "alignment":"True Neutral",
+  "armor": ["Leather Armor", "Shield"],
+  "languages": ["Common","Elvish","Infernal","Kenderspeak","Sylvan"],
+  
+   "proficiencies": {
+    "weapons": ["Longbow","Longsword", "Shortswords","Simple Weapons"],
+    "armor":   ["Heavy","Medium","Light","Shields"]          
+      },
+        "skill_proficiencies": {"saving throws":["Wis","Cha"],
+  "skills":["Medicine","Perception","Insight","Persuasion","Survival","Religion"]},
+  "equipment": 
+  { "weapons": 
+  ["Mace", 
+  "Yklwa" ]
+   },"gear": [
+  { "name": "Priest's Pack" },
+  { "name": "Holy Symbol" },
+  { "name": "Prayer Book" },
+  { "name": "Incense Sticks", "desc": "5 sticks of incense." },
+  { "name": "Vestments" },
+  { "name": "Common Clothes" },
+   { "name": "Moonlight Monocle", "desc": "While wearing these dark lenses, you have Darkvision out to 60 feet. If you already have Darkvision, wearing the goggles increases its range by 60 feet." },
+    { "name": "Scroll of Identify", "qty": 3 },
+    { "name": "12-inch marionette" },
+     { "name": "Bright Red Fruit", "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown." },
+    { "name": "Spool of silver thread" },
+    { "name": "Toy slingshot", "desc": "A magical toy slingshot. As an action, you can cast the catapult spell (spell save DC 13) for the bullet you sling. This damage is non-lethal. The slingshot breaks after it has been used this way." }
+],
+
+"coins": { "gp": 15, "sp": 0, "cp": 0, "pp": 0 }
+
+
+
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Orchid Feather",
+  "class": "Druid",
+  "level": 2,
+  "maxHP": 13,
+    "currentHP": 13,
+  "hit_die": "d8",
+  "tempHP": 0,
+  "race": "Tiefling",
+    "abilities": {
+    "CHA": 7,
+  "WIS": 15,
+  "INT": 13,
+  "DEX": 14,
+  "STR": 12,
+  "CON": 11
+  },
+  "spells": [
+    "Shillelagh",
+    "Goodberry"
+  ],
+  "background": "Hermit",
+  "build": "Circle of Spores",
+  "eyes_hair": "",
+  "gender": "Female",
+  "player_name": "Sam Schmidt",
+  "alignment":"Chaotic Good",
+  "armor": ["Leather Armor", "Shield"],
+  "languages": ["Common","Druidic","Infernal"], "proficiencies": {
+    "tools":   ["Herbalism Kit"],
+    "weapons": ["Club", "Dagger","Dart","Javelin", "Quarterstaff", "Scimitar", "Sickle","Sling","Spear"],
+    "armor":   ["Light","Medium","Shields"]
+  },
+  "skill_proficiencies": {"saving throws":["Wis","Int"],
+  "skills":["Medicine","Perception","Religion","Nature"]},
+  "equipment": 
+  { "weapons": ["Quarterstaff"] },
+  "gear": [
+  { "name": "Explorer's Pack" },
+  { "name": "Druidic Focus" },
+  { "name": "Scroll Case", "desc": "Containing notes from your studies."},
+  { "name": "Winter Blanket"},
+  { "name": "Common Clothes" },
+  { "name": "Herbalism Kit" },
+  { "name": "Bright Red Fruit", "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown." },
+  { "name": "Displacer Beast Eye" }
+  
+], 
+"coins": { "gp": 5, "sp": 0, "cp": 0, "pp": 0 }
+
+
+
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encounter Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/wildshape.css">
+    <link rel="stylesheet" href="../assets/css/tooltip.css">
+    <style>
+        /* Styles for the setup list to align initiative inputs */
+        .combatant-setup-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1em;
+        }
+        .combatant-name-details {
+            flex-grow: 1;
+        }
+        .initiative-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75em;
+        }
+        .initiative-input {
+            width: 5em;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Encounter Tracker</h1>
+
+        <!-- Setup View -->
+        <div id="setup-view">
+            <a href="monster-editor.html" style="float: right; font-size: 0.9em; margin-top: 1em;">Monster Editor →</a>
+            <h2>Setup</h2>
+            <div class="setup-forms">
+                <div id="add-party-container">
+                    <h3>Add Party Members</h3>
+                    <div id="party-selection-list">
+                        <!-- Player checkboxes will be inserted here by JS -->
+                    </div>
+                    <div class="party-button-group">
+                        <button id="select-all-players-btn">Select All</button>
+                        <button id="add-selected-players-btn">Add Selected</button>
+                    </div>
+                </div>
+                <form id="add-monster-form">
+                    <h3>Add Monster</h3>
+                    <select id="monster-type" required></select>
+                    <input type="number" id="monster-count" value="1" min="1">
+                    <button type="submit">Add Monsters</button>
+                </form>
+            </div>
+
+            <h3>Combatants</h3>
+            <div id="setup-list"></div>
+            <button id="start-encounter-btn" class="start-button">Start Encounter</button>
+        </div>
+
+        <!-- Combat View -->
+        <div id="combat-view" class="hidden">
+            <div class="encounter-header">
+                <h2 id="round-counter">Round 1</h2>
+                <div class="turn-controls">
+                    <button id="prev-turn-btn" title="Shift + Space">← Previous</button>
+                    <button id="next-turn-btn" title="Spacebar">Next →</button>
+                </div>
+            </div>
+            <div id="combat-tracker">
+                <!-- Combatants will be dynamically inserted here -->
+            </div>
+            <div class="combat-controls">
+                <button id="end-encounter-btn">End Encounter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="generic-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modal-title">Modal Title</h3>
+            <div id="modal-body"></div>
+            <div class="modal-actions">
+                <button id="modal-cancel-btn">Cancel</button>
+                <button id="modal-confirm-btn">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wild Shape Modal -->
+    <div id="wild-shape-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 class="modal-title">Choose Wild Shape Form</h3>
+            <div class="modal-body">
+                <div class="ws-picker">
+                    <div class="ws-list-container">
+                        <input type="text" id="ws-search" placeholder="Search beasts...">
+                        <div id="ws-beast-list"></div>
+                    </div>
+                    <div id="ws-stat-block-container"></div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button id="ws-modal-transform-btn" class="primary-btn" disabled>Transform</button>
+                <button id="ws-modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shared scripts from the character sheet tool -->
+    <script src="../assets/js/common/storage.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

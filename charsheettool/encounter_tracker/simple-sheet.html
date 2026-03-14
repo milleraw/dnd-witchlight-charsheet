@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="data-root" content="./data/">
+    <title>Simple D&D Character Sheet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/simple-sheet.css">
+    <link rel="stylesheet" href="assets/css/tooltip.css">
+</head>
+<body>
+
+    <div id="toolbar">
+        <strong>Character:</strong>
+        <select id="char-select"></select>
+        <input id="char-input" type="text" placeholder="or type a JSON file name (e.g., direcris.json)" style="flex:1;" />
+        <button id="char-load">Load</button>
+        <button id="save-char" style="margin-left:auto">Save State</button>
+        <span id="status" style="font-size:12px; color:#666;"></span>
+    </div>
+
+    <div class="sheet-container">
+        <header class="sheet-header">
+            <h1 id="char-name">Character Name</h1>
+            <div id="char-meta" class="meta-info">
+                <span id="char-class-level">Class & Level</span>
+                <span id="char-race">Race</span>
+                <span id="char-background">Background</span>
+                <span id="char-alignment">Alignment</span>
+            </div>
+        </header>
+
+        <main class="sheet-body">
+            <div class="column-main">
+                <section class="card combat-stats">
+                    <div class="stat-trio">
+                        <div class="stat-box">
+                            <div class="stat-value" id="stat-ac">10</div>
+                            <div class="stat-label">Armor Class</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value" id="stat-initiative">+0</div>
+                            <div class="stat-label">Initiative</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value" id="stat-speed">30 ft.</div>
+                            <div class="stat-label">Speed</div>
+                        </div>
+                    </div>
+                    <div class="hp-box">
+                        <div class="hp-current">
+                            <label for="current-hp">Current Hit Points</label>
+                            <input type="number" id="current-hp" value="10">
+                        </div>
+                        <div class="hp-max">
+                            <div class="stat-value" id="stat-max-hp">10</div>
+                            <div class="stat-label">Max HP</div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="stat-item"><strong>Proficiency Bonus:</strong> <span id="stat-prof-bonus">+2</span></div>
+                        <div class="stat-item"><strong>Passive Perception:</strong> <span id="stat-passive-perception">10</span></div>
+                    </div>
+                </section>
+
+                <section class="card attacks-section">
+                    <h2>Attacks & Cantrips</h2>
+                    <div id="attacks-list">
+                        <!-- Attacks will be rendered here -->
+                    </div>
+                </section>
+
+                <section class="card actions-section">
+                    <h2>Actions</h2>
+                    <div id="actions-list"></div>
+                </section>
+
+                <section class="card spells-section">
+                    <h2>Spells</h2>
+                    <div id="spell-stats" class="stat-row"></div>
+                    <div id="spells-list"></div>
+                </section>
+            </div>
+
+            <div class="column-side">
+                <section class="card abilities-section">
+                    <h2>Abilities</h2>
+                    <div class="abilities-grid">
+                        <!-- Ability scores will be rendered here -->
+                    </div>
+                </section>
+
+                <section class="card skills-section">
+                    <h2>Skills</h2>
+                    <ul id="skills-list">
+                        <!-- Skills will be rendered here -->
+                    </ul>
+                </section>
+
+                <section class="card features-section">
+                    <h2>Features & Traits</h2>
+                    <div id="features-list">
+                        <!-- Features will be rendered here -->
+                    </div>
+                </section>
+
+                <section class="card equipment-section">
+                    <h2>Equipment</h2>
+                    <div id="equipment-list">
+                        <!-- Equipment will be rendered here -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Shared Scripts -->
+    <script src="assets/js/common/dom.js"></script>
+    <script src="assets/js/common/rules.js"></script>
+    <script src="assets/js/common/storage.js"></script>
+    <script src="assets/js/common/toolbar.js"></script>
+    <script src="assets/js/common/tooltip.js"></script>
+    <script src="assets/js/actions-logic.js"></script>
+
+    <!-- Page-Specific Script -->
+    <script src="assets/js/simple-sheet.js"></script>
+
+</body>
+</html>

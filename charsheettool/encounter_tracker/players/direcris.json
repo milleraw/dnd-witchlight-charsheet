@@ -1,0 +1,50 @@
+{
+  "name": "Direcris Zzzxaaxthroth",
+  "class": "Monk",
+  "level": 3,
+  "maxHP": 25,
+    "currentHP": 25,
+  "hit_die": "d8",
+  "tempHP": 0,
+  "race": "Dragonborn",
+   "race_detail": { "ancestry": "bronze" },
+    "abilities": {
+    "CHA": 14,
+  "WIS": 15,
+  "INT": 13,
+  "DEX": 16,
+  "STR": 14,
+  "CON": 12
+  },
+  "background": "Urban Bounty Hunter",
+  "build": "Way of the Shadow",
+  "eyes_hair": "",
+  "gender": "Male",
+  "player_name": "Sauter Candlearia",
+  "alignment":"Lawful Neutral",
+  "armor": [],
+  "languages": ["Common","Draconic"],
+   "proficiencies": {
+    "tools":   ["Dice Set", "Smith’s Tools", "Theives' Tools"],
+    "weapons": ["Simple weapons", "Shortswords"]          
+      },
+ "skill_proficiencies": {"saving throws":["Dex","Str"],
+  "skills":["Deception","Insight","Stealth","Athletics"]},
+  "equipment": { "weapons": ["Kusari-gama", "Dart", "Sickle"] },
+  "gear": [
+  { "name": "Explorer's Pack" },
+  { "name": "Clothes", "desc": "Appropriate to your duties as a bounty hunter." },
+  { "name": "Gaming Set", "desc": "One type of gaming set of your choice." },
+  { "name": "Thieves' Tools" },
+  { "name": "Moon pendant" },
+  { "name": "Scroll of Identify", "qty": 3 },
+  { "name": "Pixie plush", "desc": "It sings when squeezed." },
+  { "name": "Bright Red Fruit", "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown." },
+  { "name": "Wand of Dancing Lights", "desc": "This wand has 3 charges. While holding it, you can use an action to expend 1 charge to cast the Dancing Lights cantrip. The wand regains 1d3 expended charges daily at dawn." },
+  { "name": "Wand of Smiles", "desc": "This pink wand has 3 charges. As an action, you can expend 1 charge to create a silent, spectral, smiling mouth at a point you can see within 30 feet. The mouth disappears after 1 minute. The wand regains all expended charges daily at dawn." },
+  { "name": "Book of eight dirty jokes", "desc": "A creature can read a joke to cast Vicious Mockery (spell save DC 13). Once a joke is read, it disappears from the book." }
+],
+"coins": { "gp": 20, "sp": 0, "cp": 0, "pp": 0 }
+
+
+}

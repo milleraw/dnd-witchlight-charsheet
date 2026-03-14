@@ -1,0 +1,87 @@
+{
+  "name": "Psalm",
+  "class": "Artificer",
+  "level": 3,
+  "maxHP": 26,
+  "currentHP": 26,
+  "hit_die": "d8",
+  "tempHP": 0,
+  "race": "Tiefling",
+  "abilities": {
+    "CHA": 14,
+    "WIS": 11,
+    "INT": 15,
+    "DEX": 14,
+    "STR": 10,
+    "CON": 14
+  },
+  "spells": [
+  ],
+  "background": "Haunted One",
+  "build": "Artillerist",
+  "eyes_hair": "Gold Eyes, Dark Brown Hair",
+  "gender": "Female",
+  "player_name": "Maddy Miller",
+  "alignment":"Chaotic Neutral",
+  "armor": "Studded Leather Armor",
+  "languages": ["Common","Elvish","Infernal","Sylvan"],
+   "proficiencies": {
+    "tools":   ["Thieves' Tools", "Alchemist's Supplies","Tinker's Tools","Woodcarver's Tools"],
+    "weapons": ["Simple weapons", "Firearms"],
+    "armor":   ["Light","Medium","Shields"]          
+      },
+  "skill_proficiencies": {"saving throws":["CON","INT"],
+  "skills":["Medicine","Survival","Arcana","Investigation"]},
+  "equipment": { 
+  "weapons": 
+  [
+  "Boomerang", 
+  "Crossbow, light", 
+  "Light Hammer",
+  "+1 Dagger"
+  ] },
+  "traits": [
+    { "name": "Darkvision", "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray." },
+    { "name": "Hellish Resistance", "desc": "You have resistance to fire damage." },
+    { "name": "Devil's Tongue", "desc": "You know the Vicious Mockery cantrip. At 3rd level, you can cast Charm Person as a 2nd-level spell once per long rest. At 5th level, you can cast Enthrall once per long rest. Charisma is your spellcasting ability for these spells." },
+    { "name": "Charm of the Monarch", "desc": "You can sprout a pair of beautiful butterfly wings. As long as you have the wings, you gain a flying speed equal to your walking speed, and you gain a +5 bonus on all Charisma-based ability checks. These effects last for 1 hour. After you use this charm three times, it vanishes from you." }
+  ],
+  "gear": [
+  { "name": "Explorer's Pack" },
+  { "name": "Thieves' Tools" },
+  { "name": "Alchemist's Supplies" },
+  { "name": "Chest" },
+  { "name": "Crowbar" },
+  { "name": "Hammer" },
+  { "name": "Wooden Stakes", "desc": "3 wooden stakes." },
+  { "name": "Holy Symbol" },
+  { "name": "Flask of Holy Water" },
+  { "name": "Manacles", "desc": "A sturdy set of iron manacles." },
+  { "name": "Steel Mirror" },
+  { "name": "Flask of Oil" },
+  { "name": "Tinderbox" },
+  { "name": "Torches", "desc": "3 torches." },
+  { "name": "Common Clothes" },
+  { "name": "Toolbox", "desc": "Contains the remains of a dangerous but broken clockwork arachnid." },
+  { "name": "Bright Red Fruit", "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown." },
+  { "name": "The Marching Tripod", "desc": "A hand-sized brass tripod with carved chicken-foot legs. When an Eldritch Cannon is set on it, the tripod animates, allowing you to move the cannon up to 15 ft. as a bonus action once per turn. Inscribed in Sylvan: “Feet remember the road, even when the mind forgets.”" },
+  { "name": "Potion of Revivify", "desc": "This shimmering, golden liquid allows you to cast the Revivify spell on a creature you touch. The creature must have died within the last minute. It returns to life with 1 hit point." },
+  { "name": "Golden fly brooch" },
+   { "name": "Silver coin" },
+  { "name": "Notebook", "desc": "Only reveals what's written in it when held upside-down." }
+],
+
+ "coins": { "gp": 0, "sp": 1, "cp": 0, "pp": 0 },
+  "infusions": {
+    "known_limit": 4,
+    "active_limit": 2,
+    "known": [
+      "Enhanced Defense",
+      "Enhanced Weapon",
+      "Repeating Shot",
+      "Replicate Magic Item (Bag of Holding)"
+    ]
+  }
+
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { padding-bottom: 5em; }
+        .container { max-width: 960px; }
+        form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        fieldset { border: 1px solid #ccc; border-radius: 8px; padding: 15px; margin-bottom: 1em; }
+        legend { font-weight: bold; color: #922610; padding: 0 5px; }
+        .full-width { grid-column: 1 / -1; }
+        textarea { width: 100%; box-sizing: border-box; min-height: 150px; font-family: monospace; font-size: 12px; }
+        #output-container { margin-top: 2em; }
+        #output-json { width: 100%; min-height: 300px; box-sizing: border-box; }
+        .ability-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+        .form-actions { display: flex; gap: 10px; }
+        .form-actions .secondary-btn { background-color: #6c757d; }
+        .form-actions .secondary-btn:hover { background-color: #5a6268; }
+        .ability-grid label { display: block; margin-bottom: 5px; }
+        .ability-grid input { width: 100%; }
+        label { margin-top: 10px; display: block; font-weight: bold; font-size: 0.9em; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Monster Editor</h1>
+        <p>Load an existing monster to edit, or fill out the form for a new one. When you save, the updated <code>externalmonsters.json</code> file will be downloaded automatically. You will need to move this file to the correct directory to replace the old one.</p>
+
+        <div style="margin-bottom: 2em;">
+            <label for="monster-search">Search Existing Monsters</label>
+            <input type="text" id="monster-search" placeholder="Type to filter...">
+            <label for="monster-select">Edit Existing Monster:</label>
+            <select id="monster-select" size="8" style="margin-bottom: 0;">
+                <option value="">-- New Monster --</option>
+            </select>
+            <a href="index.html" style="float: right; margin-top: -2.5em;">← Back to Encounter Tracker</a>
+        </div>
+
+        <form id="monster-form">
+            <fieldset>
+                <legend>Core Info</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+                <label for="meta">Meta (e.g., "Medium fey, chaotic evil")</label>
+                <input type="text" id="meta">
+                <label for="ac">Armor Class (e.g., "17 (Natural Armor)")</label>
+                <input type="text" id="ac">
+                <label for="hp">Hit Points (e.g., "67 (9d8 + 27)")</label>
+                <input type="text" id="hp">
+                <label for="speed">Speed (e.g., "30 ft., fly 60 ft.")</label>
+                <input type="text" id="speed">
+                <label for="img_url">Image URL</label>
+                <input type="text" id="img_url">
+            </fieldset>
+
+            <fieldset>
+                <legend>Ability Scores</legend>
+                <div class="ability-grid">
+                    <div><label for="str">STR</label><input type="text" id="str" data-mod="str_mod"></div>
+                    <div><label for="str_mod">STR Mod</label><input type="text" id="str_mod" readonly></div>
+                    <div><label for="dex">DEX</label><input type="text" id="dex" data-mod="dex_mod"></div>
+                    <div><label for="dex_mod">DEX Mod</label><input type="text" id="dex_mod" readonly></div>
+                    <div><label for="con">CON</label><input type="text" id="con" data-mod="con_mod"></div>
+                    <div><label for="con_mod">CON Mod</label><input type="text" id="con_mod" readonly></div>
+                    <div><label for="int">INT</label><input type="text" id="int" data-mod="int_mod"></div>
+                    <div><label for="int_mod">INT Mod</label><input type="text" id="int_mod" readonly></div>
+                    <div><label for="wis">WIS</label><input type="text" id="wis" data-mod="wis_mod"></div>
+                    <div><label for="wis_mod">WIS Mod</label><input type="text" id="wis_mod" readonly></div>
+                    <div><label for="cha">CHA</label><input type="text" id="cha" data-mod="cha_mod"></div>
+                    <div><label for="cha_mod">CHA Mod</label><input type="text" id="cha_mod" readonly></div>
+                </div>
+            </fieldset>
+
+            <fieldset class="full-width">
+                <legend>Details</legend>
+                <label for="saves">Saving Throws</label><input type="text" id="saves">
+                <label for="skills">Skills</label><input type="text" id="skills">
+                <label for="vulnerabilities">Damage Vulnerabilities</label><input type="text" id="vulnerabilities">
+                <label for="resistances">Damage Resistances</label><input type="text" id="resistances">
+                <label for="immunities">Damage Immunities</label><input type="text" id="immunities">
+                <label for="conditions">Condition Immunities</label><input type="text" id="conditions">
+                <label for="senses">Senses</label><input type="text" id="senses">
+                <label for="languages">Languages</label><input type="text" id="languages">
+                <label for="challenge">Challenge</label><input type="text" id="challenge">
+            </fieldset>
+
+            <fieldset class="full-width">
+                <legend>Abilities (use HTML &lt;p&gt; tags)</legend>
+                <label for="traits">Traits</label><textarea id="traits"></textarea>
+                <label for="actions">Actions</label><textarea id="actions"></textarea>
+                <label for="reactions">Reactions</label><textarea id="reactions"></textarea>
+                <label for="legendary">Legendary Actions</label><textarea id="legendary"></textarea>
+                <label for="lair">Lair Actions</label><textarea id="lair"></textarea>
+            </fieldset>
+
+            <div class="full-width form-actions">
+                <button type="button" id="save-btn">Save and Generate JSON</button>
+                <button type="button" id="clear-btn" class="secondary-btn">Clear Form</button>
+            </div>
+        </form>
+
+        <div id="output-container" class="hidden">
+            <h2>JSON Output</h2>
+            <p>For your reference, here is the generated JSON. A file named <code>externalmonsters.json</code> should have started downloading automatically.</p>
+            <textarea id="output-json" readonly></textarea>
+        </div>
+    </div>
+    <script type="module" src="monster-editor.js"></script>
+</body>
+</html>

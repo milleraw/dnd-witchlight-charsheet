@@ -1,0 +1,53 @@
+{
+  "name": "Rathen",
+  "class": "Barbarian",
+  "level": 3,
+  "maxHP": 38,
+    "currentHP": 28,
+  "hit_die": "d12",
+  "tempHP": 0,
+  "race": "Tiefling",
+    "abilities": {
+    "CHA": 9,
+  "WIS": 12,
+  "INT": 15,
+  "DEX": 15,
+  "STR": 15,
+  "CON": 15
+  },
+  "spells": [],
+  "background": "Urban Bounty Hunter",
+  "build": "Path of the Zealot",
+  "eyes_hair": "",
+  "gender": "",
+  "player_name": "Jacob Arias",
+  "alignment":"True Neutral",
+   "armor": [],
+   "languages": ["Common","Infernal"],
+   
+   "proficiencies": {
+    "tools":   ["Thieves' Tools", "Viol"],
+    "weapons": ["Simple weapons", "Martial Weapons"],
+    "armor":   ["Light","Medium","Sheilds"]          
+      },  "skill_proficiencies": {"saving throws":["Str","Con"],
+  "skills":["Intimidation","Deception","Survival","Stealth","Nature"]},
+  "equipment": 
+  { "weapons": 
+  [
+  "Greataxe", 
+  "Javelin", 
+  "Spear",
+  "Harpoon"
+  ] }
+,
+"gear": [
+  { "name": "Explorer's Pack" },
+  { "name": "Clothes", "desc": "Appropriate to your duties as a bounty hunter." },
+  { "name": "Thieves' Tools" },
+  { "name": "Viol", "desc": "A musical instrument of your choice." }
+],
+"coins": { "gp": 20, "sp": 0, "cp": 0, "pp": 0 }
+
+
+
+}
