@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="assets/css/tooltip.css">
   <link rel="stylesheet" href="assets/css/sheet-base.css">
   <link rel="stylesheet" href="assets/css/character.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
+  <link rel="stylesheet" href="assets/css/wildshape.css">
 </head>
 <body>
   <div id="toolbar">
@@ -29,6 +31,7 @@
     <input id="char-input" type="text" placeholder="or type a JSON file name (e.g., direcris.json)" style="flex:1;" />
     <button id="char-load">Load</button>
     <button id="save-char" style="margin-left:auto">Save Character</button>
+    <button id="level-up" style="margin-left:8px">Level Up</button>
     <span id="status" style="margin-left:auto; font-size:12px; color:#666;"></span>
   </div>
 
@@ -70,11 +73,24 @@
     <div id="field-proficiencies" class="field"></div>
     <div id="field-proficiency" class="field"></div>
     <div id="field-attackbonus" class="field"></div>
-    <div id="field-attacks" class="field"></div>
+    <div id="field-attacks" class="field">
+      <div class="offhand-select">
+        <label for="offhand-weapon">Off-hand</label>
+        <select id="offhand-weapon">
+          <option value="">-- none --</option>
+        </select>
+      </div>
+      <div id="attack-rows"></div>
+    </div>
     <div id="field-spellsavedc" class="field"></div>
     <div id="field-passive-perception" class="field"></div>
     <div id="field-currency" class="field base-text"></div>
+    <button id="currency-edit-btn" class="gear-add-btn currency-add-btn" type="button" title="Adjust currency">+</button>
     <div id="field-conditions" class="field"></div>
+    <button id="diamond-soul-reroll" class="sheet-mini-btn tooltip" type="button" aria-label="Diamond Soul Ki Reroll"></button>
+    <div id="inspiration-control" class="tooltip" role="button" tabindex="0" aria-label="Toggle inspiration">
+      <div id="inspiration-icon" aria-hidden="true">🎲</div>
+    </div>
     <div id="death-saves"></div>
     <div id="incapacitated-overlay" class="hidden">INCAPACITATED</div>
 
@@ -90,6 +106,7 @@
     <div id="field-gender" class="field"></div>
     <div id="field-playername" class="field"></div>
     <div id="field-alignment" class="field"></div>
+    <div id="field-deity" class="field"></div>
 
     <!-- Curved Race (left ribbon) -->
     <div id="field-race" class="field">
@@ -137,21 +154,293 @@
     <div id="field-features" class="field"></div>
     <div id="field-spells" class="field"></div>
     <div id="field-gear" class="field"></div>
+    <button id="gear-add-btn" class="gear-add-btn" type="button" title="Add equipment">+</button>
+  </div>
+
+  <!-- Wild Shape Modal -->
+  <div id="modal-backdrop" class="hidden"></div>
+  <div id="wild-shape-modal" class="modal hidden">
+      <div class="modal-content">
+          <h3 class="modal-title">Choose Wild Shape Form</h3>
+          <div class="modal-body">
+              <div class="ws-picker">
+                  <div class="ws-list-container">
+                      <input type="text" id="ws-search" placeholder="Search beasts...">
+                      <div id="ws-beast-list"></div>
+                  </div>
+                  <div id="ws-stat-block-container"></div>
+              </div>
+          </div>
+          <div class="modal-actions">
+              <button id="ws-modal-transform-btn" class="primary-btn">Transform</button>
+              <button id="ws-modal-close-btn">Close</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- Add Equipment / Currency Modal -->
+  <div id="equipment-modal" class="modal hidden">
+      <div class="modal-content">
+          <h3 class="modal-title">Manage Equipment / Currency</h3>
+          <div class="modal-body">
+              <div class="equip-section">
+                  <div class="equip-mode">
+                      <label><input type="radio" name="equip-mode" value="pick" checked> Picklist item</label>
+                      <label><input type="radio" name="equip-mode" value="custom"> Custom item</label>
+                      <label><input type="radio" name="equip-mode" value="edit"> Edit item</label>
+                      <label><input type="radio" name="equip-mode" value="remove"> Remove item</label>
+                  </div>
+
+                  <div id="equip-picklist">
+                      <label for="equip-filter-slot">Filter Equip Slot</label>
+                      <select id="equip-filter-slot">
+                          <option value="">Any</option>
+                          <option value="armor">armor</option>
+                          <option value="shield">shield</option>
+                          <option value="weapon">weapon</option>
+                          <option value="boots">boots</option>
+                          <option value="cloak">cloak</option>
+                          <option value="gloves">gloves</option>
+                          <option value="goggles">goggles</option>
+                          <option value="headwear">headwear</option>
+                          <option value="bracers">bracers</option>
+                          <option value="belt">belt</option>
+                          <option value="amulet">amulet</option>
+                          <option value="ring">ring</option>
+                          <option value="instrument">instrument</option>
+                          <option value="container">container</option>
+                          <option value="wondrous_handheld">wondrous_handheld</option>
+                          <option value="tool">tool</option>
+                      </select>
+
+                      <label for="equip-filter-form">Filter Object Form</label>
+                      <select id="equip-filter-form">
+                          <option value="">Any</option>
+                          <option value="bag">bag</option>
+                          <option value="jug">jug</option>
+                          <option value="rope">rope</option>
+                          <option value="stones">stones</option>
+                          <option value="wand">wand</option>
+                          <option value="lantern">lantern</option>
+                          <option value="shackles">shackles</option>
+                          <option value="gem">gem</option>
+                          <option value="horn">horn</option>
+                          <option value="staff">staff</option>
+                          <option value="rod">rod</option>
+                          <option value="pipes">pipes</option>
+                      </select>
+
+                      <label for="equip-filter-min-gp">Min Value (GP)</label>
+                      <input type="number" id="equip-filter-min-gp" min="0" step="0.01" value="0">
+                      <button id="equip-filter-homunculus" type="button" class="equip-mini-btn" title="Show gem/crystal items worth at least 100 gp">Homunculus Filter</button>
+                      <button id="equip-filter-potions" type="button" class="equip-mini-btn" title="Show potion items only">Potions Filter</button>
+
+                      <label for="equip-base-item">Base Item</label>
+                      <select id="equip-base-item"></select>
+
+                      <label for="equip-modifier">Magic Modifier (optional)</label>
+                      <select id="equip-modifier">
+                          <option value="">None</option>
+                      </select>
+
+                      <label for="equip-qty">Quantity</label>
+                      <input type="number" id="equip-qty" min="1" value="1">
+
+                      <label for="equip-value-gp">Value (GP, optional)</label>
+                      <input type="number" id="equip-value-gp" min="0" step="0.01" placeholder="e.g. 100">
+
+                      <div id="equip-derived" class="equip-derived">Derived Item: —</div>
+
+                      <label for="equip-notes">Notes (optional)</label>
+                      <textarea id="equip-notes" rows="2" placeholder="Short description or notes"></textarea>
+                  </div>
+
+                  <div id="equip-custom" class="hidden">
+                      <label for="equip-custom-name">Item Name</label>
+                      <input type="text" id="equip-custom-name" placeholder="Custom item name">
+
+                      <label for="equip-custom-desc">Description</label>
+                      <textarea id="equip-custom-desc" rows="3" placeholder="Shown in tooltip"></textarea>
+
+                      <label for="equip-custom-qty">Quantity</label>
+                      <input type="number" id="equip-custom-qty" min="1" value="1">
+
+                      <label for="equip-custom-value-gp">Value (GP, optional)</label>
+                      <input type="number" id="equip-custom-value-gp" min="0" step="0.01" placeholder="e.g. 100">
+
+                      <label for="equip-custom-slot">Equip Slot (optional)</label>
+                      <select id="equip-custom-slot">
+                          <option value="">(none)</option>
+                          <option value="armor">armor</option>
+                          <option value="shield">shield</option>
+                          <option value="weapon">weapon</option>
+                          <option value="boots">boots</option>
+                          <option value="cloak">cloak</option>
+                          <option value="gloves">gloves</option>
+                          <option value="goggles">goggles</option>
+                          <option value="headwear">headwear</option>
+                          <option value="bracers">bracers</option>
+                          <option value="belt">belt</option>
+                          <option value="amulet">amulet</option>
+                          <option value="ring">ring</option>
+                          <option value="instrument">instrument</option>
+                          <option value="container">container</option>
+                          <option value="wondrous_handheld">wondrous_handheld</option>
+                          <option value="tool">tool</option>
+                      </select>
+
+                      <label for="equip-custom-form">Object Form (optional)</label>
+                      <select id="equip-custom-form">
+                          <option value="">(none)</option>
+                          <option value="bag">bag</option>
+                          <option value="jug">jug</option>
+                          <option value="rope">rope</option>
+                          <option value="stones">stones</option>
+                          <option value="wand">wand</option>
+                          <option value="lantern">lantern</option>
+                          <option value="shackles">shackles</option>
+                          <option value="gem">gem</option>
+                          <option value="horn">horn</option>
+                          <option value="staff">staff</option>
+                          <option value="rod">rod</option>
+                          <option value="pipes">pipes</option>
+                      </select>
+
+                      <label><input type="checkbox" id="equip-custom-is-weapon"> Treat as Weapon</label>
+                      <div id="equip-custom-weapon-fields" class="hidden">
+                          <label for="equip-custom-weapon-range">Weapon Range Type</label>
+                          <select id="equip-custom-weapon-range">
+                              <option value="melee">Melee</option>
+                              <option value="ranged">Ranged</option>
+                          </select>
+
+                          <label for="equip-custom-weapon-dice">Base Damage Dice</label>
+                          <input type="text" id="equip-custom-weapon-dice" placeholder="e.g. 1d6">
+
+                          <label for="equip-custom-weapon-damage-type">Damage Type</label>
+                          <select id="equip-custom-weapon-damage-type">
+                              <option value="acid">acid</option>
+                              <option value="bludgeoning">bludgeoning</option>
+                              <option value="cold">cold</option>
+                              <option value="fire">fire</option>
+                              <option value="force">force</option>
+                              <option value="lightning">lightning</option>
+                              <option value="necrotic">necrotic</option>
+                              <option value="piercing" selected>piercing</option>
+                              <option value="poison">poison</option>
+                              <option value="psychic">psychic</option>
+                              <option value="radiant">radiant</option>
+                              <option value="slashing">slashing</option>
+                              <option value="thunder">thunder</option>
+                          </select>
+                          <label for="equip-custom-weapon-damage-type-alt">Alternate Damage Type (optional; OR)</label>
+                          <select id="equip-custom-weapon-damage-type-alt">
+                              <option value="">(none)</option>
+                              <option value="acid">acid</option>
+                              <option value="bludgeoning">bludgeoning</option>
+                              <option value="cold">cold</option>
+                              <option value="fire">fire</option>
+                              <option value="force">force</option>
+                              <option value="lightning">lightning</option>
+                              <option value="necrotic">necrotic</option>
+                              <option value="piercing">piercing</option>
+                              <option value="poison">poison</option>
+                              <option value="psychic">psychic</option>
+                              <option value="radiant">radiant</option>
+                              <option value="slashing">slashing</option>
+                              <option value="thunder">thunder</option>
+                          </select>
+                          <label for="equip-custom-weapon-damage-type-custom">Custom Damage Type (optional override)</label>
+                          <input type="text" id="equip-custom-weapon-damage-type-custom" placeholder="e.g. void">
+
+                          <label for="equip-custom-weapon-category">Weapon Proficiency Class</label>
+                          <select id="equip-custom-weapon-category">
+                              <option value="">(unspecified)</option>
+                              <option value="simple melee">Simple Melee</option>
+                              <option value="simple ranged">Simple Ranged</option>
+                              <option value="martial melee">Martial Melee</option>
+                              <option value="martial ranged">Martial Ranged</option>
+                          </select>
+
+                          <label for="equip-custom-weapon-range-normal">Range (Normal)</label>
+                          <input type="number" id="equip-custom-weapon-range-normal" min="0" step="1" placeholder="e.g. 20">
+
+                          <label for="equip-custom-weapon-range-long">Range (Long)</label>
+                          <input type="number" id="equip-custom-weapon-range-long" min="0" step="1" placeholder="e.g. 60">
+
+                          <label>Weapon Properties (multi-select)</label>
+                          <select id="equip-custom-weapon-properties" multiple size="8">
+                              <option value="finesse">finesse</option>
+                              <option value="heavy">heavy</option>
+                              <option value="light">light</option>
+                              <option value="loading">loading</option>
+                              <option value="reach">reach</option>
+                              <option value="special">special</option>
+                              <option value="thrown">thrown</option>
+                              <option value="two-handed">two-handed</option>
+                              <option value="versatile">versatile</option>
+                              <option value="ammunition">ammunition</option>
+                          </select>
+
+                          <label for="equip-custom-weapon-properties-extra">Extra Properties (comma-separated)</label>
+                          <input type="text" id="equip-custom-weapon-properties-extra" placeholder="e.g. silvered, returning">
+
+                          <label for="equip-custom-weapon-versatile-dice">Versatile Dice (optional)</label>
+                          <input type="text" id="equip-custom-weapon-versatile-dice" placeholder="e.g. 1d8">
+                      </div>
+                  </div>
+
+                  <div id="equip-remove" class="hidden">
+                      <label for="equip-remove-item">Current Item</label>
+                      <select id="equip-remove-item"></select>
+
+                      <label for="equip-remove-qty">Quantity to Remove</label>
+                      <input type="number" id="equip-remove-qty" min="1" value="1">
+                  </div>
+
+                  <div id="equip-edit" class="hidden">
+                      <label for="equip-edit-item">Current Item</label>
+                      <select id="equip-edit-item"></select>
+
+                      <label for="equip-edit-desc">Tooltip / Description</label>
+                      <textarea id="equip-edit-desc" rows="5" placeholder="Update item tooltip text"></textarea>
+                  </div>
+              </div>
+
+              <div class="equip-section">
+                  <div class="equip-subtitle">Currency Changes (use negative values to spend)</div>
+                  <div class="equip-currency-grid">
+                      <label>PP <input type="number" id="equip-pp" value="0"></label>
+                      <label>GP <input type="number" id="equip-gp" value="0"></label>
+                      <label>SP <input type="number" id="equip-sp" value="0"></label>
+                      <label>CP <input type="number" id="equip-cp" value="0"></label>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-actions">
+              <button id="equip-save-btn" class="primary-btn">Save</button>
+              <button id="equip-cancel-btn">Cancel</button>
+          </div>
+      </div>
   </div>
 
   <!-- Shared JS Libraries -->
   <script src="assets/js/common/textfit.js"></script>
   <script src="assets/js/common/dom.js"></script>
   <script src="assets/js/common/tooltip.js"></script>
-  <script src="assets/js/common/storage.js"></script>
+  <script src="assets/js/common/storage.js?v=3"></script>
+  <script src="assets/js/common/feat-runtime.js"></script>
   <script src="assets/js/common/name-curves.js"></script>
   <script src="assets/js/common/toolbar.js"></script>
   <script src="assets/js/common/ribbon-button.js"></script>
-  <script src="assets/js/common/glue.js"></script>
+  <script src="assets/js/common/glue.js?v=2"></script>
   <script src="assets/js/common/rules.js"></script>
+  <script src="assets/js/common/wild-shape-ui.js"></script>
+  <script src="assets/js/common/level-up.js?v=6"></script>
+
 
   <!-- Page-Specific JS -->
-  <script src="assets/js/sheet-character.js"></script>
+  <script src="assets/js/sheet-character.js?v=9"></script>
   <script src="assets/js/sheet-boot.js"></script>
 </body>
 </html>

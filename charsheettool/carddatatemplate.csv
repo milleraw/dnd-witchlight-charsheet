@@ -1,0 +1,583 @@
+name,color,limitedScore,cmc,rarity,manaCost,typeLine,oracleText,archetype,isSignpost,isBomb,isRemoval
+Changeling Wayfinder,,,3.0,common,{3},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+When this creature enters, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle.",,false,false,false
+Rooftop Percher,,,5.0,common,{5},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+Flying
+When this creature enters, exile up to two target cards from graveyards. You gain 3 life.",,false,false,false
+Adept Watershaper,W,,3.0,rare,{2}{W},Creature — Merfolk Cleric,Other tapped creatures you control have indestructible.,,false,false,false
+"Ajani, Outland Chaperone",W,,3.0,mythic,{1}{W}{W},Legendary Planeswalker — Ajani,"+1: Create a 1/1 green and white Kithkin creature token.
+−2: Ajani deals 4 damage to target tapped creature.
+−8: Look at the top X cards of your library, where X is your life total. You may put any number of nonland permanent cards with mana value 3 or less from among them onto the battlefield. Then shuffle.",,false,false,false
+Appeal to Eirdu,W,,4.0,common,{3}{W},Instant,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+One or two target creatures each get +2/+1 until end of turn.",,false,false,false
+Bark of Doran,W,,2.0,uncommon,{1}{W},Artifact — Equipment,"Equipped creature gets +0/+1.
+As long as equipped creature's toughness is greater than its power, it assigns combat damage equal to its toughness rather than its power.
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",,false,false,false
+"Brigid, Clachan's Heart // Brigid, Doun's Mind",GW,,3.0,rare,,Legendary Creature — Kithkin Warrior // Legendary Creature — Kithkin Soldier,,,false,false,false
+Burdened Stoneback,W,,2.0,uncommon,{1}{W},Creature — Giant Warrior,"This creature enters with two -1/-1 counters on it.
+{1}{W}, Remove a counter from this creature: Target creature gains indestructible until end of turn. Activate only as a sorcery. (Damage and effects that say ""destroy"" don't destroy it. If its toughness is 0 or less, it still dies.)",,false,false,false
+Champion of the Clachan,W,,4.0,rare,{3}{W},Creature — Kithkin Knight,"Flash
+As an additional cost to cast this spell, behold a Kithkin and exile it. (Exile a Kithkin you control or a Kithkin card from your hand.)
+Other Kithkin you control get +1/+1.
+When this creature leaves the battlefield, return the exiled card to its owner's hand.",,false,false,false
+Clachan Festival,W,,3.0,uncommon,{2}{W},Kindred Enchantment — Kithkin,"When this enchantment enters, create two 1/1 green and white Kithkin creature tokens.
+{4}{W}: Create a 1/1 green and white Kithkin creature token.",,false,false,false
+Crib Swap,W,,3.0,uncommon,{2}{W},Kindred Instant — Shapeshifter,"Changeling (This card is every creature type.)
+Exile target creature. Its controller creates a 1/1 colorless Shapeshifter creature token with changeling.",,false,false,false
+Curious Colossus,W,,7.0,mythic,{5}{W}{W},Creature — Giant Warrior,"When this creature enters, each creature target opponent controls loses all abilities, becomes a Coward in addition to its other types, and has base power and toughness 1/1.",,false,false,false
+"Eirdu, Carrier of Dawn // Isilu, Carrier of Twilight",BW,,5.0,mythic,,Legendary Creature — Elemental God // Legendary Creature — Elemental God,,,false,false,false
+Encumbered Reejerey,W,,2.0,uncommon,{1}{W},Creature — Merfolk Soldier,"This creature enters with three -1/-1 counters on it.
+Whenever this creature becomes tapped while it has a -1/-1 counter on it, remove a -1/-1 counter from it.",,false,false,false
+Evershrike's Gift,W,,1.0,uncommon,{W},Enchantment — Aura,"Enchant creature
+Enchanted creature gets +1/+0 and has flying.
+{1}{W}, Blight 2: Return this card from your graveyard to your hand. Activate only as a sorcery. (To blight 2, put two -1/-1 counters on a creature you control.)",,false,false,false
+Flock Impostor,W,,3.0,uncommon,{2}{W},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+Flash
+Flying
+When this creature enters, return up to one other target creature you control to its owner's hand.",,false,false,false
+Gallant Fowlknight,W,,4.0,common,{3}{W},Creature — Kithkin Knight,"When this creature enters, creatures you control get +1/+0 until end of turn. Kithkin creatures you control also gain first strike until end of turn.",,false,false,false
+Goldmeadow Nomad,W,,1.0,common,{W},Creature — Kithkin Scout,"{W}, Exile this card from your graveyard: Create a 1/1 green and white Kithkin creature token. Activate only as a sorcery.",,false,false,false
+Keep Out,W,,2.0,common,{1}{W},Instant,"Choose one —
+• Keep Out deals 4 damage to target tapped creature.
+• Destroy target enchantment.",,false,false,false
+Kinbinding,W,,5.0,rare,{3}{W}{W},Enchantment,"Creatures you control get +X/+X, where X is the number of creatures that entered the battlefield under your control this turn.
+At the beginning of combat on your turn, create a 1/1 green and white Kithkin creature token.",,false,false,false
+Kinsbaile Aspirant,W,,1.0,uncommon,{W},Creature — Kithkin Citizen,"As an additional cost to cast this spell, behold a Kithkin or pay {2}. (To behold a Kithkin, choose a Kithkin you control or reveal a Kithkin card from your hand.)
+Whenever another creature you control enters, this creature gets +1/+1 until end of turn.",,false,false,false
+Kinscaer Sentry,W,,2.0,rare,{1}{W},Creature — Kithkin Soldier,"First strike, lifelink
+Whenever this creature attacks, you may put a creature card with mana value X or less from your hand onto the battlefield tapped and attacking, where X is the number of attacking creatures you control.",,false,false,false
+Kithkeeper,W,,7.0,uncommon,{6}{W},Creature — Elemental,"Vivid — When this creature enters, create X 1/1 green and white Kithkin creature tokens, where X is the number of colors among permanents you control.
+Tap three untapped creatures you control: This creature gets +3/+0 and gains flying until end of turn.",,false,false,false
+Liminal Hold,W,,4.0,common,{3}{W},Enchantment,"When this enchantment enters, exile up to one target nonland permanent an opponent controls until this enchantment leaves the battlefield. You gain 2 life.",,false,false,false
+Meanders Guide,W,,3.0,uncommon,{2}{W},Creature — Merfolk Scout,"Whenever this creature attacks, you may tap another untapped Merfolk you control. When you do, return target creature card with mana value 3 or less from your graveyard to the battlefield.",,false,false,false
+Moonlit Lamenter,W,,3.0,uncommon,{2}{W},Creature — Treefolk Cleric,"This creature enters with a -1/-1 counter on it.
+{1}{W}, Remove a counter from this creature: Draw a card. Activate only as a sorcery.",,false,false,false
+Morningtide's Light,W,,4.0,mythic,{3}{W},Sorcery,"Exile any number of target creatures. At the beginning of the next end step, return those cards to the battlefield tapped under their owners' control.
+Until your next turn, prevent all damage that would be dealt to you.
+Exile Morningtide's Light.",,false,false,false
+Personify,W,,2.0,uncommon,{1}{W},Instant,"Exile target creature you control, then return that card to the battlefield under its owner's control. Create a 1/1 colorless Shapeshifter creature token with changeling. (It's every creature type.)",,false,false,false
+Protective Response,W,,3.0,uncommon,{2}{W},Instant,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Destroy target attacking or blocking creature.",,false,false,false
+Pyrrhic Strike,W,,3.0,uncommon,{2}{W},Instant,"As an additional cost to cast this spell, you may blight 2. (You may put two -1/-1 counters on a creature you control.)
+Choose one. If this spell's additional cost was paid, choose both instead.
+• Destroy target artifact or enchantment.
+• Destroy target creature with mana value 3 or greater.",,false,false,false
+Reluctant Dounguard,W,,3.0,common,{2}{W},Creature — Kithkin Soldier,"This creature enters with two -1/-1 counters on it.
+Whenever another creature you control enters while this creature has a -1/-1 counter on it, remove a -1/-1 counter from this creature.",,false,false,false
+"Rhys, the Evermore",W,,2.0,rare,{1}{W},Legendary Creature — Elf Warrior,"Flash
+When Rhys enters, another target creature you control gains persist until end of turn. (When it dies, if it had no -1/-1 counters on it, return it to the battlefield under its owner's control with a -1/-1 counter on it.)
+{W}, {T}: Remove any number of counters from target creature you control. Activate only as a sorcery.",,false,false,false
+Riverguard's Reflexes,W,,2.0,common,{1}{W},Instant,Target creature gets +2/+2 and gains first strike until end of turn. Untap it.,,false,false,false
+Shore Lurker,W,,4.0,common,{3}{W},Creature — Merfolk Scout,"Flying
+When this creature enters, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",,false,false,false
+Slumbering Walker,W,,5.0,rare,{3}{W}{W},Creature — Giant Warrior,"This creature enters with two -1/-1 counters on it.
+At the beginning of your end step, you may remove a counter from this creature. When you do, return target creature card with power 2 or less from your graveyard to the battlefield.",,false,false,false
+Spiral into Solitude,W,,2.0,common,{1}{W},Enchantment — Aura,"Enchant creature
+Enchanted creature can't attack or block.
+{1}{W}, Blight 1, Sacrifice this Aura: Exile enchanted creature. (To blight 1, put a -1/-1 counter on a creature you control.)",,false,false,false
+Sun-Dappled Celebrant,W,,6.0,common,{4}{W}{W},Creature — Treefolk Cleric,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Vigilance",,false,false,false
+Thoughtweft Imbuer,W,,4.0,uncommon,{3}{W},Creature — Kithkin Advisor,"Whenever a creature you control attacks alone, it gets +X/+X until end of turn, where X is the number of Kithkin you control.",,false,false,false
+Timid Shieldbearer,W,,2.0,common,{1}{W},Creature — Kithkin Soldier,{4}{W}: Creatures you control get +1/+1 until end of turn.,,false,false,false
+Tributary Vaulter,W,,3.0,common,{2}{W},Creature — Merfolk Warrior,"Flying
+Whenever this creature becomes tapped, another target Merfolk you control gets +2/+0 until end of turn.",,false,false,false
+Wanderbrine Preacher,W,,2.0,common,{1}{W},Creature — Merfolk Cleric,"Whenever this creature becomes tapped, you gain 2 life.",,false,false,false
+Wanderbrine Trapper,W,,1.0,uncommon,{W},Creature — Merfolk Scout,"{1}, {T}, Tap another untapped creature you control: Tap target creature an opponent controls.",,false,false,false
+Winnowing,W,,6.0,rare,{4}{W}{W},Sorcery,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+For each player, you choose a creature that player controls. Then each player sacrifices all other creatures they control that don't share a creature type with the chosen creature they control.",,false,false,false
+Aquitect's Defenses,U,,2.0,common,{1}{U},Enchantment — Aura,"Flash
+Enchant creature you control
+When this Aura enters, enchanted creature gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.)
+Enchanted creature gets +1/+2.",,false,false,false
+Blossombind,U,,2.0,common,{1}{U},Enchantment — Aura,"Enchant creature
+When this Aura enters, tap enchanted creature.
+Enchanted creature can't become untapped and can't have counters put on it.",,false,false,false
+Champions of the Shoal,U,,4.0,rare,{3}{U},Creature — Merfolk Soldier,"As an additional cost to cast this spell, behold a Merfolk and exile it. (Exile a Merfolk you control or a Merfolk card from your hand.)
+Whenever this creature enters or becomes tapped, tap up to one target creature and put a stun counter on it.
+When this creature leaves the battlefield, return the exiled card to its owner's hand.",,false,false,false
+Disruptor of Currents,U,,5.0,rare,{3}{U}{U},Creature — Merfolk Wizard,"Flash
+Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+When this creature enters, return up to one other target nonland permanent to its owner's hand.",,false,false,false
+Flitterwing Nuisance,U,,1.0,rare,{U},Creature — Faerie Rogue,"Flying
+This creature enters with a -1/-1 counter on it.
+{2}{U}, Remove a counter from this creature: Whenever a creature you control deals combat damage to a player or planeswalker this turn, draw a card.",,false,false,false
+Glamer Gifter,U,,2.0,uncommon,{1}{U},Creature — Faerie Wizard,"Flash
+Flying
+When this creature enters, choose up to one other target creature. Until end of turn, that creature has base power and toughness 4/4 and gains all creature types.",,false,false,false
+Glamermite,U,,3.0,common,{2}{U},Creature — Faerie Rogue,"Flash
+Flying
+When this creature enters, choose one —
+• Tap target creature.
+• Untap target creature.",,false,false,false
+Glen Elendra Guardian,U,,3.0,rare,{2}{U},Creature — Faerie Wizard,"Flash
+Flying
+This creature enters with a -1/-1 counter on it.
+{1}{U}, Remove a counter from this creature: Counter target noncreature spell. Its controller draws a card.",,false,false,false
+Glen Elendra's Answer,U,,4.0,mythic,{2}{U}{U},Instant,"This spell can't be countered.
+Counter all spells your opponents control and all abilities your opponents control. Create a 1/1 blue and black Faerie creature token with flying for each spell and ability countered this way.",,false,false,false
+Gravelgill Scoundrel,U,,2.0,common,{1}{U},Creature — Merfolk Rogue,"Vigilance
+Whenever this creature attacks, you may tap another untapped creature you control. If you do, this creature can't be blocked this turn.",,false,false,false
+Harmonized Crescendo,U,,6.0,rare,{4}{U}{U},Instant,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Choose a creature type. Draw a card for each permanent you control of that type.",,false,false,false
+Illusion Spinners,U,,5.0,uncommon,{4}{U},Creature — Faerie Wizard,"You may cast this spell as though it had flash if you control a Faerie.
+Flying
+This creature has hexproof as long as it's untapped. (It can't be the target of spells or abilities your opponents control.)",,false,false,false
+Kulrath Mystic,U,,3.0,common,{2}{U},Creature — Elemental Wizard,"Whenever you cast a spell with mana value 4 or greater, this creature gets +2/+0 and gains vigilance until end of turn.",,false,false,false
+Loch Mare,U,,2.0,mythic,{1}{U},Creature — Horse Serpent,"This creature enters with three -1/-1 counters on it.
+{1}{U}, Remove a counter from this creature: Draw a card.
+{2}{U}, Remove two counters from this creature: Tap target creature. Put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)",,false,false,false
+Lofty Dreams,U,,5.0,uncommon,{3}{U}{U},Enchantment — Aura,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Enchant creature
+When this Aura enters, draw a card.
+Enchanted creature gets +2/+2 and has flying.",,false,false,false
+Mirrorform,U,,6.0,mythic,{4}{U}{U},Instant,Each nonland permanent you control becomes a copy of target non-Aura permanent.,,false,false,false
+Noggle the Mind,U,,2.0,uncommon,{1}{U},Enchantment — Aura,"Flash
+Enchant creature
+Enchanted creature loses all abilities and is a colorless Noggle with base power and toughness 1/1. (It loses all colors and all other creature types.)",,false,false,false
+"Oko, Lorwyn Liege // Oko, Shadowmoor Scion",GU,,3.0,mythic,,Legendary Planeswalker — Oko // Legendary Planeswalker — Oko,,,false,false,false
+Omni-Changeling,U,,5.0,uncommon,{3}{U}{U},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+You may have this creature enter as a copy of any creature on the battlefield, except it has changeling.",,false,false,false
+Pestered Wellguard,U,,4.0,uncommon,{3}{U},Creature — Merfolk Soldier,"Whenever this creature becomes tapped, create a 1/1 blue and black Faerie creature token with flying.",,false,false,false
+Rime Chill,U,,7.0,uncommon,{6}{U},Instant,"Vivid — This spell costs {1} less to cast for each color among permanents you control.
+Tap up to two target creatures. Put a stun counter on each of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)
+Draw a card.",,false,false,false
+Rimefire Torque,U,,2.0,rare,{1}{U},Artifact,"As this artifact enters, choose a creature type.
+Whenever a permanent you control of the chosen type enters, put a charge counter on this artifact.
+{T}, Remove three charge counters from this artifact: When you next cast an instant or sorcery spell this turn, copy it. You may choose new targets for the copy.",,false,false,false
+Rimekin Recluse,U,,3.0,uncommon,{2}{U},Creature — Elemental Wizard,"When this creature enters, return up to one other target creature to its owner's hand.",,false,false,false
+Run Away Together,U,,2.0,common,{1}{U},Instant,Choose two target creatures controlled by different players. Return those creatures to their owners' hands.,,false,false,false
+Shinestriker,U,,6.0,uncommon,{4}{U}{U},Creature — Elemental,"Flying
+Vivid — When this creature enters, draw cards equal to the number of colors among permanents you control.",,false,false,false
+Silvergill Mentor,U,,2.0,uncommon,{1}{U},Creature — Merfolk Wizard,"As an additional cost to cast this spell, behold a Merfolk or pay {2}.
+When this creature enters, create a 1/1 white and blue Merfolk creature token.",,false,false,false
+Silvergill Peddler,U,,3.0,common,{2}{U},Creature — Merfolk Citizen,"Whenever this creature becomes tapped, draw a card, then discard a card.",,false,false,false
+Spell Snare,U,,1.0,uncommon,{U},Instant,Counter target spell with mana value 2.,,false,false,false
+Stratosoarer,U,,5.0,common,{4}{U},Creature — Elemental,"Flying
+When this creature enters, target creature gains flying until end of turn.
+Basic landcycling {1}{U} ({1}{U}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",,false,false,false
+Summit Sentinel,U,,2.0,common,{1}{U},Creature — Elemental Soldier,"When this creature dies, draw a card.",,false,false,false
+Sunderflock,U,,9.0,rare,{7}{U}{U},Creature — Elemental,"This spell costs {X} less to cast, where X is the greatest mana value among Elementals you control.
+Flying
+When this creature enters, if you cast it, return all non-Elemental creatures to their owners' hands.",,false,false,false
+Swat Away,U,,4.0,uncommon,{2}{U}{U},Instant,"This spell costs {2} less to cast if a creature is attacking you.
+The owner of target spell or creature puts it on their choice of the top or bottom of their library.",,false,false,false
+"Sygg, Wanderwine Wisdom // Sygg, Wanderbrine Shield",UW,,2.0,rare,,Legendary Creature — Merfolk Wizard // Legendary Creature — Merfolk Rogue,,,false,false,false
+Tanufel Rimespeaker,U,,4.0,uncommon,{3}{U},Creature — Elemental Wizard,"Whenever you cast a spell with mana value 4 or greater, draw a card.",,false,false,false
+Temporal Cleansing,U,,4.0,common,{3}{U},Sorcery,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+The owner of target nonland permanent puts it into their library second from the top or on the bottom.",,false,false,false
+Thirst for Identity,U,,3.0,uncommon,{2}{U},Instant,Draw three cards. Then discard two cards unless you discard a creature card.,,false,false,false
+Unexpected Assistance,U,,5.0,common,{3}{U}{U},Instant,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Draw three cards, then discard a card.",,false,false,false
+Unwelcome Sprite,U,,2.0,uncommon,{1}{U},Creature — Faerie Rogue,"Flying
+Whenever you cast a spell during an opponent's turn, surveil 2. (Look at the top two cards of your library. You may put any number of them into your graveyard and the rest on top of your library in any order.)",,false,false,false
+Wanderwine Distracter,U,,4.0,common,{3}{U},Creature — Merfolk Wizard,"Whenever this creature becomes tapped, target creature an opponent controls gets -3/-0 until end of turn.",,false,false,false
+Wanderwine Farewell,U,,7.0,uncommon,{5}{U}{U},Kindred Sorcery — Merfolk,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Return one or two target nonland permanents to their owners' hands. Then if you control a Merfolk, create a 1/1 white and blue Merfolk creature token for each permanent returned to its owner's hand this way.",,false,false,false
+Wild Unraveling,U,,2.0,common,{U}{U},Instant,"As an additional cost to cast this spell, blight 2 or pay {1}. (To blight 2, put two -1/-1 counters on a creature you control.)
+Counter target spell.",,false,false,false
+Auntie's Sentence,B,,2.0,common,{1}{B},Sorcery,"Choose one —
+• Target opponent reveals their hand. You choose a nonland permanent card from it. That player discards that card.
+• Target creature gets -2/-2 until end of turn.",,false,false,false
+Barbed Bloodletter,B,,2.0,common,{1}{B},Artifact — Equipment,"Flash
+When this Equipment enters, attach it to target creature you control. That creature gains wither until end of turn. (It deals damage to creatures in the form of -1/-1 counters.)
+Equipped creature gets +1/+2.
+Equip {2}",,false,false,false
+Bile-Vial Boggart,B,,1.0,common,{B},Creature — Goblin Assassin,"When this creature dies, put a -1/-1 counter on up to one target creature.",,false,false,false
+Bitterbloom Bearer,B,,2.0,mythic,{B}{B},Creature — Faerie Rogue,"Flash
+Flying
+At the beginning of your upkeep, you lose 1 life and create a 1/1 blue and black Faerie creature token with flying.",,false,false,false
+Blight Rot,B,,3.0,common,{2}{B},Instant,Put four -1/-1 counters on target creature.,,false,false,false
+Blighted Blackthorn,B,,5.0,common,{4}{B},Creature — Treefolk Warlock,"Whenever this creature enters or attacks, you may blight 2. If you do, you draw a card and lose 1 life. (To blight 2, put two -1/-1 counters on a creature you control.)",,false,false,false
+Bloodline Bidding,B,,8.0,rare,{6}{B}{B},Sorcery,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Choose a creature type. Return all creature cards of the chosen type from your graveyard to the battlefield.",,false,false,false
+Boggart Mischief,B,,3.0,uncommon,{2}{B},Kindred Enchantment — Goblin,"When this enchantment enters, you may blight 1. If you do, create two 1/1 black and red Goblin creature tokens. (To blight 1, put a -1/-1 counter on a creature you control.)
+Whenever a Goblin creature you control dies, each opponent loses 1 life and you gain 1 life.",,false,false,false
+Boggart Prankster,B,,2.0,common,{1}{B},Creature — Goblin Warrior,"Whenever you attack, target attacking Goblin you control gets +1/+0 until end of turn.",,false,false,false
+Bogslither's Embrace,B,,2.0,common,{1}{B},Sorcery,"As an additional cost to cast this spell, blight 1 or pay {3}. (To blight 1, put a -1/-1 counter on a creature you control.)
+Exile target creature.",,false,false,false
+Champion of the Weird,B,,4.0,rare,{3}{B},Creature — Goblin Berserker,"As an additional cost to cast this spell, behold a Goblin and exile it. (Exile a Goblin you control or a Goblin card from your hand.)
+Pay 1 life, Blight 2: Target opponent blights 2. Activate only as a sorcery.
+When this creature leaves the battlefield, return the exiled card to its owner's hand.",,false,false,false
+Creakwood Safewright,B,,2.0,uncommon,{1}{B},Creature — Elf Warrior,"This creature enters with three -1/-1 counters on it.
+At the beginning of your end step, if there is an Elf card in your graveyard and this creature has a -1/-1 counter on it, remove a -1/-1 counter from this creature.",,false,false,false
+Darkness Descends,B,,4.0,uncommon,{2}{B}{B},Sorcery,Put two -1/-1 counters on each creature.,,false,false,false
+Dawnhand Dissident,B,,1.0,rare,{B},Creature — Elf Warlock,"{T}, Blight 1: Surveil 1.
+{T}, Blight 2: Exile target card from a graveyard.
+During your turn, you may cast creature spells from among cards you own exiled with this creature by removing three counters from among creatures you control in addition to paying their other costs.",,false,false,false
+Dawnhand Eulogist,B,,4.0,common,{3}{B},Creature — Elf Warlock,"Menace (This creature can't be blocked except by two or more creatures.)
+When this creature enters, mill three cards. Then if there is an Elf card in your graveyard, each opponent loses 2 life and you gain 2 life. (To mill three cards, put the top three cards of your library into your graveyard.)",,false,false,false
+Dose of Dawnglow,B,,5.0,uncommon,{4}{B},Instant,"Return target creature card from your graveyard to the battlefield. Then if it isn't your main phase, blight 2. (Put two -1/-1 counters on a creature you control.)",,false,false,false
+Dream Seizer,B,,4.0,common,{3}{B},Creature — Faerie Rogue,"Flying
+When this creature enters, you may blight 1. If you do, each opponent discards a card. (To blight 1, put a -1/-1 counter on a creature you control.)",,false,false,false
+Gloom Ripper,B,,5.0,rare,{3}{B}{B},Creature — Elf Assassin,"When this creature enters, target creature you control gets +X/+0 until end of turn and up to one target creature an opponent controls gets -0/-X until end of turn, where X is the number of Elves you control plus the number of Elf cards in your graveyard.",,false,false,false
+Gnarlbark Elm,B,,3.0,uncommon,{2}{B},Creature — Treefolk Warlock,"This creature enters with two -1/-1 counters on it.
+{2}{B}, Remove two counters from this creature: Target creature gets -2/-2 until end of turn. Activate only as a sorcery.",,false,false,false
+Graveshifter,B,,4.0,uncommon,{3}{B},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+When this creature enters, you may return target creature card from your graveyard to your hand.",,false,false,false
+"Grub, Storied Matriarch // Grub, Notorious Auntie",BR,,3.0,rare,,Legendary Creature — Goblin Warlock // Legendary Creature — Goblin Warrior,,,false,false,false
+Gutsplitter Gang,B,,4.0,uncommon,{3}{B},Creature — Goblin Berserker,"At the beginning of your first main phase, you may blight 2. If you don't, you lose 3 life. (To blight 2, put two -1/-1 counters on a creature you control.)",,false,false,false
+Heirloom Auntie,B,,3.0,common,{2}{B},Creature — Goblin Warlock,"This creature enters with two -1/-1 counters on it.
+Whenever another creature you control dies, surveil 1, then remove a -1/-1 counter from this creature. (To surveil 1, look at the top card of your library. You may put it into your graveyard.)",,false,false,false
+Iron-Shield Elf,B,,2.0,uncommon,{1}{B},Creature — Elf Warrior,"Discard a card: This creature gains indestructible until end of turn. Tap it. (Damage and effects that say ""destroy"" don't destroy it. If its toughness is 0 or less, it still dies.)",,false,false,false
+Moonglove Extractor,B,,3.0,common,{2}{B},Creature — Elf Warlock,"Whenever this creature attacks, you draw a card and lose 1 life.",,false,false,false
+Moonshadow,B,,1.0,mythic,{B},Creature — Elemental,"Menace
+This creature enters with six -1/-1 counters on it.
+Whenever one or more permanent cards are put into your graveyard from anywhere while this creature has a -1/-1 counter on it, remove a -1/-1 counter from this creature.",,false,false,false
+Mornsong Aria,B,,3.0,rare,{1}{B}{B},Legendary Enchantment,"Players can't draw cards or gain life.
+At the beginning of each player's draw step, that player loses 3 life, searches their library for a card, puts it into their hand, then shuffles.",,false,false,false
+Mudbutton Cursetosser,B,,1.0,uncommon,{B},Creature — Goblin Warlock,"As an additional cost to cast this spell, behold a Goblin or pay {2}. (To behold a Goblin, choose a Goblin you control or reveal a Goblin card from your hand.)
+This creature can't block.
+When this creature dies, destroy target creature an opponent controls with power 2 or less.",,false,false,false
+Nameless Inversion,B,,2.0,uncommon,{1}{B},Kindred Instant — Shapeshifter,"Changeling (This card is every creature type.)
+Target creature gets +3/-3 and loses all creature types until end of turn.",,false,false,false
+Nightmare Sower,B,,4.0,uncommon,{3}{B},Creature — Faerie Assassin,"Flying, lifelink
+Whenever you cast a spell during an opponent's turn, put a -1/-1 counter on up to one target creature.",,false,false,false
+Perfect Intimidation,B,,4.0,uncommon,{3}{B},Sorcery,"Choose one or both —
+• Target opponent exiles two cards from their hand.
+• Remove all counters from target creature.",,false,false,false
+Requiting Hex,B,,1.0,uncommon,{B},Instant,"As an additional cost to cast this spell, you may blight 1. (You may put a -1/-1 counter on a creature you control.)
+Destroy target creature with mana value 2 or less. If this spell's additional cost was paid, you gain 2 life.",,false,false,false
+Retched Wretch,B,,3.0,uncommon,{2}{B},Creature — Goblin,"When this creature dies, if it had a -1/-1 counter on it, return it to the battlefield under its owner's control and it loses all abilities.",,false,false,false
+Scarblade Scout,B,,2.0,common,{1}{B},Creature — Elf Scout,"Lifelink
+When this creature enters, mill two cards. (Put the top two cards of your library into your graveyard.)",,false,false,false
+Scarblade's Malice,B,,1.0,common,{B},Instant,"Target creature you control gains deathtouch and lifelink until end of turn. When that creature dies this turn, create a 2/2 black and green Elf creature token.",,false,false,false
+Shimmercreep,B,,5.0,uncommon,{4}{B},Creature — Elemental,"Menace (This creature can't be blocked except by two or more creatures.)
+Vivid — When this creature enters, each opponent loses X life and you gain X life, where X is the number of colors among permanents you control.",,false,false,false
+Taster of Wares,B,,3.0,rare,{2}{B},Creature — Goblin Warlock,"When this creature enters, target opponent reveals X cards from their hand, where X is the number of Goblins you control. You choose one of those cards. That player exiles it. If an instant or sorcery card is exiled this way, you may cast it for as long as you control this creature, and mana of any type can be spent to cast that spell.",,false,false,false
+Twilight Diviner,B,,3.0,rare,{2}{B},Creature — Elf Cleric,"When this creature enters, surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+Whenever one or more other creatures you control enter, if they entered or were cast from a graveyard, create a token that's a copy of one of them. This ability triggers only once each turn.",,false,false,false
+Unbury,B,,2.0,uncommon,{1}{B},Instant,"Choose one —
+• Return target creature card from your graveyard to your hand.
+• Return two target creature cards that share a creature type from your graveyard to your hand.",,false,false,false
+"Ashling, Rekindled // Ashling, Rimebound",RU,,2.0,rare,,Legendary Creature — Elemental Sorcerer // Legendary Creature — Elemental Wizard,,,false,false,false
+Boldwyr Aggressor,R,,5.0,uncommon,{3}{R}{R},Creature — Giant Warrior,"Double strike
+Other Giants you control have double strike.",,false,false,false
+Boneclub Berserker,R,,4.0,common,{3}{R},Creature — Goblin Berserker,This creature gets +2/+0 for each other Goblin you control.,,false,false,false
+Boulder Dash,R,,2.0,uncommon,{1}{R},Sorcery,Boulder Dash deals 2 damage to any target and 1 damage to any other target.,,false,false,false
+Brambleback Brute,R,,3.0,common,{2}{R},Creature — Giant Warrior,"This creature enters with two -1/-1 counters on it.
+{1}{R}, Remove a counter from this creature: Target creature can't block this turn. Activate only as a sorcery.",,false,false,false
+Burning Curiosity,R,,3.0,common,{2}{R},Sorcery,"As an additional cost to cast this spell, you may blight 1. (You may put a -1/-1 counter on a creature you control.)
+Exile the top two cards of your library. If this spell's additional cost was paid, exile the top three cards instead. Until the end of your next turn, you may play those cards.",,false,false,false
+Champion of the Path,R,,4.0,rare,{3}{R},Creature — Elemental Sorcerer,"As an additional cost to cast this spell, behold an Elemental and exile it. (Exile an Elemental you control or an Elemental card from your hand.)
+Whenever another Elemental you control enters, it deals damage equal to its power to each opponent.
+When this creature leaves the battlefield, return the exiled card to its owner's hand.",,false,false,false
+Cinder Strike,R,,1.0,common,{R},Sorcery,"As an additional cost to cast this spell, you may blight 1. (You may put a -1/-1 counter on a creature you control.)
+Cinder Strike deals 2 damage to target creature. It deals 4 damage to that creature instead if this spell's additional cost was paid.",,false,false,false
+Collective Inferno,R,,5.0,rare,{3}{R}{R},Enchantment,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+As this enchantment enters, choose a creature type.
+Double all damage that sources you control of the chosen type would deal.",,false,false,false
+Elder Auntie,R,,3.0,common,{2}{R},Creature — Goblin Warlock,"When this creature enters, create a 1/1 black and red Goblin creature token.",,false,false,false
+End-Blaze Epiphany,R,,1.0,rare,{X}{R},Instant,"End-Blaze Epiphany deals X damage to target creature. When that creature dies this turn, exile a number of cards from the top of your library equal to its power, then choose a card exiled this way. Until the end of your next turn, you may play that card.",,false,false,false
+Enraged Flamecaster,R,,3.0,common,{2}{R},Creature — Elemental Sorcerer,"Reach
+Whenever you cast a spell with mana value 4 or greater, this creature deals 2 damage to each opponent.",,false,false,false
+Explosive Prodigy,R,,2.0,uncommon,{1}{R},Creature — Elemental Sorcerer,"Vivid — When this creature enters, it deals X damage to target creature an opponent controls, where X is the number of colors among permanents you control.",,false,false,false
+Feed the Flames,R,,4.0,common,{3}{R},Instant,"Feed the Flames deals 5 damage to target creature. If that creature would die this turn, exile it instead.",,false,false,false
+Flame-Chain Mauler,R,,2.0,common,{1}{R},Creature — Elemental Warrior,{1}{R}: This creature gets +1/+0 and gains menace until end of turn. (It can't be blocked except by two or more creatures.),,false,false,false
+Flamebraider,R,,2.0,uncommon,{1}{R},Creature — Elemental Bard,{T}: Add two mana in any combination of colors. Spend this mana only to cast Elemental spells or activate abilities of Elemental sources.,,false,false,false
+Flamekin Gildweaver,R,,4.0,common,{3}{R},Creature — Elemental Sorcerer,"Trample
+When this creature enters, create a Treasure token. (It's an artifact with ""{T}, Sacrifice this token: Add one mana of any color."")",,false,false,false
+Giantfall,R,,2.0,uncommon,{1}{R},Instant,"Choose one —
+• Target creature you control deals damage equal to its power to target creature an opponent controls.
+• Destroy target artifact.",,false,false,false
+Goatnap,R,,3.0,uncommon,{2}{R},Sorcery,"Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. If that creature is a Goat, it also gets +3/+0 until end of turn.",,false,false,false
+Goliath Daydreamer,R,,4.0,rare,{2}{R}{R},Creature — Giant Wizard,"Whenever you cast an instant or sorcery spell from your hand, exile that card with a dream counter on it instead of putting it into your graveyard as it resolves.
+Whenever this creature attacks, you may cast a spell from among cards you own in exile with dream counters on them without paying its mana cost.",,false,false,false
+Gristle Glutton,R,,2.0,common,{1}{R},Creature — Goblin Scout,"{T}, Blight 1: Discard a card. If you do, draw a card. (To blight 1, put a -1/-1 counter on a creature you control.)",,false,false,false
+Hexing Squelcher,R,,2.0,rare,{1}{R},Creature — Goblin Sorcerer,"This spell can't be countered.
+Ward—Pay 2 life.
+Spells you control can't be countered.
+Other creatures you control have ""Ward—Pay 2 life.""",,false,false,false
+Impolite Entrance,R,,1.0,uncommon,{R},Sorcery,"Target creature gains trample and haste until end of turn.
+Draw a card.",,false,false,false
+Kindle the Inner Flame,R,,4.0,uncommon,{3}{R},Kindred Sorcery — Elemental,"Create a token that's a copy of target creature you control, except it has haste and ""At the beginning of the end step, sacrifice this token.""
+Flashback—{1}{R}, Behold three Elementals. (You may cast this card from your graveyard for its flashback cost. Then exile it. To behold an Elemental, choose an Elemental you control or reveal an Elemental card from your hand.)",,false,false,false
+Kulrath Zealot,R,,6.0,common,{5}{R},Creature — Elemental Warrior,"When this creature enters, exile the top card of your library. Until the end of your next turn, you may play that card.
+Basic landcycling {1}{R} ({1}{R}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",,false,false,false
+Lasting Tarfire,R,,2.0,uncommon,{1}{R},Enchantment,"At the beginning of each end step, if you put a counter on a creature this turn, this enchantment deals 2 damage to each opponent.",,false,false,false
+Lavaleaper,R,,4.0,rare,{3}{R},Creature — Elemental,"All creatures have haste.
+Whenever a player taps a basic land for mana, that player adds one mana of any type that land produced.",,false,false,false
+Meek Attack,R,,3.0,mythic,{2}{R},Enchantment,"{1}{R}: You may put a creature card with total power and toughness 5 or less from your hand onto the battlefield. That creature gains haste. At the beginning of the next end step, sacrifice that creature.",,false,false,false
+Reckless Ransacking,R,,2.0,common,{1}{R},Instant,"Target creature gets +3/+2 until end of turn. Create a Treasure token. (It's an artifact with ""{T}, Sacrifice this token: Add one mana of any color."")",,false,false,false
+Scuzzback Scrounger,R,,2.0,rare,{1}{R},Creature — Goblin Warrior,"At the beginning of your first main phase, you may blight 1. If you do, create a Treasure token. (To blight 1, put a -1/-1 counter on a creature you control. A Treasure token is an artifact with ""{T}, Sacrifice this token: Add one mana of any color."")",,false,false,false
+Sear,R,,2.0,uncommon,{1}{R},Instant,Sear deals 4 damage to target creature or planeswalker.,,false,false,false
+Sizzling Changeling,R,,3.0,uncommon,{2}{R},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+When this creature dies, exile the top card of your library. Until the end of your next turn, you may play that card.",,false,false,false
+Soul Immolation,R,,5.0,mythic,{3}{R}{R},Sorcery,"As an additional cost to cast this spell, blight X. X can't be greater than the greatest toughness among creatures you control. (Put X -1/-1 counters on a creature you control.)
+Soul Immolation deals X damage to each opponent and each creature they control.",,false,false,false
+Soulbright Seeker,R,,1.0,uncommon,{R},Creature — Elemental Sorcerer,"As an additional cost to cast this spell, behold an Elemental or pay {2}. (To behold an Elemental, choose an Elemental you control or reveal an Elemental card from your hand.)
+{R}: Target creature you control gains trample until end of turn. If this is the third time this ability has resolved this turn, add {R}{R}{R}{R}.",,false,false,false
+Sourbread Auntie,R,,4.0,uncommon,{2}{R}{R},Creature — Goblin Warrior,"When this creature enters, you may blight 2. If you do, create two 1/1 black and red Goblin creature tokens. (To blight 2, put two -1/-1 counters on a creature you control.)",,false,false,false
+Spinerock Tyrant,R,,5.0,mythic,{3}{R}{R},Creature — Dragon,"Flying
+Wither (This deals damage to creatures in the form of -1/-1 counters.)
+Whenever you cast an instant or sorcery spell with a single target, you may copy it. If you do, those spells gain wither. You may choose new targets for the copy.",,false,false,false
+Squawkroaster,R,,4.0,uncommon,{3}{R},Creature — Elemental,"Double strike
+Vivid — Squawkroaster's power is equal to the number of colors among permanents you control.",,false,false,false
+Sting-Slinger,R,,3.0,uncommon,{2}{R},Creature — Goblin Warrior,"{1}{R}, {T}, Blight 1: This creature deals 2 damage to each opponent. (To blight 1, put a -1/-1 counter on a creature you control.)",,false,false,false
+Tweeze,R,,3.0,common,{2}{R},Instant,"Tweeze deals 3 damage to any target. You may discard a card. If you do, draw a card.",,false,false,false
+Warren Torchmaster,R,,2.0,uncommon,{1}{R},Creature — Goblin Warrior,"At the beginning of combat on your turn, you may blight 1. When you do, target creature gains haste until end of turn. (To blight 1, put a -1/-1 counter on a creature you control.)",,false,false,false
+Assert Perfection,G,,2.0,common,{1}{G},Sorcery,Target creature you control gets +1/+0 until end of turn. It deals damage equal to its power to up to one target creature an opponent controls.,,false,false,false
+Aurora Awakener,G,,7.0,mythic,{6}{G},Creature — Giant Druid,"Trample
+Vivid — When this creature enters, reveal cards from the top of your library until you reveal X permanent cards, where X is the number of colors among permanents you control. Put any number of those permanent cards onto the battlefield, then put the rest of the revealed cards on the bottom of your library in a random order.",,false,false,false
+Bloom Tender,G,,2.0,mythic,{1}{G},Creature — Elf Druid,"Vivid — {T}: For each color among permanents you control, add one mana of that color.",,false,false,false
+Blossoming Defense,G,,1.0,uncommon,{G},Instant,Target creature you control gets +2/+2 and gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.),,false,false,false
+Bristlebane Battler,G,,2.0,rare,{1}{G},Creature — Kithkin Soldier,"Trample, ward {2}
+This creature enters with five -1/-1 counters on it.
+Whenever another creature you control enters while this creature has a -1/-1 counter on it, remove a -1/-1 counter from this creature.",,false,false,false
+Bristlebane Outrider,G,,4.0,uncommon,{3}{G},Creature — Kithkin Knight,"This creature can't be blocked by creatures with power 2 or less.
+As long as another creature entered the battlefield under your control this turn, this creature gets +2/+0.",,false,false,false
+Celestial Reunion,G,,1.0,mythic,{X}{G},Sorcery,"As an additional cost to cast this spell, you may choose a creature type and behold two creatures of that type.
+Search your library for a creature card with mana value X or less, reveal it, put it into your hand, then shuffle. If this spell's additional cost was paid and the revealed card is the chosen type, put that card onto the battlefield instead of putting it into your hand.",,false,false,false
+Champions of the Perfect,G,,4.0,rare,{3}{G},Creature — Elf Warrior,"As an additional cost to cast this spell, behold an Elf and exile it. (Exile an Elf you control or an Elf card from your hand.)
+Whenever you cast a creature spell, draw a card.
+When this creature leaves the battlefield, return the exiled card to its owner's hand.",,false,false,false
+Chomping Changeling,G,,3.0,uncommon,{2}{G},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+When this creature enters, destroy up to one target artifact or enchantment.",,false,false,false
+Crossroads Watcher,G,,3.0,common,{2}{G},Creature — Kithkin Ranger,"Trample
+Whenever another creature you control enters, this creature gets +1/+0 until end of turn.",,false,false,false
+Dawn's Light Archer,G,,3.0,common,{2}{G},Creature — Elf Archer,"Flash
+Reach",,false,false,false
+Dundoolin Weaver,G,,2.0,uncommon,{1}{G},Creature — Kithkin Druid,"When this creature enters, if you control three or more creatures, return target permanent card from your graveyard to your hand.",,false,false,false
+Formidable Speaker,G,,3.0,rare,{2}{G},Creature — Elf Druid,"When this creature enters, you may discard a card. If you do, search your library for a creature card, reveal it, put it into your hand, then shuffle.
+{1}, {T}: Untap another target permanent.",,false,false,false
+Gilt-Leaf's Embrace,G,,3.0,common,{2}{G},Enchantment — Aura,"Flash
+Enchant creature
+When this Aura enters, enchanted creature gains trample and indestructible until end of turn. (Damage and effects that say ""destroy"" don't destroy it. If its toughness is 0 or less, it still dies.)
+Enchanted creature gets +2/+0.",,false,false,false
+Great Forest Druid,G,,2.0,common,{1}{G},Creature — Treefolk Druid,{T}: Add one mana of any color.,,false,false,false
+Luminollusk,G,,4.0,uncommon,{3}{G},Creature — Elemental,"Deathtouch
+Vivid — When this creature enters, you gain life equal to the number of colors among permanents you control.",,false,false,false
+Lys Alana Dignitary,G,,2.0,uncommon,{1}{G},Creature — Elf Advisor,"As an additional cost to cast this spell, behold an Elf or pay {2}. (To behold an Elf, choose an Elf you control or reveal an Elf card from your hand.)
+{T}: Add {G}{G}. Activate only if there is an Elf card in your graveyard.",,false,false,false
+Lys Alana Informant,G,,2.0,common,{1}{G},Creature — Elf Scout,"When this creature enters or dies, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",,false,false,false
+Midnight Tilling,G,,2.0,common,{1}{G},Instant,"Mill four cards, then you may return a permanent card from among them to your hand. (To mill four cards, put the top four cards of your library into your graveyard.)",,false,false,false
+Mistmeadow Council,G,,5.0,common,{4}{G},Creature — Kithkin Advisor,"This spell costs {1} less to cast if you control a Kithkin.
+When this creature enters, draw a card.",,false,false,false
+Moon-Vigil Adherents,G,,4.0,uncommon,{2}{G}{G},Creature — Elf Druid,"Trample
+This creature gets +1/+1 for each creature you control and each creature card in your graveyard.",,false,false,false
+Morcant's Eyes,G,,2.0,uncommon,{1}{G},Kindred Enchantment — Elf,"At the beginning of your upkeep, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+{4}{G}{G}, Sacrifice this enchantment: Create X 2/2 black and green Elf creature tokens, where X is the number of Elf cards in your graveyard. Activate only as a sorcery.",,false,false,false
+Mutable Explorer,G,,3.0,rare,{2}{G},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+When this creature enters, create a tapped Mutavault token. (It's a land with ""{T}: Add {C}"" and ""{1}: This token becomes a 2/2 creature with all creature types until end of turn. It's still a land."")",,false,false,false
+Pitiless Fists,G,,4.0,uncommon,{3}{G},Enchantment — Aura,"Enchant creature you control
+When this Aura enters, enchanted creature fights up to one target creature an opponent controls. (Each deals damage equal to its power to the other.)
+Enchanted creature gets +2/+2.",,false,false,false
+Prismabasher,G,,6.0,uncommon,{4}{G}{G},Creature — Elemental,"Trample
+Vivid — When this creature enters, up to X target creatures you control get +X/+X until end of turn, where X is the number of colors among permanents you control.",,false,false,false
+Prismatic Undercurrents,G,,4.0,uncommon,{3}{G},Enchantment,"Vivid — When this enchantment enters, search your library for up to X basic land cards, where X is the number of colors among permanents you control. Reveal those cards, put them into your hand, then shuffle.
+You may play an additional land on each of your turns.",,false,false,false
+Pummeler for Hire,G,,5.0,uncommon,{4}{G},Creature — Giant Mercenary,"Vigilance, reach
+Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+When this creature enters, you gain X life, where X is the greatest power among Giants you control.",,false,false,false
+Safewright Cavalry,G,,4.0,common,{3}{G},Creature — Elf Warrior,"This creature can't be blocked by more than one creature.
+{5}: Target Elf you control gets +2/+2 until end of turn.",,false,false,false
+Sapling Nursery,G,,8.0,rare,{6}{G}{G},Enchantment,"Affinity for Forests (This spell costs {1} less to cast for each Forest you control.)
+Landfall — Whenever a land you control enters, create a 3/4 green Treefolk creature token with reach.
+{1}{G}, Exile this enchantment: Treefolk and Forests you control gain indestructible until end of turn.",,false,false,false
+Selfless Safewright,G,,5.0,rare,{3}{G}{G},Creature — Elf Warrior,"Flash
+Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+When this creature enters, choose a creature type. Other permanents you control of that type gain hexproof and indestructible until end of turn.",,false,false,false
+Shimmerwilds Growth,G,,2.0,uncommon,{1}{G},Enchantment — Aura,"Enchant land
+As this Aura enters, choose a color.
+Enchanted land is the chosen color.
+Whenever enchanted land is tapped for mana, its controller adds an additional one mana of the chosen color.",,false,false,false
+Spry and Mighty,G,,5.0,rare,{4}{G},Sorcery,"Choose two creatures you control. You draw X cards and the chosen creatures get +X/+X and gain trample until end of turn, where X is the difference between the chosen creatures' powers.",,false,false,false
+Surly Farrier,G,,2.0,common,{1}{G},Creature — Kithkin Citizen,{T}: Target creature you control gets +1/+1 and gains vigilance until end of turn. Activate only as a sorcery.,,false,false,false
+Tend the Sprigs,G,,3.0,common,{2}{G},Sorcery,"Search your library for a basic land card, put it onto the battlefield tapped, then shuffle. Then if you control seven or more lands and/or Treefolk, create a 3/4 green Treefolk creature token with reach. (It can block creatures with flying.)",,false,false,false
+Thoughtweft Charge,G,,2.0,uncommon,{1}{G},Instant,"Target creature gets +3/+3 until end of turn. If a creature entered the battlefield under your control this turn, draw a card.",,false,false,false
+"Trystan, Callous Cultivator // Trystan, Penitent Culler",BG,,3.0,rare,,Legendary Creature — Elf Druid // Legendary Creature — Elf Warlock,,,false,false,false
+Unforgiving Aim,G,,3.0,common,{2}{G},Instant,"Choose one —
+• Destroy target creature with flying.
+• Destroy target enchantment.
+• Create a 2/2 black and green Elf creature token.",,false,false,false
+Vinebred Brawler,G,,3.0,uncommon,{2}{G},Creature — Elf Berserker,"This creature must be blocked if able.
+Whenever this creature attacks, another target Elf you control gets +2/+1 until end of turn.",,false,false,false
+Virulent Emissary,G,,1.0,uncommon,{G},Creature — Elf Assassin,"Deathtouch
+Whenever another creature you control enters, you gain 1 life.",,false,false,false
+Wildvine Pummeler,G,,7.0,common,{6}{G},Creature — Giant Berserker,"Vivid — This spell costs {1} less to cast for each color among permanents you control.
+Reach, trample",,false,false,false
+"Abigale, Eloquent First-Year",BW,,2.0,rare,{W/B}{W/B},Legendary Creature — Bird Bard,"Flying, first strike, lifelink
+When Abigale enters, up to one other target creature loses all abilities. Put a flying counter, a first strike counter, and a lifelink counter on that creature.",,false,false,false
+Ashling's Command,RU,,5.0,rare,{3}{U}{R},Kindred Instant — Elemental,"Choose two —
+• Create a token that's a copy of target Elemental you control.
+• Target player draws two cards.
+• Ashling's Command deals 2 damage to each creature target player controls.
+• Target player creates two Treasure tokens.",,false,false,false
+Boggart Cursecrafter,BR,,2.0,uncommon,{B}{R},Creature — Goblin Warlock,"Deathtouch
+Whenever another Goblin you control dies, this creature deals 1 damage to each opponent.",,false,false,false
+Bre of Clan Stoutarm,RW,,4.0,rare,{2}{R}{W},Legendary Creature — Giant Warrior,"{1}{W}, {T}: Another target creature you control gains flying and lifelink until end of turn.
+At the beginning of your end step, if you gained life this turn, exile cards from the top of your library until you exile a nonland card. You may cast that card without paying its mana cost if the spell's mana value is less than or equal to the amount of life you gained this turn. Otherwise, put it into your hand.",,false,false,false
+Brigid's Command,GW,,3.0,rare,{1}{G}{W},Kindred Sorcery — Kithkin,"Choose two —
+• Create a token that's a copy of target Kithkin you control.
+• Target player creates a 1/1 green and white Kithkin creature token.
+• Target creature you control gets +3/+3 until end of turn.
+• Target creature you control fights target creature an opponent controls.",,false,false,false
+Catharsis,RW,,6.0,mythic,{4}{R/W}{R/W},Creature — Elemental Incarnation,"When this creature enters, if {W}{W} was spent to cast it, create two 1/1 green and white Kithkin creature tokens.
+When this creature enters, if {R}{R} was spent to cast it, creatures you control get +1/+1 and gain haste until end of turn.
+Evoke {R/W}{R/W} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)",,false,false,false
+Chaos Spewer,BR,,3.0,common,{2}{B/R},Creature — Goblin Warlock,"When this creature enters, you may pay {2}. If you don't, blight 2. (To blight 2, put two -1/-1 counters on a creature you control.)",,false,false,false
+Chitinous Graspling,GU,,4.0,common,{3}{G/U},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+Reach",,false,false,false
+Deceit,BU,,6.0,mythic,{4}{U/B}{U/B},Creature — Elemental Incarnation,"When this creature enters, if {U}{U} was spent to cast it, return up to one other target nonland permanent to its owner's hand.
+When this creature enters, if {B}{B} was spent to cast it, target opponent reveals their hand. You choose a nonland card from it. That player discards that card.
+Evoke {U/B}{U/B}",,false,false,false
+Deepchannel Duelist,UW,,2.0,uncommon,{W}{U},Creature — Merfolk Soldier,"At the beginning of your end step, untap target Merfolk you control.
+Other Merfolk you control get +1/+1.",,false,false,false
+Deepway Navigator,UW,,2.0,rare,{W}{U},Creature — Merfolk Wizard,"Flash
+When this creature enters, untap each other Merfolk you control.
+As long as you attacked with three or more Merfolk this turn, Merfolk you control get +1/+0.",,false,false,false
+"Doran, Besieged by Time",BGW,,4.0,rare,{1}{W}{B}{G},Legendary Creature — Treefolk Druid,"Each creature spell you cast with toughness greater than its power costs {1} less to cast.
+Whenever a creature you control attacks or blocks, it gets +X/+X until end of turn, where X is the difference between its power and toughness.",,false,false,false
+Dream Harvest,BU,,7.0,rare,{5}{U/B}{U/B},Sorcery,"Each opponent exiles cards from the top of their library until they have exiled cards with total mana value 5 or greater this way. Until end of turn, you may cast cards exiled this way without paying their mana costs.",,false,false,false
+Eclipsed Boggart,BR,,3.0,uncommon,{B/R}{B/R}{B/R},Creature — Goblin Scout,"When this creature enters, look at the top four cards of your library. You may reveal a Goblin, Swamp, or Mountain card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",,false,false,false
+Eclipsed Elf,BG,,3.0,uncommon,{B/G}{B/G}{B/G},Creature — Elf Scout,"When this creature enters, look at the top four cards of your library. You may reveal an Elf, Swamp, or Forest card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",,false,false,false
+Eclipsed Flamekin,RU,,3.0,uncommon,{1}{U/R}{U/R},Creature — Elemental Scout,"When this creature enters, look at the top four cards of your library. You may reveal an Elemental, Island, or Mountain card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",,false,false,false
+Eclipsed Kithkin,GW,,2.0,uncommon,{G/W}{G/W},Creature — Kithkin Scout,"When this creature enters, look at the top four cards of your library. You may reveal a Kithkin, Forest, or Plains card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",,false,false,false
+Eclipsed Merrow,UW,,3.0,uncommon,{W/U}{W/U}{W/U},Creature — Merfolk Scout,"When this creature enters, look at the top four cards of your library. You may reveal a Merfolk, Plains, or Island card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",,false,false,false
+Emptiness,BW,,6.0,mythic,{4}{W/B}{W/B},Creature — Elemental Incarnation,"When this creature enters, if {W}{W} was spent to cast it, return target creature card with mana value 3 or less from your graveyard to the battlefield.
+When this creature enters, if {B}{B} was spent to cast it, put three -1/-1 counters on up to one target creature.
+Evoke {W/B}{W/B}",,false,false,false
+Feisty Spikeling,RW,,2.0,common,{1}{R/W},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+During your turn, this creature has first strike.",,false,false,false
+Figure of Fable,GW,,1.0,rare,{G/W},Creature — Kithkin,"{G/W}: This creature becomes a Kithkin Scout with base power and toughness 2/3.
+{1}{G/W}{G/W}: If this creature is a Scout, it becomes a Kithkin Soldier with base power and toughness 4/5.
+{3}{G/W}{G/W}{G/W}: If this creature is a Soldier, it becomes a Kithkin Avatar with base power and toughness 7/8 and protection from each of your opponents.",,false,false,false
+Flaring Cinder,RU,,3.0,common,{1}{U/R}{U/R},Creature — Elemental Sorcerer,"When this creature enters and whenever you cast a spell with mana value 4 or greater, you may discard a card. If you do, draw a card.",,false,false,false
+Gangly Stompling,GR,,3.0,common,{2}{R/G},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+Trample",,false,false,false
+Glister Bairn,GU,,5.0,uncommon,{2}{G/U}{G/U}{G/U},Creature — Ouphe,"Vivid — At the beginning of combat on your turn, another target creature you control gets +X/+X until end of turn, where X is the number of colors among permanents you control.",,false,false,false
+Grub's Command,BR,,5.0,rare,{3}{B}{R},Kindred Sorcery — Goblin,"Choose two —
+• Create a token that's a copy of target Goblin you control.
+• Creatures target player controls get +1/+1 and gain haste until end of turn.
+• Destroy target artifact or creature.
+• Target player mills five cards, then puts each Goblin card milled this way into their hand.",,false,false,false
+High Perfect Morcant,BG,,4.0,rare,{2}{B}{G},Legendary Creature — Elf Noble,"Whenever High Perfect Morcant or another Elf you control enters, each opponent blights 1. (They each put a -1/-1 counter on a creature they control.)
+Tap three untapped Elves you control: Proliferate. Activate only as a sorcery. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",,false,false,false
+Hovel Hurler,RW,,5.0,uncommon,{3}{R/W}{R/W},Creature — Giant Warrior,"This creature enters with two -1/-1 counters on it.
+{R/W}{R/W}, Remove a counter from this creature: Another target creature you control gets +1/+0 and gains flying until end of turn. Activate only as a sorcery.",,false,false,false
+"Kirol, Attentive First-Year",RW,,3.0,rare,{1}{R/W}{R/W},Legendary Creature — Vampire Cleric,Tap two untapped creatures you control: Copy target triggered ability you control. You may choose new targets for the copy. Activate only once each turn.,,false,false,false
+"Lluwen, Imperfect Naturalist",BG,,2.0,rare,{B/G}{B/G},Legendary Creature — Elf Druid,"When Lluwen enters, mill four cards, then you may put a creature or land card from among the milled cards on top of your library.
+{2}{B/G}{B/G}{B/G}, {T}, Discard a land card: Create a 1/1 black and green Worm creature token for each land card in your graveyard.",,false,false,false
+"Maralen, Fae Ascendant",BGU,,5.0,rare,{2}{B}{G}{U},Legendary Creature — Elf Faerie Noble,"Flying
+Whenever Maralen or another Elf or Faerie you control enters, exile the top two cards of target opponent's library.
+Once each turn, you may cast a spell with mana value less than or equal to the number of Elves and Faeries you control from among cards exiled with Maralen this turn without paying its mana cost.",,false,false,false
+Merrow Skyswimmer,UW,,5.0,common,{3}{W/U}{W/U},Creature — Merfolk Soldier,"Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)
+Flying, vigilance
+When this creature enters, create a 1/1 white and blue Merfolk creature token.",,false,false,false
+Mischievous Sneakling,BU,,2.0,common,{1}{U/B},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+Flash",,false,false,false
+Morcant's Loyalist,BG,,3.0,uncommon,{1}{B}{G},Creature — Elf Warrior,"Other Elves you control get +1/+1.
+When this creature dies, return another target Elf card from your graveyard to your hand.",,false,false,false
+Noggle Robber,GR,,3.0,uncommon,{1}{R/G}{R/G},Creature — Noggle Rogue,"When this creature enters or dies, create a Treasure token. (It's an artifact with ""{T}, Sacrifice this token: Add one mana of any color."")",,false,false,false
+Prideful Feastling,BW,,3.0,common,{2}{W/B},Creature — Shapeshifter,"Changeling (This card is every creature type.)
+Lifelink",,false,false,false
+Raiding Schemes,GR,,5.0,rare,{3}{R}{G},Enchantment,"Each noncreature spell you cast has conspire. (As you cast a noncreature spell, you may tap two untapped creatures you control that share a color with it. When you do, copy it and you may choose new targets for the copy. A copy of a permanent spell becomes a token.)",,false,false,false
+Reaping Willow,BW,,4.0,uncommon,{1}{W/B}{W/B}{W/B},Creature — Treefolk Cleric,"Lifelink
+This creature enters with two -1/-1 counters on it.
+{1}{W/B}, Remove two counters from this creature: Return target creature card with mana value 3 or less from your graveyard to the battlefield. Activate only as a sorcery.",,false,false,false
+"Sanar, Innovative First-Year",RU,,4.0,rare,{2}{U/R}{U/R},Legendary Creature — Goblin Sorcerer,"Vivid — At the beginning of your first main phase, reveal cards from the top of your library until you reveal X nonland cards, where X is the number of colors among permanents you control. For each of those colors, you may exile a card of that color from among the revealed cards. Then shuffle. You may cast the exiled cards this turn.",,false,false,false
+Shadow Urchin,BR,,3.0,rare,{2}{B/R},Creature — Ouphe,"Whenever this creature attacks, blight 1. (Put a -1/-1 counter on a creature you control.)
+Whenever a creature you control with one or more counters on it dies, exile that many cards from the top of your library. Until your next end step, you may play those cards.",,false,false,false
+Stoic Grove-Guide,BG,,5.0,common,{4}{B/G},Creature — Elf Druid,"{1}{B/G}, Exile this card from your graveyard: Create a 2/2 black and green Elf creature token. Activate only as a sorcery.",,false,false,false
+Sygg's Command,UW,,3.0,rare,{1}{W}{U},Kindred Sorcery — Merfolk,"Choose two —
+• Create a token that's a copy of target Merfolk you control.
+• Creatures target player controls gain lifelink until end of turn.
+• Target player draws a card.
+• Tap target creature. Put a stun counter on it.",,false,false,false
+"Tam, Mindful First-Year",GU,,2.0,rare,{1}{G/U},Legendary Creature — Gorgon Wizard,"Each other creature you control has hexproof from each of its colors.
+{T}: Target creature you control becomes all colors until end of turn.",,false,false,false
+Thoughtweft Lieutenant,GW,,2.0,uncommon,{G}{W},Creature — Kithkin Soldier,"Whenever this creature or another Kithkin you control enters, target creature you control gets +1/+1 and gains trample until end of turn.",,false,false,false
+Trystan's Command,BG,,6.0,rare,{4}{B}{G},Kindred Sorcery — Elf,"Choose two —
+• Create a token that's a copy of target Elf you control.
+• Return one or two target permanent cards from your graveyard to your hand.
+• Destroy target creature or enchantment.
+• Creatures target player controls get +3/+3 until end of turn. Untap them.",,false,false,false
+Twinflame Travelers,RU,,4.0,uncommon,{2}{U}{R},Creature — Elemental Sorcerer,"Flying
+If a triggered ability of another Elemental you control triggers, it triggers an additional time.",,false,false,false
+Vibrance,GR,,5.0,mythic,{3}{R/G}{R/G},Creature — Elemental Incarnation,"When this creature enters, if {R}{R} was spent to cast it, this creature deals 3 damage to any target.
+When this creature enters, if {G}{G} was spent to cast it, search your library for a land card, reveal it, put it into your hand, then shuffle. You gain 2 life.
+Evoke {R/G}{R/G}",,false,false,false
+Voracious Tome-Skimmer,BU,,3.0,uncommon,{U/B}{U/B}{U/B},Creature — Faerie Rogue,"Flying
+Whenever you cast a spell during an opponent's turn, you may pay 1 life. If you do, draw a card.",,false,false,false
+Wary Farmer,GW,,3.0,common,{1}{G/W}{G/W},Creature — Kithkin Citizen,"At the beginning of your end step, if another creature entered the battlefield under your control this turn, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",,false,false,false
+Wistfulness,GU,,5.0,mythic,{3}{G/U}{G/U},Creature — Elemental Incarnation,"When this creature enters, if {G}{G} was spent to cast it, exile target artifact or enchantment an opponent controls.
+When this creature enters, if {U}{U} was spent to cast it, draw two cards, then discard a card.
+Evoke {G/U}{G/U} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)",,false,false,false
+Chronicle of Victory,,,6.0,mythic,{6},Legendary Artifact,"As Chronicle of Victory enters, choose a creature type.
+Creatures you control of the chosen type get +2/+2 and have first strike and trample.
+Whenever you cast a spell of the chosen type, draw a card.",,false,false,false
+Dawn-Blessed Pennant,,,1.0,uncommon,{1},Artifact,"As this artifact enters, choose Elemental, Elf, Faerie, Giant, Goblin, Kithkin, Merfolk, or Treefolk.
+Whenever a permanent you control of the chosen type enters, you gain 1 life.
+{2}, {T}, Sacrifice this artifact: Return target card of the chosen type from your graveyard to your hand.",,false,false,false
+Firdoch Core,,,3.0,common,{3},Kindred Artifact — Shapeshifter,"Changeling (This card is every creature type.)
+{T}: Add one mana of any color.
+{4}: This artifact becomes a 4/4 artifact creature until end of turn.",,false,false,false
+Foraging Wickermaw,,,2.0,common,{2},Artifact Creature — Scarecrow,"When this creature enters, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)
+{1}: Add one mana of any color. This creature becomes that color until end of turn. Activate only once each turn.",,false,false,false
+Gathering Stone,,,4.0,uncommon,{4},Artifact,"As this artifact enters, choose a creature type.
+Spells you cast of the chosen type cost {1} less to cast.
+When this artifact enters and at the beginning of your upkeep, look at the top card of your library. If it's a card of the chosen type, you may reveal it and put it into your hand. If you don't put the card into your hand, you may put it into your graveyard.",,false,false,false
+Mirrormind Crown,,,4.0,rare,{4},Artifact — Equipment,"As long as this Equipment is attached to a creature, the first time you would create one or more tokens each turn, you may instead create that many tokens that are copies of equipped creature.
+Equip {2}",,false,false,false
+Puca's Eye,,,2.0,uncommon,{2},Artifact,"When this artifact enters, draw a card, then choose a color. This artifact becomes the chosen color.
+{3}, {T}: Draw a card. Activate only if there are five colors among permanents you control.",,false,false,false
+Springleaf Drum,,,1.0,uncommon,{1},Artifact,"{T}, Tap an untapped creature you control: Add one mana of any color.",,false,false,false
+Stalactite Dagger,,,2.0,common,{2},Artifact — Equipment,"When this Equipment enters, create a 1/1 colorless Shapeshifter creature token with changeling. (It's every creature type.)
+Equipped creature gets +1/+1 and is all creature types.
+Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)",,false,false,false
+Blood Crypt,BR,,0.0,rare,,Land — Swamp Mountain,"({T}: Add {B} or {R}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",,false,false,false
+Eclipsed Realms,,,0.0,uncommon,,Land,"As this land enters, choose Elemental, Elf, Faerie, Giant, Goblin, Kithkin, Merfolk, or Treefolk.
+{T}: Add {C}.
+{T}: Add one mana of any color. Spend this mana only to cast a spell of the chosen type or activate an ability of a source of the chosen type.",,false,false,false
+Evolving Wilds,,,0.0,common,,Land,"{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",,false,false,false
+Hallowed Fountain,UW,,0.0,rare,,Land — Plains Island,"({T}: Add {W} or {U}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",,false,false,false
+Overgrown Tomb,BG,,0.0,rare,,Land — Swamp Forest,"({T}: Add {B} or {G}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",,false,false,false
+Steam Vents,RU,,0.0,rare,,Land — Island Mountain,"({T}: Add {U} or {R}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",,false,false,false
+Temple Garden,GW,,0.0,rare,,Land — Forest Plains,"({T}: Add {G} or {W}.)
+As this land enters, you may pay 2 life. If you don't, it enters tapped.",,false,false,false
+Plains,W,,0.0,common,,Basic Land — Plains,({T}: Add {W}.),,false,false,false
+Island,U,,0.0,common,,Basic Land — Island,({T}: Add {U}.),,false,false,false
+Swamp,B,,0.0,common,,Basic Land — Swamp,({T}: Add {B}.),,false,false,false
+Mountain,R,,0.0,common,,Basic Land — Mountain,({T}: Add {R}.),,false,false,false
+Forest,G,,0.0,common,,Basic Land — Forest,({T}: Add {G}.),,false,false,false
+Idyllic Tutor,W,,3.0,mythic,{2}{W},Sorcery,"Search your library for an enchantment card, reveal it, put it into your hand, then shuffle.",,false,false,false
+Kinsbaile Cavalier,W,,4.0,mythic,{3}{W},Creature — Kithkin Knight,Knight creatures you control have double strike.,,false,false,false
+Mistbind Clique,U,,4.0,mythic,{3}{U},Creature — Faerie Wizard,"Flash
+Flying
+Champion a Faerie (When this enters, sacrifice it unless you exile another Faerie you control. When this leaves the battlefield, that card returns to the battlefield.)
+When a Faerie is championed with this creature, tap all lands target player controls.",,false,false,false
+Wanderwine Prophets,U,,6.0,mythic,{4}{U}{U},Creature — Merfolk Wizard,"Champion a Merfolk (When this enters, sacrifice it unless you exile another Merfolk you control. When this leaves the battlefield, that card returns to the battlefield.)
+Whenever this creature deals combat damage to a player, you may sacrifice a Merfolk. If you do, take an extra turn after this one.",,false,false,false
+Bitterblossom,B,,2.0,mythic,{1}{B},Kindred Enchantment — Faerie,"At the beginning of your upkeep, you lose 1 life and create a 1/1 black Faerie Rogue creature token with flying.",,false,false,false
+Faerie Macabre,B,,3.0,mythic,{1}{B}{B},Creature — Faerie Rogue,"Flying
+Discard this card: Exile up to two target cards from graveyards.",,false,false,false
+Goblin Chieftain,R,,3.0,mythic,{1}{R}{R},Creature — Goblin,"Haste (This creature can attack and {T} as soon as it comes under your control.)
+Other Goblin creatures you control get +1/+1 and have haste.",,false,false,false
+Goblin Sharpshooter,R,,3.0,mythic,{2}{R},Creature — Goblin,"This creature doesn't untap during your untap step.
+Whenever a creature dies, untap this creature.
+{T}: This creature deals 1 damage to any target.",,false,false,false
+Heat Shimmer,R,,3.0,mythic,{2}{R},Sorcery,"Create a token that's a copy of target creature, except it has haste and ""At the beginning of the end step, exile this token.""",,false,false,false
+Devoted Druid,G,,2.0,mythic,{1}{G},Creature — Elf Druid,"{T}: Add {G}.
+Put a -1/-1 counter on this creature: Untap this creature.",,false,false,false
+Helix Pinnacle,G,,1.0,mythic,{G},Enchantment,"Shroud (This enchantment can't be the target of spells or abilities.)
+{X}: Put X tower counters on this enchantment.
+At the beginning of your upkeep, if there are 100 or more tower counters on this enchantment, you win the game.",,false,false,false
+Leaf-Crowned Visionary,G,,2.0,mythic,{G}{G},Creature — Elf Druid,"Other Elves you control get +1/+1.
+Whenever you cast an Elf spell, you may pay {G}. If you do, draw a card.",,false,false,false
+Regal Force,G,,7.0,mythic,{4}{G}{G}{G},Creature — Elemental,"When this creature enters, draw a card for each green creature you control.",,false,false,false
+Manamorphose,GR,,2.0,mythic,{1}{R/G},Instant,"Add two mana in any combination of colors.
+Draw a card.",,false,false,false
+Risen Reef,GU,,3.0,mythic,{1}{G}{U},Creature — Elemental,"Whenever this creature or another Elemental you control enters, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped. If you don't put the card onto the battlefield, put it into your hand.",,false,false,false
+Slippery Bogle,GU,,1.0,mythic,{G/U},Creature — Beast,Hexproof (This creature can't be the target of spells or abilities your opponents control.),,false,false,false
+Dolmen Gate,,,2.0,mythic,{2},Artifact,Prevent all combat damage that would be dealt to attacking creatures you control.,,false,false,false
+Door of Destinies,,,4.0,mythic,{4},Artifact,"As this artifact enters, choose a creature type.
+Whenever you cast a spell of the chosen type, put a charge counter on this artifact.
+Creatures you control of the chosen type get +1/+1 for each charge counter on this artifact.",,false,false,false
+Painter's Servant,,,2.0,mythic,{2},Artifact Creature — Scarecrow,"As this creature enters, choose a color.
+All cards that aren't on the battlefield, spells, and permanents are the chosen color in addition to their other colors.",,false,false,false
+Thousand-Year Elixir,,,3.0,mythic,{3},Artifact,"You may activate abilities of creatures you control as though those creatures had haste.
+{1}, {T}: Untap target creature.",,false,false,false

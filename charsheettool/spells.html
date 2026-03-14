@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/tooltip.css">
   <link rel="stylesheet" href="assets/css/sheet-base.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
    <link rel="stylesheet" href="assets/css/spells.css">
 </head>
 
@@ -34,7 +35,8 @@
   <input id="char-input" type="text" placeholder="or type a JSON file name (e.g., direcris.json)" style="flex:1;" />
   <button id="char-load">Load</button>
   <button id="save-char" style="margin-left:auto">Save Character</button>
-  <span id="status" style="font-size:12px; color:#666;"></span>
+  <button id="level-up" style="margin-left:8px">Level Up</button>
+  <span id="status" style="margin-left:auto; font-size:12px; color:#666;"></span>
 </div>
 
 
@@ -169,9 +171,11 @@
 <script src="./assets/js/common/dom.js"></script>
 <script src="./assets/js/common/tooltip.js"></script>
 <script src="./assets/js/common/storage.js"></script>
+<script src="./assets/js/common/feat-runtime.js"></script>
 <script src="./assets/js/common/name-curves.js"></script>
 <script src="./assets/js/common/toolbar.js"></script>
 <script src="./assets/js/common/ribbon-button.js"></script>
+<script src="./assets/js/common/level-up.js"></script>
 
 <!-- NEW: the tiny compatibility bridge -->
 <script src="./assets/js/common/rules.js"></script>

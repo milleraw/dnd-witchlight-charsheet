@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Character Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/builder.css">
+    <link rel="stylesheet" href="assets/css/tooltip.css">
+</head>
+<body>
+    <div class="builder-container">
+        <h1>Character Builder</h1>
+        <p>Fill out the form below to generate a character JSON file.</p>
+
+        <div class="builder-grid">
+            <div class="form-column">
+                <section class="card">
+                    <h2>Core Identity</h2>
+                    <div class="form-group">
+                        <label for="builder-name">Character Name</label>
+                        <div class="inline-input-group">
+                            <input type="text" id="builder-name" placeholder="e.g., Direcris">
+                            <button id="random-name-btn" class="random-btn" title="Generate Random Name">🎲</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="builder-player">Player Name</label>
+                        <input type="text" id="builder-player" placeholder="e.g., Alan">
+                    </div>
+                    <div class="form-group">
+                        <label for="builder-gender">Gender</label>
+                        <select id="builder-gender">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Class & Race</h2>
+                    <div class="form-group">
+                        <label for="builder-class">Class</label>
+                        <select id="builder-class"></select>
+                    </div>
+                    <div id="subclass-container" class="form-group hidden">
+                        <label for="builder-subclass">Subclass</label>
+                        <select id="builder-subclass"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="builder-level">Level</label>
+                        <input type="number" id="builder-level" value="1" min="1" max="20">
+                    </div>
+                     <div class="form-group">
+                        <label for="builder-race">Race</label>
+                        <select id="builder-race"></select>
+                    </div>
+                    <div id="subrace-container" class="form-group hidden">
+                        <label id="builder-subrace-label" for="builder-subrace">Subrace</label>
+                        <select id="builder-subrace"></select>
+                    </div>
+                    <div id="tiefling-variants-container" class="form-group hidden">
+                        <label>Tiefling Variants</label>
+                        <div id="tiefling-variants-choices" class="variant-choice-list"></div>
+                    </div>
+                    <div id="ethnicity-container" class="form-group hidden">
+                        <label for="builder-ethnicity">Ethnicity</label>
+                        <select id="builder-ethnicity"></select>
+                    </div>
+                    <div id="variant-human-container" class="form-group hidden">
+                        <label class="inline-checkbox">
+                            <input type="checkbox" id="builder-variant-human-enable">
+                            Use Variant Human (Feat Rule)
+                        </label>
+                        <div id="variant-human-fields" class="hidden" style="margin-top: 8px;">
+                            <div class="form-group">
+                                <label for="builder-variant-human-asi-1">Variant Human ASI (+1)</label>
+                                <select id="builder-variant-human-asi-1"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="builder-variant-human-asi-2">Variant Human ASI (+1)</label>
+                                <select id="builder-variant-human-asi-2"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="builder-variant-human-skill">Variant Human Skill</label>
+                                <select id="builder-variant-human-skill"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="builder-variant-human-feat">Variant Human Feat</label>
+                                <select id="builder-variant-human-feat"></select>
+                            </div>
+                            <div id="variant-human-feat-choices" class="form-group"></div>
+                            <div id="variant-human-feat-summary" class="info-item" style="font-size: 0.9em; color: #4a5568;"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Details</h2>
+                    <div class="form-group">
+                        <label for="builder-background">Background</label>
+                        <select id="builder-background"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Alignment</label>
+                        <div class="alignment-group">
+                            <select id="builder-alignment-lcn">
+                                <option value="Lawful">Lawful</option>
+                                <option value="Neutral" selected>Neutral</option>
+                                <option value="Chaotic">Chaotic</option>
+                            </select>
+                            <select id="builder-alignment-gne">
+                                <option value="Good">Good</option>
+                                <option value="Neutral" selected>Neutral</option>
+                                <option value="Evil">Evil</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="builder-deity">Deity</label>
+                        <input type="text" id="builder-deity" list="builder-deity-list" placeholder="Type or pick a suggested deity">
+                        <datalist id="builder-deity-list"></datalist>
+                        <div id="deity-suggestions" class="deity-suggestions"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="builder-eyes-hair">Eyes & Hair</label>
+                        <input type="text" id="builder-eyes-hair" placeholder="e.g., Blue Eyes, Brown Hair">
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Personality & Characteristics</h2>
+                    <div class="form-group characteristic-group">
+                        <label for="builder-trait">Personality Trait</label>
+                        <div class="inline-input-group">
+                            <select id="builder-trait"></select>
+                            <button id="random-trait-btn" class="random-btn" title="Random Trait">🎲</button>
+                        </div>
+                    </div>
+                    <div class="form-group characteristic-group">
+                        <label for="builder-ideal">Ideal</label>
+                        <div class="inline-input-group">
+                            <select id="builder-ideal"></select>
+                            <button id="random-ideal-btn" class="random-btn" title="Random Ideal">🎲</button>
+                        </div>
+                    </div>
+                    <div class="form-group characteristic-group">
+                        <label for="builder-bond">Bond</label>
+                        <div class="inline-input-group">
+                            <select id="builder-bond"></select>
+                            <button id="random-bond-btn" class="random-btn" title="Random Bond">🎲</button>
+                        </div>
+                    </div>
+                    <div class="form-group characteristic-group">
+                        <label for="builder-flaw">Flaw</label>
+                        <div class="inline-input-group">
+                            <select id="builder-flaw"></select>
+                            <button id="random-flaw-btn" class="random-btn" title="Random Flaw">🎲</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Background Choices</h2>
+                    <div id="background-choices-container"></div>
+                </section>
+
+                <section class="card">
+                    <h2>Class Choices</h2>
+                    <div id="class-choices-container"></div>
+                </section>
+
+                <section class="card">
+                    <h2>Race & Class Features</h2>
+                    <div id="racial-info-display">
+                        <div class="info-item"><strong>Speed:</strong> <span id="info-speed">--</span> ft.</div>
+                        <div class="info-item"><strong>Size:</strong> <span id="info-size">--</span></div>
+                        <div class="info-item"><strong>Languages:</strong> <span id="info-languages">--</span></div>
+                        <div class="info-item"><strong>Typical Lifespan:</strong> <span id="info-age">--</span></div>
+                        <div id="racial-traits-list" class="info-item"></div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Hit Points & Hit Dice</h2>
+                    <div class="info-item"><strong>Max HP:</strong> <span id="info-max-hp">--</span></div>
+                    <div class="info-item"><strong>Hit Dice:</strong> <span id="info-hit-die">--</span></div>
+                </section>
+
+                <section class="card">
+                    <h2>Saving Throws</h2>
+                    <div id="saving-throws-list">
+                        <!-- Populated by JS -->
+                    </div>
+                </section>
+
+                <section id="ability-choice-card" class="card hidden">
+                    <h2>Ability Score Choices</h2>
+                    <div id="ability-choices-container"></div>
+                </section>
+
+                <section class="card">
+                    <h2>Languages</h2>
+                    <div id="language-info-display">
+                        <div class="info-item"><strong>Known:</strong> <span id="known-languages">--</span></div>
+                        <div id="language-choices-container"></div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Skills</h2>
+                    <div id="granted-skills-container"></div>
+                    <div id="skill-choices-container"></div>
+                </section>
+
+                <section class="card">
+                    <h2>Tools</h2>
+                    <div id="granted-tools-container"></div>
+                    <div id="tool-choices-container"></div>
+                </section>
+
+                <section class="card">
+                    <h2>Armor & Weapon Proficiencies</h2>
+                    <div id="armor-profs-container"></div>
+                    <div id="weapon-profs-container"></div>
+                </section>
+
+                <section class="card">
+                    <h2>Spells</h2>
+                    <div id="cantrips-container"></div>
+                    <div id="spells-container"></div>
+                </section>
+
+                <section class="card">
+                    <h2>Starting Equipment</h2>
+                    <div id="granted-equipment-container"></div>
+                    <div id="equipment-choices-container"></div>
+                </section>
+
+                <section class="card">
+                    <h2>Ability Scores</h2>
+                    <div class="abilities-input-grid">
+                        <div class="form-group">
+                            <label>STR</label>
+                            <div class="ability-input-group">
+                                <input type="number" id="builder-str" value="10" min="1" max="30">
+                                <span class="ability-bonus-display" id="bonus-str"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>DEX</label>
+                            <div class="ability-input-group">
+                                <input type="number" id="builder-dex" value="10" min="1" max="30">
+                                <span class="ability-bonus-display" id="bonus-dex"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>CON</label>
+                            <div class="ability-input-group">
+                                <input type="number" id="builder-con" value="10" min="1" max="30">
+                                <span class="ability-bonus-display" id="bonus-con"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>INT</label>
+                            <div class="ability-input-group">
+                                <input type="number" id="builder-int" value="10" min="1" max="30">
+                                <span class="ability-bonus-display" id="bonus-int"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>WIS</label>
+                            <div class="ability-input-group">
+                                <input type="number" id="builder-wis" value="10" min="1" max="30">
+                                <span class="ability-bonus-display" id="bonus-wis"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>CHA</label>
+                            <div class="ability-input-group">
+                                <input type="number" id="builder-cha" value="10" min="1" max="30">
+                                <span class="ability-bonus-display" id="bonus-cha"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="output-column">
+                <section class="card">
+                    <h2>Generated JSON</h2>
+                    <div id="builder-errors" class="builder-errors hidden"></div>
+                    <div class="output-actions">
+                        <button id="generate-json">Generate JSON</button>
+                        <button id="download-json" disabled>Download File</button>
+                        <button id="save-json" disabled>Save to Data Folder</button>
+                    </div>
+                    <pre id="json-output">Click "Generate JSON" to see the output.</pre>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shared Scripts -->
+    <script src="assets/js/common/storage.js?v=2"></script>
+    <script src="assets/js/common/tooltip.js?v=2"></script>
+    <script src="assets/js/common/rules.js?v=2"></script>
+    <!-- Builder-specific script -->
+    <script src="assets/js/builder.js?v=11"></script>
+</body>
+</html>

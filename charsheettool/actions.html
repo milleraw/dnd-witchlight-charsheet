@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="assets/css/tooltip.css">
   <link rel="stylesheet" href="assets/css/sheet-base.css">
   <link rel="stylesheet" href="assets/css/character.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
+  <link rel="stylesheet" href="assets/css/wildshape.css">
   <!-- Page-specific CSS (can be created later) -->
   <link rel="stylesheet" href="assets/css/actions.css">
 </head>
@@ -29,7 +31,8 @@
     <input id="char-input" type="text" placeholder="or type a JSON file name (e.g., direcris.json)" style="flex:1;" />
     <button id="char-load">Load</button>
     <button id="save-char" style="margin-left:auto">Save Character</button>
-    <span id="status" style="font-size:12px; color:#666;"></span>
+    <button id="level-up" style="margin-left:8px">Level Up</button>
+    <span id="status" style="margin-left:auto; font-size:12px; color:#666;"></span>
   </div>
 
   <div id="wrapper">
@@ -91,21 +94,44 @@
     </div>
   </div>
 
+  <div id="modal-backdrop" class="hidden"></div>
+  <div id="wild-shape-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3 class="modal-title">Choose Wild Shape Form</h3>
+      <div class="modal-body">
+        <div class="ws-picker">
+          <div class="ws-list-container">
+            <input type="text" id="ws-search" placeholder="Search beasts...">
+            <div id="ws-beast-list"></div>
+          </div>
+          <div id="ws-stat-block-container"></div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="ws-modal-transform-btn" class="primary-btn">Transform</button>
+        <button id="ws-modal-close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Shared JS -->
   <script src="./assets/js/common/textfit.js"></script>
   <script src="./assets/js/common/dom.js"></script>
   <script src="./assets/js/common/tooltip.js"></script>
   <script src="./assets/js/common/storage.js"></script>
+  <script src="./assets/js/common/wild-shape-ui.js"></script>
+  <script src="./assets/js/common/feat-runtime.js"></script>
   <script src="./assets/js/common/name-curves.js"></script>
   <script src="./assets/js/common/toolbar.js"></script>
   <script src="./assets/js/common/ribbon-button.js"></script>
+  <script src="./assets/js/common/level-up.js?v=5"></script>
 
   <!-- Page-specific logic -->
   <!-- Dependencies for spell data -->
   <script src="./assets/js/common/rules.js"></script>
   <script src="./assets/js/glue-spells.js"></script>
 
-  <script src="./assets/js/actions-logic.js"></script>
-  <script src="./assets/js/actions-page.js"></script>
+  <script src="./assets/js/actions-logic.js?v=2"></script>
+  <script src="./assets/js/actions-page.js?v=4"></script>
 </body>
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feywild NPC Generator</title>
+    <link rel="stylesheet" href="assets/css/generator_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feywild NPC Generator</h1>
+        <div class="controls">
+            <label for="power-level">Power Level:</label>
+            <select id="power-level">
+                <option value="minor_fey">Minor Fey</option>
+                <option value="major_fey">Major Fey</option>
+                <option value="archfey">Archfey</option>
+            </select>
+            <button id="generate-btn">Generate NPC</button>
+        </div>
+        <div class="output-container">
+            <pre id="output">Loading data...</pre>
+        </div>
+    </div>
+
+    <!-- Generator Logic -->
+    <script src="assets/js/fey_generator.js"></script>
+    <script>
+        (async function() {
+            'use strict';
+
+            // DOM Elements
+            const powerLevelSelect = document.getElementById('power-level');
+            const generateBtn = document.getElementById('generate-btn');
+            const outputEl = document.getElementById('output');
+
+            // --- Data Loading ---
+            async function loadAllData() {
+                try {
+                    const [
+                        descriptions, names, pixieOutfits, wants, offers, compatibility,
+                        pranks, scenes, environments, envNpcWeights, appearances
+                    ] = await Promise.all([
+                        fetch('data/fey_descriptions.json').then(res => res.json()),
+                        fetch('data/fey_name_pools.json').then(res => res.json()),
+                        fetch('data/pixie_outfits.json').then(res => res.json()),
+                        fetch('data/fey_wants.json').then(res => res.json()),
+                        fetch('data/fey_offers.json').then(res => res.json()),
+                        fetch('data/fey_compatibility.json').then(res => res.json()),
+                        fetch('data/fey_pranks.json').then(res => res.json()),
+                        fetch('data/feywild_scenes.json').then(res => res.json()),
+                        fetch('data/fey_thither_environments.json').then(res => res.json()),
+                        fetch('data/fey_thither_environment_npc_weights.json').then(res => res.json()),
+                        fetch('data/fey_appearances.json').then(res => res.json())
+                    ]);
+
+                    return { descriptions, names, pixieOutfits, wants, offers, compatibility, pranks, scenes, environments, envNpcWeights, appearances };
+                } catch (error) {
+                    console.error("Failed to load generator data:", error);
+                    outputEl.textContent = "Error: Could not load necessary data files. Please check the console.";
+                    return null;
+                }
+            }
+
+            const data = await loadAllData();
+            if (!data) {
+                generateBtn.disabled = true;
+                return;
+            }
+
+            // --- Event Listener ---
+            generateBtn.addEventListener('click', async () => {
+                const powerLevel = powerLevelSelect.value;
+                outputEl.textContent = "Generating...";
+                const description = await window.generateRandomFeyNpc(powerLevel, data);
+                // Replace markdown-style bolding with <strong> tags for HTML display
+                outputEl.innerHTML = description.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            });
+
+            // Initial generation on load
+            generateBtn.click();
+
+        })();
+    </script>
+</body>
+</html>
