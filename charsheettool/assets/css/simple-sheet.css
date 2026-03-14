@@ -1,0 +1,378 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 1rem;
+}
+
+#toolbar {
+    max-width: 1000px;
+    margin: 0 auto 1rem auto;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.sheet-container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.sheet-header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#char-name {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    margin: 0;
+    color: #1a202c;
+}
+
+.meta-info {
+    margin-top: 0.5rem;
+    color: #718096;
+    font-size: 1rem;
+}
+
+.meta-info span:not(:last-child)::after {
+    content: '•';
+    margin: 0 0.5rem;
+}
+
+.sheet-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fdfdfd;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.card h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.25rem;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* Combat Stats */
+.combat-stats .stat-trio {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.stat-box .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.stat-box .stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #718096;
+}
+
+.hp-box {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.hp-current {
+    text-align: center;
+}
+
+.hp-current label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #718096;
+}
+
+.hp-current input {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 5em;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.hp-max {
+    text-align: center;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #eee;
+}
+
+/* Abilities */
+.abilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.ability-box {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.ability-abbr {
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.ability-score {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.ability-mod {
+    font-size: 1rem;
+    color: #718096;
+}
+
+/* Lists (Skills, Attacks, etc) */
+.attack-row, .feature-item {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+.attack-row:last-child, .feature-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.attack-row {
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+}
+.attack-name {
+    font-weight: bold;
+}
+
+#skills-list, #features-list { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 0.9rem;
+}
+.skill-item:last-child { border-bottom: none; }
+.skill-mod { font-weight: bold; width: 2.5em; text-align: right; margin-right: 0.5em; }
+.skill-name { flex: 1; }
+.skill-ability { font-size: 0.8em; color: #718096; }
+.skill-item.proficient .skill-mod, .skill-item.proficient .skill-name { color: #2c5282; }
+.skill-item.expertise .skill-mod, .skill-item.expertise .skill-name { font-weight: 900; color: #553c9a; }
+
+.equipment-item-list {
+    list-style: disc;
+    padding-left: 1.5em;
+    margin: 0;
+    font-size: 0.9rem;
+}
+.equipment-item-list li { margin-bottom: 0.25em; }
+
+/* Actions */
+.actions-section .action-category {
+    margin-bottom: 1rem;
+}
+.actions-section h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #eee;
+}
+.action-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.action-item {
+    padding: 2px 0;
+    font-size: 0.9rem;
+}
+.action-name {
+    font-weight: bold;
+}
+
+/* Spells */
+.spells-section #spell-stats {
+    margin-bottom: 1rem;
+}
+
+.spell-level-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.spell-level-header h4 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.spell-level-group {
+    margin-bottom: 1rem;
+}
+
+.spell-slots {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.spell-slots-label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #555;
+}
+.spell-slot-pips {
+    display: flex;
+    gap: 4px;
+}
+.spell-slot-pip {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.spell-slot-pip:checked {
+    background-color: #2c5282;
+    border-color: #2c5282;
+}
+
+.spell-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.spell-item {
+    font-size: 0.9rem;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+}
+.spell-item.preparable {
+    cursor: pointer;
+}
+.spell-item.preparable:hover {
+    background-color: #f0f8ff; /* A light blue hover effect */
+}
+.spell-item.prepared {
+    font-weight: bold;
+    color: #2c5282; /* A nice dark blue for prepared spells */
+}
+.spell-item.prepared::before {
+    content: '★' !important;
+    display: inline-block !important; /* Override tooltip.css */
+    color: #f6ad55; /* A gold star */
+    margin-right: 0.5em;
+    font-size: 0.8em;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+.spell-slot-reset {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #aaa;
+    padding: 0 4px;
+    line-height: 1;
+}
+.spell-slot-reset:hover {
+    color: #333;
+}
+.spells-section #spell-stats {
+    justify-content: space-between;
+}
+
+.spell-item .spell-name-text {
+    flex-grow: 1;
+}
+
+.spell-item .spell-badge {
+    font-size: 0.75em;
+    font-weight: normal;
+    padding: 2px 5px;
+    border-radius: 4px;
+    background-color: #e2e8f0;
+    color: #4a5568;
+    margin-left: 8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Saving Throws */
+#saving-throws-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.save-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 0.9rem;
+}
+.save-item:last-child { border-bottom: none; }
+.save-mod {
+    font-weight: bold;
+    width: 2.5em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+.save-name { flex: 1; }
+.save-item.proficient .save-mod, .save-item.proficient .save-name {
+    color: #2c5282;
+}

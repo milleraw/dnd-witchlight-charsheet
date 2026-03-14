@@ -9,60 +9,38 @@
 
 // Master render — calls all the individual renderers split across files
 async function renderCharacter(character, state = {}) {
-    if (!character) return;
+  if (!character) return;
 
-    // Store original character for state modifications and create a display character
-    window.__char_original = character;
+  // keep around for HP buttons etc.
+  window.__char = character;
 
-    if (!state?.isWildShaped && typeof window.syncHpFromEffectiveCon === 'function') {
-      const hpSync = window.syncHpFromEffectiveCon(character);
-      if (hpSync?.changed && typeof persistCharacterOverrideFromSheet === 'function') {
-        persistCharacterOverrideFromSheet();
-      }
-    }
-    let displayCharacter = character;
+  // Top-of-sheet
+  renderSimpleFields(character);        // uses renderCurvedName/renderRace/renderBackground
+  renderAbilityFields(character, state);
 
-    if (state.isWildShaped && state.wildShapeForm) {
-        displayCharacter = await createWildShapeProxy(character, state);
-    }
+  // Combat cluster
+  await renderArmorAndAC(character);
+  renderInitiative(character);
+  await renderPassivePerception(character);
+  renderSpellSaveDC(character);
+  await renderSpeed(character);
 
-    // keep around for HP buttons etc.
-    window.__char = displayCharacter;
+  // Attacks/Gear/Currency
+  await renderAttacks(character, state);
+  await renderGear(character);
+  renderCurrency(character);
 
-    // Get condition effects once to pass to other renderers
-    const conditionEffects = getActiveConditionEffects(displayCharacter);
+  // Languages/Proficiencies/Features
+  renderLanguages(character);
+  await renderProficiencies(character);
+  await renderFeaturesBox(character);
+  await renderConditionsTracker(character);
 
-    // Top-of-sheet
-    renderSimpleFields(displayCharacter);
-    renderAbilityFields(displayCharacter, state, conditionEffects);
+  // Proficiency pips overlay
+  renderProficiencyPips(character);
 
-    // Combat cluster
-    await renderArmorAndAC(displayCharacter);
-    renderInitiative(displayCharacter);
-    await renderPassivePerception(displayCharacter, conditionEffects);
-    renderSpellSaveDC(displayCharacter);
-    await renderSpeed(displayCharacter);
-
-    // Attacks/Gear/Currency
-    await renderAttacks(displayCharacter, state, conditionEffects);
-    await renderGear(displayCharacter);
-    renderCurrency(displayCharacter);
-
-    // Languages/Proficiencies/Features
-    renderLanguages(displayCharacter);
-    await renderProficiencies(displayCharacter);
-    await renderFeaturesBox(displayCharacter); // Pass display character
-    await renderConditionsTracker(displayCharacter);
-    renderDeathSaves(displayCharacter);
-    renderIncapacitatedOverlay(conditionEffects);
-
-    // Proficiency pips overlay
-    renderProficiencyPips(displayCharacter);
-    renderDiamondSoulControl(displayCharacter);
-    renderInspirationControl(displayCharacter);
-
-    // HP cluster last (depends on window.__char)
-    renderHPCluster(displayCharacter);
+  // HP cluster last (depends on window.__char)
+  renderHPCluster(character);
 }
 
 // Load a character file (from /data) then render
@@ -115,7 +93,6 @@ function bootSheet() {
 
   // HP + other UI controls from sheet-character-clean2.js
   if (typeof wireHPButtons === 'function') wireHPButtons();
-  if (typeof wireInspirationToggle === 'function') wireInspirationToggle();
 
   // initial pick: ?char=... or first option in #char-select
   const params = new URLSearchParams(location.search);
@@ -128,7 +105,7 @@ function bootSheet() {
     renderFromCharacterFile(sel.value);
   } else {
     // hard fallback so something renders
-    renderFromCharacterFile('direcris-zzzxaaxthroth-new.json');
+    renderFromCharacterFile('direcris.json');
   }
 
   // Add navigation ribbon button once sheet has rendered

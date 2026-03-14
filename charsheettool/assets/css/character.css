@@ -53,7 +53,8 @@
 #field-eyeshair,
 #field-gender,
 #field-playername,
-#field-alignment {
+#field-alignment,
+#field-deity {
   font-family: var(--font-display), "Saber", "Saber-Regular", Georgia, serif;
   
 }
@@ -63,6 +64,7 @@
 #field-gender   { position:absolute; top:134px; left:131px; width:120px; height:23px; display:flex; align-items:center; justify-content:flex-end; text-align:right; background:transparent; padding:0; border-radius:0; }
 #field-playername { position:absolute; top:78px; left:541px; width:167px; height:23px; display:flex; align-items:center; justify-content:flex-start; text-align:left; background:transparent; padding:0; border-radius:0; }
 #field-alignment  { position:absolute; top:109px; left:541px; width:162px; height:20px; display:flex; align-items:center; justify-content:flex-start; text-align:left; background:transparent; padding:0; border-radius:0; }
+#field-deity      { position:absolute; top:131px; left:541px; width:162px; height:20px; display:flex; align-items:center; justify-content:flex-start; text-align:left; background:transparent; padding:0; border-radius:0; }
 
 /* Attributes positions */
 #field-cha-base { position:absolute; top:282px; left:489px; width:36px; height:31px; }
@@ -114,13 +116,96 @@
 /* Let clicks pass through HP fields (keep local due to IDs) */
 #field-currenthp, #field-temphp, #field-maxhp, #field-hitdie { pointer-events: none; }
 
+#inspiration-control {
+  position: absolute;
+  top: 463px;
+  left: 697px;
+  width: 62px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  z-index: calc(var(--z-field) + 5);
+  box-sizing: border-box;
+  padding: 0;
+  cursor: pointer;
+}
+
+#inspiration-icon {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1;
+  transform: translateY(-15px);
+  filter: grayscale(1);
+  opacity: 0.35;
+  user-select: none;
+}
+
+#inspiration-control.active #inspiration-icon {
+  filter: none;
+  opacity: 1;
+}
+
 /* Features list */
 #field-features {
   position:absolute; top:579px; left:58px; width:186px; height:308px;
   background:transparent; padding:4px; border-radius:0; display:block;
-  overflow: visible; z-index: calc(var(--z-field) + 1000);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 4px 8px 4px 4px; /* right padding for scrollbar */
+  box-sizing: border-box;
+  z-index: calc(var(--z-field) + 1000);
 }
 #field-features .feature-item { margin: 0 0 2px 0; } /* (could stay here or live in tooltip.css) */
+/* Make Wild Shape clickable */
+#field-features .feature-item.wild-shape-feature:not(.active) {
+  color: #0056b3; /* A standard link-blue color */
+  cursor: pointer;
+  text-decoration: none;
+}
+#field-features .feature-item.wild-shape-feature:not(.active):hover {
+  text-decoration: underline;
+}
+
+/* Wild Shape feature highlight */
+#field-features .feature-item.wild-shape-feature.active {
+  background-color: #fdf1dc; /* Same as stat block bg */
+  color: #8B0000; /* Accent color */
+  font-weight: bold;
+  border: 1px solid #8B0000;
+}
+
+/* Symbiotic Entity feature states */
+#field-features .feature-item.symbiotic-feature:not(.active):not(.disabled) {
+  color: #2f4a2f;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#field-features .feature-item.symbiotic-feature:not(.active):not(.disabled):hover {
+  text-decoration: underline;
+}
+
+#field-features .feature-item.symbiotic-feature.active {
+  background-color: #eef9ee;
+  color: #2d6b2d;
+  font-weight: bold;
+  border: 1px solid #2d6b2d;
+}
+
+#field-features .feature-item.symbiotic-feature.disabled {
+  opacity: 0.55;
+  cursor: not-allowed !important;
+}
+
+/* Minimalist scrollbar for the features box */
+#field-features::-webkit-scrollbar { width: 4px; }
+#field-features::-webkit-scrollbar-track { background: transparent; }
+#field-features::-webkit-scrollbar-thumb { background: #888; border-radius: 2px; }
+#field-features::-webkit-scrollbar-thumb:hover { background: #555; }
 
 /* Proficiency bonus */
 #field-proficiency { position:absolute; top:252px; left:701px; width:36px; height:37px;
@@ -131,8 +216,36 @@
   background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; font-family: var(--font-body)}
 
 #field-attacks { position:absolute; top:693px; left:285px; width:160px; height:224px;
-  background:transparent; padding:0; border-radius:0; overflow: hidden; }
+  background:transparent; padding:0; border-radius:0; overflow: hidden; display:flex; flex-direction:column; gap:6px; }
+#field-attacks .offhand-select { display:flex; flex-direction:column; gap:3px; font-size:10px; }
+#field-attacks .offhand-select label { font-variant:small-caps; font-weight:600; letter-spacing:0.4px; }
+#field-attacks .offhand-select select { width:100%; font-size:10px; padding:2px 4px; }
+#field-attacks .attack-power-toggle { display:flex; align-items:center; gap:6px; font-size:10px; margin-bottom:4px; }
+#field-attacks #attack-rows {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 6px;
+  box-sizing: border-box;
+}
+#field-attacks #attack-rows::-webkit-scrollbar { width: 4px; }
+#field-attacks #attack-rows::-webkit-scrollbar-track { background: transparent; }
+#field-attacks #attack-rows::-webkit-scrollbar-thumb { background: #888; border-radius: 2px; }
+#field-attacks #attack-rows::-webkit-scrollbar-thumb:hover { background: #555; }
 #field-attacks .attack-row { white-space:normal; overflow-wrap:anywhere; word-break:keep-all; line-height:1.05; margin-bottom:3px; cursor:help; }
+#field-attacks .attack-row.lightning-action {
+  background: linear-gradient(90deg, rgba(230, 246, 255, 0.95), rgba(255, 255, 255, 0.85));
+  border-left: 3px solid #2a86c8;
+  box-shadow: 0 0 8px rgba(75, 156, 214, 0.25);
+  border-radius: 3px;
+  padding-left: 3px;
+}
+#field-attacks .attack-row.lightning-action .line1,
+#field-attacks .attack-row.lightning-action .line2 {
+  color: #1f5f8f;
+  text-shadow: 0 0 6px rgba(98, 188, 255, 0.35);
+}
 #field-attacks .line1 { font-size:11px; font-variant:small-caps; font-weight:600; }
 #field-attacks .line2 { font-size:11px; opacity:.95; }
 /* Make rage indicators more specific to override base styles */
@@ -161,6 +274,208 @@
   font-style: italic;
   text-shadow: 0 0 3px rgba(0,0,0,0.4);
 }
+
+/* Fey Wanderer indicator kept separate from text so CHA mod rendering is never affected */
+#cha-fey-sparkle {
+  position: absolute;
+  left: 501px;
+  top: 305px;
+  width: 16px;
+  height: 16px;
+  pointer-events: auto;
+  z-index: 40;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+#cha-fey-sparkle .spark-main,
+#cha-fey-sparkle .spark-a,
+#cha-fey-sparkle .spark-b,
+#cha-fey-sparkle .spark-c,
+#cha-fey-sparkle .spark-d,
+#cha-fey-sparkle .spark-e,
+#cha-fey-sparkle .spark-f,
+#cha-fey-sparkle .spark-g,
+#cha-fey-sparkle .spark-h,
+#cha-fey-sparkle .spark-i,
+#cha-fey-sparkle .spark-j,
+#cha-fey-sparkle .spark-k,
+#cha-fey-sparkle .spark-l,
+#cha-fey-sparkle .spark-m,
+#cha-fey-sparkle .spark-n,
+#cha-fey-sparkle .spark-o {
+  position: absolute;
+  pointer-events: none;
+}
+
+#cha-fey-sparkle .spark-main {
+  left: 3px;
+  top: 0;
+  font-size: 13px;
+  color: #e1c56c;
+  text-shadow: 0 0 6px rgba(255, 235, 160, 0.85);
+  animation: feySparkDrift 1.7s ease-in-out infinite;
+}
+
+#cha-fey-sparkle .spark-a,
+#cha-fey-sparkle .spark-b,
+#cha-fey-sparkle .spark-c,
+#cha-fey-sparkle .spark-d,
+#cha-fey-sparkle .spark-e,
+#cha-fey-sparkle .spark-f,
+#cha-fey-sparkle .spark-g,
+#cha-fey-sparkle .spark-h,
+#cha-fey-sparkle .spark-i,
+#cha-fey-sparkle .spark-j,
+#cha-fey-sparkle .spark-k,
+#cha-fey-sparkle .spark-l,
+#cha-fey-sparkle .spark-m,
+#cha-fey-sparkle .spark-n,
+#cha-fey-sparkle .spark-o {
+  color: #e1c56c;
+  text-shadow: 0 0 5px rgba(255, 235, 160, 0.75);
+}
+
+#cha-fey-sparkle .spark-a {
+  left: -2px;
+  top: 7px;
+  font-size: 9px;
+  opacity: 0.95;
+  animation: feySparkDrift 1.9s ease-in-out infinite;
+  animation-delay: 0.25s;
+}
+
+#cha-fey-sparkle .spark-b {
+  left: 9px;
+  top: -5px;
+  font-size: 8px;
+  opacity: 0.88;
+  animation: feySparkDrift 1.5s ease-in-out infinite;
+  animation-delay: 0.45s;
+}
+
+#cha-fey-sparkle .spark-c {
+  left: -8px;
+  top: -3px;
+  font-size: 8px;
+  opacity: 0.86;
+  animation: feySparkDrift 1.8s ease-in-out infinite;
+  animation-delay: 0.15s;
+}
+
+#cha-fey-sparkle .spark-d {
+  left: 13px;
+  top: 8px;
+  font-size: 7px;
+  opacity: 0.84;
+  animation: feySparkDrift 1.6s ease-in-out infinite;
+  animation-delay: 0.62s;
+}
+
+#cha-fey-sparkle .spark-e {
+  left: 5px;
+  top: 11px;
+  font-size: 8px;
+  opacity: 0.85;
+  animation: feySparkDrift 2s ease-in-out infinite;
+  animation-delay: 0.35s;
+}
+
+#cha-fey-sparkle .spark-f {
+  left: -11px;
+  top: 12px;
+  font-size: 7px;
+  opacity: 0.84;
+  animation: feySparkDrift 1.55s ease-in-out infinite;
+  animation-delay: 0.52s;
+}
+
+#cha-fey-sparkle .spark-g {
+  left: 15px;
+  top: -8px;
+  font-size: 7px;
+  opacity: 0.84;
+  animation: feySparkDrift 1.75s ease-in-out infinite;
+  animation-delay: 0.28s;
+}
+
+#cha-fey-sparkle .spark-h {
+  left: -14px;
+  top: 2px;
+  font-size: 7px;
+  opacity: 0.85;
+  animation: feySparkDrift 1.7s ease-in-out infinite;
+  animation-delay: 0.41s;
+}
+
+#cha-fey-sparkle .spark-i {
+  left: 18px;
+  top: 2px;
+  font-size: 8px;
+  opacity: 0.86;
+  animation: feySparkDrift 1.45s ease-in-out infinite;
+  animation-delay: 0.19s;
+}
+
+#cha-fey-sparkle .spark-j {
+  left: -6px;
+  top: 15px;
+  font-size: 7px;
+  opacity: 0.83;
+  animation: feySparkDrift 1.9s ease-in-out infinite;
+  animation-delay: 0.57s;
+}
+
+#cha-fey-sparkle .spark-k {
+  left: 12px;
+  top: 14px;
+  font-size: 8px;
+  opacity: 0.86;
+  animation: feySparkDrift 1.6s ease-in-out infinite;
+  animation-delay: 0.31s;
+}
+
+#cha-fey-sparkle .spark-l {
+  left: -16px;
+  top: -7px;
+  font-size: 7px;
+  opacity: 0.82;
+  animation: feySparkDrift 1.8s ease-in-out infinite;
+  animation-delay: 0.48s;
+}
+
+#cha-fey-sparkle .spark-m {
+  left: 20px;
+  top: -10px;
+  font-size: 7px;
+  opacity: 0.82;
+  animation: feySparkDrift 1.72s ease-in-out infinite;
+  animation-delay: 0.22s;
+}
+
+#cha-fey-sparkle .spark-n {
+  left: -18px;
+  top: 16px;
+  font-size: 6px;
+  opacity: 0.8;
+  animation: feySparkDrift 2.05s ease-in-out infinite;
+  animation-delay: 0.67s;
+}
+
+#cha-fey-sparkle .spark-o {
+  left: 22px;
+  top: 16px;
+  font-size: 6px;
+  opacity: 0.8;
+  animation: feySparkDrift 1.95s ease-in-out infinite;
+  animation-delay: 0.53s;
+}
+
+@keyframes feySparkDrift {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.65; }
+  50% { transform: translateY(-2px) scale(1.08); opacity: 1; }
+}
 /* Spell Save DC */
 #field-spellsavedc { position:absolute; top:923px; left:372px; width:67px; height:48px;
   background:transparent; padding:0; border-radius:0; display:flex; align-items:center; justify-content:center; text-align:center; font-family: var(--font-body)}
@@ -182,12 +497,64 @@
   box-sizing: border-box;
   word-break: break-word; /* Ensure long item names wrap */
 }
+#gear-add-btn {
+  position: absolute;
+  top: 850px;
+  left: 716px;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  border: 1px solid #9a7b59;
+  background: #f5efe4;
+  color: #3b2415;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+#gear-add-btn:hover { background: #efe5d5; }
+
+.currency-add-btn {
+  position: absolute;
+  top: 880px;
+  left: 546px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: 1px solid #9a7b59;
+  background: #f5efe4;
+  color: #3b2415;
+  font-weight: 700;
+  line-height: 14px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 11px;
+}
+.currency-add-btn:hover { background: #efe5d5; }
 #field-gear .row { white-space: normal; overflow: visible; text-overflow: clip; word-break: break-word; }
 #field-gear .more { opacity: 0.75; font-style: italic; }
 #field-gear .coins { font-weight: 600; margin-bottom: 2px; }
 #field-gear .itm { cursor: help; }
 #field-gear .itm.infused-item {
   font-weight: bold;
+}
+#field-gear .attunement-row {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  opacity: 0.9;
+}
+#field-gear .attunement-row.over-limit {
+  color: #8b0000;
+}
+#field-gear .itm.attunable-item {
+  cursor: pointer;
+}
+#field-gear .itm.attunable-item.is-attuned {
+  font-weight: 700;
 }
 #field-gear .sep { opacity: .6; }
 
@@ -208,6 +575,51 @@
 #field-currency .lbl { font-variant: small-caps; cursor: help; }
 #field-currency .val { font-weight:600; margin-left:auto; text-align:right; }
 #field-currency .coin-row { display:flex; justify-content:space-between; align-items:baseline; margin:0; padding:0; }
+
+/* Equipment modal layout */
+#equipment-modal .equip-section { margin-bottom: 12px; }
+#equipment-modal label { display:block; font-size: 12px; margin: 6px 0 2px; }
+#equipment-modal input,
+#equipment-modal select,
+#equipment-modal textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px;
+  font-size: 12px;
+  border: 1px solid #c4b7a6;
+  border-radius: 4px;
+  background: #fffaf2;
+}
+#equipment-modal .equip-mode { display:flex; flex-wrap: wrap; gap:12px; margin-bottom: 6px; font-size: 12px; }
+#equipment-modal .equip-mode label { display:flex; gap:6px; align-items:center; margin:0; }
+#equipment-modal .equip-mini-btn {
+  margin-top: 6px;
+  width: auto;
+  padding: 4px 8px;
+  font-size: 11px;
+  border: 1px solid #c4b7a6;
+  border-radius: 4px;
+  background: #f5efe4;
+  color: #3b2415;
+  cursor: pointer;
+}
+#equipment-modal .equip-mini-btn:hover { background: #efe5d5; }
+#equipment-modal .equip-derived { font-size: 12px; margin: 6px 0; font-style: italic; color: #5d4836; }
+#equipment-modal .equip-subtitle { font-size: 12px; font-weight: 600; margin-bottom: 6px; }
+#equipment-modal .equip-currency-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap: 6px 10px; }
+#equipment-modal .modal-content {
+  min-height: 0;
+}
+#equipment-modal .modal-body {
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 6px;
+}
+#equipment-modal .modal-body::-webkit-scrollbar { width: 6px; }
+#equipment-modal .modal-body::-webkit-scrollbar-track { background: transparent; }
+#equipment-modal .modal-body::-webkit-scrollbar-thumb { background: #9a8d7c; border-radius: 3px; }
+#equipment-modal .modal-body::-webkit-scrollbar-thumb:hover { background: #7d7265; }
 
 /* Conditions Tracker */
 #field-conditions {
@@ -238,6 +650,39 @@
   text-align: center;
 }
 .condition-pill.active { background: var(--accent-color, #8B0000); color: white; border-color: rgba(0,0,0,0.5); font-weight: bold; }
+.condition-pill.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+#diamond-soul-reroll {
+  position: absolute;
+  /* Positioned directly under the CON save proficiency pip (x:578, y:726). */
+  top: 742px;
+  left: 569px;
+  width: 160px;
+  height: 18px;
+  border: 1px solid #9a7b59;
+  border-radius: 9px;
+  background: rgba(245, 239, 228, 0.95);
+  color: #2e1503;
+  font-family: var(--font-body);
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  padding: 0 6px;
+  cursor: pointer;
+  display: none;
+  z-index: calc(var(--z-field) + 5);
+}
+#diamond-soul-reroll:hover {
+  background: #efe5d5;
+}
+#diamond-soul-reroll.no-resource {
+  opacity: 0.55;
+  color: #7f6c59;
+}
 
 /* Minimalist scrollbar for the conditions box */
 #field-conditions::-webkit-scrollbar { width: 4px; }

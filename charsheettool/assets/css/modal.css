@@ -1,0 +1,284 @@
+/* assets/css/modal.css */
+.modal {
+    position: fixed;
+    z-index: 2000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 800px; /* Wider for stat blocks */
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1999;
+}
+
+.modal.hidden, #modal-backdrop.hidden {
+    display: none;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+}
+
+.modal-title {
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    font-family: var(--font-display, serif);
+    color: #922610;
+}
+
+.modal-body {
+    margin: 15px 0;
+    display: flex; /* This is crucial for constraining its children */
+    min-height: 0; /* This allows the flex-body to shrink, enabling its children to scroll */
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.modal-actions button {
+    width: auto;
+    padding: 10px 20px;
+    font-family: var(--font-body, serif);
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-actions button:hover {
+    background-color: #5a6268;
+}
+
+.modal-actions button.primary-btn {
+    background-color: #007bff;
+}
+
+.modal-actions button.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+.modal-actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Level-up modal layout */
+.lu-body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    overflow: auto;
+    padding-right: 6px;
+}
+
+.lu-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 8px 12px;
+    align-items: center;
+}
+
+.lu-header {
+    grid-template-columns: 1fr;
+}
+
+.lu-title {
+    font-family: var(--font-display, serif);
+    font-size: 18px;
+    color: #5a2a12;
+}
+
+.lu-meta {
+    font-size: 12px;
+    color: #555;
+}
+
+.lu-label {
+    font-weight: 600;
+}
+
+.lu-hint {
+    grid-column: 2 / -1;
+    font-size: 12px;
+    color: #555;
+}
+
+.lu-inline {
+    grid-column: 2 / -1;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.lu-section-title {
+    grid-column: 1 / -1;
+    font-weight: 600;
+}
+
+.lu-asi {
+    grid-template-columns: 1fr;
+}
+
+.lu-options {
+    grid-template-columns: 1fr;
+}
+
+.lu-choices {
+    grid-template-columns: 1fr;
+}
+
+.lu-choices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+}
+
+.lu-choice-block {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 10px;
+    background: #f7f5f1;
+    display: grid;
+    gap: 6px;
+}
+
+.lu-choice-block select {
+    width: 100%;
+}
+
+.lu-custom-input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #cfc9c1;
+    border-radius: 4px;
+}
+
+.lu-subchoice {
+    display: grid;
+    gap: 6px;
+}
+
+.lu-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.lu-options-group {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 10px;
+    background: #faf7f4;
+}
+
+.lu-options-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.lu-list {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 0;
+    font-size: 13px;
+}
+
+.lu-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.lu-check {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.lu-empty {
+    font-size: 12px;
+    color: #666;
+}
+
+.lu-radio-row {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.lu-asi-fields,
+.lu-feat-fields {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 8px 12px;
+    align-items: center;
+}
+
+.lu-asi-row {
+    display: contents;
+}
+
+.lu-file {
+    grid-template-columns: 1fr auto;
+}
+
+.lu-file .lu-hint {
+    grid-column: 1 / -1;
+}
+
+.lu-file-status {
+    font-size: 12px;
+    color: #555;
+    align-self: center;
+}
+
+.lu-error {
+    grid-column: 1 / -1;
+    color: #b00020;
+    font-weight: 600;
+}
+
+.lu-body input[type="text"],
+.lu-body input[type="number"],
+.lu-body select,
+.lu-body textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    font-family: var(--font-body, serif);
+}
+
+.lu-body textarea {
+    resize: vertical;
+}

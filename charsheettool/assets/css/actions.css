@@ -108,3 +108,43 @@
   font-size: 22px;
   text-align: center;
 }
+
+.action-toggle.divine-active {
+  outline: 2px solid #b79a3e;
+  background-color: #fffaed;
+}
+
+.action-toggle.divine-active .action-name {
+  color: #725a17;
+  font-family: 'IM Fell DW Pica SC', serif;
+  font-weight: 600;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.action-toggle.ki-action {
+  outline: 2px solid #4a638f;
+  background-color: #f2f6ff;
+}
+
+.action-toggle.ki-action.no-resource {
+  outline: 2px dashed #8a8a8a;
+  background-color: #f5f5f5;
+  opacity: 0.72;
+}
+
+.action-toggle.ki-action.no-resource .action-name {
+  color: #666;
+}
+
+.action-item.lightning-action {
+  background: linear-gradient(90deg, rgba(228, 245, 255, 0.9), rgba(255, 255, 255, 0.8));
+  border-left: 3px solid #2a86c8;
+  box-shadow: 0 0 10px rgba(75, 156, 214, 0.25);
+}
+
+.action-item.lightning-action .action-name {
+  color: #195b8a;
+  text-shadow: 0 0 6px rgba(98, 188, 255, 0.45);
+}

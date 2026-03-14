@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Character Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/builder.css">
+</head>
+<body>
+    <div class="builder-container">
+        <h1>Character Builder</h1>
+        <p>Fill out the form below to generate a character JSON file.</p>
+
+        <div class="builder-grid">
+            <div class="form-column">
+                <section class="card">
+                    <h2>Core Identity</h2>
+                    <div class="form-group">
+                        <label for="builder-name">Character Name</label>
+                        <div class="inline-input-group">
+                            <input type="text" id="builder-name" placeholder="e.g., Direcris">
+                            <button id="random-name-btn" title="Generate Random Name">🎲</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="builder-player">Player Name</label>
+                        <input type="text" id="builder-player" placeholder="e.g., Alan">
+                    </div>
+                    <div class="form-group">
+                        <label for="builder-gender">Gender</label>
+                        <select id="builder-gender">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Class & Race</h2>
+                    <div class="form-group">
+                        <label for="builder-class">Class</label>
+                        <select id="builder-class"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="builder-level">Level</label>
+                        <input type="number" id="builder-level" value="1" min="1" max="20">
+                    </div>
+                     <div class="form-group">
+                        <label for="builder-race">Race</label>
+                        <select id="builder-race"></select>
+                    </div>
+                    <div id="ethnicity-container" class="form-group hidden">
+                        <label for="builder-ethnicity">Ethnicity</label>
+                        <select id="builder-ethnicity"></select>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Details</h2>
+                    <div class="form-group">
+                        <label for="builder-background">Background</label>
+                        <select id="builder-background"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="builder-alignment">Alignment</label>
+                        <input type="text" id="builder-alignment" placeholder="e.g., Lawful Good">
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Ability Scores</h2>
+                    <div class="abilities-input-grid">
+                        <div class="form-group">
+                            <label for="builder-str">STR</label>
+                            <input type="number" id="builder-str" value="10" min="1" max="30">
+                        </div>
+                        <div class="form-group">
+                            <label for="builder-dex">DEX</label>
+                            <input type="number" id="builder-dex" value="10" min="1" max="30">
+                        </div>
+                        <div class="form-group">
+                            <label for="builder-con">CON</label>
+                            <input type="number" id="builder-con" value="10" min="1" max="30">
+                        </div>
+                        <div class="form-group">
+                            <label for="builder-int">INT</label>
+                            <input type="number" id="builder-int" value="10" min="1" max="30">
+                        </div>
+                        <div class="form-group">
+                            <label for="builder-wis">WIS</label>
+                            <input type="number" id="builder-wis" value="10" min="1" max="30">
+                        </div>
+                        <div class="form-group">
+                            <label for="builder-cha">CHA</label>
+                            <input type="number" id="builder-cha" value="10" min="1" max="30">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="output-column">
+                <section class="card">
+                    <h2>Generated JSON</h2>
+                    <div class="output-actions">
+                        <button id="generate-json">Generate JSON</button>
+                        <button id="download-json" disabled>Download File</button>
+                    </div>
+                    <pre id="json-output">Click "Generate JSON" to see the output.</pre>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shared Scripts -->
+    <script src="assets/js/common/storage.js"></script>
+    <!-- Builder-specific script -->
+    <script src="assets/js/builder.js"></script>
+</body>
+</html>

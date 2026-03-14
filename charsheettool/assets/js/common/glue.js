@@ -2,9 +2,32 @@
 
 // 1) Pick some equipped weapons if the character file doesn't list any
 window.getEquippedWeapons = window.getEquippedWeapons || function getEquippedWeapons(c = {}) {
+  const uniqueByName = (arr) => {
+    const out = [];
+    const seen = new Set();
+    for (const w of arr) {
+      const key = String(w || '').trim().toLowerCase();
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      out.push(String(w || '').trim());
+    }
+    return out;
+  };
+  const normalize = (arr) => (Array.isArray(arr) ? arr
+    .map(w => (typeof w === 'string' ? w : (w && typeof w === 'object' ? w.name : '')))
+    .map(w => String(w || '').trim())
+    .filter(Boolean) : []);
+  const fromGearWeapons = () => {
+    const gear = Array.isArray(c?.equipment?.gear) ? c.equipment.gear : [];
+    return gear
+      .filter(it => String(it?.equip_slot || '').trim().toLowerCase() === 'weapon' || !!it?.weapon)
+      .map(it => String(it?.name || '').trim())
+      .filter(Boolean);
+  };
   // explicit wins if present in the character JSON
-  if (Array.isArray(c.weapons) && c.weapons.length) return c.weapons.slice();
-  if (Array.isArray(c.equipment?.weapons) && c.equipment.weapons.length) return c.equipment.weapons.slice();
+  if (Array.isArray(c.weapons) && c.weapons.length) return uniqueByName(normalize(c.weapons).concat(fromGearWeapons()));
+  if (Array.isArray(c.equipment?.weapons) && c.equipment.weapons.length) return uniqueByName(normalize(c.equipment.weapons).concat(fromGearWeapons()));
+  if (fromGearWeapons().length) return uniqueByName(fromGearWeapons());
 
   const cls = String(c.class || '').toLowerCase();
   // super‑simple defaults so the sheet has *something* to render

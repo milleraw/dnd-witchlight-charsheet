@@ -175,11 +175,57 @@
   // Builds tooltip text for anything in the Gear/Weapons/Armor lists
 async function gearTooltipFor(item) {
   if (!item || typeof item !== 'object') return '';
+  const valueGp = Math.max(0, Number(item?.value_gp || 0) || 0);
+  const valueLine = valueGp > 0 ? `Value: ${valueGp} gp` : '';
 
   // --- If a description is provided inline, show it right under the name ---
   const descLine = (typeof item.desc === 'string' && item.desc.trim())
     ? item.desc.trim()
     : '';
+
+  // --- Try to resolve base equipment by ref (v1 catalog) ---
+  if (item.ref && typeof window.loadEquipmentLocal === 'function') {
+    const catalog = await window.loadEquipmentLocal().catch(() => null);
+    const list = Array.isArray(catalog?.equipment) ? catalog.equipment : [];
+    const ref = String(item.ref || '').toLowerCase();
+    const base = list.find(e => {
+      const id = String(e?.id || '').toLowerCase();
+      const key = String(e?.key || e?.index || '').toLowerCase();
+      const name = String(e?.name || '').toLowerCase();
+      return ref === id || ref === key || ref === name;
+    });
+    if (base) {
+      const lines = [item.name || base.name || 'Item'];
+      if (base.rules?.weapon || base.weapon) {
+        const w = base.rules?.weapon || base.weapon;
+        const props = (w.properties || []).map(p => String(p).toLowerCase().replace(/^prop:/, "")).filter(Boolean);
+        const dmg = w.damage ? `${w.damage.dice || w.damage.damage_dice} ${String(w.damage.type || w.damage?.damage_type?.name || '').toLowerCase()}` : '';
+        const range = w.range ? `range ${w.range.normal}/${w.range.long}` : '';
+        const parts = [dmg, range, props.length ? props.join(', ') : null].filter(Boolean);
+        if (parts.length) lines.push(parts.join(' · '));
+      } else if (base.rules?.armor || base.armor) {
+        const a = base.rules?.armor || base.armor;
+        const ac = a.ac || {};
+        const baseAc = Number(ac.base ?? a.ac ?? 0);
+        const bonus = Number(ac.bonus ?? 0);
+        const parts = [];
+        if (bonus) parts.push(`AC +${bonus}`);
+        else if (baseAc) parts.push(`AC ${baseAc}`);
+        if (ac.dexBonus || a.dex_bonus) parts.push(ac.dexMax != null ? `Dex (max ${ac.dexMax})` : 'Dex');
+        if (a.stealthDisadvantage || a.stealth_disadvantage) parts.push('Stealth disadvantage');
+        if (a.strMin || a.str_min) parts.push(`STR ${a.strMin || a.str_min} required`);
+        lines.push(parts.join(' · '));
+      }
+      if (Number(item.modifier)) lines.push(`Magic Bonus: +${Number(item.modifier)}`);
+      if (valueLine) lines.push(valueLine);
+      if (descLine) {
+        lines.push(descLine);
+      } else if (Array.isArray(base.desc) && base.desc.length) {
+        lines.push(base.desc.join('\n'));
+      }
+      return lines.filter(Boolean).join('\n');
+    }
+  }
 
   // --- If contents/items already exist, render as a pack right away ---
   if (Array.isArray(item.contents) || Array.isArray(item.items)) {
@@ -190,7 +236,7 @@ async function gearTooltipFor(item) {
       .filter(Boolean)
       .join('\n');
 
-    return [item.name, contents ? `Contents:\n${contents}` : null, descLine]
+    return [item.name, valueLine, contents ? `Contents:\n${contents}` : null, descLine]
       .filter(Boolean)
       .join('\n\n');
   }
@@ -234,6 +280,7 @@ async function gearTooltipFor(item) {
 
       return [
         item.name || packObj.name || 'Pack',
+        valueLine,
         contents ? `Contents:\n${contents}` : null,
         descLine
       ].filter(Boolean).join('\n\n');
@@ -246,7 +293,7 @@ async function gearTooltipFor(item) {
     if (item.damage) parts.push(`${item.damage}${item.damageType ? ' ' + item.damageType : ''}`);
     if (item.range)  parts.push(`range ${item.range}`);
     if (item.properties?.length) parts.push(item.properties.join(', '));
-    return [name, parts.join(' · '), descLine || item.notes || ''].filter(Boolean).join('\n');
+    return [name, valueLine, parts.join(' · '), descLine || item.notes || ''].filter(Boolean).join('\n');
   }
 
   // --- Armor-like ---
@@ -254,12 +301,12 @@ async function gearTooltipFor(item) {
     const parts = [`AC ${item.ac}`];
     if (item.stealthDisadvantage) parts.push('Stealth disadvantage');
     if (item.strReq) parts.push(`STR ${item.strReq} required`);
-    return [name, parts.join(' · '), descLine || item.notes || ''].filter(Boolean).join('\n');
+    return [name, valueLine, parts.join(' · '), descLine || item.notes || ''].filter(Boolean).join('\n');
   }
 
   // --- Default ---
   const base = item?.qty > 1 ? `${name} (x${item.qty})` : name;
-  return [base, descLine].filter(Boolean).join('\n\n');
+  return [base, valueLine, descLine].filter(Boolean).join('\n\n');
 }
 
 

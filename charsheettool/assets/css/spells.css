@@ -55,7 +55,8 @@
 .lvl .list {
   position: absolute;
   inset: 31px 8px 32px 8px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* --- Spell/Infusion Items --- */
@@ -97,6 +98,23 @@
   background: #fff8e6;
 }
 
+.Item.is-concentrating {
+  background: #f3f0ff;
+}
+
+.Item .badge.concentration-badge {
+  border-color: #8f86c1;
+  background: #f4f1ff;
+  cursor: pointer;
+}
+
+.Item .badge.concentration-badge.active {
+  border-color: #5f5299;
+  background: #e9e4ff;
+  color: #2f2763;
+  font-weight: 600;
+}
+
 .infusion-active .infusion-target {
   opacity: 0.7;
   font-style: italic;
@@ -118,6 +136,171 @@
   font-size: 10px;
   margin-left: 10px;
   padding: 1px 4px;
+  cursor: pointer;
+}
+
+.homunculus-row .hs-btn {
+  font-size: 10px;
+  padding: 1px 5px;
+  border: 1px solid #b79d77;
+  border-radius: 4px;
+  background: #fff8e6;
+  cursor: pointer;
+}
+
+.homunculus-row .hs-btn:hover {
+  background: #fff1cf;
+}
+
+.homunculus-row .hs-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: auto;
+}
+
+.homunculus-row {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  align-items: start;
+  column-gap: 4px;
+  row-gap: 3px;
+}
+
+.homunculus-row .name {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: normal;
+  white-space: normal;
+  line-height: 1.2;
+}
+
+.homunculus-row .hs-name {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+
+.homunculus-row .hs-icon {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.homunculus-row .hs-controls {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.hs-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10020;
+}
+
+.hs-details-modal {
+  width: min(620px, 92vw);
+  max-height: 84vh;
+  overflow: auto;
+  background: #f7f2df;
+  border: 2px solid #8b5f2d;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.35);
+  padding: 12px 14px;
+  font-family: var(--font-body);
+  color: #2e1503;
+}
+
+.hs-head {
+  font-size: 28px;
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.hs-subhead {
+  margin-top: 2px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.hs-rule {
+  border-top: 2px solid #8b5f2d;
+  margin: 8px 0;
+}
+
+.hs-lines {
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.hs-lines.hs-secondary {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.hs-details-modal .hs-lines.hs-secondary strong {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 1.1;
+  margin-right: 4px;
+  font-weight: 700;
+}
+
+.hs-section {
+  margin-top: 8px;
+  font-size: 22px;
+  font-variant: small-caps;
+  border-top: 2px solid #8b5f2d;
+  padding-top: 5px;
+  line-height: 1;
+}
+
+.hs-abilities {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 6px;
+  font-size: 12px;
+}
+
+.hs-abilities > div {
+  text-align: center;
+  border: 1px solid #b89a73;
+  background: #fffdf3;
+  padding: 4px 2px;
+}
+
+.hs-abilities strong {
+  display: block;
+  font-size: 11px;
+}
+
+.hs-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hs-close-btn {
+  border: 1px solid #8b5f2d;
+  background: #fff8e6;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 3px 9px;
   cursor: pointer;
 }
 

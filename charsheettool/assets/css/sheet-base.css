@@ -34,6 +34,16 @@ html, body {
 .pip { position:absolute; transform:translate(-50%,-50%); }
 .pip.circle  { width:7px; height:7px;  background:url('img/circle_filled.png') center/contain no-repeat; }
 .pip.diamond { width:7px; height:9px;  background:url('img/diamond_filled.png') center/contain no-repeat; }
+.pip.circle.canny-expertise {
+  /* Visual reminder: this skill has doubled proficiency from Canny. */
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%) scale(1.2);
+  background:
+    radial-gradient(circle at center, rgba(39, 120, 83, 0.95) 0 56%, rgba(226, 193, 112, 0.95) 57% 100%);
+  border-radius: 999px;
+  box-shadow: 0 0 2px rgba(18, 122, 84, 0.8);
+}
 
 /* Attribute helpers */
 .attr-base, .attr-mod {
