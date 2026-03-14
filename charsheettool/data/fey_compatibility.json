@@ -1,0 +1,38 @@
+{
+  "rules": [
+    { "want_tags": ["token","trinket","body","appearance"], "offer_tags": ["item","craft","utility","light"], "weight": 2, "notes": "Small tokens for small boons/items." },
+    { "want_tags": ["hospitality","service","social","protocol"], "offer_tags": ["guidance","navigation","information","ally","social"], "weight": 2, "notes": "Courtesy repaid with help or guidance." },
+    { "want_tags": ["nature"], "offer_tags": ["nature","beasts","protection","navigation","terrain"], "weight": 3, "notes": "Nature favors nature." },
+    { "want_tags": ["secret"], "offer_tags": ["secret","information","secrecy","access"], "weight": 3, "notes": "Secrets traded for secrets/access." },
+    { "want_tags": ["truth"], "offer_tags": ["information","social","curse"], "weight": 1, "notes": "Truth for clarity or leverage." },
+    { "want_tags": ["emotion"], "offer_tags": ["luck","buff","comfort","protection"], "weight": 2, "notes": "Emotional gifts → morale/comfort boons." },
+    { "want_tags": ["music","story","game"], "offer_tags": ["illusion","entertainment","communication","ally"], "weight": 1, "notes": "Performances return favor with fun or contacts." },
+    { "want_tags": ["weird"], "offer_tags": ["illusion","disguise","light","dream","language"], "weight": 1, "notes": "Oddities suit odd boons." },
+    { "want_tags": ["temporary"], "offer_tags": ["temporary","weather","light","movement","disguise"], "weight": 2, "notes": "Short asks pair with short boons." },
+    { "want_tags": ["favor","oath","promise","law"], "offer_tags": ["oath","charm","haven","status","ally"], "weight": 3, "notes": "Binding pledges → courtly protections." },
+    { "want_tags": ["name","power"], "offer_tags": ["name","power","information","artifact"], "weight": 3, "notes": "True names merit leverage or mighty gifts." },
+    { "want_tags": ["memory"], "offer_tags": ["information","dream","glamour","prophecy"], "weight": 2, "notes": "Memories ↔ insight/prophecy/dream aid." },
+    { "want_tags": ["sacrifice","heirloom"], "offer_tags": ["magic","artifact","planar","wish"], "weight": 3, "notes": "Big sacrifices should pay big." },
+    { "want_tags": ["messenger","politic"], "offer_tags": ["access","ally","status","secrecy"], "weight": 2, "notes": "Diplomatic tasks → doors open." },
+    { "want_tags": ["time"], "offer_tags": ["time","haven","travel","weather"], "weight": 2, "notes": "Time given ↔ time-scaled boons." },
+    { "want_tags": ["destiny","prophecy","lineage"], "offer_tags": ["prophecy","lineage","status","fate","artifact"], "weight": 3, "notes": "Weighty wants ↔ fate/lineage boons." },
+    { "want_tags": ["summons"], "offer_tags": ["summon","ally","haven"], "weight": 2, "notes": "Answer when called ↔ call for aid." },
+
+    { "want_tags": ["trinket"], "offer_tags": ["artifact","wish","planar"], "weight": -2, "notes": "Tiny trinket shouldn’t yield a mythic boon." },
+    { "want_tags": ["oath","name","sacrifice","lineage"], "offer_tags": ["light","entertainment","food"], "weight": -3, "notes": "Major concessions shouldn’t pay with trifles." },
+    { "want_tags": ["law","protocol"], "offer_tags": ["curse","mischief","distraction"], "weight": -1, "notes": "Formal asks clash with chaotic boons." }
+  ],
+
+  "hard_links": [
+    { "want_text_contains": "true name", "offer_tags_any": ["name","power","artifact","planar","prophecy"], "priority": 10 },
+    { "want_tags_any": ["oath","favor"], "offer_tags_any": ["oath","haven","status","ally"], "priority": 8 },
+    { "want_tags_any": ["heirloom","sacrifice"], "offer_tags_any": ["artifact","magic","planar","wish"], "priority": 8 },
+    { "want_tags_any": ["memory"], "offer_tags_any": ["prophecy","information","dream","glamour"], "priority": 6 },
+    { "want_tags_any": ["nature"], "offer_tags_any": ["nature","beasts","terrain","protection"], "priority": 6 }
+  ],
+
+  "avoid_links": [
+    { "want_tags_any": ["token","trinket"], "offer_tags_any": ["artifact","wish"], "reason": "Disproportionate reward" },
+    { "want_tags_any": ["name","oath","lineage"], "offer_tags_any": ["food","entertainment","light"], "reason": "Underpaying a grave pledge" }
+  ]
+}

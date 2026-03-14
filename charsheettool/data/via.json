@@ -1,0 +1,196 @@
+{
+  "name": "Via",
+  "player_name": "Deegan",
+  "class": "Bard",
+  "level": 2,
+  "race": "Tiefling",
+  "speed": 30,
+  "size": "Medium",
+  "background": "Entertainer",
+  "alignment": "Neutral Good",
+  "eyes_hair": "",
+  "armor": [
+    "Leather Armor"
+  ],
+  "abilities": {
+    "STR": 8,
+    "DEX": 14,
+    "CON": 11,
+    "INT": 12,
+    "WIS": 13,
+    "CHA": 18
+  },
+  "traits": [
+    {
+      "name": "Darkvision",
+      "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+    },
+    {
+      "name": "Hellish Resistance",
+      "desc": "You have resistance to fire damage."
+    },
+    {
+      "name": "Infernal Legacy",
+      "desc": "You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+    },
+    {
+      "name": "By Popular Demand",
+      "desc": "You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble’s court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you."
+    },
+    {
+      "name": "Entertainer Routines",
+      "desc": "Choose one to three routines (or roll) to define your expertise as an entertainer: Actor (1), Dancer (2), Fire-eater (3), Jester (4), Juggler (5), Instrumentalist (6), Poet (7), Singer (8), Storyteller (9), Tumbler (10)."
+    },
+    {
+      "name": "Bardic Inspiration (d6)",
+      "desc": "You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.\nYou can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. \nYour Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+    },
+    {
+      "name": "Jack of All Trades",
+      "desc": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus."
+    },
+    {
+      "name": "Song of Rest (d6)",
+      "desc": "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points."
+    }
+  ],
+  "proficiencies": {
+    "armor": [
+      "Light Armor"
+    ],
+    "weapons": [
+      "Simple Weapons"
+    ],
+    "tools": [
+      "Disguise Kit",
+      "Bagpipes"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "DEX",
+      "CHA"
+    ],
+    "skills": [
+      "Acrobatics",
+      "Performance"
+    ]
+  },
+  "languages": [
+    "Common",
+    "Infernal"
+  ],
+  "spells": [
+    "Thaumaturgy",
+    "Mage Hand",
+    "Message",
+    "Heroism",
+    "Cure Wounds",
+    "Sleep",
+    "Comprehend Languages"
+  ],
+  "spells_known": [
+    "Puppet"
+  ],
+  "equipment": {
+    "weapons": [
+      "Dagger",
+      "Rapier"
+    ],
+    "gear": [
+      {
+        "name": "Chest",
+        "qty": 1,
+        "ref": "equip:chest",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Case, map or scroll",
+        "qty": 2,
+        "ref": "equip:case-map-or-scroll",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Clothes, fine",
+        "qty": 1,
+        "ref": "equip:clothes-fine",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Ink (bottle)",
+        "qty": 1
+      },
+      {
+        "name": "Ink pen",
+        "qty": 1,
+        "ref": "equip:ink-pen",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Lamp",
+        "qty": 1,
+        "ref": "equip:lamp",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Oil (flask)",
+        "qty": 2,
+        "ref": "equip:oil-flask",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Paper (sheet)",
+        "qty": 5
+      },
+      {
+        "name": "Perfume (vial)",
+        "qty": 1,
+        "ref": "equip:perfume-vial",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Sealing wax",
+        "qty": 1,
+        "ref": "equip:sealing-wax",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Soap",
+        "qty": 1,
+        "ref": "equip:soap",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Lute",
+        "qty": 1
+      },
+      {
+        "name": "A musical instrument (one of your choice)",
+        "qty": 1
+      },
+      {
+        "name": "The favor of an admirer (love letter, lock of hair, or trinket)",
+        "qty": 1
+      },
+      {
+        "name": "A costume",
+        "qty": 1
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 15,
+    "sp": 0,
+    "cp": 0
+  },
+  "hit_die": "d8",
+  "maxHP": 15,
+  "characteristics": {
+    "trait": "I know a story relevant to almost every situation.",
+    "ideal": "The stories, legends, and songs of the past must never be forgotten, for they teach us who we are. (Lawful)",
+    "bond": "I will do anything to prove myself superior to my hated rival.",
+    "flaw": "A scandal prevents me from ever going home again. That kind of trouble seems to follow me around."
+  },
+  "currentHP": 15
+}

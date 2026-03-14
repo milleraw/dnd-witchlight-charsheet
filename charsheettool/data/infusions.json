@@ -26,7 +26,7 @@
   {
     "name": "Replicate Magic Item (Bag of Holding)",
     "level": 2,
-    "item_type": "Bag",
+    "item_type": "Bag or Pack",
     "replicates": "Bag of Holding",
     "desc": "This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action."
   },
@@ -106,14 +106,14 @@
   {
     "name": "Replicate Magic Item (Boots of Elvenkind)",
     "level": 6,
-    "item_type": "Boots (requires attunement)",
+    "item_type": "Boots",
     "replicates": "Boots of Elvenkind",
     "desc": "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently."
   },
   {
     "name": "Replicate Magic Item (Pipes of Haunting)",
     "level": 6,
-    "item_type": "Pipes (requires attunement)",
+    "item_type": "Pipes",
     "replicates": "Pipes of Haunting",
     "desc": "You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that can hear you must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute."
   },
@@ -130,6 +130,41 @@
     "item_type": "Cloak (requires attunement)",
     "replicates": "Cloak of Elvenkind",
     "desc": "While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you."
+  },
+  {
+    "name": "Replicate Magic Item (Cloak of the Manta Ray)",
+    "level": 6,
+    "item_type": "Cloak",
+    "replicates": "Cloak of the Manta Ray",
+    "desc": "While wearing this cloak with its hood up, you can breathe underwater and gain a swimming speed of 60 feet."
+  },
+  {
+    "name": "Replicate Magic Item (Eyes of Charming)",
+    "level": 6,
+    "item_type": "Eyes (requires attunement)",
+    "replicates": "Eyes of Charming",
+    "desc": "These crystal lenses have 3 charges. You can expend 1 charge to cast charm person (save DC 13). The lenses regain all expended charges daily at dawn."
+  },
+  {
+    "name": "Replicate Magic Item (Gloves of Thievery)",
+    "level": 6,
+    "item_type": "Gloves",
+    "replicates": "Gloves of Thievery",
+    "desc": "These gloves are invisible while worn and grant a +5 bonus to Dexterity (Sleight of Hand) checks and lockpicking checks."
+  },
+  {
+    "name": "Replicate Magic Item (Lantern of Revealing)",
+    "level": 6,
+    "item_type": "Lantern",
+    "replicates": "Lantern of Revealing",
+    "desc": "While lit, this hooded lantern reveals invisible creatures and objects within 30 feet in bright light."
+  },
+  {
+    "name": "Replicate Magic Item (Ring of Water Walking)",
+    "level": 6,
+    "item_type": "Ring",
+    "replicates": "Ring of Water Walking",
+    "desc": "While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground."
   },
   {
     "name": "Radiant Weapon",
@@ -150,15 +185,141 @@
     "desc": "While wearing this helmet, a creature has advantage on initiative rolls. In addition, the wearer can't be surprised, provided it isn't incapacitated."
   },
   {
-    "name": "Replicate Magic Item (Amulet of Health)",
+    "name": "Replicate Magic Item (Boots of Striding and Springing)",
     "level": 10,
+    "item_type": "Boots (requires attunement)",
+    "replicates": "Boots of Striding and Springing",
+    "desc": "While you wear these boots, your walking speed becomes 30 feet unless your speed is already higher, and your jump distance is tripled."
+  },
+  {
+    "name": "Replicate Magic Item (Boots of the Winterlands)",
+    "level": 10,
+    "item_type": "Boots (requires attunement)",
+    "replicates": "Boots of the Winterlands",
+    "desc": "These furred boots let you ignore difficult terrain created by ice or snow, tolerate extreme cold, and gain resistance to cold damage."
+  },
+  {
+    "name": "Replicate Magic Item (Brooch of Shielding)",
+    "level": 10,
+    "item_type": "Brooch (requires attunement)",
+    "replicates": "Brooch of Shielding",
+    "desc": "While wearing this brooch, you have resistance to force damage and immunity to damage from the magic missile spell."
+  },
+  {
+    "name": "Replicate Magic Item (Cloak of Protection)",
+    "level": 10,
+    "item_type": "Cloak (requires attunement)",
+    "replicates": "Cloak of Protection",
+    "desc": "While wearing this cloak, you gain a +1 bonus to AC and saving throws."
+  },
+  {
+    "name": "Replicate Magic Item (Eyes of the Eagle)",
+    "level": 10,
+    "item_type": "Eyewear (requires attunement)",
+    "replicates": "Eyes of the Eagle",
+    "desc": "While wearing these lenses, you have advantage on Wisdom (Perception) checks that rely on sight."
+  },
+  {
+    "name": "Replicate Magic Item (Gloves of Missile Snaring)",
+    "level": 10,
+    "item_type": "Gloves (requires attunement)",
+    "replicates": "Gloves of Missile Snaring",
+    "desc": "These gloves improve your ability to catch and reduce damage from ranged weapon attacks."
+  },
+  {
+    "name": "Replicate Magic Item (Gloves of Swimming and Climbing)",
+    "level": 10,
+    "item_type": "Gloves (requires attunement)",
+    "replicates": "Gloves of Swimming and Climbing",
+    "desc": "While wearing these gloves, you gain a swimming speed and climbing speed equal to your walking speed."
+  },
+  {
+    "name": "Replicate Magic Item (Hat of Disguise)",
+    "level": 10,
+    "item_type": "Hat (requires attunement)",
+    "replicates": "Hat of Disguise",
+    "desc": "While wearing this hat, you can cast disguise self from it at will."
+  },
+  {
+    "name": "Replicate Magic Item (Headband of Intellect)",
+    "level": 10,
+    "item_type": "Headband (requires attunement)",
+    "replicates": "Headband of Intellect",
+    "desc": "Your Intelligence score is 19 while you wear this headband."
+  },
+  {
+    "name": "Replicate Magic Item (Helm of Telepathy)",
+    "level": 10,
+    "item_type": "Helm (requires attunement)",
+    "replicates": "Helm of Telepathy",
+    "desc": "While wearing this helm, you can use telepathy and cast detect thoughts."
+  },
+  {
+    "name": "Replicate Magic Item (Medallion of Thoughts)",
+    "level": 10,
+    "item_type": "Medallion (requires attunement)",
+    "replicates": "Medallion of Thoughts",
+    "desc": "While wearing this medallion, you can cast detect thoughts with charges that refresh at dawn."
+  },
+  {
+    "name": "Replicate Magic Item (Necklace of Adaptation)",
+    "level": 10,
+    "item_type": "Necklace (requires attunement)",
+    "replicates": "Necklace of Adaptation",
+    "desc": "While wearing this necklace, you can breathe normally in any environment and gain advantage against harmful gases and vapors."
+  },
+  {
+    "name": "Replicate Magic Item (Periapt of Wound Closure)",
+    "level": 10,
+    "item_type": "Periapt (requires attunement)",
+    "replicates": "Periapt of Wound Closure",
+    "desc": "While wearing this periapt, you stabilize automatically at the start of your turn while dying, and Hit Dice healing is doubled."
+  },
+  {
+    "name": "Replicate Magic Item (Pipes of the Sewers)",
+    "level": 10,
+    "item_type": "Pipes (requires attunement)",
+    "replicates": "Pipes of the Sewers",
+    "desc": "You can use these pipes to summon and control swarms of rats."
+  },
+  {
+    "name": "Replicate Magic Item (Quiver of Ehlonna)",
+    "level": 10,
+    "item_type": "Quiver",
+    "replicates": "Quiver of Ehlonna",
+    "desc": "This quiver has multiple extradimensional compartments that can hold ammunition and similar long objects."
+  },
+  {
+    "name": "Replicate Magic Item (Ring of Jumping)",
+    "level": 10,
+    "item_type": "Ring (requires attunement)",
+    "replicates": "Ring of Jumping",
+    "desc": "While wearing this ring, you can cast jump on yourself at will."
+  },
+  {
+    "name": "Replicate Magic Item (Ring of Mind Shielding)",
+    "level": 10,
+    "item_type": "Ring (requires attunement)",
+    "replicates": "Ring of Mind Shielding",
+    "desc": "While wearing this ring, your thoughts can't be read by telepathy or magic unless you allow it."
+  },
+  {
+    "name": "Replicate Magic Item (Slippers of Spider Climbing)",
+    "level": 10,
+    "item_type": "Slippers (requires attunement)",
+    "replicates": "Slippers of Spider Climbing",
+    "desc": "While wearing these slippers, you can move up, down, and across vertical surfaces and upside down along ceilings, with your hands free."
+  },
+  {
+    "name": "Replicate Magic Item (Amulet of Health)",
+    "level": 14,
     "item_type": "Amulet (requires attunement)",
     "replicates": "Amulet of Health",
     "desc": "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution is already 19 or higher."
   },
   {
     "name": "Replicate Magic Item (Belt of Hill Giant Strength)",
-    "level": 10,
+    "level": 14,
     "item_type": "Belt (requires attunement)",
     "replicates": "Belt of Hill Giant Strength",
     "desc": "Your Strength score is 21 while you wear this belt. It has no effect on you if your Strength is already 21 or higher."
@@ -184,11 +345,74 @@
     "desc": "The wearer of this armor gains these benefits:\n• The wearer's Strength score is 18, unless it is already higher.\n• The armor has gauntlets that are magic melee weapons, with which the wearer is proficient. They deal 1d8 force damage on a hit.\n• The armor has integrated boots that give a flying speed of 5 feet, allowing the wearer to hover. The wearer can't be knocked prone against their will."
   },
   {
-    "name": "Replicate Magic Item (Amulet of the Planes)",
+    "name": "Replicate Magic Item (Boots of Levitation)",
     "level": 14,
-    "item_type": "Amulet (requires attunement)",
-    "replicates": "Amulet of the Planes",
-    "desc": "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination."
+    "item_type": "Boots (requires attunement)",
+    "replicates": "Boots of Levitation",
+    "desc": "While wearing these boots, you can cast levitate on yourself at will."
+  },
+  {
+    "name": "Replicate Magic Item (Boots of Speed)",
+    "level": 14,
+    "item_type": "Boots (requires attunement)",
+    "replicates": "Boots of Speed",
+    "desc": "As a bonus action, you can click the boots' heels together to double your walking speed and impose disadvantage on opportunity attacks against you."
+  },
+  {
+    "name": "Replicate Magic Item (Bracers of Defense)",
+    "level": 14,
+    "item_type": "Bracers (requires attunement)",
+    "replicates": "Bracers of Defense",
+    "desc": "While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield."
+  },
+  {
+    "name": "Replicate Magic Item (Cloak of the Bat)",
+    "level": 14,
+    "item_type": "Cloak (requires attunement)",
+    "replicates": "Cloak of the Bat",
+    "desc": "While wearing this cloak in dim light or darkness, you can fly and gain stealth benefits, and it can transform into a bat."
+  },
+  {
+    "name": "Replicate Magic Item (Dimensional Shackles)",
+    "level": 14,
+    "item_type": "Shackles",
+    "replicates": "Dimensional Shackles",
+    "desc": "These shackles restrain a creature and prevent teleportation or interplanar travel until removed."
+  },
+  {
+    "name": "Replicate Magic Item (Gem of Seeing)",
+    "level": 14,
+    "item_type": "Gem (requires attunement)",
+    "replicates": "Gem of Seeing",
+    "desc": "This gem has 3 charges. As an action, you can expend 1 charge to gain truesight out to 120 feet for 10 minutes."
+  },
+  {
+    "name": "Replicate Magic Item (Horn of Blasting)",
+    "level": 14,
+    "item_type": "Horn",
+    "replicates": "Horn of Blasting",
+    "desc": "You can use this horn to emit a destructive blast in a 30-foot cone. The horn has a chance to explode when used."
+  },
+  {
+    "name": "Replicate Magic Item (Ring of Free Action)",
+    "level": 14,
+    "item_type": "Ring (requires attunement)",
+    "replicates": "Ring of Free Action",
+    "desc": "While wearing this ring, difficult terrain doesn't cost extra movement, and magic can neither reduce your speed nor cause paralysis or restraint."
+  },
+  {
+    "name": "Replicate Magic Item (Ring of Protection)",
+    "level": 14,
+    "item_type": "Ring (requires attunement)",
+    "replicates": "Ring of Protection",
+    "desc": "While wearing this ring, you gain a +1 bonus to AC and saving throws."
+  },
+  {
+    "name": "Replicate Magic Item (Ring of the Ram)",
+    "level": 14,
+    "item_type": "Ring (requires attunement)",
+    "replicates": "Ring of the Ram",
+    "desc": "This ring has charges that you can expend to make a ranged force attack that can push creatures and objects."
   },
   {
     "name": "Armor of Magical Strength",

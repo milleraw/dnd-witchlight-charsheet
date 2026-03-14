@@ -1,0 +1,478 @@
+{
+  "name": "Talan Briarstep",
+  "player_name": "Testy McTesterson",
+  "class": "Ranger",
+  "level": 3,
+  "race": "Elf",
+  "subrace": "wood-elf",
+  "speed": 35,
+  "size": "Medium",
+  "background": "Outlander",
+  "alignment": "Neutral Good",
+  "eyes_hair": "",
+  "armor": [
+    "Scale Mail"
+  ],
+  "abilities": {
+    "STR": 11,
+    "DEX": 18,
+    "CON": 12,
+    "INT": 9,
+    "WIS": 15,
+    "CHA": 8
+  },
+  "traits": [
+    {
+      "id": "trait:elf:darkvision",
+      "key": "darkvision",
+      "name": "Darkvision",
+      "type": "passive",
+      "desc": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+    },
+    {
+      "id": "trait:elf:fey-ancestry",
+      "key": "fey-ancestry",
+      "name": "Fey Ancestry",
+      "type": "passive",
+      "desc": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+    },
+    {
+      "id": "trait:elf:trance",
+      "key": "trance",
+      "name": "Trance",
+      "type": "passive",
+      "desc": "Elves do not sleep. Instead they meditate deeply, remaining semi-conscious, for 4 hours a day. The Common word for this meditation is \"trance.\" While meditating, you dream after a fashion; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way, you gain the same benefit a human would from 8 hours of sleep."
+    },
+    {
+      "id": "trait:elf:keen-senses",
+      "key": "keen-senses",
+      "name": "Keen Senses",
+      "type": "passive",
+      "desc": "You have proficiency in the Perception skill."
+    },
+    {
+      "id": "trait:wood-elf:elf-weapon-training",
+      "key": "elf-weapon-training",
+      "name": "Elf Weapon Training",
+      "type": "passive",
+      "desc": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+    },
+    {
+      "id": "trait:wood-elf:fleet-of-foot",
+      "key": "fleet-of-foot",
+      "name": "Fleet of Foot",
+      "type": "passive",
+      "desc": "Your base walking speed increases to 35 feet."
+    },
+    {
+      "id": "trait:wood-elf:mask-of-the-wild",
+      "key": "mask-of-the-wild",
+      "name": "Mask of the Wild",
+      "type": "passive",
+      "desc": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+    },
+    {
+      "id": "trait:bg:outlander:wanderer",
+      "name": "Wanderer",
+      "type": "background",
+      "desc": "You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth."
+    },
+    {
+      "name": "Favored Enemy",
+      "desc": "Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, choose two humanoid races. You have advantage on Wisdom (Survival) checks to track your favored enemies and on Intelligence checks to recall information about them. You also learn one language spoken by your favored enemies, if they speak one. You choose one additional favored enemy and language at 6th level and again at 14th level."
+    },
+    {
+      "name": "Natural Explorer",
+      "desc": "Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if using a skill you're proficient in. While traveling for an hour or more in your favored terrain, you gain travel benefits (difficult terrain doesn't slow group, can't become lost except magically, remain alert, etc.). You choose additional favored terrain types at 6th and 10th level."
+    },
+    {
+      "name": "Favored Foe (Optional)",
+      "desc": "Replaces Favored Enemy. When you hit a creature with an attack roll, you can mark it as your favored foe for 1 minute (or until you lose concentration, as if concentrating on a spell). The first time on each of your turns that you hit the favored foe and deal damage to it, you deal an extra 1d4 damage. You can use this feature a number of times equal to your proficiency bonus per long rest. The extra damage increases to 1d6 at 6th level and 1d8 at 14th level."
+    },
+    {
+      "name": "Deft Explorer (Optional)",
+      "desc": "Replaces Natural Explorer. You gain benefits as you advance: at 1st level choose Canny; at 6th level gain Roving; at 10th level gain Tireless."
+    }
+  ],
+  "proficiencies": {
+    "armor": [
+      "Light Armor",
+      "Medium Armor"
+    ],
+    "weapons": [
+      "Simple Weapons",
+      "Martial Weapons",
+      "Weapon: Longsword",
+      "Weapon: Shortsword",
+      "Weapon: Shortbow",
+      "Weapon: Longbow"
+    ],
+    "tools": [
+      "Flute"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "STR",
+      "DEX"
+    ],
+    "skills": [
+      "Perception",
+      "Athletics",
+      "Survival",
+      "Animal Handling",
+      "Nature",
+      "Stealth"
+    ]
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Sylvan"
+  ],
+  "spells": [],
+  "equipment": {
+    "weapons": [
+      "Longbow",
+      "Shortsword",
+      "Shortsword"
+    ],
+    "gear": [
+      {
+        "name": "Arrow",
+        "qty": 20
+      },
+      {
+        "name": "Backpack",
+        "qty": 1,
+        "ref": "equip:backpack",
+        "equip_slot": "container",
+        "object_form": "bag"
+      },
+      {
+        "name": "Bedroll",
+        "qty": 1,
+        "ref": "equip:bedroll",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Mess kit",
+        "qty": 1,
+        "ref": "equip:mess-kit",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Tinderbox",
+        "qty": 1,
+        "ref": "equip:tinderbox",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Torch",
+        "qty": 10,
+        "ref": "equip:torch",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Rations (1 day)",
+        "qty": 10,
+        "ref": "equip:rations-1-day",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Waterskin",
+        "qty": 1,
+        "ref": "equip:waterskin",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Rope, hempen (50 feet)",
+        "qty": 1,
+        "ref": "equip:rope-hempen-50-feet",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "A staff",
+        "qty": 1
+      },
+      {
+        "name": "A hunting trap",
+        "qty": 1
+      },
+      {
+        "name": "A trophy from an animal you killed",
+        "qty": 1
+      },
+      {
+        "name": "A set of traveler's clothes",
+        "qty": 1
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 10,
+    "sp": 0,
+    "cp": 0
+  },
+  "hit_die": "d10",
+  "maxHP": 19,
+  "characteristics": {
+    "trait": "I have a lesson for every situation, drawn from observing nature.",
+    "ideal": "If I dishonor myself, I dishonor my whole clan. (Lawful)",
+    "bond": "I will bring terrible wrath down on the evildoers who destroyed my homeland.",
+    "flaw": "I am slow to trust members of other races, tribes, and societies."
+  },
+  "choices": {
+    "class": "Ranger",
+    "subclass": "Fey Wanderer",
+    "race": "Elf",
+    "subrace": "wood-elf",
+    "subraceKey": "wood-elf",
+    "subraceAlias": "",
+    "background": "Outlander",
+    "alignment": "Neutral Good",
+    "abilities": {
+      "STR": 11,
+      "DEX": 16,
+      "CON": 12,
+      "INT": 9,
+      "WIS": 14,
+      "CHA": 8
+    },
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 2,
+      "con": 0,
+      "int": 0,
+      "wis": 1,
+      "cha": 0
+    },
+    "languages": [
+      "Common",
+      "Elvish",
+      "Sylvan"
+    ],
+    "skills": [
+      "Perception",
+      "Athletics",
+      "Survival",
+      "Animal Handling",
+      "Nature",
+      "Stealth"
+    ],
+    "tools": [
+      "Flute"
+    ],
+    "spells": [],
+    "racialCantrips": [],
+    "equipmentChoices": [
+      {
+        "block": 0,
+        "option": 0,
+        "items": [
+          "Scale Mail"
+        ]
+      },
+      {
+        "block": 1,
+        "option": 0,
+        "items": [
+          "Shortsword"
+        ]
+      },
+      {
+        "block": 2,
+        "option": 1,
+        "items": [
+          "Explorer's Pack"
+        ]
+      }
+    ],
+    "backgroundFeatures": [
+      {
+        "id": "trait:bg:outlander:wanderer",
+        "name": "Wanderer",
+        "desc": "You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth."
+      }
+    ],
+    "backgroundChoices": [
+      {
+        "choiceId": "choice:bg:outlander:personality-traits",
+        "itemId": "bgtext:outlander:trait:4",
+        "label": "I have a lesson for every situation, drawn from observing nature."
+      },
+      {
+        "choiceId": "choice:bg:outlander:ideals",
+        "itemId": "bgideal:outlander:honor",
+        "label": "Honor"
+      },
+      {
+        "choiceId": "choice:bg:outlander:bonds",
+        "itemId": "bgtext:outlander:bond:3",
+        "label": "I will bring terrible wrath down on the evildoers who destroyed my homeland."
+      },
+      {
+        "choiceId": "choice:bg:outlander:flaws",
+        "itemId": "bgtext:outlander:flaw:4",
+        "label": "I am slow to trust members of other races, tribes, and societies."
+      },
+      {
+        "choiceId": "choice:bg:outlander:origin",
+        "itemId": "bgopt:outlander:origin:exile",
+        "label": "Exile or Outcast"
+      },
+      {
+        "choiceId": "choice:bg:outlander:language",
+        "itemId": "Sylvan",
+        "label": "Sylvan"
+      },
+      {
+        "choiceId": "choice:bg:outlander:tool",
+        "itemId": "Flute",
+        "label": "Flute"
+      }
+    ],
+    "raceTraits": [
+      {
+        "id": "trait:elf:darkvision",
+        "name": "Darkvision",
+        "desc": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "id": "trait:elf:fey-ancestry",
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+      },
+      {
+        "id": "trait:elf:trance",
+        "name": "Trance",
+        "desc": "Elves do not sleep. Instead they meditate deeply, remaining semi-conscious, for 4 hours a day. The Common word for this meditation is \"trance.\" While meditating, you dream after a fashion; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way, you gain the same benefit a human would from 8 hours of sleep."
+      },
+      {
+        "id": "trait:elf:keen-senses",
+        "name": "Keen Senses",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "id": "trait:wood-elf:elf-weapon-training",
+        "name": "Elf Weapon Training",
+        "desc": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+      },
+      {
+        "id": "trait:wood-elf:fleet-of-foot",
+        "name": "Fleet of Foot",
+        "desc": "Your base walking speed increases to 35 feet."
+      },
+      {
+        "id": "trait:wood-elf:mask-of-the-wild",
+        "name": "Mask of the Wild",
+        "desc": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+      },
+      {
+        "id": "trait:bg:outlander:wanderer",
+        "name": "Wanderer",
+        "desc": "You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you. In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth."
+      }
+    ],
+    "classFeatures": [
+      {
+        "id": "class:ranger:lvl1:favored-enemy",
+        "name": "Favored Enemy"
+      },
+      {
+        "id": "class:ranger:lvl1:natural-explorer",
+        "name": "Natural Explorer"
+      },
+      {
+        "id": "class:ranger:lvl1:favored-foe-optional",
+        "name": "Favored Foe (Optional)"
+      },
+      {
+        "id": "class:ranger:lvl1:deft-explorer-optional",
+        "name": "Deft Explorer (Optional)"
+      }
+    ],
+    "subclassFeatures": [],
+    "levelUpDecisions": [
+      {
+        "level": 3,
+        "choices": [
+          {
+            "choiceId": "choice:subclass",
+            "type": "subclass",
+            "values": [
+              "Fey Wanderer"
+            ],
+            "value": "Fey Wanderer",
+            "cantrips": []
+          },
+          {
+            "choiceId": "choice:subclass:fey-wanderer:feature:otherworldly-glamour",
+            "type": "subclass-choice",
+            "values": [
+              "Deception"
+            ],
+            "value": "Deception",
+            "cantrips": []
+          }
+        ]
+      }
+    ]
+  },
+  "currentHP": 19,
+  "levelUpLog": [
+    {
+      "level": 2,
+      "from": 1,
+      "hitDie": "d10",
+      "conMod": 1,
+      "hpGain": 8,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-01-31T20:20:41.256Z"
+    },
+    {
+      "level": 3,
+      "from": 2,
+      "hitDie": "d10",
+      "conMod": 1,
+      "hpGain": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": "Fey Wanderer",
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:subclass",
+          "type": "subclass",
+          "values": [
+            "Fey Wanderer"
+          ],
+          "value": "Fey Wanderer",
+          "cantrips": []
+        },
+        {
+          "choiceId": "choice:subclass:fey-wanderer:feature:otherworldly-glamour",
+          "type": "subclass-choice",
+          "values": [
+            "Deception"
+          ],
+          "value": "Deception",
+          "cantrips": []
+        }
+      ],
+      "at": "2026-01-31T21:21:29.231Z"
+    }
+  ],
+  "build": "Fey Wanderer"
+}

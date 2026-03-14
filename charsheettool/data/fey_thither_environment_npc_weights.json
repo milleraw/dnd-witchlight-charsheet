@@ -1,0 +1,70 @@
+{
+  "environments": {
+    "woodland": {
+      "weight": 40,
+      "npc_weights": {
+        "pixie": 35,
+        "sprite": 25,
+        "satyr": 10,
+        "dryad": 20,
+        "quickling": 8,
+        "other": 2
+      }
+    },
+    "glade": {
+      "weight": 20,
+      "npc_weights": {
+        "pixie": 40,
+        "sprite": 20,
+        "satyr": 20,
+        "dryad": 15,
+        "quickling": 3,
+        "other": 2
+      }
+    },
+    "pond": {
+      "weight": 15,
+      "npc_weights": {
+        "pixie": 15,
+        "sprite": 25,
+        "satyr": 5,
+        "dryad": 40,
+        "quickling": 5,
+        "other": 10
+      }
+    },
+    "path": {
+      "weight": 10,
+      "npc_weights": {
+        "pixie": 20,
+        "sprite": 20,
+        "satyr": 10,
+        "dryad": 5,
+        "quickling": 40,
+        "other": 5
+      }
+    },
+    "ruin": {
+      "weight": 10,
+      "npc_weights": {
+        "pixie": 10,
+        "sprite": 20,
+        "satyr": 15,
+        "dryad": 15,
+        "quickling": 25,
+        "other": 15
+      }
+    },
+    "dream": {
+      "weight": 5,
+      "npc_weights": {
+        "pixie": 25,
+        "sprite": 15,
+        "satyr": 10,
+        "dryad": 20,
+        "quickling": 5,
+        "other": 25
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "environments": {
+    "woodland": {
+      "weight": 40,
+      "entries": [
+        { "scene": "Twisting oaks arch overhead, branches woven into a cathedral ceiling.", "tags": ["neutral"], "flavor": "Your footsteps echo strangely here." },
+        { "scene": "Roots rise into natural steps, leading upward to nowhere.", "tags": ["ownership"], "flavor": "A sprite insists the roots are not for climbing." },
+        { "scene": "A grove where birds fall silent as you enter, replaced by whispering leaves.", "tags": ["reciprocity"], "flavor": "The forest waits for you to offer a sound in return." },
+        { "scene": "Towering trees sway though there is no wind.", "tags": ["neutral"], "flavor": "Their creaks sound like distant voices." },
+        { "scene": "An enormous fallen log is hollowed into a tunnel.", "tags": ["ownership"], "flavor": "A quickling claims tolls for those who pass." },
+        { "scene": "Sunlight filters through leaves in beams of shifting colors.", "tags": ["neutral"], "flavor": "The colors change with each step you take." },
+        { "scene": "Mossy stones form a ring that hums faintly when touched.", "tags": ["ownership"], "flavor": "Sprites warn you not to disturb the ring." },
+        { "scene": "The scent of pine needles and wildflowers intensifies suddenly.", "tags": ["hospitality"], "flavor": "It feels like an unspoken welcome." },
+        { "scene": "A canopy of spider silk glitters with dew like starlight.", "tags": ["ownership"], "flavor": "Tampering may anger whoever wove it." },
+        { "scene": "Animal tracks circle the area in impossible patterns.", "tags": ["neutral"], "flavor": "They begin and end without reason." },
+        { "scene": "The air feels thick, as if full of unspoken words.", "tags": ["reciprocity"], "flavor": "The silence begs to be broken with a story." },
+        { "scene": "Trees here lean together, their trunks etched with symbols.", "tags": ["ownership"], "flavor": "A dryad warns that the carvings are sacred." },
+        { "scene": "You hear laughter but see no one; it echoes from the canopy.", "tags": ["neutral"], "flavor": "The forest seems to be in on a joke." }
+      ]
+    },
+
+    "glade": {
+      "weight": 20,
+      "entries": [
+        { "scene": "A sun-dappled clearing ringed with glowing toadstools.", "tags": ["hospitality"], "flavor": "Sprites beckon you to step inside the circle." },
+        { "scene": "A meadow where fireflies pulse in rhythm like a heartbeat.", "tags": ["neutral"], "flavor": "The light seems to match your breath." },
+        { "scene": "A grassy hillock with a feast spread on tree stumps.", "tags": ["hospitality"], "flavor": "Empty seats wait for honored guests." },
+        { "scene": "A ring of flowers emits music when stepped on.", "tags": ["reciprocity"], "flavor": "The blooms seem to expect a gift in return." },
+        { "scene": "Butterflies gather here in impossible numbers.", "tags": ["neutral"], "flavor": "They spiral upward like a living rainbow." },
+        { "scene": "Stone monoliths rise from the grass, humming with energy.", "tags": ["ownership"], "flavor": "The stones do not like to be touched." },
+        { "scene": "A bonfire burns without heat, sparks swirling upward.", "tags": ["hospitality"], "flavor": "The fire invites you closer." },
+        { "scene": "A gentle brook splits the glade, its water glowing faintly.", "tags": ["neutral"], "flavor": "The current whispers in an unknown tongue." },
+        { "scene": "A woven canopy of vines shades the glade perfectly.", "tags": ["hospitality"], "flavor": "It feels prepared for honored guests." },
+        { "scene": "Musical instruments lie scattered in the grass.", "tags": ["reciprocity"], "flavor": "Picking one up demands you play." }
+      ]
+    },
+
+    "pond": {
+      "weight": 15,
+      "entries": [
+        { "scene": "A glassy pond reflects the stars even at midday.", "tags": ["ownership"], "flavor": "A nixie warns you not to disturb the reflection." },
+        { "scene": "A family of swans circles a single glowing lily.", "tags": ["neutral"], "flavor": "The lily’s light brightens when you approach." },
+        { "scene": "Frogs leap onto lilypads that hum like tuning forks.", "tags": ["hospitality"], "flavor": "One pad glows invitingly as if reserved for you." },
+        { "scene": "Ripples form in the water though nothing disturbs it.", "tags": ["neutral"], "flavor": "The ripples seem to beckon you closer." },
+        { "scene": "Dragonflies hover over the pond, their wings shimmering silver.", "tags": ["neutral"], "flavor": "They dart away if you stare too long." },
+        { "scene": "A willow dips its branches into the pond, glowing faintly.", "tags": ["ownership"], "flavor": "The tree seems protective of its water." },
+        { "scene": "Fish leap in sequence, forming words with their splashes.", "tags": ["reciprocity"], "flavor": "They expect you to answer somehow." },
+        { "scene": "A giant lilypad rises like a platform, large enough to stand on.", "tags": ["hospitality"], "flavor": "It offers you a place to rest." },
+        { "scene": "Mist hovers just above the surface, glowing pale blue.", "tags": ["neutral"], "flavor": "Shapes flicker in the fog." },
+        { "scene": "Coins glitter faintly at the pond’s bottom.", "tags": ["ownership"], "flavor": "A sprite warns that they belong to the water spirits." }
+      ]
+    },
+
+    "path": {
+      "weight": 10,
+      "entries": [
+        { "scene": "A trail splits into three, each lined with lantern-moths.", "tags": ["reciprocity"], "flavor": "The moths demand a token to guide you true." },
+        { "scene": "A bridge of woven roots spans a ravine but shifts when stepped on.", "tags": ["ownership"], "flavor": "A quickling claims toll rights." },
+        { "scene": "A fork where signposts point in opposite, impossible directions.", "tags": ["neutral"], "flavor": "The wood creaks as though laughing." },
+        { "scene": "A cobblestone path winds into the forest, each stone engraved.", "tags": ["ownership"], "flavor": "Sprites insist the path is theirs to keep." },
+        { "scene": "A hollow tree forms a natural tunnel through a hill.", "tags": ["neutral"], "flavor": "Voices echo as if many walk with you." },
+        { "scene": "A rope bridge sways wildly, though the air is still.", "tags": ["reciprocity"], "flavor": "Crossing seems to demand a spoken vow." },
+        { "scene": "A crossroads where all four paths appear identical.", "tags": ["neutral"], "flavor": "A fox waits to see which you choose." },
+        { "scene": "Stone lanterns line the path, each lit with will-o’-wisps.", "tags": ["ownership"], "flavor": "The lights wink if you touch them." },
+        { "scene": "A wooden sign reads ‘Welcome, Stranger’ in fresh paint.", "tags": ["hospitality"], "flavor": "It feels like someone is expecting you." },
+        { "scene": "The path loops back on itself after only a few steps.", "tags": ["neutral"], "flavor": "The trees seem to laugh silently." }
+      ]
+    },
+
+    "ruin": {
+      "weight": 10,
+      "entries": [
+        { "scene": "Crumbling stone archways rise from the undergrowth, carved with fey runes.", "tags": ["ownership"], "flavor": "A sprite insists the ruins belong to her kin." },
+        { "scene": "Collapsed walls shelter a wild garden of singing flowers.", "tags": ["hospitality"], "flavor": "The blooms bend as if offering seats." },
+        { "scene": "A moss-covered statue of a knight bows eternally.", "tags": ["neutral"], "flavor": "Its eyes glimmer faintly as if watching you." },
+        { "scene": "An overgrown throne rests beneath a fallen roof.", "tags": ["ownership"], "flavor": "Sprites insist no one may sit there." },
+        { "scene": "A tower leans precariously but never falls.", "tags": ["neutral"], "flavor": "It hums faintly as if alive." },
+        { "scene": "A cracked fountain still trickles water, glowing faintly.", "tags": ["hospitality"], "flavor": "The water tastes sweeter than expected." },
+        { "scene": "A stairway leads underground but ends abruptly in roots.", "tags": ["ownership"], "flavor": "Dryads say the roots claim the way." },
+        { "scene": "Broken stained glass windows glow faintly with moonlight.", "tags": ["neutral"], "flavor": "The images shift as you look." },
+        { "scene": "A bridge of stone fragments still hangs in the air, incomplete.", "tags": ["ownership"], "flavor": "Sprites demand a toll to cross." },
+        { "scene": "An amphitheater of mossy stone echoes with unseen applause.", "tags": ["reciprocity"], "flavor": "The unseen crowd expects a performance." }
+      ]
+    },
+
+    "dream": {
+      "weight": 5,
+      "entries": [
+        { "scene": "Leaves fall upward into the canopy, glowing softly.", "tags": ["neutral"], "flavor": "They vanish into constellations overhead." },
+        { "scene": "Time lurches: your shadow races hours ahead of you.", "tags": ["reciprocity"], "flavor": "A dryad asks what you’ll give to catch up." },
+        { "scene": "An aurora flickers through the branches though the sun still shines.", "tags": ["hospitality"], "flavor": "Sprites invite you to sit and watch the show." },
+        { "scene": "Your reflection lags several seconds behind your movement.", "tags": ["ownership"], "flavor": "A fey warns you not to break it." },
+        { "scene": "The forest fades to monochrome except for one vivid flower.", "tags": ["neutral"], "flavor": "The bloom seems to demand attention." },
+        { "scene": "A starry sky appears beneath your feet instead of soil.", "tags": ["neutral"], "flavor": "It ripples like water when you step." },
+        { "scene": "Birds sing in reverse, their notes unwinding like spools.", "tags": ["reciprocity"], "flavor": "They pause, waiting for your tune in reply." },
+        { "scene": "Every tree you see appears to bow as you pass.", "tags": ["hospitality"], "flavor": "It feels as if you are a guest of honor." },
+        { "scene": "Clouds drift through the forest floor like fog, but glow with starlight.", "tags": ["neutral"], "flavor": "Shapes dance within the glow." },
+        { "scene": "Your footsteps echo like bells though the ground is soft.", "tags": ["neutral"], "flavor": "The bells grow louder the faster you walk." }
+      ]
+    }
+  }
+}

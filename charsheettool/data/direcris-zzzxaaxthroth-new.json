@@ -1,0 +1,549 @@
+{
+  "name": "Direcris Zzzxaaxthroth-New",
+  "player_name": "Sauter Candelaria",
+  "gender": "Male",
+  "class": "Monk",
+  "level": 4,
+  "race": "Dragonborn",
+  "draconic_ancestry": "bronze",
+  "race_detail": {
+    "ancestry": "bronze",
+    "breath_weapon": {
+      "damage_type": "lightning",
+      "save": "DEX",
+      "area": "5 by 30 ft. line"
+    },
+    "damage_resistance": "lightning"
+  },
+  "speed": 30,
+  "size": "Medium",
+  "background": "Urban Bounty Hunter",
+  "alignment": "Lawful Neutral",
+  "eyes_hair": "",
+  "armor": [],
+  "abilities": {
+    "STR": 14,
+    "DEX": 18,
+    "CON": 12,
+    "INT": 13,
+    "WIS": 15,
+    "CHA": 14
+  },
+  "traits": [
+    {
+      "id": "trait:dragonborn:draconic-ancestry",
+      "key": "draconic-ancestry",
+      "name": "Draconic Ancestry",
+      "type": "passive",
+      "desc": "You have draconic ancestry (Bronze). Your breath weapon and damage resistance are determined by this dragon type."
+    },
+    {
+      "id": "trait:dragonborn:damage-resistance",
+      "key": "damage-resistance",
+      "name": "Damage Resistance",
+      "type": "passive",
+      "desc": "You have resistance to lightning damage (Bronze ancestry).",
+      "effects": [
+        {
+          "resistances": [
+            "Lightning"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trait:bg:urban-bounty-hunter:ear-to-the-ground",
+      "name": "Ear to the Ground",
+      "type": "background",
+      "desc": "You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area."
+    },
+    {
+      "name": "Unarmored Defense",
+      "desc": "While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
+    },
+    {
+      "name": "Martial Arts",
+      "desc": "While you are unarmed or wielding only monk weapons, and you aren't wearing armor or wielding a shield: you can use Dexterity instead of Strength for attacks/damage with unarmed strikes and monk weapons; you can use the Martial Arts die in place of normal damage for your unarmed strikes/monk weapons; and when you use the Attack action with an unarmed strike or monk weapon, you can make one unarmed strike as a bonus action."
+    },
+    {
+      "name": "Dedicated Weapon: Kusarigama",
+      "desc": ""
+    }
+  ],
+  "proficiencies": {
+    "armor": [],
+    "weapons": [
+      "Simple Weapons"
+    ],
+    "tools": [
+      "Smith's Tools",
+      "Thieves' Tools",
+      "Bone Dice"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "STR",
+      "DEX"
+    ],
+    "skills": [
+      "Athletics",
+      "Stealth",
+      "Insight",
+      "Deception"
+    ]
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "spells": [],
+  "equipment": {
+    "weapons": [
+      "Dart",
+      "Sickle",
+      "Kusarigama"
+    ],
+    "gear": [
+      {
+        "name": "Explorer's Pack",
+        "qty": 1
+      },
+      {
+        "name": "A set of clothes appropriate to your duties",
+        "qty": 1
+      },
+      {
+        "name": "Kusarigama",
+        "qty": 1,
+        "desc": "The kusarigama \"chain-sickle\" is a traditional Japanese weapon that consists of a kama (the Japanese equivalent of a sickle) on a kusari-fundo – a type of metal chain with a heavy iron weight at the end.\n\nSpecial. You can engage in two-weapon fighting when wielding a Kusarigama as if wielding a pair of weapons, attacking with both the blade and the iron weight. You can use your Bonus Action attack to attempt to ensnare an enemy weapon, instead of attacking. This functions as a grapple context, but you remove the opponent's weapon, rather than immobilize them.",
+        "equip_slot": "weapon",
+        "weapon": {
+          "range": "melee",
+          "category": "martial melee",
+          "damage": {
+            "dice": "1d8",
+            "type": "bludgeoning",
+            "alt_type": "slashing"
+          },
+          "properties": [
+            "finesse",
+            "reach",
+            "special",
+            "two-handed"
+          ]
+        }
+      },
+      {
+        "name": "Moon Pendant",
+        "qty": 1,
+        "desc": "Pendant that shows the phases of the moon",
+        "equip_slot": "amulet"
+      },
+      {
+        "name": "Spell Scroll (Identify)",
+        "qty": 3,
+        "desc": "A spell scroll containing Identify. Casting the spell from the scroll consumes it."
+      },
+      {
+        "name": "Wand of Dancing Lights",
+        "qty": 1,
+        "desc": "This wand has 3 charges. While holding it, you can use an action to expend 1 charge to cast the Dancing Lights cantrip. The wand regains 1d3 expended charges daily at dawn."
+      },
+      {
+        "name": "Wand of Smiles",
+        "qty": 1,
+        "desc": "This pink wand has 3 charges. As an action, you can expend 1 charge to create a silent, spectral, smiling mouth at a point you can see within 30 feet. The mouth disappears after 1 minute. The wand regains all expended charges daily at dawn."
+      },
+      {
+        "name": "A book of eight dirty jokes",
+        "qty": 1,
+        "desc": "A creature can read a joke to cast vicious mockery (spell save DC 13). Once a joke is read, it disappears from the book."
+      },
+      {
+        "name": "Gaming Set",
+        "qty": 1,
+        "desc": "One type of gaming set of your choice."
+      },
+      {
+        "name": "Pixie Plush",
+        "qty": 1,
+        "desc": "It sings when squeezed"
+      },
+      {
+        "name": "Bright Red Fruit",
+        "qty": 1,
+        "desc": "A mysterious feywild fruit.  Effects unknown."
+      },
+      {
+        "name": "Boots with mismatched laces",
+        "qty": 1,
+        "desc": "One is a vibrant pink, the other a calm blue.",
+        "equip_slot": "boots"
+      },
+      {
+        "name": "Amulet of proof against detection and location",
+        "qty": 1,
+        "equip_slot": "amulet"
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 20,
+    "sp": 0,
+    "cp": 0
+  },
+  "hit_die": "d8",
+  "maxHP": 33,
+  "feats": [],
+  "characteristics": {
+    "trait": "The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden.",
+    "ideal": "I steal from the wealthy so that I can help people in need. (Good)",
+    "bond": "Something important was taken from me, and I aim to steal it back.",
+    "flaw": "If there's a plan, I'll forget it. If I don't forget it, I'll ignore it."
+  },
+  "choices": {
+    "class": "Monk",
+    "subclass": "Way of Shadow",
+    "race": "Dragonborn",
+    "subrace": "",
+    "subraceKey": "bronze",
+    "subraceAlias": "",
+    "draconicAncestry": "bronze",
+    "raceVariantKeys": [],
+    "background": "Urban Bounty Hunter",
+    "alignment": "Lawful Neutral",
+    "abilities": {
+      "STR": 12,
+      "DEX": 16,
+      "CON": 12,
+      "INT": 13,
+      "WIS": 15,
+      "CHA": 13
+    },
+    "abilityBonuses": {
+      "str": 2,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 0,
+      "cha": 1
+    },
+    "languages": [
+      "Common",
+      "Draconic"
+    ],
+    "skills": [
+      "Athletics",
+      "Stealth",
+      "Insight",
+      "Deception"
+    ],
+    "tools": [
+      "Smith's Tools",
+      "Thieves' Tools",
+      "Bone Dice"
+    ],
+    "spells": [],
+    "racialCantrips": [],
+    "equipmentChoices": [
+      {
+        "block": 0,
+        "option": 1,
+        "items": [
+          "Sickle"
+        ]
+      },
+      {
+        "block": 1,
+        "option": 1,
+        "items": [
+          "Explorer's Pack"
+        ]
+      }
+    ],
+    "backgroundFeatures": [
+      {
+        "id": "trait:bg:urban-bounty-hunter:ear-to-the-ground",
+        "name": "Ear to the Ground",
+        "desc": "You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area."
+      }
+    ],
+    "backgroundChoices": [
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:personality-traits",
+        "itemId": "bgtext:urban-bounty-hunter:trait:3",
+        "label": "The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden."
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:ideals",
+        "itemId": "bgideal:urban-bounty-hunter:charity",
+        "label": "Charity"
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:bonds",
+        "itemId": "bgtext:urban-bounty-hunter:bond:3",
+        "label": "Something important was taken from me, and I aim to steal it back."
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:flaws",
+        "itemId": "bgtext:urban-bounty-hunter:flaw:3",
+        "label": "If there's a plan, I'll forget it. If I don't forget it, I'll ignore it."
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:skills",
+        "itemId": "Insight",
+        "label": "Insight"
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:skills",
+        "itemId": "Deception",
+        "label": "Deception"
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:tool-proficiencies",
+        "itemId": "Thieves' Tools",
+        "label": "Thieves' Tools"
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:tool-proficiencies",
+        "itemId": "Bone Dice",
+        "label": "Bone Dice"
+      }
+    ],
+    "raceTraits": [
+      {
+        "id": "trait:dragonborn:draconic-ancestry",
+        "name": "Draconic Ancestry",
+        "desc": "You have draconic ancestry (Bronze). Your breath weapon and damage resistance are determined by this dragon type."
+      },
+      {
+        "id": "trait:dragonborn:damage-resistance",
+        "name": "Damage Resistance",
+        "desc": "You have resistance to lightning damage (Bronze ancestry)."
+      },
+      {
+        "id": "trait:bg:urban-bounty-hunter:ear-to-the-ground",
+        "name": "Ear to the Ground",
+        "desc": "You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area."
+      }
+    ],
+    "classFeatures": [
+      {
+        "id": "class:monk:lvl1:unarmored-defense",
+        "name": "Unarmored Defense"
+      },
+      {
+        "id": "class:monk:lvl1:martial-arts",
+        "name": "Martial Arts"
+      }
+    ],
+    "subclassFeatures": [],
+    "classChoices": [
+      {
+        "level": 2,
+        "choiceId": "choice:class:monk:optional:dedicated-weapon",
+        "value": "Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": true
+      },
+      {
+        "level": 2,
+        "choiceId": "choice:class:monk:optional:dedicated-weapon:weapon",
+        "value": "Kusarigama",
+        "values": [
+          "Kusarigama"
+        ],
+        "cantrips": []
+      },
+      {
+        "level": 3,
+        "choiceId": "choice:class:monk:optional:ki-fueled-attack",
+        "value": "Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": true
+      },
+      {
+        "level": 4,
+        "choiceId": "choice:class:monk:optional:quickened-healing",
+        "value": "Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": true
+      }
+    ],
+    "levelUpDecisions": [
+      {
+        "level": 2,
+        "choices": [
+          {
+            "choiceId": "choice:class:monk:optional:dedicated-weapon",
+            "type": "boolean",
+            "taken": true,
+            "value": "Taken"
+          },
+          {
+            "choiceId": "choice:class:monk:optional:dedicated-weapon:weapon",
+            "type": "class-choice",
+            "values": [
+              "Kusarigama"
+            ],
+            "value": "Kusarigama",
+            "cantrips": []
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "choices": [
+          {
+            "choiceId": "choice:subclass",
+            "type": "subclass",
+            "values": [
+              "Way of Shadow"
+            ],
+            "value": "Way of Shadow",
+            "cantrips": []
+          },
+          {
+            "choiceId": "choice:class:monk:optional:ki-fueled-attack",
+            "type": "boolean",
+            "taken": true,
+            "value": "Taken"
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          },
+          {
+            "choiceId": "choice:class:monk:optional:quickened-healing",
+            "type": "boolean",
+            "taken": true,
+            "value": "Taken"
+          }
+        ]
+      }
+    ]
+  },
+  "actions": [
+    {
+      "name": "Ensnare Weapon",
+      "type": "bonus",
+      "desc": "When wielding your kusarigama, you can use your bonus action attack to attempt to ensnare an enemy weapon instead of making an attack. Resolve this in a grapple-like context; on success, you remove the opponent's weapon rather than immobilizing the target.",
+      "source": "Kusarigama (Custom)"
+    }
+  ],
+  "resistances": [
+    "Lightning"
+  ],
+  "spellSources": {},
+  "currentHP": 33,
+  "levelUpLog": [
+    {
+      "level": 2,
+      "from": 1,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 8,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:class:monk:optional:dedicated-weapon",
+          "type": "boolean",
+          "taken": true,
+          "value": "Taken"
+        },
+        {
+          "choiceId": "choice:class:monk:optional:dedicated-weapon:weapon",
+          "type": "class-choice",
+          "values": [
+            "Kusarigama"
+          ],
+          "value": "Kusarigama",
+          "cantrips": []
+        }
+      ],
+      "at": "2026-03-08T23:22:28.957Z"
+    },
+    {
+      "level": 3,
+      "from": 2,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 8,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": "Way of Shadow",
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:subclass",
+          "type": "subclass",
+          "values": [
+            "Way of Shadow"
+          ],
+          "value": "Way of Shadow",
+          "cantrips": []
+        },
+        {
+          "choiceId": "choice:class:monk:optional:ki-fueled-attack",
+          "type": "boolean",
+          "taken": true,
+          "value": "Taken"
+        }
+      ],
+      "at": "2026-03-08T23:26:15.768Z"
+    },
+    {
+      "level": 4,
+      "from": 3,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 8,
+      "conHpAdjustment": 0,
+      "asi": {
+        "first": "DEX",
+        "second": "DEX"
+      },
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        },
+        {
+          "choiceId": "choice:class:monk:optional:quickened-healing",
+          "type": "boolean",
+          "taken": true,
+          "value": "Taken"
+        }
+      ],
+      "at": "2026-03-08T23:35:38.937Z"
+    }
+  ],
+  "build": "Way of Shadow"
+}

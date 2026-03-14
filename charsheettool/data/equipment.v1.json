@@ -1,0 +1,6119 @@
+{
+  "schema_version": "1.0",
+  "equipment": [
+    {
+      "id": "equip:abacus",
+      "key": "abacus",
+      "name": "Abacus",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:acid-vial",
+      "key": "acid-vial",
+      "name": "Acid (vial)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [
+        "As an action, you can splash the contents of this vial onto a creature within 5 feet or throw the vial up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage."
+      ],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:alchemists-fire-flask",
+      "key": "alchemists-fire-flask",
+      "name": "Alchemist's fire (flask)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [
+        "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object. On a hit, the target takes 1d4 fire damage at the start of each of its turns until a creature uses its action to extinguish the flames."
+      ],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:alms-box",
+      "key": "alms-box",
+      "name": "Alms box",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "sp"
+      },
+      "weight": 0.5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:antitoxin-vial",
+      "key": "antitoxin-vial",
+      "name": "Antitoxin (vial)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 0,
+      "desc": [
+        "A creature that drinks this vial gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs."
+      ],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:backpack",
+      "key": "backpack",
+      "name": "Backpack",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "container",
+      "object_form": "bag",
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:ball-bearings-bag",
+      "key": "ball-bearings-bag",
+      "name": "Ball bearings (bag of 1,000)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [
+        "As an action, you can spill these from the bag to cover a level, square area that is 10 feet on a side. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone."
+      ],
+      "contents": [],
+      "equip_slot": "container",
+      "object_form": "bag",
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:barrel",
+      "key": "barrel",
+      "name": "Barrel",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 70,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:basket",
+      "key": "basket",
+      "name": "Basket",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 4,
+        "unit": "sp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:bedroll",
+      "key": "bedroll",
+      "name": "Bedroll",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 7,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:bell",
+      "key": "bell",
+      "name": "Bell",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:blanket",
+      "key": "blanket",
+      "name": "Blanket",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "sp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:block-and-tackle",
+      "key": "block-and-tackle",
+      "name": "Block and tackle",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:book",
+      "key": "book",
+      "name": "Book",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:bottle-glass",
+      "key": "bottle-glass",
+      "name": "Bottle, glass",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:bucket",
+      "key": "bucket",
+      "name": "Bucket",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "cp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:caltrops-bag",
+      "key": "caltrops-bag",
+      "name": "Caltrops (bag of 20)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [
+        "As an action, you can spread these to cover a 5-foot-square area. A creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage."
+      ],
+      "contents": [],
+      "equip_slot": "container",
+      "object_form": "bag",
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:candle",
+      "key": "candle",
+      "name": "Candle",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "cp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:case-crossbow-bolt",
+      "key": "case-crossbow-bolt",
+      "name": "Case, crossbow bolt",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:case-map-or-scroll",
+      "key": "case-map-or-scroll",
+      "name": "Case, map or scroll",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:censer",
+      "key": "censer",
+      "name": "Censer",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:chain-10-feet",
+      "key": "chain-10-feet",
+      "name": "Chain (10 feet)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 10,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:chalk-1-piece",
+      "key": "chalk-1-piece",
+      "name": "Chalk (1 piece)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "cp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:chest",
+      "key": "chest",
+      "name": "Chest",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 25,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:climbers-kit",
+      "key": "climbers-kit",
+      "name": "Climber's kit",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 12,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:clothes-common",
+      "key": "clothes-common",
+      "name": "Clothes, common",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "sp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:clothes-costume",
+      "key": "clothes-costume",
+      "name": "Clothes, costume",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:clothes-fine",
+      "key": "clothes-fine",
+      "name": "Clothes, fine",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 15,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:clothes-travelers",
+      "key": "clothes-travelers",
+      "name": "Clothes, traveler's",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:component-pouch",
+      "key": "component-pouch",
+      "name": "Component pouch",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "container",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:crowbar",
+      "key": "crowbar",
+      "name": "Crowbar",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:fishing-tackle",
+      "key": "fishing-tackle",
+      "name": "Fishing tackle",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:flask-or-tankard",
+      "key": "flask-or-tankard",
+      "name": "Flask or tankard",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "cp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:grappling-hook",
+      "key": "grappling-hook",
+      "name": "Grappling hook",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:hammer",
+      "key": "hammer",
+      "name": "Hammer",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:hammer-sledge",
+      "key": "hammer-sledge",
+      "name": "Hammer, sledge",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 10,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:healers-kit",
+      "key": "healers-kit",
+      "name": "Healer's kit",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:holy-water-flask",
+      "key": "holy-water-flask",
+      "name": "Holy water (flask)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [
+        "As an action, you can splash the contents of this flask onto a creature within 5 feet or throw it up to 20 feet, shattering it on impact. Make a ranged attack, treating it as an improvised weapon. On a hit, a fiend or undead takes 2d6 radiant damage."
+      ],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:hourglass",
+      "key": "hourglass",
+      "name": "Hourglass",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:hunting-trap",
+      "key": "hunting-trap",
+      "name": "Hunting trap",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 25,
+      "desc": [
+        "When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The creature must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving."
+      ],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:incense-block",
+      "key": "incense-block",
+      "name": "Incense (block)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "cp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:ink-1-ounce-bottle",
+      "key": "ink-1-ounce-bottle",
+      "name": "Ink (1 ounce bottle)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:ink-pen",
+      "key": "ink-pen",
+      "name": "Ink pen",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "cp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:jug-or-pitcher",
+      "key": "jug-or-pitcher",
+      "name": "Jug or pitcher",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "cp"
+      },
+      "weight": 4,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:knife-small",
+      "key": "knife-small",
+      "name": "Knife, small",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "sp"
+      },
+      "weight": 0.5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:ladder-10-foot",
+      "key": "ladder-10-foot",
+      "name": "Ladder (10-foot)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "sp"
+      },
+      "weight": 25,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:lamp",
+      "key": "lamp",
+      "name": "Lamp",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "sp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:lantern-bullseye",
+      "key": "lantern-bullseye",
+      "name": "Lantern, bullseye",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:lantern-hooded",
+      "key": "lantern-hooded",
+      "name": "Lantern, hooded",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:little-bag-of-sand",
+      "key": "little-bag-of-sand",
+      "name": "Little bag of sand",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "cp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "container",
+      "object_form": "bag",
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:lock",
+      "key": "lock",
+      "name": "Lock",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:magnifying-glass",
+      "key": "magnifying-glass",
+      "name": "Magnifying glass",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 100,
+        "unit": "gp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:manacles",
+      "key": "manacles",
+      "name": "Manacles",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:mess-kit",
+      "key": "mess-kit",
+      "name": "Mess kit",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "sp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:mirror-steel",
+      "key": "mirror-steel",
+      "name": "Mirror, steel",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 0.5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:oil-flask",
+      "key": "oil-flask",
+      "name": "Oil (flask)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "sp"
+      },
+      "weight": 1,
+      "desc": [
+        "Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet or throw it up to 20 feet. On a hit, the target is covered in oil. If the target takes fire damage before the oil dries, it takes an additional 5 fire damage."
+      ],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:paper-one-sheet",
+      "key": "paper-one-sheet",
+      "name": "Paper (one sheet)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "sp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:parchment-one-sheet",
+      "key": "parchment-one-sheet",
+      "name": "Parchment (one sheet)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "sp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:perfume-vial",
+      "key": "perfume-vial",
+      "name": "Perfume (vial)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:pick-miners",
+      "key": "pick-miners",
+      "name": "Pick, miner's",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 10,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:piton",
+      "key": "piton",
+      "name": "Piton",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "cp"
+      },
+      "weight": 0.25,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:poison-basic-vial",
+      "key": "poison-basic-vial",
+      "name": "Poison, basic (vial)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 100,
+        "unit": "gp"
+      },
+      "weight": 0,
+      "desc": [
+        "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit must succeed on a DC 10 Constitution saving throw or take 1d4 poison damage."
+      ],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:pole-10-foot",
+      "key": "pole-10-foot",
+      "name": "Pole (10-foot)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "cp"
+      },
+      "weight": 7,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:pot-iron",
+      "key": "pot-iron",
+      "name": "Pot, iron",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 10,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:pouch",
+      "key": "pouch",
+      "name": "Pouch",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "sp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "container",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:quiver",
+      "key": "quiver",
+      "name": "Quiver",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "container",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:ram-portable",
+      "key": "ram-portable",
+      "name": "Ram, portable",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 4,
+        "unit": "gp"
+      },
+      "weight": 35,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:rations-1-day",
+      "key": "rations-1-day",
+      "name": "Rations (1 day)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "sp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:robe",
+      "key": "robe",
+      "name": "Robe",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": true
+    },
+    {
+      "id": "equip:rope-hempen-50-feet",
+      "key": "rope-hempen-50-feet",
+      "name": "Rope, hempen (50 feet)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 10,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:rope-silk-50-feet",
+      "key": "rope-silk-50-feet",
+      "name": "Rope, silk (50 feet)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:sack",
+      "key": "sack",
+      "name": "Sack",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "cp"
+      },
+      "weight": 0.5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:scale-merchants",
+      "key": "scale-merchants",
+      "name": "Scale, merchant's",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:sealing-wax",
+      "key": "sealing-wax",
+      "name": "Sealing wax",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "sp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:shovel",
+      "key": "shovel",
+      "name": "Shovel",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:signal-whistle",
+      "key": "signal-whistle",
+      "name": "Signal whistle",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "cp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:signet-ring",
+      "key": "signet-ring",
+      "name": "Signet ring",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "ring",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:soap",
+      "key": "soap",
+      "name": "Soap",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "cp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:spellbook",
+      "key": "spellbook",
+      "name": "Spellbook",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:spikes-iron-10",
+      "key": "spikes-iron-10",
+      "name": "Spikes, iron (10)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:spyglass",
+      "key": "spyglass",
+      "name": "Spyglass",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1000,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:string-10-feet",
+      "key": "string-10-feet",
+      "name": "String (10 feet)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "sp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:tent-two-person",
+      "key": "tent-two-person",
+      "name": "Tent, two-person",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 20,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:tinderbox",
+      "key": "tinderbox",
+      "name": "Tinderbox",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "sp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:torch",
+      "key": "torch",
+      "name": "Torch",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "cp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:vestments",
+      "key": "vestments",
+      "name": "Vestments",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:vial",
+      "key": "vial",
+      "name": "Vial",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:waterskin",
+      "key": "waterskin",
+      "name": "Waterskin",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "sp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:whetstone",
+      "key": "whetstone",
+      "name": "Whetstone",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "adventuring-gear",
+        "name": "Adventuring Gear"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "cp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:arrows-20",
+      "key": "arrows-20",
+      "name": "Arrows (20)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "ammunition",
+        "name": "Ammunition"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:blowgun-needles-50",
+      "key": "blowgun-needles-50",
+      "name": "Blowgun needles (50)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "ammunition",
+        "name": "Ammunition"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:bolts-20",
+      "key": "bolts-20",
+      "name": "Crossbow bolts (20)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "ammunition",
+        "name": "Ammunition"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 1.5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:sling-bullets-20",
+      "key": "sling-bullets-20",
+      "name": "Sling bullets (20)",
+      "source": {
+        "book": "PHB",
+        "page": 150
+      },
+      "category": {
+        "id": "ammunition",
+        "name": "Ammunition"
+      },
+      "cost": {
+        "quantity": 0.04,
+        "unit": "gp"
+      },
+      "weight": 1.5,
+      "desc": [],
+      "contents": [],
+      "equip_slot": "wondrous_handheld",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:breastplate",
+      "key": "breastplate",
+      "name": "Breastplate",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 400,
+        "unit": "gp"
+      },
+      "weight": 20,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Medium",
+        "ac": 14,
+        "dex_bonus": true,
+        "dex_max": 2,
+        "stealth_disadvantage": false,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:chain-mail",
+      "key": "chain-mail",
+      "name": "Chain Mail",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 75,
+        "unit": "gp"
+      },
+      "weight": 55,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Heavy",
+        "ac": 16,
+        "dex_bonus": false,
+        "str_min": 13,
+        "stealth_disadvantage": true,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:chain-shirt",
+      "key": "chain-shirt",
+      "name": "Chain Shirt",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 20,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Medium",
+        "ac": 13,
+        "dex_bonus": true,
+        "dex_max": 2,
+        "stealth_disadvantage": false,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:half-plate",
+      "key": "half-plate",
+      "name": "Half Plate",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 750,
+        "unit": "gp"
+      },
+      "weight": 40,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Medium",
+        "ac": 15,
+        "dex_bonus": true,
+        "dex_max": 2,
+        "stealth_disadvantage": true,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:hide",
+      "key": "hide",
+      "name": "Hide",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 12,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Medium",
+        "ac": 12,
+        "dex_bonus": true,
+        "dex_max": 2,
+        "stealth_disadvantage": false,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:leather",
+      "key": "leather",
+      "name": "Leather",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 10,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Light",
+        "ac": 11,
+        "dex_bonus": true,
+        "stealth_disadvantage": false,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:padded",
+      "key": "padded",
+      "name": "Padded",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 8,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Light",
+        "ac": 11,
+        "dex_bonus": true,
+        "stealth_disadvantage": true,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:plate",
+      "key": "plate",
+      "name": "Plate",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 1500,
+        "unit": "gp"
+      },
+      "weight": 65,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Heavy",
+        "ac": 18,
+        "dex_bonus": false,
+        "str_min": 15,
+        "stealth_disadvantage": true,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:ring-mail",
+      "key": "ring-mail",
+      "name": "Ring Mail",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 30,
+        "unit": "gp"
+      },
+      "weight": 40,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Heavy",
+        "ac": 14,
+        "dex_bonus": false,
+        "stealth_disadvantage": true,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:scale-mail",
+      "key": "scale-mail",
+      "name": "Scale Mail",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 45,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Medium",
+        "ac": 14,
+        "dex_bonus": true,
+        "dex_max": 2,
+        "stealth_disadvantage": true,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:shield",
+      "key": "shield",
+      "name": "Shield",
+      "source": {
+        "book": "PHB",
+        "page": 144
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [
+        "A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+      ],
+      "contents": [],
+      "armor": {
+        "category": "Shield",
+        "ac": 2,
+        "dex_bonus": false,
+        "stealth_disadvantage": false,
+        "shield": true
+      },
+      "equip_slot": "shield",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:splint",
+      "key": "splint",
+      "name": "Splint",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 200,
+        "unit": "gp"
+      },
+      "weight": 60,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Heavy",
+        "ac": 17,
+        "dex_bonus": false,
+        "str_min": 15,
+        "stealth_disadvantage": true,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:studded-leather",
+      "key": "studded-leather",
+      "name": "Studded Leather",
+      "source": {
+        "book": "PHB",
+        "page": 145
+      },
+      "category": {
+        "id": "armor",
+        "name": "Armor"
+      },
+      "cost": {
+        "quantity": 45,
+        "unit": "gp"
+      },
+      "weight": 13,
+      "desc": [],
+      "contents": [],
+      "armor": {
+        "category": "Light",
+        "ac": 12,
+        "dex_bonus": true,
+        "stealth_disadvantage": false,
+        "shield": false
+      },
+      "equip_slot": "armor",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:burglars-pack",
+      "key": "burglars-pack",
+      "name": "Burglar's Pack",
+      "source": {
+        "book": "PHB",
+        "page": 151
+      },
+      "category": {
+        "id": "equipment-packs",
+        "name": "Equipment Packs"
+      },
+      "cost": {
+        "quantity": 16,
+        "unit": "gp"
+      },
+      "weight": 47.5,
+      "desc": [],
+      "contents": [
+        {
+          "item": "equip:backpack",
+          "name": "Backpack",
+          "quantity": 1
+        },
+        {
+          "item": "equip:ball-bearings-bag",
+          "name": "Ball bearings (bag of 1,000)",
+          "quantity": 1
+        },
+        {
+          "item": "equip:string-10-feet",
+          "name": "String (10 feet)",
+          "quantity": 1
+        },
+        {
+          "item": "equip:bell",
+          "name": "Bell",
+          "quantity": 1
+        },
+        {
+          "item": "equip:candle",
+          "name": "Candle",
+          "quantity": 5
+        },
+        {
+          "item": "equip:crowbar",
+          "name": "Crowbar",
+          "quantity": 1
+        },
+        {
+          "item": "equip:hammer",
+          "name": "Hammer",
+          "quantity": 1
+        },
+        {
+          "item": "equip:piton",
+          "name": "Piton",
+          "quantity": 10
+        },
+        {
+          "item": "equip:lantern-hooded",
+          "name": "Lantern, hooded",
+          "quantity": 1
+        },
+        {
+          "item": "equip:oil-flask",
+          "name": "Oil (flask)",
+          "quantity": 2
+        },
+        {
+          "item": "equip:rations-1-day",
+          "name": "Rations (1 day)",
+          "quantity": 5
+        },
+        {
+          "item": "equip:tinderbox",
+          "name": "Tinderbox",
+          "quantity": 1
+        },
+        {
+          "item": "equip:waterskin",
+          "name": "Waterskin",
+          "quantity": 1
+        },
+        {
+          "item": "equip:rope-hempen-50-feet",
+          "name": "Rope, hempen (50 feet)",
+          "quantity": 1
+        }
+      ],
+      "equip_slot": "container",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:diplomats-pack",
+      "key": "diplomats-pack",
+      "name": "Diplomat's Pack",
+      "source": {
+        "book": "PHB",
+        "page": 151
+      },
+      "category": {
+        "id": "equipment-packs",
+        "name": "Equipment Packs"
+      },
+      "cost": {
+        "quantity": 39,
+        "unit": "gp"
+      },
+      "weight": 36,
+      "desc": [],
+      "contents": [
+        {
+          "item": "equip:chest",
+          "name": "Chest",
+          "quantity": 1
+        },
+        {
+          "item": "equip:case-map-or-scroll",
+          "name": "Case, map or scroll",
+          "quantity": 2
+        },
+        {
+          "item": "equip:clothes-fine",
+          "name": "Clothes, fine",
+          "quantity": 1
+        },
+        {
+          "item": "equip:ink-1-ounce-bottle",
+          "name": "Ink (1 ounce bottle)",
+          "quantity": 1
+        },
+        {
+          "item": "equip:ink-pen",
+          "name": "Ink pen",
+          "quantity": 1
+        },
+        {
+          "item": "equip:lamp",
+          "name": "Lamp",
+          "quantity": 1
+        },
+        {
+          "item": "equip:oil-flask",
+          "name": "Oil (flask)",
+          "quantity": 2
+        },
+        {
+          "item": "equip:paper-one-sheet",
+          "name": "Paper (one sheet)",
+          "quantity": 5
+        },
+        {
+          "item": "equip:perfume-vial",
+          "name": "Perfume (vial)",
+          "quantity": 1
+        },
+        {
+          "item": "equip:sealing-wax",
+          "name": "Sealing wax",
+          "quantity": 1
+        },
+        {
+          "item": "equip:soap",
+          "name": "Soap",
+          "quantity": 1
+        }
+      ],
+      "equip_slot": "container",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:dungeoneers-pack",
+      "key": "dungeoneers-pack",
+      "name": "Dungeoneer's Pack",
+      "source": {
+        "book": "PHB",
+        "page": 151
+      },
+      "category": {
+        "id": "equipment-packs",
+        "name": "Equipment Packs"
+      },
+      "cost": {
+        "quantity": 12,
+        "unit": "gp"
+      },
+      "weight": 61.5,
+      "desc": [],
+      "contents": [
+        {
+          "item": "equip:backpack",
+          "name": "Backpack",
+          "quantity": 1
+        },
+        {
+          "item": "equip:crowbar",
+          "name": "Crowbar",
+          "quantity": 1
+        },
+        {
+          "item": "equip:hammer",
+          "name": "Hammer",
+          "quantity": 1
+        },
+        {
+          "item": "equip:piton",
+          "name": "Piton",
+          "quantity": 10
+        },
+        {
+          "item": "equip:torch",
+          "name": "Torch",
+          "quantity": 10
+        },
+        {
+          "item": "equip:tinderbox",
+          "name": "Tinderbox",
+          "quantity": 1
+        },
+        {
+          "item": "equip:rations-1-day",
+          "name": "Rations (1 day)",
+          "quantity": 10
+        },
+        {
+          "item": "equip:waterskin",
+          "name": "Waterskin",
+          "quantity": 1
+        },
+        {
+          "item": "equip:rope-hempen-50-feet",
+          "name": "Rope, hempen (50 feet)",
+          "quantity": 1
+        }
+      ],
+      "equip_slot": "container",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:entertainers-pack",
+      "key": "entertainers-pack",
+      "name": "Entertainer's Pack",
+      "source": {
+        "book": "PHB",
+        "page": 151
+      },
+      "category": {
+        "id": "equipment-packs",
+        "name": "Equipment Packs"
+      },
+      "cost": {
+        "quantity": 40,
+        "unit": "gp"
+      },
+      "desc": [],
+      "contents": [
+        {
+          "item": "equip:backpack",
+          "name": "Backpack",
+          "quantity": 1
+        },
+        {
+          "item": "equip:bedroll",
+          "name": "Bedroll",
+          "quantity": 1
+        },
+        {
+          "item": "equip:clothes-costume",
+          "name": "Clothes, costume",
+          "quantity": 2
+        },
+        {
+          "item": "equip:candle",
+          "name": "Candle",
+          "quantity": 5
+        },
+        {
+          "item": "equip:rations-1-day",
+          "name": "Rations (1 day)",
+          "quantity": 5
+        },
+        {
+          "item": "equip:waterskin",
+          "name": "Waterskin",
+          "quantity": 1
+        },
+        {
+          "item": "equip:disguise-kit",
+          "name": "disguise-kit",
+          "quantity": 1
+        }
+      ],
+      "equip_slot": "container",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:explorers-pack",
+      "key": "explorers-pack",
+      "name": "Explorer's Pack",
+      "source": {
+        "book": "PHB",
+        "page": 151
+      },
+      "category": {
+        "id": "equipment-packs",
+        "name": "Equipment Packs"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 59,
+      "desc": [],
+      "contents": [
+        {
+          "item": "equip:backpack",
+          "name": "Backpack",
+          "quantity": 1
+        },
+        {
+          "item": "equip:bedroll",
+          "name": "Bedroll",
+          "quantity": 1
+        },
+        {
+          "item": "equip:mess-kit",
+          "name": "Mess kit",
+          "quantity": 1
+        },
+        {
+          "item": "equip:tinderbox",
+          "name": "Tinderbox",
+          "quantity": 1
+        },
+        {
+          "item": "equip:torch",
+          "name": "Torch",
+          "quantity": 10
+        },
+        {
+          "item": "equip:rations-1-day",
+          "name": "Rations (1 day)",
+          "quantity": 10
+        },
+        {
+          "item": "equip:waterskin",
+          "name": "Waterskin",
+          "quantity": 1
+        },
+        {
+          "item": "equip:rope-hempen-50-feet",
+          "name": "Rope, hempen (50 feet)",
+          "quantity": 1
+        }
+      ],
+      "equip_slot": "container",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:priests-pack",
+      "key": "priests-pack",
+      "name": "Priest's Pack",
+      "source": {
+        "book": "PHB",
+        "page": 151
+      },
+      "category": {
+        "id": "equipment-packs",
+        "name": "Equipment Packs"
+      },
+      "cost": {
+        "quantity": 19,
+        "unit": "gp"
+      },
+      "weight": 23.5,
+      "desc": [],
+      "contents": [
+        {
+          "item": "equip:backpack",
+          "name": "Backpack",
+          "quantity": 1
+        },
+        {
+          "item": "equip:blanket",
+          "name": "Blanket",
+          "quantity": 1
+        },
+        {
+          "item": "equip:candle",
+          "name": "Candle",
+          "quantity": 10
+        },
+        {
+          "item": "equip:tinderbox",
+          "name": "Tinderbox",
+          "quantity": 1
+        },
+        {
+          "item": "equip:alms-box",
+          "name": "Alms box",
+          "quantity": 1
+        },
+        {
+          "item": "equip:incense-block",
+          "name": "Incense (block)",
+          "quantity": 2
+        },
+        {
+          "item": "equip:censer",
+          "name": "Censer",
+          "quantity": 1
+        },
+        {
+          "item": "equip:vestments",
+          "name": "Vestments",
+          "quantity": 1
+        },
+        {
+          "item": "equip:rations-1-day",
+          "name": "Rations (1 day)",
+          "quantity": 2
+        },
+        {
+          "item": "equip:waterskin",
+          "name": "Waterskin",
+          "quantity": 1
+        }
+      ],
+      "equip_slot": "container",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:scholars-pack",
+      "key": "scholars-pack",
+      "name": "Scholar's Pack",
+      "source": {
+        "book": "PHB",
+        "page": 151
+      },
+      "category": {
+        "id": "equipment-packs",
+        "name": "Equipment Packs"
+      },
+      "cost": {
+        "quantity": 40,
+        "unit": "gp"
+      },
+      "weight": 10.5,
+      "desc": [],
+      "contents": [
+        {
+          "item": "equip:backpack",
+          "name": "Backpack",
+          "quantity": 1
+        },
+        {
+          "item": "equip:book",
+          "name": "Book",
+          "quantity": 1
+        },
+        {
+          "item": "equip:ink-1-ounce-bottle",
+          "name": "Ink (1 ounce bottle)",
+          "quantity": 1
+        },
+        {
+          "item": "equip:ink-pen",
+          "name": "Ink pen",
+          "quantity": 1
+        },
+        {
+          "item": "equip:parchment-one-sheet",
+          "name": "Parchment (one sheet)",
+          "quantity": 10
+        },
+        {
+          "item": "equip:little-bag-of-sand",
+          "name": "Little bag of sand",
+          "quantity": 1
+        },
+        {
+          "item": "equip:knife-small",
+          "name": "Knife, small",
+          "quantity": 1
+        }
+      ],
+      "equip_slot": "container",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:alchemists-supplies",
+      "key": "alchemists-supplies",
+      "name": "Alchemist's supplies",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 8,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:bagpipes",
+      "key": "bagpipes",
+      "name": "Bagpipes",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 30,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Musical instrument"
+      },
+      "equip_slot": "instrument",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:brewers-supplies",
+      "key": "brewers-supplies",
+      "name": "Brewer's supplies",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 20,
+        "unit": "gp"
+      },
+      "weight": 9,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:calligraphers-supplies",
+      "key": "calligraphers-supplies",
+      "name": "Calligrapher's supplies",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:carpenters-tools",
+      "key": "carpenters-tools",
+      "name": "Carpenter's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 8,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:cartographers-tools",
+      "key": "cartographers-tools",
+      "name": "Cartographer's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 15,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:cobblers-tools",
+      "key": "cobblers-tools",
+      "name": "Cobbler's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:cooks-utensils",
+      "key": "cooks-utensils",
+      "name": "Cook's utensils",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 8,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:dice-set",
+      "key": "dice-set",
+      "name": "Dice set",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "sp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Gaming set"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:disguise-kit",
+      "key": "disguise-kit",
+      "name": "Disguise kit",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Kit"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:dragonchess-set",
+      "key": "dragonchess-set",
+      "name": "Dragonchess set",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 0.5,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Gaming set"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:drum",
+      "key": "drum",
+      "name": "Drum",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 6,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Musical instrument"
+      },
+      "equip_slot": "instrument",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:dulcimer",
+      "key": "dulcimer",
+      "name": "Dulcimer",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 10,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Musical instrument"
+      },
+      "equip_slot": "instrument",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:flute",
+      "key": "flute",
+      "name": "Flute",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Musical instrument"
+      },
+      "equip_slot": "instrument",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:forgery-kit",
+      "key": "forgery-kit",
+      "name": "Forgery kit",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 15,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Kit"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:glassblowers-tools",
+      "key": "glassblowers-tools",
+      "name": "Glassblower's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 30,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:herbalism-kit",
+      "key": "herbalism-kit",
+      "name": "Herbalism kit",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Kit"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:horn",
+      "key": "horn",
+      "name": "Horn",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 3,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Musical instrument"
+      },
+      "equip_slot": "instrument",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:jewelers-tools",
+      "key": "jewelers-tools",
+      "name": "Jeweler's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:leatherworkers-tools",
+      "key": "leatherworkers-tools",
+      "name": "Leatherworker's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:lute",
+      "key": "lute",
+      "name": "Lute",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 35,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Musical instrument"
+      },
+      "equip_slot": "instrument",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:lyre",
+      "key": "lyre",
+      "name": "Lyre",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 30,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Musical instrument"
+      },
+      "equip_slot": "instrument",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:masons-tools",
+      "key": "masons-tools",
+      "name": "Mason's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 8,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:navigators-tools",
+      "key": "navigators-tools",
+      "name": "Navigator's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:painters-supplies",
+      "key": "painters-supplies",
+      "name": "Painter's supplies",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:pan-flute",
+      "key": "pan-flute",
+      "name": "Pan flute",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 12,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Musical instrument"
+      },
+      "equip_slot": "instrument",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:playing-card-set",
+      "key": "playing-card-set",
+      "name": "Playing card set",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "sp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Gaming set"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:poisoners-kit",
+      "key": "poisoners-kit",
+      "name": "Poisoner's kit",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Kit"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:potters-tools",
+      "key": "potters-tools",
+      "name": "Potter's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:shawm",
+      "key": "shawm",
+      "name": "Shawm",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Musical instrument"
+      },
+      "equip_slot": "instrument",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:smiths-tools",
+      "key": "smiths-tools",
+      "name": "Smith's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 20,
+        "unit": "gp"
+      },
+      "weight": 8,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:thieves-tools",
+      "key": "thieves-tools",
+      "name": "Thieves' tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:three-dragon-ante-set",
+      "key": "three-dragon-ante-set",
+      "name": "Three-Dragon Ante set",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Gaming set"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:tinkers-tools",
+      "key": "tinkers-tools",
+      "name": "Tinker's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 10,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:viol",
+      "key": "viol",
+      "name": "Viol",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 30,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Musical instrument"
+      },
+      "equip_slot": "instrument",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:weavers-tools",
+      "key": "weavers-tools",
+      "name": "Weaver's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:woodcarvers-tools",
+      "key": "woodcarvers-tools",
+      "name": "Woodcarver's tools",
+      "source": {
+        "book": "PHB",
+        "page": 154
+      },
+      "category": {
+        "id": "tools",
+        "name": "Tools"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "tool": {
+        "category": "Artisan's tools"
+      },
+      "equip_slot": "tool",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:dagger-plus-1",
+      "key": "dagger-plus-1",
+      "name": "+1 Dagger",
+      "source": {
+        "book": "DMG",
+        "page": 213
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d4",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 20,
+          "long": 60
+        },
+        "properties": [
+          "Finesse",
+          "Light",
+          "Thrown"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:battleaxe",
+      "key": "battleaxe",
+      "name": "Battleaxe",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [
+        "Versatile (1d10)"
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d8",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Versatile"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:blowgun",
+      "key": "blowgun",
+      "name": "Blowgun",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Ranged",
+        "category_range": "Martial Ranged",
+        "damage": {
+          "dice": "1",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 25,
+          "long": 100
+        },
+        "properties": [
+          "Ammunition",
+          "Loading"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:boomerang",
+      "key": "boomerang",
+      "name": "Boomerang",
+      "source": {
+        "book": "custom"
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [
+        "If you miss your target, the boomerang returns to your hand."
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Ranged",
+        "category_range": "Simple Ranged",
+        "damage": {
+          "dice": "1d4",
+          "type": "Bludgeoning"
+        },
+        "range_values": {
+          "normal": 60,
+          "long": 120
+        },
+        "properties": [
+          "Thrown"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:club",
+      "key": "club",
+      "name": "Club",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 0.1,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d4",
+          "type": "Bludgeoning"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Light"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:crossbow-hand",
+      "key": "crossbow-hand",
+      "name": "Crossbow, hand",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 75,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Ranged",
+        "category_range": "Martial Ranged",
+        "damage": {
+          "dice": "1d6",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 30,
+          "long": 120
+        },
+        "properties": [
+          "Ammunition",
+          "Light",
+          "Loading"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:crossbow-heavy",
+      "key": "crossbow-heavy",
+      "name": "Crossbow, heavy",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 18,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Ranged",
+        "category_range": "Martial Ranged",
+        "damage": {
+          "dice": "1d10",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 100,
+          "long": 400
+        },
+        "properties": [
+          "Ammunition",
+          "Heavy",
+          "Loading",
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:crossbow-light",
+      "key": "crossbow-light",
+      "name": "Crossbow, light",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 5,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Ranged",
+        "category_range": "Simple Ranged",
+        "damage": {
+          "dice": "1d8",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 80,
+          "long": 320
+        },
+        "properties": [
+          "Ammunition",
+          "Loading",
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:dagger",
+      "key": "dagger",
+      "name": "Dagger",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 1,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d4",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 20,
+          "long": 60
+        },
+        "properties": [
+          "Finesse",
+          "Light",
+          "Thrown"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:dart",
+      "key": "dart",
+      "name": "Dart",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 0.05,
+        "unit": "gp"
+      },
+      "weight": 0.25,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Ranged",
+        "category_range": "Simple Ranged",
+        "damage": {
+          "dice": "1d4",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 20,
+          "long": 60
+        },
+        "properties": [
+          "Finesse",
+          "Thrown"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:flail",
+      "key": "flail",
+      "name": "Flail",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d8",
+          "type": "Bludgeoning"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": []
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:glaive",
+      "key": "glaive",
+      "name": "Glaive",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 20,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d10",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Heavy",
+          "Reach",
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:greataxe",
+      "key": "greataxe",
+      "name": "Greataxe",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 30,
+        "unit": "gp"
+      },
+      "weight": 7,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d12",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Heavy",
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:greatclub",
+      "key": "greatclub",
+      "name": "Greatclub",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 0.2,
+        "unit": "gp"
+      },
+      "weight": 10,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d8",
+          "type": "Bludgeoning"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:greatsword",
+      "key": "greatsword",
+      "name": "Greatsword",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "2d6",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Heavy",
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:halberd",
+      "key": "halberd",
+      "name": "Halberd",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 20,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d10",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Heavy",
+          "Reach",
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:handaxe",
+      "key": "handaxe",
+      "name": "Handaxe",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d6",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 20,
+          "long": 60
+        },
+        "properties": [
+          "Light",
+          "Thrown"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:harpoon",
+      "key": "harpoon",
+      "name": "Harpoon",
+      "source": {
+        "book": "custom"
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [
+        "When you hit a Large or smaller creature with this weapon, you can attempt to impale it.",
+        "The target must succeed on a Strength saving throw (DC = 8 + your Strength modifier + your proficiency bonus) or be impaled.",
+        "While impaled, the target’s movement is reduced to 0 unless it breaks free, and you can use a bonus action to try to reel it in.",
+        "The target can use its action to make a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check to free itself."
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d6",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 15,
+          "long": 45
+        },
+        "properties": [
+          "Thrown",
+          "Special"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:javelin",
+      "key": "javelin",
+      "name": "Javelin",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 0.5,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d6",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 30,
+          "long": 120
+        },
+        "properties": [
+          "Thrown"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:kusari-gama",
+      "key": "kusari-gama",
+      "name": "Kusari-gama",
+      "source": {
+        "book": "custom"
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d8",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Finesse",
+          "Reach",
+          "Monk"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:lance",
+      "key": "lance",
+      "name": "Lance",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 6,
+      "desc": [
+        "You have disadvantage when you use a lance to attack a target within 5 feet of you.",
+        "Also, a lance requires two hands to wield when you aren’t mounted."
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d12",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Reach",
+          "Special"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:light-hammer",
+      "key": "light-hammer",
+      "name": "Light Hammer",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d4",
+          "type": "Bludgeoning"
+        },
+        "range_values": {
+          "normal": 20,
+          "long": 60
+        },
+        "properties": [
+          "Light",
+          "Thrown"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:longbow",
+      "key": "longbow",
+      "name": "Longbow",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 50,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Ranged",
+        "category_range": "Martial Ranged",
+        "damage": {
+          "dice": "1d8",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 150,
+          "long": 600
+        },
+        "properties": [
+          "Ammunition",
+          "Heavy",
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:longsword",
+      "key": "longsword",
+      "name": "Longsword",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 15,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [
+        "Versatile (1d10)"
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d8",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Versatile"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:mace",
+      "key": "mace",
+      "name": "Mace",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d6",
+          "type": "Bludgeoning"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": []
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:maul",
+      "key": "maul",
+      "name": "Maul",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 10,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "2d6",
+          "type": "Bludgeoning"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Heavy",
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:morningstar",
+      "key": "morningstar",
+      "name": "Morningstar",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 15,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d8",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": []
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:net",
+      "key": "net",
+      "name": "Net",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [
+        "A Large or smaller creature hit by a net is restrained until it is freed.",
+        "A net has no effect on creatures that are formless, or creatures that are Huge or larger.",
+        "A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success.",
+        "Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it; the net is destroyed.",
+        "When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Ranged",
+        "category_range": "Martial Ranged",
+        "damage": {},
+        "range_values": {
+          "normal": 5,
+          "long": 15
+        },
+        "properties": [
+          "Special",
+          "Thrown"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:pike",
+      "key": "pike",
+      "name": "Pike",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 18,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d10",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Heavy",
+          "Reach",
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:quarterstaff",
+      "key": "quarterstaff",
+      "name": "Quarterstaff",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 0.2,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [
+        "Versatile (1d8)"
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d6",
+          "type": "Bludgeoning"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Versatile"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:rapier",
+      "key": "rapier",
+      "name": "Rapier",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d8",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Finesse"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:scimitar",
+      "key": "scimitar",
+      "name": "Scimitar",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d6",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Finesse",
+          "Light"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:shortbow",
+      "key": "shortbow",
+      "name": "Shortbow",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 25,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Ranged",
+        "category_range": "Simple Ranged",
+        "damage": {
+          "dice": "1d6",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 80,
+          "long": 320
+        },
+        "properties": [
+          "Ammunition",
+          "Two-Handed"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:shortsword",
+      "key": "shortsword",
+      "name": "Shortsword",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 10,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d6",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Finesse",
+          "Light"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:sickle",
+      "key": "sickle",
+      "name": "Sickle",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d4",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Light"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:sling",
+      "key": "sling",
+      "name": "Sling",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 0.1,
+        "unit": "gp"
+      },
+      "weight": 0,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Ranged",
+        "category_range": "Simple Ranged",
+        "damage": {
+          "dice": "1d4",
+          "type": "Bludgeoning"
+        },
+        "range_values": {
+          "normal": 30,
+          "long": 120
+        },
+        "properties": [
+          "Ammunition"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:spear",
+      "key": "spear",
+      "name": "Spear",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [
+        "Versatile (1d8)"
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d6",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 20,
+          "long": 60
+        },
+        "properties": [
+          "Thrown",
+          "Versatile"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:trident",
+      "key": "trident",
+      "name": "Trident",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 4,
+      "desc": [
+        "Versatile (1d8)"
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d6",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 20,
+          "long": 60
+        },
+        "properties": [
+          "Thrown",
+          "Versatile"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:war-pick",
+      "key": "war-pick",
+      "name": "War Pick",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 5,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d8",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": []
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:warhammer",
+      "key": "warhammer",
+      "name": "Warhammer",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 15,
+        "unit": "gp"
+      },
+      "weight": 2,
+      "desc": [
+        "Versatile (1d10)"
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d8",
+          "type": "Bludgeoning"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Versatile"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:whip",
+      "key": "whip",
+      "name": "Whip",
+      "source": {
+        "book": "PHB",
+        "page": 149
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 2,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [],
+      "contents": [],
+      "weapon": {
+        "category": "Martial",
+        "range": "Melee",
+        "category_range": "Martial Melee",
+        "damage": {
+          "dice": "1d4",
+          "type": "Slashing"
+        },
+        "range_values": {
+          "normal": 5,
+          "long": 5
+        },
+        "properties": [
+          "Finesse",
+          "Reach"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    },
+    {
+      "id": "equip:yklwa",
+      "key": "yklwa",
+      "name": "Yklwa",
+      "source": {
+        "book": "ToA",
+        "page": 208
+      },
+      "category": {
+        "id": "weapon",
+        "name": "Weapon"
+      },
+      "cost": {
+        "quantity": 1,
+        "unit": "gp"
+      },
+      "weight": 3,
+      "desc": [
+        "Pronounced: YICK-ul-wah, it consists of a 3-foot wooden shaft with a steel or stone blade up to 18 inches long."
+      ],
+      "contents": [],
+      "weapon": {
+        "category": "Simple",
+        "range": "Melee",
+        "category_range": "Simple Melee",
+        "damage": {
+          "dice": "1d8",
+          "type": "Piercing"
+        },
+        "range_values": {
+          "normal": 10,
+          "long": 30
+        },
+        "properties": [
+          "Thrown"
+        ]
+      },
+      "equip_slot": "weapon",
+      "object_form": null,
+      "is_spellcasting_focus": false,
+      "focus_kind": null,
+      "is_armor_like_garment": false
+    }
+  ],
+  "modifiers": [
+    {
+      "id": "mod:magic:+1",
+      "key": "+1",
+      "name": "+1",
+      "bonus": 1,
+      "type": "magic"
+    },
+    {
+      "id": "mod:magic:+2",
+      "key": "+2",
+      "name": "+2",
+      "bonus": 2,
+      "type": "magic"
+    },
+    {
+      "id": "mod:magic:+3",
+      "key": "+3",
+      "name": "+3",
+      "bonus": 3,
+      "type": "magic"
+    }
+  ]
+}

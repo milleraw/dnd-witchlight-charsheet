@@ -1,0 +1,605 @@
+{
+  "name": "Hariette Carrotson-new",
+  "player_name": "Holly Deegan",
+  "gender": "Female",
+  "class": "Ranger",
+  "level": 4,
+  "race": "Harengon",
+  "speed": 30,
+  "size": "Medium",
+  "background": "Witchlight Hand",
+  "alignment": "Neutral Good",
+  "eyes_hair": "",
+  "armor": [
+    "Scale Mail"
+  ],
+  "abilities": {
+    "STR": 13,
+    "DEX": 18,
+    "CON": 14,
+    "INT": 15,
+    "WIS": 11,
+    "CHA": 16
+  },
+  "traits": [
+    {
+      "id": "trait:harengon:hare-trigger",
+      "key": "hare-trigger",
+      "name": "Hare-Trigger",
+      "type": "passive",
+      "desc": "You can add your proficiency bonus to your initiative rolls."
+    },
+    {
+      "id": "trait:harengon:leporine-senses",
+      "key": "leporine-senses",
+      "name": "Leporine Senses",
+      "type": "passive",
+      "desc": "You have proficiency in the Perception skill."
+    },
+    {
+      "id": "trait:harengon:lucky-footwork",
+      "key": "lucky-footwork",
+      "name": "Lucky Footwork",
+      "type": "passive",
+      "desc": "When you fail a Dexterity saving throw after seeing the roll but before the DM determines the outcome, you can use your reaction to roll a d4 and add it to the save, potentially turning it into a success. You can’t use this reaction if your speed is 0.",
+      "rules": {
+        "grants_action": "action:harengon:lucky-footwork"
+      }
+    },
+    {
+      "id": "trait:harengon:rabbit-hop",
+      "key": "rabbit-hop",
+      "name": "Rabbit Hop",
+      "type": "passive",
+      "desc": "As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait a number of times equal to your proficiency bonus per long rest.",
+      "rules": {
+        "grants_action": "action:harengon:rabbit-hop"
+      }
+    },
+    {
+      "id": "trait:bg:witchlight-hand:carnival-fixture",
+      "name": "Carnival Fixture",
+      "type": "background",
+      "desc": "The Witchlight Carnival provides you with free, modest lodging and food. In addition, you may wander about the carnival and partake of its many wonders at no cost to you, provided you don’t disrupt its shows or cause any other trouble."
+    },
+    {
+      "id": "trait:bg:witchlight-hand:carnival-companion",
+      "name": "Carnival Companion",
+      "type": "background",
+      "desc": "Over the years, you have earned the friendship of another carnival fixture. This companion hangs around you while you’re in the carnival but won’t voluntarily leave it. Work with your DM to flesh out this relationship."
+    },
+    {
+      "name": "Favored Foe (Optional)",
+      "desc": "Replaces Favored Enemy. When you hit a creature with an attack roll, you can mark it as your favored foe for 1 minute (or until you lose concentration, as if concentrating on a spell). The first time on each of your turns that you hit the favored foe and deal damage to it, you deal an extra 1d4 damage. You can use this feature a number of times equal to your proficiency bonus per long rest. The extra damage increases to 1d6 at 6th level and 1d8 at 14th level."
+    },
+    {
+      "name": "Deft Explorer (Optional)",
+      "desc": "Replaces Natural Explorer. You gain benefits as you advance: at 1st level choose Canny; at 6th level gain Roving; at 10th level gain Tireless."
+    },
+    {
+      "id": "trait:bg:witchlight-hand:carnival-fixture",
+      "name": "Carnival Fixture",
+      "type": "background",
+      "desc": "The Witchlight Carnival provides you with free, modest lodging and food. In addition, you may wander about the carnival and partake of its many wonders at no cost to you, provided you don’t disrupt its shows or cause any other trouble."
+    },
+    {
+      "id": "trait:bg:witchlight-hand:carnival-companion",
+      "name": "Carnival Companion",
+      "type": "background",
+      "desc": "Over the years, you have earned the friendship of another carnival fixture. This companion hangs around you while you’re in the carnival but won’t voluntarily leave it. Work with your DM to flesh out this relationship."
+    },
+    {
+      "name": "Favored Foe (Optional)",
+      "desc": "Replaces Favored Enemy. When you hit a creature with an attack roll, you can mark it as your favored foe for 1 minute (or until you lose concentration, as if concentrating on a spell). The first time on each of your turns that you hit the favored foe and deal damage to it, you deal an extra 1d4 damage. You can use this feature a number of times equal to your proficiency bonus per long rest. The extra damage increases to 1d6 at 6th level and 1d8 at 14th level."
+    },
+    {
+      "name": "Deft Explorer (Optional)",
+      "desc": "Replaces Natural Explorer. You gain benefits as you advance: at 1st level choose Canny; at 6th level gain Roving; at 10th level gain Tireless."
+    },
+    {
+      "name": "Fighting Style (Archery)",
+      "desc": ""
+    }
+  ],
+  "proficiencies": {
+    "armor": [
+      "Light Armor",
+      "Medium Armor"
+    ],
+    "weapons": [
+      "Simple Weapons",
+      "Martial Weapons"
+    ],
+    "tools": [
+      "Bagpipes"
+    ],
+    "skills": [
+      "Persuasion"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "STR",
+      "DEX"
+    ],
+    "skills": [
+      "Perception",
+      "Performance",
+      "Sleight of Hand",
+      "Animal Handling",
+      "Investigation",
+      "Nature",
+      "Persuasion"
+    ]
+  },
+  "languages": [
+    "Common",
+    "Dwarvish",
+    "Elvish",
+    "Giant",
+    "Goblin",
+    "Sylvan"
+  ],
+  "spells": [],
+  "equipment": {
+    "weapons": [
+      "Longbow",
+      "Shortsword"
+    ],
+    "gear": [
+      {
+        "name": "Arrow",
+        "qty": 20
+      },
+      {
+        "name": "Explorer's Pack",
+        "qty": 1
+      },
+      {
+        "name": "A deck of cards",
+        "qty": 1
+      },
+      {
+        "name": "A carnival uniform or costume",
+        "qty": 1
+      },
+      {
+        "name": "One Feywild trinket",
+        "qty": 1
+      },
+      {
+        "name": "Sponge Shoes",
+        "qty": 1,
+        "desc": "Shoes with soles that look like they're made out of sponge.",
+        "equip_slot": "boots"
+      },
+      {
+        "name": "Tiny Vial",
+        "qty": 1,
+        "desc": "A tiny vial containing a mysterious, shimmering liquid that changes colour when shaken."
+      },
+      {
+        "name": "Boots of Elvenkind",
+        "qty": 1,
+        "ref": "equip:boots-of-elvenkind",
+        "equip_slot": "boots"
+      },
+      {
+        "name": "Bracers of Archery",
+        "qty": 1,
+        "ref": "equip:bracers-of-archery",
+        "equip_slot": "bracers",
+        "attuned": true,
+        "attuned_qty": 1
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 8,
+    "sp": 0,
+    "cp": 0
+  },
+  "hit_die": "d10",
+  "maxHP": 40,
+  "feats": [],
+  "characteristics": {
+    "trait": "",
+    "ideal": "",
+    "bond": "",
+    "flaw": ""
+  },
+  "choices": {
+    "class": "Ranger",
+    "subclass": "Fey Wanderer",
+    "race": "Harengon",
+    "subrace": "",
+    "subraceKey": "",
+    "subraceAlias": "",
+    "draconicAncestry": "",
+    "raceVariantKeys": [],
+    "background": "Witchlight Hand",
+    "alignment": "Neutral Good",
+    "deity": "",
+    "abilities": {
+      "STR": 13,
+      "DEX": 16,
+      "CON": 14,
+      "INT": 15,
+      "WIS": 11,
+      "CHA": 16
+    },
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "languages": [
+      "Common",
+      "Dwarvish",
+      "Elvish",
+      "Giant",
+      "Goblin",
+      "Sylvan"
+    ],
+    "skills": [
+      "Perception",
+      "Performance",
+      "Sleight of Hand",
+      "Animal Handling",
+      "Investigation",
+      "Nature"
+    ],
+    "tools": [
+      "Bagpipes"
+    ],
+    "spells": [],
+    "racialCantrips": [],
+    "equipmentChoices": [
+      {
+        "block": 0,
+        "option": 0,
+        "items": [
+          "Scale Mail"
+        ]
+      },
+      {
+        "block": 1,
+        "option": 0,
+        "items": [
+          "Shortsword"
+        ]
+      },
+      {
+        "block": 2,
+        "option": 1,
+        "items": [
+          "Explorer's Pack"
+        ]
+      }
+    ],
+    "backgroundFeatures": [
+      {
+        "id": "trait:bg:witchlight-hand:carnival-fixture",
+        "name": "Carnival Fixture",
+        "desc": "The Witchlight Carnival provides you with free, modest lodging and food. In addition, you may wander about the carnival and partake of its many wonders at no cost to you, provided you don’t disrupt its shows or cause any other trouble."
+      },
+      {
+        "id": "trait:bg:witchlight-hand:carnival-companion",
+        "name": "Carnival Companion",
+        "desc": "Over the years, you have earned the friendship of another carnival fixture. This companion hangs around you while you’re in the carnival but won’t voluntarily leave it. Work with your DM to flesh out this relationship."
+      }
+    ],
+    "backgroundChoices": [
+      {
+        "choiceId": "choice:bg:witchlight-hand:companion",
+        "itemId": "bgtext:witchlight-hand:companion:1",
+        "label": "Old, cantankerous Witchlight hand"
+      },
+      {
+        "choiceId": "choice:bg:witchlight-hand:languages",
+        "itemId": "Goblin",
+        "label": "Goblin"
+      },
+      {
+        "choiceId": "choice:bg:witchlight-hand:languages",
+        "itemId": "Giant",
+        "label": "Giant"
+      },
+      {
+        "choiceId": "choice:bg:witchlight-hand:tools",
+        "itemId": "Bagpipes",
+        "label": "Bagpipes"
+      }
+    ],
+    "raceTraits": [
+      {
+        "id": "trait:harengon:hare-trigger",
+        "name": "Hare-Trigger",
+        "desc": "You can add your proficiency bonus to your initiative rolls."
+      },
+      {
+        "id": "trait:harengon:leporine-senses",
+        "name": "Leporine Senses",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "id": "trait:harengon:lucky-footwork",
+        "name": "Lucky Footwork",
+        "desc": "When you fail a Dexterity saving throw after seeing the roll but before the DM determines the outcome, you can use your reaction to roll a d4 and add it to the save, potentially turning it into a success. You can’t use this reaction if your speed is 0."
+      },
+      {
+        "id": "trait:harengon:rabbit-hop",
+        "name": "Rabbit Hop",
+        "desc": "As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait a number of times equal to your proficiency bonus per long rest."
+      },
+      {
+        "id": "trait:bg:witchlight-hand:carnival-fixture",
+        "name": "Carnival Fixture",
+        "desc": "The Witchlight Carnival provides you with free, modest lodging and food. In addition, you may wander about the carnival and partake of its many wonders at no cost to you, provided you don’t disrupt its shows or cause any other trouble."
+      },
+      {
+        "id": "trait:bg:witchlight-hand:carnival-companion",
+        "name": "Carnival Companion",
+        "desc": "Over the years, you have earned the friendship of another carnival fixture. This companion hangs around you while you’re in the carnival but won’t voluntarily leave it. Work with your DM to flesh out this relationship."
+      },
+      {
+        "id": "race:harengon:favored-foe-optional",
+        "name": "Favored Foe (Optional)",
+        "desc": "Replaces Favored Enemy. When you hit a creature with an attack roll, you can mark it as your favored foe for 1 minute (or until you lose concentration, as if concentrating on a spell). The first time on each of your turns that you hit the favored foe and deal damage to it, you deal an extra 1d4 damage. You can use this feature a number of times equal to your proficiency bonus per long rest. The extra damage increases to 1d6 at 6th level and 1d8 at 14th level."
+      },
+      {
+        "id": "race:harengon:deft-explorer-optional",
+        "name": "Deft Explorer (Optional)",
+        "desc": "Replaces Natural Explorer. You gain benefits as you advance: at 1st level choose Canny; at 6th level gain Roving; at 10th level gain Tireless."
+      },
+      {
+        "id": "trait:bg:witchlight-hand:carnival-fixture",
+        "name": "Carnival Fixture",
+        "desc": "The Witchlight Carnival provides you with free, modest lodging and food. In addition, you may wander about the carnival and partake of its many wonders at no cost to you, provided you don’t disrupt its shows or cause any other trouble."
+      },
+      {
+        "id": "trait:bg:witchlight-hand:carnival-companion",
+        "name": "Carnival Companion",
+        "desc": "Over the years, you have earned the friendship of another carnival fixture. This companion hangs around you while you’re in the carnival but won’t voluntarily leave it. Work with your DM to flesh out this relationship."
+      }
+    ],
+    "classFeatures": [
+      {
+        "id": "class:ranger:lvl1:favored-foe-optional",
+        "name": "Favored Foe (Optional)"
+      },
+      {
+        "id": "class:ranger:lvl1:deft-explorer-optional",
+        "name": "Deft Explorer (Optional)"
+      }
+    ],
+    "subclassFeatures": [],
+    "classChoices": [
+      {
+        "level": 2,
+        "choiceId": "choice:class:ranger:ranger_fighting_style",
+        "value": "Archery",
+        "values": [
+          "Archery"
+        ],
+        "cantrips": []
+      },
+      {
+        "level": 3,
+        "choiceId": "choice:class:ranger:optional:primal-awareness",
+        "value": "Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": true
+      },
+      {
+        "level": 3,
+        "choiceId": "choice:class:ranger:optional:primal-awareness-spells-by-level",
+        "value": "Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": true
+      },
+      {
+        "level": 4,
+        "choiceId": "choice:class:ranger:optional:martial-versatility",
+        "value": "Not Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": false
+      }
+    ],
+    "rangerChoices": {
+      "favoredChoice": "favored-foe",
+      "favoredEnemyType": "",
+      "favoredEnemyLanguage": "",
+      "terrainChoice": "deft-explorer",
+      "favoredTerrain": "",
+      "cannySkill": "Perception",
+      "cannyLanguage1": "Dwarvish",
+      "cannyLanguage2": "Elvish"
+    },
+    "levelUpDecisions": [
+      {
+        "level": 2,
+        "choices": [
+          {
+            "choiceId": "choice:class:ranger:ranger_fighting_style",
+            "type": "fighting_style",
+            "values": [
+              "Archery"
+            ],
+            "value": "Archery",
+            "cantrips": []
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "choices": [
+          {
+            "choiceId": "choice:subclass",
+            "type": "subclass",
+            "values": [
+              "Fey Wanderer"
+            ],
+            "value": "Fey Wanderer",
+            "cantrips": []
+          },
+          {
+            "choiceId": "choice:subclass:fey-wanderer:feature:otherworldly-glamour",
+            "type": "subclass-choice",
+            "values": [
+              "Persuasion"
+            ],
+            "value": "Persuasion",
+            "cantrips": []
+          },
+          {
+            "choiceId": "choice:class:ranger:optional:primal-awareness",
+            "type": "boolean",
+            "taken": true,
+            "value": "Taken"
+          },
+          {
+            "choiceId": "choice:class:ranger:optional:primal-awareness-spells-by-level",
+            "type": "boolean",
+            "taken": true,
+            "value": "Taken"
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          },
+          {
+            "choiceId": "choice:class:ranger:optional:martial-versatility",
+            "type": "boolean",
+            "taken": false,
+            "value": "Not Taken"
+          }
+        ]
+      }
+    ]
+  },
+  "spellSources": {},
+  "currentHP": 40,
+  "levelUpLog": [
+    {
+      "level": 2,
+      "from": 1,
+      "hitDie": "d10",
+      "conMod": 2,
+      "hpGain": 9,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:class:ranger:ranger_fighting_style",
+          "type": "fighting_style",
+          "values": [
+            "Archery"
+          ],
+          "value": "Archery",
+          "cantrips": []
+        }
+      ],
+      "at": "2026-03-13T19:46:12.977Z"
+    },
+    {
+      "level": 3,
+      "from": 2,
+      "hitDie": "d10",
+      "conMod": 2,
+      "hpGain": 9,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": "Fey Wanderer",
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:subclass",
+          "type": "subclass",
+          "values": [
+            "Fey Wanderer"
+          ],
+          "value": "Fey Wanderer",
+          "cantrips": []
+        },
+        {
+          "choiceId": "choice:subclass:fey-wanderer:feature:otherworldly-glamour",
+          "type": "subclass-choice",
+          "values": [
+            "Persuasion"
+          ],
+          "value": "Persuasion",
+          "cantrips": []
+        },
+        {
+          "choiceId": "choice:class:ranger:optional:primal-awareness",
+          "type": "boolean",
+          "taken": true,
+          "value": "Taken"
+        },
+        {
+          "choiceId": "choice:class:ranger:optional:primal-awareness-spells-by-level",
+          "type": "boolean",
+          "taken": true,
+          "value": "Taken"
+        }
+      ],
+      "at": "2026-03-13T19:50:39.724Z"
+    },
+    {
+      "level": 4,
+      "from": 3,
+      "hitDie": "d10",
+      "conMod": 2,
+      "hpGain": 10,
+      "conHpAdjustment": 0,
+      "asi": {
+        "first": "DEX",
+        "second": "DEX"
+      },
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        },
+        {
+          "choiceId": "choice:class:ranger:optional:martial-versatility",
+          "type": "boolean",
+          "taken": false,
+          "value": "Not Taken"
+        }
+      ],
+      "at": "2026-03-13T19:58:55.913Z"
+    }
+  ],
+  "build": "Fey Wanderer",
+  "inspiration": false
+}

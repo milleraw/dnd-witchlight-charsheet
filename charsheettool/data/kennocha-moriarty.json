@@ -1,0 +1,380 @@
+{
+  "name": "Kennocha Moriarty",
+  "player_name": "tester",
+  "class": "Fighter",
+  "level": 1,
+  "race": "Human",
+  "speed": 30,
+  "size": "Medium",
+  "background": "Sage",
+  "alignment": "Chaotic Neutral",
+  "eyes_hair": "",
+  "armor": [],
+  "abilities": {
+    "STR": 16,
+    "DEX": 13,
+    "CON": 15,
+    "INT": 10,
+    "WIS": 13,
+    "CHA": 8
+  },
+  "traits": [
+    {
+      "id": "trait:bg:sage:researcher",
+      "name": "Researcher",
+      "type": "background",
+      "desc": "When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an inaccessible place, or that it simply cannot be found."
+    },
+    {
+      "name": "Fighting Style",
+      "desc": "You adopt a particular style of fighting as your specialty. Choose one Fighting Style option."
+    },
+    {
+      "name": "Second Wind",
+      "desc": "On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again."
+    }
+  ],
+  "proficiencies": {
+    "armor": [],
+    "weapons": [
+      "Simple Weapons",
+      "Martial Weapons"
+    ],
+    "tools": []
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "STR",
+      "CON"
+    ],
+    "skills": [
+      "Arcana",
+      "History",
+      "Athletics",
+      "Perception",
+      "Insight"
+    ]
+  },
+  "languages": [
+    "Celestial",
+    "Common",
+    "Draconic",
+    "Elvish"
+  ],
+  "spells": [
+    "Misty Step",
+    "Command"
+  ],
+  "equipment": {
+    "weapons": [],
+    "gear": [
+      {
+        "name": "Chain Mail",
+        "qty": 1
+      },
+      {
+        "name": "Longsword",
+        "qty": 1
+      },
+      {
+        "name": "Maul",
+        "qty": 1
+      },
+      {
+        "name": "Handaxe",
+        "qty": 2
+      },
+      {
+        "name": "Explorer's Pack",
+        "qty": 1
+      },
+      {
+        "name": "A bottle of black ink",
+        "qty": 1
+      },
+      {
+        "name": "A quill",
+        "qty": 1
+      },
+      {
+        "name": "A small knife",
+        "qty": 1
+      },
+      {
+        "name": "A letter from a dead colleague posing a question you have not yet been able to answer",
+        "qty": 1
+      },
+      {
+        "name": "A set of common clothes",
+        "qty": 1
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 10,
+    "sp": 0,
+    "cp": 0
+  },
+  "hit_die": "d10",
+  "maxHP": 12,
+  "feats": [
+    {
+      "id": "feat:fey-touched",
+      "name": "Fey Touched",
+      "desc": "Your exposure to the Feywild's magic has changed you, granting you the following benefits:\n- Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.\n- You learn the Misty Step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+    }
+  ],
+  "characteristics": {
+    "trait": "There's nothing I like more than a good mystery.",
+    "ideal": "Emotions must not cloud our logical thinking. (Lawful)",
+    "bond": "I've been searching my whole life for the answer to a certain question.",
+    "flaw": "Unlocking an ancient mystery is worth the price of a civilization."
+  },
+  "choices": {
+    "class": "Fighter",
+    "subclass": "",
+    "race": "Human",
+    "subrace": "",
+    "subraceKey": "",
+    "subraceAlias": "",
+    "raceVariantKeys": [],
+    "background": "Sage",
+    "alignment": "Chaotic Neutral",
+    "abilities": {
+      "STR": 15,
+      "DEX": 13,
+      "CON": 14,
+      "INT": 10,
+      "WIS": 12,
+      "CHA": 8
+    },
+    "abilityBonuses": {
+      "str": 1,
+      "dex": 0,
+      "con": 1,
+      "int": 0,
+      "wis": 0,
+      "cha": 0
+    },
+    "languages": [
+      "Celestial",
+      "Common",
+      "Draconic",
+      "Elvish"
+    ],
+    "skills": [
+      "Arcana",
+      "History",
+      "Athletics",
+      "Perception",
+      "Insight"
+    ],
+    "tools": [],
+    "spells": [
+      "Misty Step",
+      "Command"
+    ],
+    "racialCantrips": [],
+    "equipmentChoices": [
+      {
+        "block": 0,
+        "option": 0,
+        "items": [
+          "Chain Mail"
+        ]
+      },
+      {
+        "block": 1,
+        "option": 1,
+        "items": [
+          "Longsword",
+          "Maul"
+        ]
+      },
+      {
+        "block": 2,
+        "option": 1,
+        "items": [
+          "Handaxe"
+        ]
+      },
+      {
+        "block": 3,
+        "option": 1,
+        "items": [
+          "Explorer's Pack"
+        ]
+      }
+    ],
+    "backgroundFeatures": [
+      {
+        "id": "trait:bg:sage:researcher",
+        "name": "Researcher",
+        "desc": "When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an inaccessible place, or that it simply cannot be found."
+      }
+    ],
+    "backgroundChoices": [
+      {
+        "choiceId": "choice:feat:fey-touched:asi",
+        "itemId": "WIS",
+        "label": "WIS"
+      },
+      {
+        "choiceId": "choice:feat:fey-touched:spell",
+        "itemId": "Command",
+        "label": "Command"
+      },
+      {
+        "choiceId": "choice:bg:sage:personality-traits",
+        "itemId": "bgtext:sage:trait:4",
+        "label": "There's nothing I like more than a good mystery."
+      },
+      {
+        "choiceId": "choice:bg:sage:ideals",
+        "itemId": "bgideal:sage:logic",
+        "label": "Logic"
+      },
+      {
+        "choiceId": "choice:bg:sage:bonds",
+        "itemId": "bgtext:sage:bond:5",
+        "label": "I've been searching my whole life for the answer to a certain question."
+      },
+      {
+        "choiceId": "choice:bg:sage:flaws",
+        "itemId": "bgtext:sage:flaw:3",
+        "label": "Unlocking an ancient mystery is worth the price of a civilization."
+      },
+      {
+        "choiceId": "choice:bg:sage:specialty",
+        "itemId": "bgopt:sage:specialty:astronomer",
+        "label": "Astronomer"
+      },
+      {
+        "choiceId": "choice:bg:sage:languages",
+        "itemId": "Celestial",
+        "label": "Celestial"
+      },
+      {
+        "choiceId": "choice:bg:sage:languages",
+        "itemId": "Elvish",
+        "label": "Elvish"
+      }
+    ],
+    "raceTraits": [
+      {
+        "id": "trait:bg:sage:researcher",
+        "name": "Researcher",
+        "desc": "When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an inaccessible place, or that it simply cannot be found."
+      }
+    ],
+    "classFeatures": [
+      {
+        "id": "class:fighter:lvl1:fighting-style",
+        "name": "Fighting Style"
+      },
+      {
+        "id": "class:fighter:lvl1:second-wind",
+        "name": "Second Wind"
+      }
+    ],
+    "subclassFeatures": [],
+    "classChoices": {},
+    "variantHuman": {
+      "enabled": true,
+      "asi": [
+        "CON",
+        "STR"
+      ],
+      "skill": "Insight",
+      "feat": "Fey Touched",
+      "featChoices": {
+        "choice:feat:fey-touched:asi": [
+          "WIS"
+        ],
+        "choice:feat:fey-touched:spell": [
+          "Command"
+        ]
+      }
+    },
+    "featChoices": [
+      {
+        "featId": "feat:fey-touched",
+        "featName": "Fey Touched",
+        "choices": {
+          "choice:feat:fey-touched:asi": [
+            "WIS"
+          ],
+          "choice:feat:fey-touched:spell": [
+            "Command"
+          ]
+        }
+      }
+    ],
+    "featSpellGrants": [
+      {
+        "featId": "feat:fey-touched",
+        "featName": "Fey Touched",
+        "spells": [
+          "Misty Step"
+        ],
+        "castingAbility": null,
+        "castingAbilityFromChoice": "choice:feat:fey-touched:asi",
+        "castingAbilityMap": null,
+        "castingAbilityClassFromChoice": null
+      },
+      {
+        "featId": "feat:fey-touched",
+        "featName": "Fey Touched",
+        "spells": [
+          "Command"
+        ],
+        "castingAbility": null,
+        "castingAbilityFromChoice": "choice:feat:fey-touched:asi",
+        "castingAbilityMap": null,
+        "castingAbilityClassFromChoice": null
+      }
+    ]
+  },
+  "spellSources": {
+    "Misty Step": "Fey Touched",
+    "Command": "Fey Touched"
+  },
+  "spellCastingAbilityOverrides": {
+    "Misty Step": "WIS",
+    "Command": "WIS"
+  },
+  "resources": [
+    {
+      "type": "resource_grant",
+      "id": "res:feat:fey-touched:misty-step",
+      "name": "Fey Touched (Misty Step)",
+      "uses": 1,
+      "recharge": "long_rest",
+      "consumes": [
+        {
+          "spell": "Misty Step",
+          "uses": 1
+        }
+      ],
+      "shared_pool": false,
+      "source": "feat:fey-touched"
+    },
+    {
+      "type": "resource_grant",
+      "id": "res:feat:fey-touched:chosen-spell",
+      "name": "Fey Touched (Chosen Spell)",
+      "uses": 1,
+      "recharge": "long_rest",
+      "consumes": [
+        {
+          "uses": 1,
+          "spell": "Command"
+        }
+      ],
+      "shared_pool": false,
+      "source": "feat:fey-touched"
+    }
+  ],
+  "currentHP": 12
+}

@@ -1,0 +1,169 @@
+{
+  "name": "Figge (Locke)",
+  "player_name": "Maddy",
+  "class": "Bard",
+  "level": 2,
+  "race": "Ratfolk",
+  "subrace": "Fancy Rat",
+  "speed": 30,
+  "size": "Medium",
+  "background": "Charlatan",
+  "alignment": "True Neutral",
+  "eyes_hair": "",
+  "armor": [
+    "Leather Armor"
+  ],
+  "abilities": {
+    "STR": 12,
+    "DEX": 17,
+    "CON": 12,
+    "INT": 13,
+    "WIS": 13,
+    "CHA": 18
+  },
+  "traits": [
+    {
+      "name": "Brethren of the Swarm",
+      "desc": "Mice and rats of all types will not show unprovoked hostility towards you unless threatened. Additionally, you can communicate simple ideas with them through squeaking Rattus."
+    },
+    {
+      "name": "Keen Senses",
+      "desc": "You have advantage on Wisdom (Perception) checks that involve hearing or smell."
+    },
+    {
+      "name": "Scurry",
+      "desc": "You are able to slip and squeeze through small openings. You have advantage on Dexterity (Acrobatics) to fit through tight spaces and squeezing through narrow passages doesn’t cost you extra movement."
+    },
+    {
+      "name": "False Identity",
+      "desc": "You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona. Additionally, you can forge documents, including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy."
+    },
+    {
+      "name": "Bardic Inspiration (d6)",
+      "desc": "You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.\nYou can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. \nYour Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+    },
+    {
+      "name": "Favored Scheme",
+      "desc": "I put on new identities like clothes."
+    },
+    {
+      "name": "Jack of All Trades",
+      "desc": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus."
+    },
+    {
+      "name": "Song of Rest (d6)",
+      "desc": "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points."
+    }
+  ],
+  "proficiencies": {
+    "armor": [
+      "Light Armor"
+    ],
+    "weapons": [
+      "Simple Weapons",
+      "Crossbow, light",
+      "Longsword",
+      "Shortsword"
+    ],
+    "tools": [
+      "Disguise Kit",
+      "Forgery Kit",
+      "Lyre",
+      "Viola",
+      "Lute"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "DEX",
+      "CHA"
+    ],
+    "skills": [
+      "Persuasion",
+      "Insight",
+      "Perception",
+      "Deception",
+      "Sleight of Hand"
+    ]
+  },
+  "languages": [
+    "Common",
+    "Rattus",
+    "Draconic",
+    "Infernal"
+  ],
+  "spells": [],
+  "equipment": {
+    "weapons": [
+      "Dagger",
+      "Dagger",
+      "Crossbow, light"
+    ],
+    "gear": [
+      {
+        "name": "A set of fine clothes",
+        "qty": 1
+      },
+      {
+        "name": "Backpack",
+        "qty": 1,
+        "ref": "equip:backpack",
+        "equip_slot": "container",
+        "object_form": "bag"
+      },
+      {
+        "name": "Bedroll",
+        "qty": 1,
+        "ref": "equip:bedroll",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Costume",
+        "qty": 2
+      },
+      {
+        "name": "Candle",
+        "qty": 5,
+        "ref": "equip:candle",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Rations (1 day)",
+        "qty": 5,
+        "ref": "equip:rations-1-day",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Waterskin",
+        "qty": 1,
+        "ref": "equip:waterskin",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Disguise kit",
+        "qty": 1,
+        "ref": "equip:disguise-kit",
+        "equip_slot": "tool"
+      },
+      {
+        "name": "A set of weighted dice",
+        "qty": 1
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 15,
+    "sp": 0,
+    "cp": 0
+  },
+  "hit_die": "d8",
+  "maxHP": 16,
+  "characteristics": {
+    "trait": "",
+    "ideal": "",
+    "bond": "",
+    "flaw": ""
+  },
+  "currentHP": 16
+}

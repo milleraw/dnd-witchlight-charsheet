@@ -1,19 +1,19 @@
 {
   "name": "Orchid Feather",
   "class": "Druid",
-  "level": 2,
-  "maxHP": 13,
-    "currentHP": 13,
+  "level": 4,
+  "maxHP": 25,
+  "currentHP": 25,
   "hit_die": "d8",
   "tempHP": 0,
   "race": "Tiefling",
-    "abilities": {
+  "abilities": {
     "CHA": 7,
-  "WIS": 15,
-  "INT": 13,
-  "DEX": 14,
-  "STR": 12,
-  "CON": 11
+    "WIS": 17,
+    "INT": 13,
+    "DEX": 14,
+    "STR": 12,
+    "CON": 11
   },
   "spells": [
     "Shillelagh",
@@ -24,30 +24,177 @@
   "eyes_hair": "",
   "gender": "Female",
   "player_name": "Sam Schmidt",
-  "alignment":"Chaotic Good",
-  "armor": ["Leather Armor", "Shield"],
-  "languages": ["Common","Druidic","Infernal"], "proficiencies": {
-    "tools":   ["Herbalism Kit"],
-    "weapons": ["Club", "Dagger","Dart","Javelin", "Quarterstaff", "Scimitar", "Sickle","Sling","Spear"],
-    "armor":   ["Light","Medium","Shields"]
+  "alignment": "Chaotic Good",
+  "armor": [
+    "Leather Armor",
+    "Shield"
+  ],
+  "languages": [
+    "Common",
+    "Druidic",
+    "Infernal"
+  ],
+  "proficiencies": {
+    "tools": [
+      "Herbalism Kit"
+    ],
+    "weapons": [
+      "Club",
+      "Dagger",
+      "Dart",
+      "Javelin",
+      "Quarterstaff",
+      "Scimitar",
+      "Sickle",
+      "Sling",
+      "Spear"
+    ],
+    "armor": [
+      "Light",
+      "Medium",
+      "Shields"
+    ]
   },
-  "skill_proficiencies": {"saving throws":["Wis","Int"],
-  "skills":["Medicine","Perception","Religion","Nature"]},
-  "equipment": 
-  { "weapons": ["Quarterstaff"] },
+  "skill_proficiencies": {
+    "saving throws": [
+      "Wis",
+      "Int"
+    ],
+    "skills": [
+      "Medicine",
+      "Perception",
+      "Religion",
+      "Nature"
+    ]
+  },
+  "equipment": {
+    "weapons": [
+      "Quarterstaff"
+    ],
+    "gear": [
+      {
+        "name": "Backpack",
+        "qty": 1,
+        "ref": "equip:backpack",
+        "equip_slot": "container",
+        "object_form": "bag"
+      },
+      {
+        "name": "Bedroll",
+        "qty": 1,
+        "ref": "equip:bedroll",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Mess kit",
+        "qty": 1,
+        "ref": "equip:mess-kit",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Tinderbox",
+        "qty": 1,
+        "ref": "equip:tinderbox",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Torch",
+        "qty": 10,
+        "ref": "equip:torch",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Rations (1 day)",
+        "qty": 10,
+        "ref": "equip:rations-1-day",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Waterskin",
+        "qty": 1,
+        "ref": "equip:waterskin",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Rope, hempen (50 feet)",
+        "qty": 1,
+        "ref": "equip:rope-hempen-50-feet",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Druidic Focus",
+        "qty": 1
+      },
+      {
+        "name": "Scroll Case",
+        "qty": 1,
+        "desc": "Containing notes from your studies."
+      },
+      {
+        "name": "Winter Blanket",
+        "qty": 1
+      },
+      {
+        "name": "Common Clothes",
+        "qty": 1
+      },
+      {
+        "name": "Herbalism Kit",
+        "qty": 1
+      },
+      {
+        "name": "Bright Red Fruit",
+        "qty": 1,
+        "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown."
+      },
+      {
+        "name": "Displacer Beast Eye",
+        "qty": 1
+      },
+      {
+        "name": "Quill of Message",
+        "qty": 1,
+        "desc": "Writing a note with this quill and addressing it to someone allows the note to magically appear in the recipient’s pocket or bag."
+      },
+      {
+        "name": "Bag of Holding",
+        "qty": 1,
+        "desc": "This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.\n\nIf the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.\n\nPlacing a bag of holding inside an extradimensional space created by a Heward's handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened."
+      }
+    ]
+  },
   "gear": [
-  { "name": "Explorer's Pack" },
-  { "name": "Druidic Focus" },
-  { "name": "Scroll Case", "desc": "Containing notes from your studies."},
-  { "name": "Winter Blanket"},
-  { "name": "Common Clothes" },
-  { "name": "Herbalism Kit" },
-  { "name": "Bright Red Fruit", "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown." },
-  { "name": "Displacer Beast Eye" }
-  
-], 
-"coins": { "gp": 5, "sp": 0, "cp": 0, "pp": 0 }
-
-
-
+    {
+      "name": "Explorer's Pack"
+    },
+    {
+      "name": "Druidic Focus"
+    },
+    {
+      "name": "Scroll Case",
+      "desc": "Containing notes from your studies."
+    },
+    {
+      "name": "Winter Blanket"
+    },
+    {
+      "name": "Common Clothes"
+    },
+    {
+      "name": "Herbalism Kit"
+    },
+    {
+      "name": "Bright Red Fruit",
+      "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown."
+    },
+    {
+      "name": "Displacer Beast Eye"
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 5,
+    "sp": 0,
+    "cp": 0
+  }
 }

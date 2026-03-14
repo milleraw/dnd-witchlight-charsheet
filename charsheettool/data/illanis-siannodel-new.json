@@ -1,0 +1,586 @@
+{
+  "name": "Illanis Siannodel-new",
+  "player_name": "Rosie Longfield",
+  "gender": "Female",
+  "class": "Cleric",
+  "level": 4,
+  "build": "Nature Domain",
+  "race": "Elf",
+  "subrace": "Moon Elf",
+  "speed": 30,
+  "size": "Medium",
+  "background": "Acolyte",
+  "alignment": "True Neutral",
+  "deity": "Silvanus, god of wild nature",
+  "eyes_hair": "",
+  "armor": [
+    "Shield",
+    "Leather Armor"
+  ],
+  "abilities": {
+    "STR": 16,
+    "DEX": 14,
+    "CON": 17,
+    "INT": 15,
+    "WIS": 18,
+    "CHA": 10
+  },
+  "traits": [
+    {
+      "id": "trait:elf:darkvision",
+      "key": "darkvision",
+      "name": "Darkvision",
+      "type": "passive",
+      "desc": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+    },
+    {
+      "id": "trait:elf:fey-ancestry",
+      "key": "fey-ancestry",
+      "name": "Fey Ancestry",
+      "type": "passive",
+      "desc": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+    },
+    {
+      "id": "trait:elf:trance",
+      "key": "trance",
+      "name": "Trance",
+      "type": "passive",
+      "desc": "Elves do not sleep. Instead they meditate deeply, remaining semi-conscious, for 4 hours a day. The Common word for this meditation is \"trance.\" While meditating, you dream after a fashion; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way, you gain the same benefit a human would from 8 hours of sleep."
+    },
+    {
+      "id": "trait:elf:keen-senses",
+      "key": "keen-senses",
+      "name": "Keen Senses",
+      "type": "passive",
+      "desc": "You have proficiency in the Perception skill."
+    },
+    {
+      "id": "trait:bg:acolyte:shelter-of-the-faithful",
+      "name": "Shelter of the Faithful",
+      "type": "background",
+      "desc": "You command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.\n\nYou might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple."
+    },
+    {
+      "name": "Divine Domain",
+      "desc": "Choose a Divine Domain. You gain domain spells and other features at 1st level, plus additional ways to use Channel Divinity at 2nd level, and additional benefits at 6th, 8th, and 17th levels."
+    },
+    {
+      "name": "Acolyte of Nature",
+      "desc": "At 1st level, you learn one druid cantrip of your choice. For you, this cantrip counts as a cleric cantrip. You also gain proficiency in one of the following skills of your choice: Animal Handling, Nature, or Survival."
+    },
+    {
+      "id": "trait:high-elf:elf-weapon-training",
+      "key": "elf-weapon-training",
+      "name": "Elf Weapon Training",
+      "type": "passive",
+      "desc": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+    }
+  ],
+  "proficiencies": {
+    "armor": [
+      "Light Armor",
+      "Medium Armor"
+    ],
+    "weapons": [
+      "Longbow",
+      "Longsword",
+      "Shortbow",
+      "Shortsword",
+      "Simple Weapons"
+    ],
+    "tools": []
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "WIS",
+      "CHA"
+    ],
+    "skills": [
+      "Perception",
+      "Insight",
+      "Religion",
+      "Persuasion",
+      "Medicine",
+      "Survival"
+    ]
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Infernal",
+    "Sylvan",
+    "Kenderspeak"
+  ],
+  "spells": [
+    "Animal Friendship",
+    "Speak with Animals",
+    "Mold Earth",
+    "Control Flames",
+    "Spare the Dying",
+    "Word of Radiance",
+    "Toll the Dead",
+    "Barkskin",
+    "Spike Growth",
+    "Misty Step",
+    "Identify",
+    "Guidance"
+  ],
+  "equipment": {
+    "weapons": [
+      "Mace",
+      "Yklwa"
+    ],
+    "gear": [
+      {
+        "name": "Priest's Pack",
+        "qty": 1
+      },
+      {
+        "name": "A holy symbol",
+        "qty": 1
+      },
+      {
+        "name": "A prayer book or prayer wheel",
+        "qty": 1
+      },
+      {
+        "name": "5 sticks of incense",
+        "qty": 1
+      },
+      {
+        "name": "Vestments",
+        "qty": 1
+      },
+      {
+        "name": "A set of common clothes",
+        "qty": 1
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 15,
+    "sp": 0,
+    "cp": 0
+  },
+  "hit_die": "d8",
+  "maxHP": 38,
+  "feats": [
+    {
+      "id": "feat:fey-touched",
+      "name": "Fey Touched",
+      "desc": "Your exposure to the Feywild's magic has changed you, granting you the following benefits:\n- Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.\n- You learn the Misty Step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+    }
+  ],
+  "characteristics": {
+    "trait": "I've spent so long in the temple that I have little practical experience dealing with people in the outside world.",
+    "ideal": "The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)",
+    "bond": "I would die to recover an ancient relic of my faith that was lost long ago.",
+    "flaw": "I am suspicious of strangers and expect the worst of them."
+  },
+  "choices": {
+    "class": "Cleric",
+    "subclass": "Nature Domain",
+    "race": "Elf",
+    "subrace": "Moon Elf",
+    "subraceKey": "high-elf",
+    "subraceAlias": "Moon Elf",
+    "draconicAncestry": "",
+    "raceVariantKeys": [],
+    "background": "Acolyte",
+    "alignment": "True Neutral",
+    "deity": "Silvanus, god of wild nature",
+    "abilities": {
+      "STR": 16,
+      "DEX": 12,
+      "CON": 17,
+      "INT": 14,
+      "WIS": 17,
+      "CHA": 10
+    },
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 2,
+      "con": 0,
+      "int": 1,
+      "wis": 0,
+      "cha": 0
+    },
+    "languages": [
+      "Common",
+      "Elvish",
+      "Infernal",
+      "Sylvan",
+      "Undercommon"
+    ],
+    "skills": [
+      "Perception",
+      "Insight",
+      "Religion",
+      "Persuasion",
+      "Medicine",
+      "Survival"
+    ],
+    "tools": [],
+    "spells": [
+      "Animal Friendship",
+      "Speak with Animals",
+      "Mold Earth",
+      "Control Flames",
+      "Spare the Dying",
+      "Word of Radiance",
+      "Toll the Dead"
+    ],
+    "racialCantrips": [
+      "Control Flames"
+    ],
+    "equipmentChoices": [
+      {
+        "block": 0,
+        "option": 0,
+        "items": [
+          "Mace"
+        ]
+      },
+      {
+        "block": 1,
+        "option": 1,
+        "items": [
+          "Leather Armor"
+        ]
+      },
+      {
+        "block": 2,
+        "option": 1,
+        "items": [
+          "Yklwa"
+        ]
+      },
+      {
+        "block": 3,
+        "option": 0,
+        "items": [
+          "Priest's Pack"
+        ]
+      }
+    ],
+    "backgroundFeatures": [
+      {
+        "id": "trait:bg:acolyte:shelter-of-the-faithful",
+        "name": "Shelter of the Faithful",
+        "desc": "You command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.\n\nYou might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple."
+      }
+    ],
+    "backgroundChoices": [
+      {
+        "choiceId": "choice:bg:acolyte:personality-traits",
+        "itemId": "bgtext:acolyte:trait:8",
+        "label": "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."
+      },
+      {
+        "choiceId": "choice:bg:acolyte:ideals",
+        "itemId": "bgideal:acolyte:tradition",
+        "label": "Tradition"
+      },
+      {
+        "choiceId": "choice:bg:acolyte:bonds",
+        "itemId": "bgtext:acolyte:bond:1",
+        "label": "I would die to recover an ancient relic of my faith that was lost long ago."
+      },
+      {
+        "choiceId": "choice:bg:acolyte:flaws",
+        "itemId": "bgtext:acolyte:flaw:5",
+        "label": "I am suspicious of strangers and expect the worst of them."
+      },
+      {
+        "choiceId": "choice:bg:acolyte:languages",
+        "itemId": "Sylvan",
+        "label": "Sylvan"
+      },
+      {
+        "choiceId": "choice:bg:acolyte:languages",
+        "itemId": "Undercommon",
+        "label": "Undercommon"
+      }
+    ],
+    "raceTraits": [
+      {
+        "id": "trait:elf:darkvision",
+        "name": "Darkvision",
+        "desc": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "id": "trait:elf:fey-ancestry",
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+      },
+      {
+        "id": "trait:elf:trance",
+        "name": "Trance",
+        "desc": "Elves do not sleep. Instead they meditate deeply, remaining semi-conscious, for 4 hours a day. The Common word for this meditation is \"trance.\" While meditating, you dream after a fashion; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way, you gain the same benefit a human would from 8 hours of sleep."
+      },
+      {
+        "id": "trait:elf:keen-senses",
+        "name": "Keen Senses",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "id": "trait:bg:acolyte:shelter-of-the-faithful",
+        "name": "Shelter of the Faithful",
+        "desc": "You command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.\n\nYou might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple."
+      }
+    ],
+    "classFeatures": [
+      {
+        "id": "class:cleric:lvl1:divine-domain",
+        "name": "Divine Domain"
+      }
+    ],
+    "subclassFeatures": [
+      {
+        "id": "subclass:nature-domain:lvl1:acolyte-of-nature",
+        "name": "Acolyte of Nature"
+      }
+    ],
+    "classChoices": [
+      {
+        "level": 1,
+        "choiceId": "choice:subclass:cleric:nature-domain:acolyte_of_nature_cantrip",
+        "value": "Mold Earth",
+        "values": [
+          "Mold Earth"
+        ],
+        "cantrips": []
+      },
+      {
+        "level": 1,
+        "choiceId": "choice:subclass:cleric:nature-domain:acolyte_of_nature_skill",
+        "value": "Survival",
+        "values": [
+          "Survival"
+        ],
+        "cantrips": []
+      },
+      {
+        "level": 2,
+        "choiceId": "choice:class:cleric:optional:harness-divine-power",
+        "value": "Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": true
+      },
+      {
+        "level": 4,
+        "choiceId": "choice:class:cleric:cantrips-known",
+        "value": "Guidance",
+        "values": [
+          "Guidance"
+        ],
+        "cantrips": []
+      }
+    ],
+    "levelUpDecisions": [
+      {
+        "level": 2,
+        "choices": [
+          {
+            "choiceId": "choice:class:cleric:optional:harness-divine-power",
+            "type": "boolean",
+            "taken": true,
+            "value": "Taken"
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          },
+          {
+            "choiceId": "choice:class:cleric:cantrips-known",
+            "type": "cantrip",
+            "values": [
+              "Guidance"
+            ],
+            "value": "Guidance",
+            "cantrips": []
+          }
+        ]
+      }
+    ],
+    "featChoices": [
+      {
+        "featId": "feat:fey-touched",
+        "featName": "Fey Touched",
+        "choices": {
+          "choice:feat:fey-touched:asi": [
+            "WIS"
+          ],
+          "choice:feat:fey-touched:spell": [
+            "Identify"
+          ]
+        }
+      }
+    ],
+    "featSpellGrants": [
+      {
+        "featId": "feat:fey-touched",
+        "featName": "Fey Touched",
+        "spells": [
+          "Misty Step"
+        ],
+        "castingAbility": null,
+        "castingAbilityFromChoice": "choice:feat:fey-touched:asi",
+        "castingAbilityMap": null,
+        "castingAbilityClassFromChoice": null
+      },
+      {
+        "featId": "feat:fey-touched",
+        "featName": "Fey Touched",
+        "spells": [
+          "Identify"
+        ],
+        "castingAbility": null,
+        "castingAbilityFromChoice": "choice:feat:fey-touched:asi",
+        "castingAbilityMap": null,
+        "castingAbilityClassFromChoice": null
+      }
+    ],
+    "subclassSpellChoices": [
+      {
+        "level": 4,
+        "choiceId": "choice:class:cleric:cantrips-known",
+        "values": [
+          "Guidance"
+        ]
+      }
+    ]
+  },
+  "spellSources": {
+    "Animal Friendship": "Domain",
+    "Speak with Animals": "Domain",
+    "Barkskin": "Domain",
+    "Spike Growth": "Domain",
+    "Misty Step": "Fey Touched",
+    "Identify": "Fey Touched"
+  },
+  "currentHP": 38,
+  "levelUpLog": [
+    {
+      "level": 2,
+      "from": 1,
+      "hitDie": "d8",
+      "conMod": 3,
+      "hpGain": 9,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:class:cleric:optional:harness-divine-power",
+          "type": "boolean",
+          "taken": true,
+          "value": "Taken"
+        }
+      ],
+      "at": "2026-03-13T12:04:06.247Z"
+    },
+    {
+      "level": 3,
+      "from": 2,
+      "hitDie": "d8",
+      "conMod": 3,
+      "hpGain": 9,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [
+        "Barkskin",
+        "Spike Growth"
+      ],
+      "decisionChoices": [],
+      "at": "2026-03-13T12:08:18.345Z"
+    },
+    {
+      "level": 4,
+      "from": 3,
+      "hitDie": "d8",
+      "conMod": 3,
+      "hpGain": 9,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": {
+        "name": "Fey Touched",
+        "notes": "Your exposure to the Feywild's magic has changed you, granting you the following benefits:\n- Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.\n- You learn the Misty Step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+      },
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        },
+        {
+          "choiceId": "choice:class:cleric:cantrips-known",
+          "type": "cantrip",
+          "values": [
+            "Guidance"
+          ],
+          "value": "Guidance",
+          "cantrips": []
+        }
+      ],
+      "at": "2026-03-14T14:06:39.117Z"
+    }
+  ],
+  "spellCastingAbilityOverrides": {
+    "Misty Step": "WIS",
+    "Identify": "WIS"
+  },
+  "resources": [
+    {
+      "type": "resource_grant",
+      "id": "res:feat:fey-touched:misty-step",
+      "name": "Fey Touched (Misty Step)",
+      "uses": 1,
+      "recharge": "long_rest",
+      "consumes": [
+        {
+          "spell": "Misty Step",
+          "uses": 1
+        }
+      ],
+      "shared_pool": false,
+      "source": "feat:fey-touched"
+    },
+    {
+      "type": "resource_grant",
+      "id": "res:feat:fey-touched:chosen-spell",
+      "name": "Fey Touched (Chosen Spell)",
+      "uses": 1,
+      "recharge": "long_rest",
+      "consumes": [
+        {
+          "uses": 1,
+          "spell": "Identify"
+        }
+      ],
+      "shared_pool": false,
+      "source": "feat:fey-touched"
+    }
+  ]
+}

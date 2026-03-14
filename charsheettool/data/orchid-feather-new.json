@@ -1,0 +1,471 @@
+{
+  "name": "Orchid Feather-new",
+  "player_name": "Sam Schmidt",
+  "gender": "Female",
+  "class": "Druid",
+  "level": 4,
+  "race": "Tiefling",
+  "subrace": "tiefling-asmodeus",
+  "speed": 30,
+  "size": "Medium",
+  "background": "Hermit",
+  "alignment": "Chaotic Good",
+  "eyes_hair": "",
+  "armor": [
+    "Leather Armor",
+    "Shield"
+  ],
+  "abilities": {
+    "STR": 12,
+    "DEX": 14,
+    "CON": 11,
+    "INT": 13,
+    "WIS": 17,
+    "CHA": 7
+  },
+  "traits": [
+    {
+      "id": "trait:tiefling:darkvision",
+      "key": "darkvision",
+      "name": "Darkvision",
+      "type": "passive",
+      "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.",
+      "rules": {
+        "senses": {
+          "darkvision": 60
+        }
+      }
+    },
+    {
+      "id": "trait:tiefling:hellish-resistance",
+      "key": "hellish-resistance",
+      "name": "Hellish Resistance",
+      "type": "passive",
+      "desc": "You have resistance to fire damage.",
+      "rules": {
+        "defenses": {
+          "resistances": [
+            "Fire"
+          ]
+        }
+      }
+    },
+    {
+      "id": "trait:tiefling:infernal-legacy",
+      "key": "infernal-legacy",
+      "name": "Infernal Legacy",
+      "type": "passive",
+      "desc": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once as a 2nd-level spell. Once you reach 5th level, you can also cast the darkness spell once. You must finish a long rest to cast these spells again with this trait. Charisma is your spellcasting ability for these spells."
+    },
+    {
+      "id": "trait:bg:hermit:discovery",
+      "name": "Discovery",
+      "type": "background",
+      "desc": "The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or organizations that are powerful today. Work with your DM to determine the details of your discovery and its impact on the campaign.\n\nBackground Tag: I have uncovered a truth that has long been forgotten and will change everything."
+    }
+  ],
+  "proficiencies": {
+    "armor": [
+      "Light Armor",
+      "Medium Armor",
+      "Shields"
+    ],
+    "weapons": [
+      "Clubs",
+      "Daggers",
+      "Darts",
+      "Javelins",
+      "Maces",
+      "Quarterstaffs",
+      "Scimitars",
+      "Sickles",
+      "Slings",
+      "Spears"
+    ],
+    "tools": [
+      "Herbalism Kit"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "INT",
+      "WIS"
+    ],
+    "skills": [
+      "Medicine",
+      "Religion",
+      "Nature",
+      "Perception"
+    ]
+  },
+  "languages": [
+    "Common",
+    "Infernal",
+    "Sylvan",
+    "Druidic"
+  ],
+  "spells": [
+    "Thaumaturgy",
+    "Poison Spray",
+    "Guidance",
+    "Blindness/Deafness",
+    "Gentle Repose",
+    "Shillelagh"
+  ],
+  "equipment": {
+    "weapons": [
+      "Quarterstaff"
+    ],
+    "gear": [
+      {
+        "name": "Explorer's Pack",
+        "qty": 1
+      },
+      {
+        "name": "Scroll case",
+        "qty": 1,
+        "desc": "Stuffed full of notes from your studies or prayers."
+      },
+      {
+        "name": "A winter blanket",
+        "qty": 1
+      },
+      {
+        "name": "A set of common clothes",
+        "qty": 1
+      },
+      {
+        "name": "An herbalism kit",
+        "qty": 1
+      },
+      {
+        "name": "Quill of Message",
+        "qty": 1,
+        "desc": "Writing a note with this quill and addressing it to someone allows the note to magically appear in the recipient’s pocket or bag."
+      },
+      {
+        "name": "Bright Red Fruit",
+        "qty": 1,
+        "desc": "A mysterious fruit from the Feywild.  Effects unknown."
+      },
+      {
+        "name": "Vitrified eye of a displacer beast",
+        "qty": 1,
+        "equip_slot": "goggles"
+      },
+      {
+        "name": "Giant Mushroom Plush",
+        "qty": 1,
+        "desc": "It's so squishy"
+      },
+      {
+        "name": "Bag of Holding",
+        "qty": 1,
+        "ref": "equip:bag-of-holding",
+        "equip_slot": "container",
+        "object_form": "bag"
+      },
+      {
+        "name": "Druidic Focus",
+        "qty": 1
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 5,
+    "sp": 0,
+    "cp": 0
+  },
+  "hit_die": "d8",
+  "maxHP": 25,
+  "feats": [],
+  "characteristics": {
+    "trait": "I connect everything that happens to me to a grand, cosmic plan.",
+    "ideal": "My gifts are meant to be shared with all, not used for my own benefit. (Good)",
+    "bond": "Should my discovery come to light, it could bring ruin to the world.",
+    "flaw": "Now that I've returned to the world, I enjoy its delights a little too much."
+  },
+  "choices": {
+    "class": "Druid",
+    "subclass": "Circle of Spores",
+    "race": "Tiefling",
+    "subrace": "tiefling-asmodeus",
+    "subraceKey": "tiefling-asmodeus",
+    "subraceAlias": "",
+    "draconicAncestry": "",
+    "raceVariantKeys": [],
+    "background": "Hermit",
+    "alignment": "Chaotic Good",
+    "abilities": {
+      "STR": 12,
+      "DEX": 14,
+      "CON": 11,
+      "INT": 13,
+      "WIS": 15,
+      "CHA": 5
+    },
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 1,
+      "wis": 0,
+      "cha": 2
+    },
+    "languages": [
+      "Common",
+      "Infernal",
+      "Sylvan",
+      "Druidic"
+    ],
+    "skills": [
+      "Medicine",
+      "Religion",
+      "Nature",
+      "Perception"
+    ],
+    "tools": [
+      "Herbalism Kit"
+    ],
+    "spells": [
+      "Thaumaturgy",
+      "Poison Spray",
+      "Guidance"
+    ],
+    "racialCantrips": [],
+    "equipmentChoices": [
+      {
+        "block": 0,
+        "option": 0,
+        "items": [
+          "Shield"
+        ]
+      },
+      {
+        "block": 1,
+        "option": 1,
+        "items": [
+          "Quarterstaff"
+        ]
+      }
+    ],
+    "backgroundFeatures": [
+      {
+        "id": "trait:bg:hermit:discovery",
+        "name": "Discovery",
+        "desc": "The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or organizations that are powerful today. Work with your DM to determine the details of your discovery and its impact on the campaign."
+      }
+    ],
+    "backgroundChoices": [
+      {
+        "choiceId": "choice:bg:hermit:personality-traits",
+        "itemId": "bgtext:hermit:trait:6",
+        "label": "I connect everything that happens to me to a grand, cosmic plan."
+      },
+      {
+        "choiceId": "choice:bg:hermit:ideals",
+        "itemId": "bgideal:hermit:greater-good",
+        "label": "Greater Good"
+      },
+      {
+        "choiceId": "choice:bg:hermit:bonds",
+        "itemId": "bgtext:hermit:bond:5",
+        "label": "Should my discovery come to light, it could bring ruin to the world."
+      },
+      {
+        "choiceId": "choice:bg:hermit:flaws",
+        "itemId": "bgtext:hermit:flaw:1",
+        "label": "Now that I've returned to the world, I enjoy its delights a little too much."
+      },
+      {
+        "choiceId": "choice:bg:hermit:discovery",
+        "itemId": "bgopt:hermit:discovery:4",
+        "label": "I have uncovered a truth that has long been forgotten and will change everything."
+      },
+      {
+        "choiceId": "choice:bg:hermit:language",
+        "itemId": "Sylvan",
+        "label": "Sylvan"
+      }
+    ],
+    "raceTraits": [
+      {
+        "id": "trait:tiefling:darkvision",
+        "name": "Darkvision",
+        "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      },
+      {
+        "id": "trait:tiefling:hellish-resistance",
+        "name": "Hellish Resistance",
+        "desc": "You have resistance to fire damage."
+      },
+      {
+        "id": "trait:tiefling:infernal-legacy",
+        "name": "Infernal Legacy",
+        "desc": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once as a 2nd-level spell. Once you reach 5th level, you can also cast the darkness spell once. You must finish a long rest to cast these spells again with this trait. Charisma is your spellcasting ability for these spells."
+      },
+      {
+        "id": "trait:bg:hermit:discovery",
+        "name": "Discovery",
+        "desc": "The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or organizations that are powerful today. Work with your DM to determine the details of your discovery and its impact on the campaign."
+      },
+      {
+        "id": "race:tiefling:background-tag-i-have-uncovered-a-truth-that-has-long-been-forgotten-and-will-change-everything",
+        "name": "Background Tag: I have uncovered a truth that has long been forgotten and will change everything.",
+        "desc": ""
+      }
+    ],
+    "classFeatures": [
+      {
+        "id": "class:druid:lvl1:druidic",
+        "name": "Druidic"
+      }
+    ],
+    "subclassFeatures": [],
+    "classChoices": [
+      {
+        "level": 4,
+        "choiceId": "choice:class:druid:cantrips-known",
+        "value": "Shillelagh",
+        "values": [
+          "Shillelagh"
+        ],
+        "cantrips": []
+      }
+    ],
+    "levelUpDecisions": [
+      {
+        "level": 2,
+        "choices": [
+          {
+            "choiceId": "choice:subclass",
+            "type": "subclass",
+            "values": [
+              "Circle of Spores"
+            ],
+            "value": "Circle of Spores",
+            "cantrips": []
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          },
+          {
+            "choiceId": "choice:class:druid:cantrips-known",
+            "type": "cantrip",
+            "values": [
+              "Shillelagh"
+            ],
+            "value": "Shillelagh",
+            "cantrips": []
+          }
+        ]
+      }
+    ],
+    "subclassSpellChoices": [
+      {
+        "level": 4,
+        "choiceId": "choice:class:druid:cantrips-known",
+        "values": [
+          "Shillelagh"
+        ]
+      }
+    ]
+  },
+  "spellSources": {
+    "Thaumaturgy": "Race",
+    "Blindness/Deafness": "Spores",
+    "Gentle Repose": "Spores"
+  },
+  "currentHP": 25,
+  "build": "Circle of Spores",
+  "levelUpLog": [
+    {
+      "level": 2,
+      "from": 1,
+      "hitDie": "d8",
+      "conMod": 0,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": "Circle of Spores",
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:subclass",
+          "type": "subclass",
+          "values": [
+            "Circle of Spores"
+          ],
+          "value": "Circle of Spores",
+          "cantrips": []
+        }
+      ],
+      "at": "2026-03-12T12:05:01.441Z"
+    },
+    {
+      "level": 3,
+      "from": 2,
+      "hitDie": "d8",
+      "conMod": 0,
+      "hpGain": 6,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [
+        "Blindness/Deafness",
+        "Gentle Repose"
+      ],
+      "decisionChoices": [],
+      "at": "2026-03-12T12:10:23.533Z"
+    },
+    {
+      "level": 4,
+      "from": 3,
+      "hitDie": "d8",
+      "conMod": 0,
+      "hpGain": 6,
+      "conHpAdjustment": 0,
+      "asi": {
+        "first": "WIS",
+        "second": "WIS"
+      },
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        },
+        {
+          "choiceId": "choice:class:druid:cantrips-known",
+          "type": "cantrip",
+          "values": [
+            "Shillelagh"
+          ],
+          "value": "Shillelagh",
+          "cantrips": []
+        }
+      ],
+      "at": "2026-03-12T12:17:36.289Z"
+    }
+  ]
+}

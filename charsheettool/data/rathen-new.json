@@ -1,0 +1,458 @@
+{
+  "name": "Rathen-new",
+  "player_name": "Jacob Arias",
+  "gender": "Male",
+  "class": "Barbarian",
+  "level": 4,
+  "race": "Tiefling",
+  "subrace": "tiefling-asmodeus",
+  "speed": 30,
+  "size": "Medium",
+  "background": "Urban Bounty Hunter",
+  "alignment": "True Neutral",
+  "eyes_hair": "",
+  "armor": [],
+  "abilities": {
+    "STR": 17,
+    "DEX": 15,
+    "CON": 15,
+    "INT": 15,
+    "WIS": 12,
+    "CHA": 9
+  },
+  "traits": [
+    {
+      "id": "trait:tiefling:darkvision",
+      "key": "darkvision",
+      "name": "Darkvision",
+      "type": "passive",
+      "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.",
+      "rules": {
+        "senses": {
+          "darkvision": 60
+        }
+      }
+    },
+    {
+      "id": "trait:tiefling:hellish-resistance",
+      "key": "hellish-resistance",
+      "name": "Hellish Resistance",
+      "type": "passive",
+      "desc": "You have resistance to fire damage.",
+      "rules": {
+        "defenses": {
+          "resistances": [
+            "Fire"
+          ]
+        }
+      }
+    },
+    {
+      "id": "trait:tiefling:infernal-legacy",
+      "key": "infernal-legacy",
+      "name": "Infernal Legacy",
+      "type": "passive",
+      "desc": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once as a 2nd-level spell. Once you reach 5th level, you can also cast the darkness spell once. You must finish a long rest to cast these spells again with this trait. Charisma is your spellcasting ability for these spells."
+    },
+    {
+      "id": "trait:bg:urban-bounty-hunter:ear-to-the-ground",
+      "name": "Ear to the Ground",
+      "type": "background",
+      "desc": "You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area."
+    },
+    {
+      "name": "Rage",
+      "desc": "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.\n\nWhile raging, you gain the following benefits if you aren't wearing heavy armor:\n\n- You have advantage on Strength checks and Strength saving throws.\n- When you make a melee weapon attack using Strength, you gain a bonus to the damage roll (see Rage Damage in progression).\n- You have resistance to bludgeoning, piercing, and slashing damage.\n\nIf you are able to cast spells, you can't cast them or concentrate on them while raging.\n\nYour rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.\n\nOnce you have raged the number of times shown for your barbarian level, you must finish a long rest before you can rage again."
+    },
+    {
+      "name": "Unarmored Defense",
+      "desc": "While you are not wearing any armor, your armor class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
+    }
+  ],
+  "proficiencies": {
+    "armor": [
+      "Light Armor",
+      "Medium Armor"
+    ],
+    "weapons": [
+      "Simple Weapons",
+      "Martial Weapons"
+    ],
+    "tools": [
+      "Thieves' Tools",
+      "Viol"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "STR",
+      "CON"
+    ],
+    "skills": [
+      "Intimidation",
+      "Survival",
+      "Deception",
+      "Stealth"
+    ]
+  },
+  "languages": [
+    "Common",
+    "Infernal"
+  ],
+  "spells": [
+    "Thaumaturgy"
+  ],
+  "equipment": {
+    "weapons": [
+      "Javelin",
+      "Greataxe",
+      "Spear",
+      "Harpoon"
+    ],
+    "gear": [
+      {
+        "name": "Explorer's Pack",
+        "qty": 1
+      },
+      {
+        "name": "A set of clothes appropriate to your duties",
+        "qty": 1
+      },
+      {
+        "name": "Spear",
+        "qty": 1,
+        "ref": "equip:spear",
+        "value_gp": 1,
+        "equip_slot": "weapon"
+      },
+      {
+        "name": "Harpoon",
+        "qty": 1,
+        "desc": "When a thrown harpoon hits it remains embedded in the target and may not be used until freed from the target. A Large or smaller creature hit by a harpoon has its speed halved. Until the barbed head is removed, the harpooned creature will take 1 hit point of damage per turn if it moves or takes an action. The barb can be removed by taking an action to pull or cut out the barbed head (causing 1d4 slashing damage to do so). If a successful Dexterity Medicine check is made when removing it, the damage is reduced to 1.\n\nIf the harpoon has a line attached, you can use an attack to attempt to pull the creature toward you. This takes 2 hands and may only be done once per turn. To succeed at this, make a contested Strength check. If you succeed, the creature is pulled 5 feet toward you, but if you fail you drop the line. Succeed or fail, the harpooned creature takes 1d4 slashing damage. Dealing 5 slashing damage to the line (AC 10) destroys the line without causing additional damage to the harpooned creature.",
+        "equip_slot": "weapon",
+        "weapon": {
+          "range": "ranged",
+          "category": "simple ranged",
+          "damage": {
+            "dice": "1d6",
+            "type": "piercing"
+          },
+          "properties": [
+            "special",
+            "thrown"
+          ]
+        }
+      },
+      {
+        "name": "Cupcake of Invisibility",
+        "qty": 1,
+        "desc": "When you eat the entire cupcake, you become invisible for 1 hour. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell."
+      },
+      {
+        "name": "Tiny Hourglass",
+        "qty": 1,
+        "desc": "Functions like an elemental gem of the blue sapphire (air elemental) variety"
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 20,
+    "sp": 0,
+    "cp": 0
+  },
+  "hit_die": "d12",
+  "maxHP": 41,
+  "feats": [],
+  "characteristics": {
+    "trait": "I would rather make a new friend than a new enemy.",
+    "ideal": "I will do whatever it takes to become wealthy. (Evil)",
+    "bond": "Someone I loved died because of a mistake I made. That will never happen again.",
+    "flaw": "An innocent person is in prison for a crime that I committed. I'm okay with that."
+  },
+  "choices": {
+    "class": "Barbarian",
+    "subclass": "Path of the Zealot",
+    "race": "Tiefling",
+    "subrace": "tiefling-asmodeus",
+    "subraceKey": "tiefling-asmodeus",
+    "subraceAlias": "",
+    "raceVariantKeys": [],
+    "background": "Urban Bounty Hunter",
+    "alignment": "True Neutral",
+    "abilities": {
+      "STR": 15,
+      "DEX": 15,
+      "CON": 15,
+      "INT": 14,
+      "WIS": 12,
+      "CHA": 7
+    },
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 1,
+      "wis": 0,
+      "cha": 2
+    },
+    "languages": [
+      "Common",
+      "Infernal"
+    ],
+    "skills": [
+      "Intimidation",
+      "Survival",
+      "Deception",
+      "Stealth"
+    ],
+    "tools": [
+      "Thieves' Tools",
+      "Viol"
+    ],
+    "spells": [
+      "Thaumaturgy"
+    ],
+    "racialCantrips": [],
+    "equipmentChoices": [
+      {
+        "block": 0,
+        "option": 0,
+        "items": [
+          "Greataxe"
+        ]
+      },
+      {
+        "block": 1,
+        "option": 1,
+        "items": [
+          "Javelin"
+        ]
+      }
+    ],
+    "backgroundFeatures": [
+      {
+        "id": "trait:bg:urban-bounty-hunter:ear-to-the-ground",
+        "name": "Ear to the Ground",
+        "desc": "You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area."
+      }
+    ],
+    "backgroundChoices": [
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:personality-traits",
+        "itemId": "bgtext:urban-bounty-hunter:trait:4",
+        "label": "I would rather make a new friend than a new enemy."
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:ideals",
+        "itemId": "bgideal:urban-bounty-hunter:greed",
+        "label": "Greed"
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:bonds",
+        "itemId": "bgtext:urban-bounty-hunter:bond:6",
+        "label": "Someone I loved died because of a mistake I made. That will never happen again."
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:flaws",
+        "itemId": "bgtext:urban-bounty-hunter:flaw:6",
+        "label": "An innocent person is in prison for a crime that I committed. I'm okay with that."
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:skills",
+        "itemId": "Deception",
+        "label": "Deception"
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:skills",
+        "itemId": "Stealth",
+        "label": "Stealth"
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:tool-proficiencies",
+        "itemId": "Thieves' Tools",
+        "label": "Thieves' Tools"
+      },
+      {
+        "choiceId": "choice:bg:urban-bounty-hunter:tool-proficiencies",
+        "itemId": "Viol",
+        "label": "Viol"
+      }
+    ],
+    "raceTraits": [
+      {
+        "id": "trait:tiefling:darkvision",
+        "name": "Darkvision",
+        "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      },
+      {
+        "id": "trait:tiefling:hellish-resistance",
+        "name": "Hellish Resistance",
+        "desc": "You have resistance to fire damage."
+      },
+      {
+        "id": "trait:tiefling:infernal-legacy",
+        "name": "Infernal Legacy",
+        "desc": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once as a 2nd-level spell. Once you reach 5th level, you can also cast the darkness spell once. You must finish a long rest to cast these spells again with this trait. Charisma is your spellcasting ability for these spells."
+      },
+      {
+        "id": "trait:bg:urban-bounty-hunter:ear-to-the-ground",
+        "name": "Ear to the Ground",
+        "desc": "You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area."
+      }
+    ],
+    "classFeatures": [
+      {
+        "id": "class:barbarian:lvl1:rage",
+        "name": "Rage"
+      },
+      {
+        "id": "class:barbarian:lvl1:unarmored-defense",
+        "name": "Unarmored Defense"
+      }
+    ],
+    "subclassFeatures": [],
+    "classChoices": [
+      {
+        "level": 3,
+        "choiceId": "choice:class:barbarian:optional:primal-knowledge",
+        "value": "Not Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": false
+      }
+    ],
+    "levelUpDecisions": [
+      {
+        "level": 3,
+        "choices": [
+          {
+            "choiceId": "choice:subclass",
+            "type": "subclass",
+            "values": [
+              "Path of the Zealot"
+            ],
+            "value": "Path of the Zealot",
+            "cantrips": []
+          },
+          {
+            "choiceId": "choice:subclass:path-of-the-zealot:divine_fury_damage_type",
+            "type": "subclassFeatureChoice",
+            "values": [
+              "Necrotic"
+            ],
+            "value": "Necrotic",
+            "cantrips": []
+          },
+          {
+            "choiceId": "choice:class:barbarian:optional:primal-knowledge",
+            "type": "boolean",
+            "taken": false,
+            "value": "Not Taken"
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          }
+        ]
+      }
+    ]
+  },
+  "spellSources": {
+    "Thaumaturgy": "Race"
+  },
+  "currentHP": 41,
+  "levelUpLog": [
+    {
+      "level": 2,
+      "from": 1,
+      "hitDie": "d12",
+      "conMod": 2,
+      "hpGain": 9,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-03-08T13:41:47.027Z"
+    },
+    {
+      "level": 3,
+      "from": 2,
+      "hitDie": "d12",
+      "conMod": 2,
+      "hpGain": 9,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": "Path of the Zealot",
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:subclass",
+          "type": "subclass",
+          "values": [
+            "Path of the Zealot"
+          ],
+          "value": "Path of the Zealot",
+          "cantrips": []
+        },
+        {
+          "choiceId": "choice:subclass:path-of-the-zealot:divine_fury_damage_type",
+          "type": "subclassFeatureChoice",
+          "values": [
+            "Necrotic"
+          ],
+          "value": "Necrotic",
+          "cantrips": []
+        },
+        {
+          "choiceId": "choice:class:barbarian:optional:primal-knowledge",
+          "type": "boolean",
+          "taken": false,
+          "value": "Not Taken"
+        }
+      ],
+      "at": "2026-03-08T13:59:00.588Z"
+    },
+    {
+      "level": 4,
+      "from": 3,
+      "hitDie": "d12",
+      "conMod": 2,
+      "hpGain": 9,
+      "conHpAdjustment": 0,
+      "asi": {
+        "first": "STR",
+        "second": "STR"
+      },
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        }
+      ],
+      "at": "2026-03-08T14:17:07.381Z"
+    }
+  ],
+  "build": "Path of the Zealot",
+  "inspiration": true
+}

@@ -1,0 +1,143 @@
+{
+  "name": "Midnight",
+  "player_name": "Rosie",
+  "class": "Rogue",
+  "level": 2,
+  "race": "Owlfolk",
+  "speed": 25,
+  "size": "Medium",
+  "background": "Spy (Variant)",
+  "alignment": "True Neutral",
+  "eyes_hair": "",
+  "armor": [
+    "Leather Armor"
+  ],
+  "abilities": {
+    "STR": 11,
+    "DEX": 17,
+    "CON": 13,
+    "INT": 14,
+    "WIS": 11,
+    "CHA": 15
+  },
+  "traits": [
+    {
+      "name": "Flight",
+      "desc": "You have a flying speed of 50 feet. To use this speed, you can’t be wearing medium or heavy armor."
+    },
+    {
+      "name": "Darkvision",
+      "desc": "You can see in dim light within 90 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+    },
+    {
+      "name": "Magic Sight",
+      "desc": "Your keen senses can focus to see the presence of magic. You gain the ability to cast the detect magic spell, but only as a ritual. Your spellcasting ability for this spell is your choice of Intelligence or Wisdom. You can also cast this spell normally with any spell slots you have."
+    },
+    {
+      "name": "Nimble Flight",
+      "desc": "When you fall, you can use your reaction to make a Dexterity saving throw (DC 10) to stop falling and fly in place until the start of your next turn."
+    },
+    {
+      "name": "Silent Feathers",
+      "desc": "You have proficiency in the Stealth skill."
+    },
+    {
+      "name": "Echo of the Great Game",
+      "desc": "Years of stealth and trickery have taught you how to not draw attention to yourself. The way you walk, talk and move are deliberately forgettable, and utterly unextraordinary. While you are wearing clothes appropriate to the area you are in, no one can remember your face nor any features about you, unless they actively make an effort to do so.\n\nIn addition, you know how to write in a special code that can only be read by people trained in deciphering it."
+    },
+    {
+      "name": "Expertise",
+      "desc": "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+    },
+    {
+      "name": "Sneak Attack",
+      "desc": "Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon. The amount of the extra damage increases as you gain levels in this class."
+    },
+    {
+      "name": "Thieves' Cant",
+      "desc": "During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation."
+    },
+    {
+      "name": "Cunning Action",
+      "desc": "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+    }
+  ],
+  "proficiencies": {
+    "armor": [
+      "Light Armor"
+    ],
+    "weapons": [
+      "Simple Weapons",
+      "Simple Melee"
+    ],
+    "tools": [
+      "Thieves' Tools",
+      "Forgery Kit"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "DEX",
+      "INT"
+    ],
+    "skills": [
+      "Stealth",
+      "Acrobatics",
+      "Deception",
+      "Perception",
+      "Persuasion",
+      "Sleight of Hand"
+    ]
+  },
+  "languages": [
+    "Auran",
+    "Common",
+    "Owlfolk",
+    "Draconic",
+    "Elvish",
+    "Thieves’ Cant"
+  ],
+  "spells": [
+    "Detect Magic"
+  ],
+  "equipment": {
+    "weapons": [
+      "Dagger",
+      "Shortbow",
+      "Shortsword"
+    ],
+    "gear": [
+      {
+        "name": "Thieves' Tools",
+        "qty": 1
+      },
+      {
+        "name": "A small mirror",
+        "qty": 1
+      },
+      {
+        "name": "A small crumpled note with secrets you stole (blackmail material, or coordinates to an unknown place)",
+        "qty": 1
+      },
+      {
+        "name": "A set of common clothes",
+        "qty": 1
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 15,
+    "sp": 0,
+    "cp": 0
+  },
+  "hit_die": "d8",
+  "maxHP": 19,
+  "characteristics": {
+    "trait": "I have a habit of listening in on the conversations of others.",
+    "ideal": "If this came out to the public... That noble would be done for... That one too... Oh what fun! (Chaotic)",
+    "bond": "I have secrets that I've uncovered that should never see the light of day.",
+    "flaw": "Some people want to kill me, to make sure I never tell a secret they'd rather have untold."
+  },
+  "currentHP": 19
+}

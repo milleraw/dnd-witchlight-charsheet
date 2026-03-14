@@ -1,0 +1,118 @@
+{
+  "pixie": [
+    "Fizzelwing","Thimbletrot","Peppin","Jorry","Linnet","Brindlewhip","Nockle","Wispeth","Talla","Pipwick",
+    "Cloverbloom","Twilla","Dapple","Brambletoe","Kipkin","Zephyra","Merribell","Thistlewhip","Glittergleam","Poppydew",
+    "Nimsy","Petalbreeze","Crinkle","Jibberin","Feyla","Tinkerthistle","Pipnock","Moonpetal","Thimbledew","Rillibin",
+    "Cobbleleaf","Twinklethatch","Fennibell","Puddlecap","Quinny","Vervain","Liltrose","Spindlewhip","Fizzledew","Mossabelle"
+  ],
+  "sprite": [
+    "Ashfern","Dewdrop","Silthas","Faylin","Corabell","Nimwillow","Tanglebriar","Petalwing","Bracken","Ivyra",
+    "Larksong","Mothdapple","Sylfaen","Liora","Thornlet","Mirel","Rosethorn","Elbrynn","Moonpetal","Fennick",
+    "Thistlefern","Bramblea","Aelwyn","Soriel","Nyris","Rowansong","Calenna","Thrynn","Isolde","Therrin",
+    "Phyrra","Syrith","Velin","Dapplefern","Corwyn","Elmira","Lyrris","Aurelith","Morwen","Nivalen"
+  ],
+  "satyr": [
+    "Daphnios","Thespin","Kallias","Orenos","Panthos","Myron","Syris","Calliane","Daphni","Myrrha",
+    "Thessa","Pheron","Lykaon","Euthis","Nerissa","Bacchos","Phoros","Satyra","Aegis","Thyrsa",
+    "Menandros","Eirenaios","Agapios","Chryseis","Damianos","Theocles","Kyrillos","Saphira","Phaedon","Eudocia",
+    "Lysandros","Xanthe","Cleon","Phoebe","Zephyros","Isidora","Antheia","Olympos","Leonidas","Gaiana"
+  ],
+  "dryad": [
+    "Elandra","Sylvine","Ashanna","Bramblea","Olun","Veyra","Lirien","Morrel","Nymora","Calthea",
+    "Rowansong","Ilyss","Maphera","Quenelle","Veyth","Thalara","Elmira","Cypressa","Willowen","Alderis",
+    "Orrynna","Thessaly","Junepetal","Marisyl","Thornella","Liora","Feylin","Vervenya","Nyssalith","Tirienna",
+    "Glyssara","Florabel","Halwynna","Ryselle","Elyndra","Noralis","Cambrienne","Silvarra","Ysoria","Trevella"
+  ],
+  "quickling": [
+    "Kiv","Trill","Nixx","Frakt","Vyr","Snick","Quill","Zipt","Jrix","Twitch",
+    "Skiv","Pritt","Vekk","Skrim","Drin","Fleck","Griv","Skerrit","Zilp","Klikka",
+    "Sniv","Frillik","Tazzik","Yrrit","Krixt","Splint","Vizzle","Scrip","Tyrnik","Glivven",
+    "Prax","Jirrik","Tazzle","Ryvven","Skerrit","Quiv","Trivven","Kniks","Zyvrek","Flintzip"
+  ],
+  "korred": [
+    "Bragni","Korveth","Tummock","Dolgra","Granith","Mossi","Harkle","Pebbla","Stonn","Grolgar",
+    "Felmor","Tharnock","Bouldermaw","Marneth","Craggit","Rilthor","Grumblehair","Karnock","Torbrae","Orrin",
+    "Druvol","Grastin","Thorgal","Karrith","Bulgran","Norrik","Dummock","Kraggir","Slabbor","Vorrick",
+    "Thrumm","Borath","Kelnor","Drammick","Ruvin","Throggar","Morrick","Voldran","Torkle","Brummis"
+  ],
+  "redcap": [
+    "Grindle","Smutch","Harkfang","Nibblegut","Skreek","Drub","Fester","Craggle","Murgash","Rattletooth",
+    "Slaggnut","Trenchcap","Snarlgut","Bashkin","Rotfang","Skulver","Grakle","Snivven","Morkit","Bloodtip",
+    "Gribble","Clankfang","Bristlenose","Stabbler","Gnashcap","Vorrik","Scarrow","Prongle","Murkcap","Tatterfang",
+    "Shivver","Wretchcap","Gnarlspike","Drognip","Scumfang","Rukkle","Snarrick","Blightcap","Fangrot","Skreeg"
+  ],
+  "eladrin": {
+    "spring": [
+      "Elanar Bloomcrown","Lysandra Dewlight","Florinel","Ivaris Greenbloom","Miri Blossomheart",
+      "Thalia Petalsong","Sorien Budling","Aelwyn Verdant","Calliris Freshbloom","Rowan Springdew",
+      "Feyra Budsong","Thessir Leafborn","Olari Brightbud","Myrris Dawnpetal","Aenwyn Greenlace",
+      "Veyor Sprigsong","Neriel Morningdew","Tressel Blossomveil","Halwyn Freshbud","Coris Greenshade",
+      "Petralis Flowerkin","Illyra Budsong","Sylvar Bloomveil","Nymis Greenblossom","Feriel Dawnbud",
+      "Therris Leafbright","Aurelin Freshpetal","Calwen Budsong","Lyris Morningveil","Sorrin Sprigsong",
+      "Eryndor Greenmantle","Mirian Blossomveil","Vorrel Springgale","Isylwen Petalborn","Thalen Budsong",
+      "Velinor Sprigsun","Nerya Blossomdew","Kyrrin Petalsong","Thessira Bloomveil","Orielle Springcrest"
+    ],
+    "summer": [
+      "Kaelor Sunbane","Thalindra Flamehair","Auren Duskbrand","Sylvaris Firelight","Orris Emberwing",
+      "Pyrran Blazewind","Theris Goldbrand","Meliara Sunchord","Valros Heatgaze","Serrin Flameborn",
+      "Liora Goldleaf","Orendil Summergale","Jassir Embercloak","Thesira Suncrest","Marrel Firetide",
+      "Kallion Duskflare","Zeryn Solbrand","Ilyra Burnsong","Vathros Brightflame","Neris Sunsworn",
+      "Calvros Emberwind","Tiriel Sunmantle","Pharos Goldcrest","Yrren Embergaze","Sylith Flameleaf",
+      "Zandor Sunbrand","Morwen Emberveil","Therra Solwing","Ryllis Summerbloom","Kelvar Duskflame",
+      "Irris Emberveil","Vorath Sunshard","Cynric Flamecrest","Oris Goldbrand","Veyra Emberwind",
+      "Quellis Flameborn","Nerion Sunflame","Teryn Embercrest","Orril Firegale","Xyros Solmantle"
+    ],
+    "autumn": [
+      "Voren Ambersong","Neryth Fallenleaf","Ithros Ambercloak","Calwen Duskhorn","Fenra Leafblade",
+      "Morric Emberleaf","Lysandor Rustgaze","Rellian Goldbark","Tavros Amberdusk","Melwen Duskleaf",
+      "Quorin Fireshed","Alyss Autumnsong","Themor Leafwhisper","Veylin Duskwind","Soriel Goldcrest",
+      "Neralis Emberdusk","Halthor Leafbrand","Isyra Russetveil","Corvell Goldthorn","Therris Emberfall",
+      "Draven Duskleaf","Sylara Amberveil","Torwyn Emberthorn","Felric Goldmantle","Myrris Autumnveil",
+      "Kyrran Duskgale","Ormir Amberflame","Zeryn Goldleaf","Illira Emberveil","Tessir Leafdusk",
+      "Orrath Amberveil","Calis Goldbark","Yllar Rustleaf","Pherrin Duskgaze","Soren Emberleaf",
+      "Vorric Goldthorn","Terys Autumnveil","Nymira Duskleaf","Korren Amberbrand","Feylin Goldcrest"
+    ],
+    "winter": [
+      "Selthis Frostgaze","Illarion Snowmantle","Veyra Icetide","Thrynn Coldveil","Oralis Frostcloak",
+      "Elyss Snowblossom","Kyrran Iceblade","Norell Chillwind","Seryn Winterthorn","Olvar Frostmantle",
+      "Thessa Icicleborn","Quyros Frostbrand","Marella Coldveil","Ylris Snowbrand","Fennar Glaciem",
+      "Thalwyn Iceheart","Corryn Frostlight","Irris Wintershard","Malrin Snowveil","Xylen Coldbane",
+      "Tyrrel Iceveil","Fenric Snowmantle","Sylwen Frostthorn","Calris Winterveil","Nyssra Coldveil",
+      "Varros Frostsong","Lirien Icepetal","Orris Coldthorn","Therros Snowgale","Illira Frostleaf",
+      "Draven Icetide","Yvress Snowbrand","Torlin Frostmantle","Ceryn Winterleaf","Vornic Icebrand",
+      "Meyra Frostgale","Kelric Winterthorn","Quenelle Coldveil","Feyris Frostwind","Therris Snowveil"
+    ]
+  },
+  "faerie_dragon": [
+    "Fizzywig","Drimble","Quorvex","Silili","Prippit","Jibble","Tinkertail","Zarvox","Lillibell","Sparklitch",
+    "Whimsy","Frizzlepop","Perrinax","Coriwobble","Mizzletip","Snorble","Frapple","Zindle","Pipflit","Buzzle",
+    "Tazzle","Nibberwit","Flimflam","Zoribble","Gribblet","Snuzzle","Merrisnap","Dazzleflit","Pribbin","Kazzle",
+    "Rizzlewig","Flitterpop","Skribble","Fuzznip","Tinkerflip","Fuzzlequill","Dribberix","Snicketip","Wobblefin","Crimblebit"
+  ],
+  "talking_animals": {
+    "fox": [
+      "Sir Reginald","Lady Vulpina","Tricktail","Rustfur","Vixelle","Cleverclaw","Fennick","Sabletooth","Amberwhisk","Nimblepaws",
+      "Cinderfang","Maplebrush","Dame Scarlet","Coppernose","Whisperfang","Flickerfoot","Velora","Ruddy","Slythistle","Thornfang",
+      "Snarlbrush","Silverpelt","Redmane","Briarwhisk","Scarletleaf","Tanglefang","Ashnose","Goldpelt","Rustlefur","Prowler",
+      "Gildentail","Emberfang","Shadebrush","Foxglove","Fennira","Vixthorn","Snapsnout","Lady Amber","Lord Russet","Whiskertide"
+    ],
+    "owl": [
+      "Professor Hoot","Baron Hootsworth","Athena","Strix","Whisperwing","Talona","Glimerbeak","Snowfeather","Dame Talaria","Owlinor",
+      "Lord Omen","Nightfeather","Twilight Hoot","Sage Eyes","Mothwing","Archimedes","Feathercrest","Starbeak","Grandma Glimmer","Grandpa Hollow",
+      "Moonblink","Silentbeak","Ebonclaw","Glimfeather","Duskwatcher","Brighttalon","Lorekeeper","Dawncry","Mistbeak","Grimscreech",
+      "Sablewing","Ivoryplume","Hollowbeak","Noxfeather","Lumina","Orriscreech","Strixelle","Talbryn","Ashplume","Hoottalon"
+    ],
+    "hare": [
+      "Lord Hopps","Dame Cloverfoot","Velvetpaw","Springtail","Bramblehop","Thistlefoot","Swiftwhisker","Hopsworth","Nibblet","Velora",
+      "Sir Longears","Lady Whiskerhop","Cottontail","Thumperkin","Warrenwise","Bunwick","Snufflin","Meadowbound","Quickfoot","Patterpaw",
+      "Greenshadow","Velvetnose","Longears","Hoppenfast","Swiftpelt","Dewwhisker","Cloverbound","Burrowbane","Bunthistle","Fenhop",
+      "Hopkins","Mistralhop","Vellicott","Pipwhisk","Cottontuft","Whiskerfoot","Rushpelt","Meadowfur","Springpaw","Brackenbun"
+    ],
+    "misc": [
+      "Doctor Talon","Countess Clover","General Whiskertail","Mistress Feathers","Colonel Fang","Sergeant Nibbles","Captain Paws","Dame Bristleback","Major Squeak","Lady Petal",
+      "Sir Barkington","Princess Whiskerwhip","Admiral Snout","Commander Chitter","Warden Scratch","Constable Flap","Sheriff Pawsworthy","Viscount Tailspin","Lady Velvetclaw","Lord Sniffle",
+      "Parson Whisk","Lady Acorn","Master Squeak","Highpaw","Mistress Scratchwhisk","Reverend Beak","Lady Dandelion","Chancellor Fangwhisk","Minister Snoutle","Elder Whiskerpuff",
+      "Bishop Claw","Doctor Brambletail","Brother Snout","Duchess Nibblewhip","Sir Acornpelt","Monk Whiskers","Captain Clawfoot","Abbot Purrtail","Count Nibbles","Saint Bramblepaw"
+    ]
+  }
+}

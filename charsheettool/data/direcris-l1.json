@@ -1,0 +1,771 @@
+{
+  "name": "Direcris Zzzxaaxthroth (L1 Test)",
+  "class": "Monk",
+  "level": 20,
+  "maxHP": 104,
+  "currentHP": 104,
+  "hit_die": "d8",
+  "tempHP": 0,
+  "race": "Dragonborn",
+  "race_detail": {
+    "ancestry": "bronze"
+  },
+  "abilities": {
+    "CHA": 14,
+    "WIS": 19,
+    "INT": 13,
+    "DEX": 20,
+    "STR": 14,
+    "CON": 12
+  },
+  "background": "Urban Bounty Hunter",
+  "eyes_hair": "",
+  "gender": "Male",
+  "player_name": "Sauter Candlearia",
+  "alignment": "Lawful Neutral",
+  "armor": [],
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "proficiencies": {
+    "tools": [
+      "Dice Set",
+      "Smith’s Tools",
+      "Theives' Tools"
+    ],
+    "weapons": [
+      "Simple weapons",
+      "Shortswords"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "Dex",
+      "Str"
+    ],
+    "skills": [
+      "Deception",
+      "Insight",
+      "Stealth",
+      "Athletics"
+    ]
+  },
+  "equipment": {
+    "weapons": [
+      "Kusari-gama",
+      "Dart",
+      "Sickle"
+    ],
+    "gear": [
+      {
+        "name": "Backpack",
+        "qty": 1,
+        "ref": "equip:backpack",
+        "equip_slot": "container",
+        "object_form": "bag"
+      },
+      {
+        "name": "Bedroll",
+        "qty": 1,
+        "ref": "equip:bedroll",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Mess kit",
+        "qty": 1,
+        "ref": "equip:mess-kit",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Tinderbox",
+        "qty": 1,
+        "ref": "equip:tinderbox",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Torch",
+        "qty": 10,
+        "ref": "equip:torch",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Rations (1 day)",
+        "qty": 10,
+        "ref": "equip:rations-1-day",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Waterskin",
+        "qty": 1,
+        "ref": "equip:waterskin",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Rope, hempen (50 feet)",
+        "qty": 1,
+        "ref": "equip:rope-hempen-50-feet",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Clothes",
+        "qty": 1,
+        "desc": "Appropriate to your duties as a bounty hunter."
+      },
+      {
+        "name": "Gaming Set",
+        "qty": 1,
+        "desc": "One type of gaming set of your choice."
+      },
+      {
+        "name": "Thieves' Tools",
+        "qty": 1
+      },
+      {
+        "name": "Moon pendant",
+        "qty": 1
+      },
+      {
+        "name": "Scroll of Identify",
+        "qty": 3
+      },
+      {
+        "name": "Pixie plush",
+        "qty": 1,
+        "desc": "It sings when squeezed."
+      },
+      {
+        "name": "Bright Red Fruit",
+        "qty": 1,
+        "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown."
+      },
+      {
+        "name": "Wand of Dancing Lights",
+        "qty": 1,
+        "desc": "This wand has 3 charges. While holding it, you can use an action to expend 1 charge to cast the Dancing Lights cantrip. The wand regains 1d3 expended charges daily at dawn."
+      },
+      {
+        "name": "Wand of Smiles",
+        "qty": 1,
+        "desc": "This pink wand has 3 charges. As an action, you can expend 1 charge to create a silent, spectral, smiling mouth at a point you can see within 30 feet. The mouth disappears after 1 minute. The wand regains all expended charges daily at dawn."
+      },
+      {
+        "name": "Book of eight dirty jokes",
+        "qty": 1,
+        "desc": "A creature can read a joke to cast Vicious Mockery (spell save DC 13). Once a joke is read, it disappears from the book."
+      },
+      {
+        "name": "Boots with mismatched laces",
+        "qty": 1,
+        "desc": "One is a vibrant pink, the other a calm blue."
+      },
+      {
+        "name": "Amulet of Proof against Detection and Location",
+        "qty": 1,
+        "desc": "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors."
+      }
+    ]
+  },
+  "gear": [
+    {
+      "name": "Explorer's Pack"
+    },
+    {
+      "name": "Clothes",
+      "desc": "Appropriate to your duties as a bounty hunter."
+    },
+    {
+      "name": "Gaming Set",
+      "desc": "One type of gaming set of your choice."
+    },
+    {
+      "name": "Thieves' Tools"
+    },
+    {
+      "name": "Moon pendant"
+    },
+    {
+      "name": "Scroll of Identify",
+      "qty": 3
+    },
+    {
+      "name": "Pixie plush",
+      "desc": "It sings when squeezed."
+    },
+    {
+      "name": "Bright Red Fruit",
+      "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown."
+    },
+    {
+      "name": "Wand of Dancing Lights",
+      "desc": "This wand has 3 charges. While holding it, you can use an action to expend 1 charge to cast the Dancing Lights cantrip. The wand regains 1d3 expended charges daily at dawn."
+    },
+    {
+      "name": "Wand of Smiles",
+      "desc": "This pink wand has 3 charges. As an action, you can expend 1 charge to create a silent, spectral, smiling mouth at a point you can see within 30 feet. The mouth disappears after 1 minute. The wand regains all expended charges daily at dawn."
+    },
+    {
+      "name": "Book of eight dirty jokes",
+      "desc": "A creature can read a joke to cast Vicious Mockery (spell save DC 13). Once a joke is read, it disappears from the book."
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 20,
+    "sp": 0,
+    "cp": 0
+  },
+  "choices": {
+    "classChoices": [
+      {
+        "level": 2,
+        "choiceId": "choice:class:monk:optional:dedicated-weapon",
+        "value": "Not Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": false
+      },
+      {
+        "level": 3,
+        "choiceId": "choice:class:monk:optional:ki-fueled-attack",
+        "value": "Not Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": false
+      },
+      {
+        "level": 4,
+        "choiceId": "choice:class:monk:optional:quickened-healing",
+        "value": "Not Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": false
+      },
+      {
+        "level": 5,
+        "choiceId": "choice:class:monk:optional:focused-aim",
+        "value": "Not Taken",
+        "values": [],
+        "cantrips": [],
+        "taken": false
+      }
+    ],
+    "levelUpDecisions": [
+      {
+        "level": 2,
+        "choices": [
+          {
+            "choiceId": "choice:class:monk:optional:dedicated-weapon",
+            "type": "boolean",
+            "taken": false,
+            "value": "Not Taken"
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "choices": [
+          {
+            "choiceId": "choice:subclass",
+            "type": "subclass",
+            "values": [
+              "Way of Shadow"
+            ],
+            "value": "Way of Shadow",
+            "cantrips": []
+          },
+          {
+            "choiceId": "choice:class:monk:optional:ki-fueled-attack",
+            "type": "boolean",
+            "taken": false,
+            "value": "Not Taken"
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          },
+          {
+            "choiceId": "choice:class:monk:optional:quickened-healing",
+            "type": "boolean",
+            "taken": false,
+            "value": "Not Taken"
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "choices": [
+          {
+            "choiceId": "choice:class:monk:optional:focused-aim",
+            "type": "boolean",
+            "taken": false,
+            "value": "Not Taken"
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          }
+        ]
+      }
+    ],
+    "subclass": "Way of Shadow",
+    "featChoices": []
+  },
+  "levelUpLog": [
+    {
+      "level": 2,
+      "from": 1,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:class:monk:optional:dedicated-weapon",
+          "type": "boolean",
+          "taken": false,
+          "value": "Not Taken"
+        }
+      ],
+      "at": "2026-02-20T13:14:40.264Z"
+    },
+    {
+      "level": 3,
+      "from": 2,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": "Way of Shadow",
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:subclass",
+          "type": "subclass",
+          "values": [
+            "Way of Shadow"
+          ],
+          "value": "Way of Shadow",
+          "cantrips": []
+        },
+        {
+          "choiceId": "choice:class:monk:optional:ki-fueled-attack",
+          "type": "boolean",
+          "taken": false,
+          "value": "Not Taken"
+        }
+      ],
+      "at": "2026-02-20T16:01:47.660Z"
+    },
+    {
+      "level": 4,
+      "from": 3,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": {
+        "first": "DEX",
+        "second": "DEX"
+      },
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        },
+        {
+          "choiceId": "choice:class:monk:optional:quickened-healing",
+          "type": "boolean",
+          "taken": false,
+          "value": "Not Taken"
+        }
+      ],
+      "at": "2026-02-20T17:31:19.202Z"
+    },
+    {
+      "level": 5,
+      "from": 4,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:class:monk:optional:focused-aim",
+          "type": "boolean",
+          "taken": false,
+          "value": "Not Taken"
+        }
+      ],
+      "at": "2026-02-20T17:46:21.906Z"
+    },
+    {
+      "level": 6,
+      "from": 5,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-20T21:46:58.475Z"
+    },
+    {
+      "level": 7,
+      "from": 6,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-20T22:17:12.002Z"
+    },
+    {
+      "level": 8,
+      "from": 7,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": {
+        "first": "WIS",
+        "second": "WIS"
+      },
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        }
+      ],
+      "at": "2026-02-21T00:46:14.344Z"
+    },
+    {
+      "level": 9,
+      "from": 8,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-21T00:48:35.323Z"
+    },
+    {
+      "level": 10,
+      "from": 9,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-21T00:54:18.167Z"
+    },
+    {
+      "level": 11,
+      "from": 10,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-21T00:58:37.335Z"
+    },
+    {
+      "level": 12,
+      "from": 11,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": {
+        "first": "DEX",
+        "second": "DEX"
+      },
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        }
+      ],
+      "at": "2026-02-21T13:32:23.878Z"
+    },
+    {
+      "level": 13,
+      "from": 12,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-21T13:34:05.872Z"
+    },
+    {
+      "level": 14,
+      "from": 13,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-21T13:41:50.020Z"
+    },
+    {
+      "level": 15,
+      "from": 14,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-21T14:06:56.974Z"
+    },
+    {
+      "level": 16,
+      "from": 15,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": {
+        "first": "WIS",
+        "second": "WIS"
+      },
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        }
+      ],
+      "at": "2026-02-21T15:01:52.584Z"
+    },
+    {
+      "level": 17,
+      "from": 16,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-21T15:06:23.031Z"
+    },
+    {
+      "level": 18,
+      "from": 17,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-21T15:11:54.241Z"
+    },
+    {
+      "level": 19,
+      "from": 18,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": {
+        "name": "Lucky",
+        "notes": "You have inexplicable luck that seems to kick in at just the right moment. You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw. You can also spend one luck point when an attack roll is made against you. Roll a d20, and then choose whether the attacker's roll or yours is used. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled. You regain your expended luck points when you finish a long rest."
+      },
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        }
+      ],
+      "at": "2026-02-21T22:49:18.402Z"
+    },
+    {
+      "level": 20,
+      "from": 19,
+      "hitDie": "d8",
+      "conMod": 1,
+      "hpGain": 5,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [],
+      "at": "2026-02-21T22:58:25.446Z"
+    }
+  ],
+  "build": "Way of Shadow",
+  "feats": [
+    {
+      "id": "feat:lucky",
+      "name": "Lucky",
+      "desc": "You have inexplicable luck that seems to kick in at just the right moment. You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw. You can also spend one luck point when an attack roll is made against you. Roll a d20, and then choose whether the attacker's roll or yours is used. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled. You regain your expended luck points when you finish a long rest."
+    }
+  ],
+  "resources": [
+    {
+      "type": "resource_grant",
+      "id": "res:feat:lucky:points",
+      "name": "Lucky Points",
+      "uses": 3,
+      "recharge": "long_rest",
+      "shared_pool": false,
+      "source": "feat:lucky"
+    }
+  ]
+}

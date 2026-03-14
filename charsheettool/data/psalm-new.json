@@ -1,0 +1,675 @@
+{
+  "name": "Psalm-new",
+  "player_name": "Matt Miller",
+  "gender": "Female",
+  "class": "Artificer",
+  "level": 4,
+  "race": "Tiefling",
+  "subrace": "tiefling-asmodeus",
+  "speed": 30,
+  "size": "Medium",
+  "background": "Haunted One",
+  "alignment": "Chaotic Neutral",
+  "eyes_hair": "Gold eyes, Dark brown hair",
+  "armor": [
+    "Studded Leather"
+  ],
+  "abilities": {
+    "STR": 10,
+    "DEX": 14,
+    "CON": 14,
+    "INT": 15,
+    "WIS": 12,
+    "CHA": 14
+  },
+  "traits": [
+    {
+      "id": "trait:tiefling:darkvision",
+      "key": "darkvision",
+      "name": "Darkvision",
+      "type": "passive",
+      "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.",
+      "rules": {
+        "senses": {
+          "darkvision": 60
+        }
+      }
+    },
+    {
+      "id": "trait:tiefling:hellish-resistance",
+      "key": "hellish-resistance",
+      "name": "Hellish Resistance",
+      "type": "passive",
+      "desc": "You have resistance to fire damage.",
+      "rules": {
+        "defenses": {
+          "resistances": [
+            "Fire"
+          ]
+        }
+      }
+    },
+    {
+      "id": "trait:tiefling:devils-tongue",
+      "key": "devils-tongue",
+      "name": "Devil's Tongue",
+      "type": "passive",
+      "desc": "You know the vicious mockery cantrip. Once you reach 3rd level, you can cast the charm person spell once as a 2nd-level spell. Once you reach 5th level, you can also cast the enthrall spell once. You must finish a long rest to cast these spells again with this trait. Charisma is your spellcasting ability for these spells."
+    },
+    {
+      "id": "trait:bg:haunted-one:heart-of-darkness",
+      "name": "Heart of Darkness",
+      "type": "background",
+      "desc": "Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+    },
+    {
+      "name": "Background Tag: An oni took your sibling one cold, dark night, and you were unable to stop it.",
+      "desc": "",
+      "source": "Background"
+    },
+    {
+      "name": "Magical Tinkering",
+      "desc": "You’ve learned how to invest a spark of magic into mundane objects. To use this ability, you must have thieves’ tools or artisan’s tools in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:\n\n- The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.\n- Whenever tapped by a creature, the object emits a recorded message that can be heard up to 10 feet away. You utter the message when you bestow this property on the object, and the recording can be no more than 6 seconds long.\n- The object continuously emits your choice of an odor or a nonverbal sound (wind, waves, chirping, or the like). The chosen phenomenon is perceptible up to 10 feet away.\n- A static visual effect appears on one of the object’s surfaces. This effect can be a picture, up to 25 words of text, lines and shapes, or a mixture of these elements, as you like.\n\nThe chosen property lasts indefinitely. As an action, you can touch the object and end the property early.\n\nYou can bestow magic on multiple objects, touching one object each time you use this feature, though a single object can only bear one property at a time. The maximum number of objects you can affect with this feature at one time is equal to your Intelligence modifier (minimum of one object). If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies."
+    }
+  ],
+  "proficiencies": {
+    "armor": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+    ],
+    "weapons": [
+      "Simple weapons"
+    ],
+    "tools": [
+      "Thieves' tools",
+      "Tinker's tools",
+      "Alchemist's supplies",
+      "Woodcarver's Tools"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "CON",
+      "INT"
+    ],
+    "skills": [
+      "Medicine",
+      "Investigation",
+      "Survival",
+      "Arcana"
+    ]
+  },
+  "languages": [
+    "Common",
+    "Elvish",
+    "Infernal",
+    "Sylvan"
+  ],
+  "spells": [
+    "Vicious Mockery",
+    "Shocking Grasp",
+    "Acid Splash",
+    "Misty Step",
+    "Command"
+  ],
+  "equipment": {
+    "weapons": [
+      "Crossbow, light",
+      "Boomerang",
+      "Light Hammer",
+      "+1 Dagger"
+    ],
+    "gear": [
+      {
+        "name": "Thieves' tools",
+        "qty": 1
+      },
+      {
+        "name": "Dungeoneer's Pack",
+        "qty": 1
+      },
+      {
+        "name": "Crossbow bolts",
+        "qty": 20
+      },
+      {
+        "name": "Chest",
+        "qty": 1
+      },
+      {
+        "name": "Crowbar",
+        "qty": 1
+      },
+      {
+        "name": "Hammer",
+        "qty": 1
+      },
+      {
+        "name": "Wooden stake",
+        "qty": 3
+      },
+      {
+        "name": "Holy symbol",
+        "qty": 1
+      },
+      {
+        "name": "Holy water",
+        "qty": 1
+      },
+      {
+        "name": "Manacles",
+        "qty": 1
+      },
+      {
+        "name": "Steel mirror",
+        "qty": 1
+      },
+      {
+        "name": "Oil (flask)",
+        "qty": 1
+      },
+      {
+        "name": "Tinderbox",
+        "qty": 1
+      },
+      {
+        "name": "Torch",
+        "qty": 3
+      },
+      {
+        "name": "A set of common clothes",
+        "qty": 1
+      },
+      {
+        "name": "Boomerang",
+        "qty": 1,
+        "ref": "equip:boomerang",
+        "value_gp": 1,
+        "equip_slot": "weapon"
+      },
+      {
+        "name": "Light Hammer",
+        "qty": 1,
+        "ref": "equip:light-hammer",
+        "value_gp": 2,
+        "equip_slot": "weapon"
+      },
+      {
+        "name": "Pipes of Haunting",
+        "qty": 1,
+        "ref": "equip:pipes-of-haunting",
+        "equip_slot": "instrument",
+        "object_form": "pipes"
+      },
+      {
+        "name": "Brass Tripod with Chicken Legs",
+        "qty": 1,
+        "desc": "A palm-sized brass tripod fitted with three delicate mechanical legs shaped like those of a bird. The legs occasionally twitch or reposition themselves when left unattended, as if testing the ground.\n\nFine arcane etchings spiral along the metal, though many are worn smooth with age. When handled by a tinkerer or spellcaster, the device feels strangely expectant, like a tool waiting to be assembled into something larger.\n\nWhatever its true purpose, it clearly was not made merely to sit still."
+      },
+      {
+        "name": "+1 Dagger",
+        "qty": 1,
+        "ref": "equip:dagger-plus-1",
+        "value_gp": 2,
+        "equip_slot": "weapon"
+      },
+      {
+        "name": "Charm of the Monarch",
+        "qty": 1,
+        "desc": "You can sprout a pair of beautiful butterfly wings. As long as you have the wings, you gain a flying speed equal to your walking speed, and you gain a +5 bonus on all Charisma-based ability checks. These effects last for 1 hour. After you use this charm three times, it vanishes from you."
+      },
+      {
+        "name": "Potion of Revivify",
+        "qty": 1,
+        "ref": "equip:potion-of-revivify",
+        "value_gp": 3000,
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Weird Notebook",
+        "qty": 1,
+        "desc": "Shows what's written on it only when held upside down"
+      },
+      {
+        "name": "Pair of Spectacles",
+        "qty": 1,
+        "desc": "Spectacles with one round lens and one square lens."
+      },
+      {
+        "name": "Wanted Poster 1",
+        "qty": 1,
+        "desc": "Wanted! Will of the Feywild. This rapscallion vexes me. Deliver him to me alive and unharmed, and I'll curse one creature whom you name."
+      },
+      {
+        "name": "Wanter Poster 2",
+        "qty": 1,
+        "desc": "\"Bring me this imp alive and unharmed, and I'll bury you up to your neck in silver.\""
+      },
+      {
+        "name": "Bracers of Archery",
+        "qty": 1,
+        "ref": "equip:bracers-of-archery",
+        "equip_slot": "bracers"
+      },
+      {
+        "name": "Bright red fruit",
+        "qty": 1,
+        "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown."
+      },
+      {
+        "name": "Silver Coin",
+        "qty": 1
+      },
+      {
+        "name": "Golden Fly Brooch",
+        "qty": 1
+      }
+    ]
+  },
+  "coins": {
+    "pp": 0,
+    "gp": 0,
+    "sp": 1,
+    "cp": 0
+  },
+  "hit_die": "d8",
+  "maxHP": 34,
+  "feats": [
+    {
+      "id": "feat:fey-touched",
+      "name": "Fey Touched",
+      "desc": "Your exposure to the Feywild's magic has changed you, granting you the following benefits:\n- Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.\n- You learn the Misty Step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+    }
+  ],
+  "characteristics": {
+    "trait": "I refuse to become a victim, and I will not allow others to be victimized.",
+    "ideal": "I have a dark calling that puts me above the law. (Chaotic)",
+    "bond": "There’s evil in me, I can feel it. It must never be set free.",
+    "flaw": "I assume the worst in people."
+  },
+  "choices": {
+    "class": "Artificer",
+    "subclass": "Artillerist",
+    "race": "Tiefling",
+    "subrace": "tiefling-asmodeus",
+    "subraceKey": "tiefling-asmodeus",
+    "subraceAlias": "",
+    "draconicAncestry": "",
+    "raceVariantKeys": [
+      "tiefling-feral",
+      "tiefling-devils-tongue"
+    ],
+    "background": "Haunted One",
+    "alignment": "Chaotic Neutral",
+    "deity": "",
+    "abilities": {
+      "STR": 10,
+      "DEX": 12,
+      "CON": 14,
+      "INT": 14,
+      "WIS": 11,
+      "CHA": 14
+    },
+    "abilityBonuses": {
+      "str": 0,
+      "dex": 2,
+      "con": 0,
+      "int": 1,
+      "wis": 0,
+      "cha": 0
+    },
+    "languages": [
+      "Common",
+      "Elvish",
+      "Infernal",
+      "Sylvan"
+    ],
+    "skills": [
+      "Medicine",
+      "Investigation",
+      "Survival",
+      "Arcana"
+    ],
+    "tools": [
+      "Thieves' tools",
+      "Tinker's tools",
+      "Alchemist's supplies"
+    ],
+    "spells": [
+      "Vicious Mockery",
+      "Shocking Grasp",
+      "Acid Splash"
+    ],
+    "racialCantrips": [],
+    "equipmentChoices": [
+      {
+        "block": 0,
+        "option": 0,
+        "items": [
+          "Crossbow, light",
+          "Crossbow bolts"
+        ]
+      },
+      {
+        "block": 1,
+        "option": 0,
+        "items": [
+          "Studded Leather"
+        ]
+      }
+    ],
+    "backgroundFeatures": [
+      {
+        "id": "trait:bg:haunted-one:heart-of-darkness",
+        "name": "Heart of Darkness",
+        "desc": "Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+      }
+    ],
+    "backgroundChoices": [
+      {
+        "choiceId": "choice:bg:haunted-one:personality-traits",
+        "itemId": "bgtext:haunted-one:trait:7",
+        "label": "I refuse to become a victim, and I will not allow others to be victimized."
+      },
+      {
+        "choiceId": "choice:bg:haunted-one:ideals",
+        "itemId": "bgideal:haunted-one:freedom",
+        "label": "Freedom"
+      },
+      {
+        "choiceId": "choice:bg:haunted-one:bonds",
+        "itemId": "bgtext:haunted-one:bond:5",
+        "label": "There’s evil in me, I can feel it. It must never be set free."
+      },
+      {
+        "choiceId": "choice:bg:haunted-one:flaws",
+        "itemId": "bgtext:haunted-one:flaw:2",
+        "label": "I assume the worst in people."
+      },
+      {
+        "choiceId": "choice:bg:haunted-one:harrowing-event",
+        "itemId": "bgtext:haunted-one:harrowing-event:5",
+        "label": "An oni took your sibling one cold, dark night, and you were unable to stop it."
+      },
+      {
+        "choiceId": "choice:bg:haunted-one:language-exotic",
+        "itemId": "Sylvan",
+        "label": "Sylvan"
+      },
+      {
+        "choiceId": "choice:bg:haunted-one:language-any",
+        "itemId": "Elvish",
+        "label": "Elvish"
+      },
+      {
+        "choiceId": "choice:bg:haunted-one:skills",
+        "itemId": "Survival",
+        "label": "Survival"
+      },
+      {
+        "choiceId": "choice:bg:haunted-one:skills",
+        "itemId": "Arcana",
+        "label": "Arcana"
+      }
+    ],
+    "raceTraits": [
+      {
+        "id": "trait:tiefling:darkvision",
+        "name": "Darkvision",
+        "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      },
+      {
+        "id": "trait:tiefling:hellish-resistance",
+        "name": "Hellish Resistance",
+        "desc": "You have resistance to fire damage."
+      },
+      {
+        "id": "trait:tiefling:devils-tongue",
+        "name": "Devil's Tongue",
+        "desc": "You know the vicious mockery cantrip. Once you reach 3rd level, you can cast the charm person spell once as a 2nd-level spell. Once you reach 5th level, you can also cast the enthrall spell once. You must finish a long rest to cast these spells again with this trait. Charisma is your spellcasting ability for these spells."
+      },
+      {
+        "id": "trait:bg:haunted-one:heart-of-darkness",
+        "name": "Heart of Darkness",
+        "desc": "Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+      },
+      {
+        "id": "race:tiefling:background-tag-an-oni-took-your-sibling-one-cold-dark-night-and-you-were-unable-to-stop-it",
+        "name": "Background Tag: An oni took your sibling one cold, dark night, and you were unable to stop it.",
+        "desc": ""
+      }
+    ],
+    "classFeatures": [
+      {
+        "id": "class:artificer:lvl1:magical-tinkering",
+        "name": "Magical Tinkering"
+      }
+    ],
+    "subclassFeatures": [],
+    "classChoices": [],
+    "raceVariants": [
+      "tiefling-feral",
+      "tiefling-devils-tongue"
+    ],
+    "levelUpDecisions": [
+      {
+        "level": 2,
+        "choices": [
+          {
+            "choiceId": "choice:artificer:infusions",
+            "type": "infusion",
+            "values": [
+              "Enhanced Defense",
+              "Enhanced Weapon",
+              "Repeating Shot",
+              "Replicate Magic Item (Bag of Holding)"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "choices": [
+          {
+            "choiceId": "choice:subclass",
+            "type": "subclass",
+            "values": [
+              "Artillerist"
+            ],
+            "value": "Artillerist",
+            "cantrips": []
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "choices": [
+          {
+            "choiceId": "choice:asi",
+            "type": "asi"
+          }
+        ]
+      }
+    ],
+    "featChoices": [
+      {
+        "featId": "feat:fey-touched",
+        "featName": "Fey Touched",
+        "choices": {
+          "choice:feat:fey-touched:asi": [
+            "WIS"
+          ],
+          "choice:feat:fey-touched:spell": [
+            "Command"
+          ]
+        }
+      }
+    ],
+    "featSpellGrants": [
+      {
+        "featId": "feat:fey-touched",
+        "featName": "Fey Touched",
+        "spells": [
+          "Misty Step"
+        ],
+        "castingAbility": null,
+        "castingAbilityFromChoice": "choice:feat:fey-touched:asi",
+        "castingAbilityMap": null,
+        "castingAbilityClassFromChoice": null
+      },
+      {
+        "featId": "feat:fey-touched",
+        "featName": "Fey Touched",
+        "spells": [
+          "Command"
+        ],
+        "castingAbility": null,
+        "castingAbilityFromChoice": "choice:feat:fey-touched:asi",
+        "castingAbilityMap": null,
+        "castingAbilityClassFromChoice": null
+      }
+    ]
+  },
+  "spellSources": {
+    "Vicious Mockery": "Race",
+    "Misty Step": "Fey Touched",
+    "Command": "Fey Touched"
+  },
+  "currentHP": 34,
+  "inspiration": true,
+  "infusions": {
+    "known": [
+      "Enhanced Defense",
+      "Enhanced Weapon",
+      "Repeating Shot",
+      "Replicate Magic Item (Bag of Holding)"
+    ],
+    "known_limit": 4,
+    "active_limit": 2
+  },
+  "levelUpLog": [
+    {
+      "level": 2,
+      "from": 1,
+      "hitDie": "d8",
+      "conMod": 2,
+      "hpGain": 8,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [
+        "Enhanced Defense",
+        "Enhanced Weapon",
+        "Repeating Shot",
+        "Replicate Magic Item (Bag of Holding)"
+      ],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:artificer:infusions",
+          "type": "infusion",
+          "values": [
+            "Enhanced Defense",
+            "Enhanced Weapon",
+            "Repeating Shot",
+            "Replicate Magic Item (Bag of Holding)"
+          ]
+        }
+      ],
+      "at": "2026-03-14T12:23:19.770Z"
+    },
+    {
+      "level": 3,
+      "from": 2,
+      "hitDie": "d8",
+      "conMod": 2,
+      "hpGain": 8,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": null,
+      "notes": "",
+      "specialistChoice": "Artillerist",
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:subclass",
+          "type": "subclass",
+          "values": [
+            "Artillerist"
+          ],
+          "value": "Artillerist",
+          "cantrips": []
+        }
+      ],
+      "at": "2026-03-14T12:26:08.729Z"
+    },
+    {
+      "level": 4,
+      "from": 3,
+      "hitDie": "d8",
+      "conMod": 2,
+      "hpGain": 8,
+      "conHpAdjustment": 0,
+      "asi": null,
+      "feat": {
+        "name": "Fey Touched",
+        "notes": "Your exposure to the Feywild's magic has changed you, granting you the following benefits:\n- Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.\n- You learn the Misty Step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+      },
+      "notes": "",
+      "specialistChoice": null,
+      "specialistFeatureNotes": "",
+      "infusionsAdded": [],
+      "spellsAdded": [],
+      "decisionChoices": [
+        {
+          "choiceId": "choice:asi",
+          "type": "asi"
+        }
+      ],
+      "at": "2026-03-14T12:28:43.277Z"
+    }
+  ],
+  "build": "Artillerist",
+  "spellCastingAbilityOverrides": {
+    "Misty Step": "WIS",
+    "Command": "WIS"
+  },
+  "resources": [
+    {
+      "type": "resource_grant",
+      "id": "res:feat:fey-touched:misty-step",
+      "name": "Fey Touched (Misty Step)",
+      "uses": 1,
+      "recharge": "long_rest",
+      "consumes": [
+        {
+          "spell": "Misty Step",
+          "uses": 1
+        }
+      ],
+      "shared_pool": false,
+      "source": "feat:fey-touched"
+    },
+    {
+      "type": "resource_grant",
+      "id": "res:feat:fey-touched:chosen-spell",
+      "name": "Fey Touched (Chosen Spell)",
+      "uses": 1,
+      "recharge": "long_rest",
+      "consumes": [
+        {
+          "uses": 1,
+          "spell": "Command"
+        }
+      ],
+      "shared_pool": false,
+      "source": "feat:fey-touched"
+    }
+  ]
+}

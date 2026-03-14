@@ -15,63 +15,245 @@
     "STR": 10,
     "CON": 14
   },
-  "spells": [
-  ],
+  "spells": [],
   "background": "Haunted One",
   "build": "Artillerist",
   "eyes_hair": "Gold Eyes, Dark Brown Hair",
   "gender": "Female",
   "player_name": "Maddy Miller",
-  "alignment":"Chaotic Neutral",
-  "armor": "Studded Leather Armor",
-  "languages": ["Common","Elvish","Infernal","Sylvan"],
-   "proficiencies": {
-    "tools":   ["Thieves' Tools", "Alchemist's Supplies","Tinker's Tools","Woodcarver's Tools"],
-    "weapons": ["Simple weapons", "Firearms"],
-    "armor":   ["Light","Medium","Shields"]          
-      },
-  "skill_proficiencies": {"saving throws":["CON","INT"],
-  "skills":["Medicine","Survival","Arcana","Investigation"]},
-  "equipment": { 
-  "weapons": 
-  [
-  "Boomerang", 
-  "Crossbow, light", 
-  "Light Hammer",
-  "+1 Dagger"
-  ] },
-  "traits": [
-    { "name": "Darkvision", "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray." },
-    { "name": "Hellish Resistance", "desc": "You have resistance to fire damage." },
-    { "name": "Devil's Tongue", "desc": "You know the Vicious Mockery cantrip. At 3rd level, you can cast Charm Person as a 2nd-level spell once per long rest. At 5th level, you can cast Enthrall once per long rest. Charisma is your spellcasting ability for these spells." },
-    { "name": "Charm of the Monarch", "desc": "You can sprout a pair of beautiful butterfly wings. As long as you have the wings, you gain a flying speed equal to your walking speed, and you gain a +5 bonus on all Charisma-based ability checks. These effects last for 1 hour. After you use this charm three times, it vanishes from you." }
+  "alignment": "Chaotic Neutral",
+  "armor": [],
+  "languages": [
+    "Common",
+    "Elvish",
+    "Infernal",
+    "Sylvan"
   ],
-  "gear": [
-  { "name": "Explorer's Pack" },
-  { "name": "Thieves' Tools" },
-  { "name": "Alchemist's Supplies" },
-  { "name": "Chest" },
-  { "name": "Crowbar" },
-  { "name": "Hammer" },
-  { "name": "Wooden Stakes", "desc": "3 wooden stakes." },
-  { "name": "Holy Symbol" },
-  { "name": "Flask of Holy Water" },
-  { "name": "Manacles", "desc": "A sturdy set of iron manacles." },
-  { "name": "Steel Mirror" },
-  { "name": "Flask of Oil" },
-  { "name": "Tinderbox" },
-  { "name": "Torches", "desc": "3 torches." },
-  { "name": "Common Clothes" },
-  { "name": "Toolbox", "desc": "Contains the remains of a dangerous but broken clockwork arachnid." },
-  { "name": "Bright Red Fruit", "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown." },
-  { "name": "The Marching Tripod", "desc": "A hand-sized brass tripod with carved chicken-foot legs. When an Eldritch Cannon is set on it, the tripod animates, allowing you to move the cannon up to 15 ft. as a bonus action once per turn. Inscribed in Sylvan: “Feet remember the road, even when the mind forgets.”" },
-  { "name": "Potion of Revivify", "desc": "This shimmering, golden liquid allows you to cast the Revivify spell on a creature you touch. The creature must have died within the last minute. It returns to life with 1 hit point." },
-  { "name": "Golden fly brooch" },
-   { "name": "Silver coin" },
-  { "name": "Notebook", "desc": "Only reveals what's written in it when held upside-down." }
-],
-
- "coins": { "gp": 0, "sp": 1, "cp": 0, "pp": 0 },
+  "proficiencies": {
+    "tools": [
+      "Thieves' Tools",
+      "Alchemist's Supplies",
+      "Tinker's Tools",
+      "Woodcarver's Tools"
+    ],
+    "weapons": [
+      "Simple weapons",
+      "Firearms"
+    ],
+    "armor": [
+      "Light",
+      "Medium",
+      "Shields"
+    ]
+  },
+  "skill_proficiencies": {
+    "saving throws": [
+      "CON",
+      "INT"
+    ],
+    "skills": [
+      "Medicine",
+      "Survival",
+      "Arcana",
+      "Investigation"
+    ]
+  },
+  "equipment": {
+    "weapons": [
+      "Boomerang",
+      "Crossbow, light",
+      "Light Hammer",
+      "+1 Dagger"
+    ],
+    "gear": [
+      {
+        "name": "Backpack",
+        "qty": 1,
+        "ref": "equip:backpack",
+        "equip_slot": "container",
+        "object_form": "bag"
+      },
+      {
+        "name": "Bedroll",
+        "qty": 1,
+        "ref": "equip:bedroll",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Mess kit",
+        "qty": 1,
+        "ref": "equip:mess-kit",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Tinderbox",
+        "qty": 1,
+        "ref": "equip:tinderbox",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Torch",
+        "qty": 10,
+        "ref": "equip:torch",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Rations (1 day)",
+        "qty": 10,
+        "ref": "equip:rations-1-day",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Waterskin",
+        "qty": 1,
+        "ref": "equip:waterskin",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Rope, hempen (50 feet)",
+        "qty": 1,
+        "ref": "equip:rope-hempen-50-feet",
+        "equip_slot": "wondrous_handheld"
+      },
+      {
+        "name": "Thieves' Tools",
+        "qty": 1
+      },
+      {
+        "name": "Alchemist's Supplies",
+        "qty": 1
+      },
+      {
+        "name": "Chest",
+        "qty": 1
+      },
+      {
+        "name": "Crowbar",
+        "qty": 1
+      },
+      {
+        "name": "Hammer",
+        "qty": 1
+      },
+      {
+        "name": "Wooden Stakes",
+        "qty": 1,
+        "desc": "3 wooden stakes."
+      },
+      {
+        "name": "Holy Symbol",
+        "qty": 1
+      },
+      {
+        "name": "Flask of Holy Water",
+        "qty": 1
+      },
+      {
+        "name": "Manacles",
+        "qty": 1,
+        "desc": "A sturdy set of iron manacles."
+      },
+      {
+        "name": "Steel Mirror",
+        "qty": 1
+      },
+      {
+        "name": "Flask of Oil",
+        "qty": 1
+      },
+      {
+        "name": "Tinderbox",
+        "qty": 1
+      },
+      {
+        "name": "Torches",
+        "qty": 1,
+        "desc": "3 torches."
+      },
+      {
+        "name": "Common Clothes",
+        "qty": 1
+      },
+      {
+        "name": "Toolbox",
+        "qty": 1,
+        "desc": "Contains the remains of a dangerous but broken clockwork arachnid."
+      },
+      {
+        "name": "Bright Red Fruit",
+        "qty": 1,
+        "desc": "A mysterious Feywild fruit, glowing faintly. Effects unknown."
+      },
+      {
+        "name": "The Marching Tripod",
+        "qty": 1,
+        "desc": "A hand-sized brass tripod with carved chicken-foot legs. When an Eldritch Cannon is set on it, the tripod animates, allowing you to move the cannon up to 15 ft. as a bonus action once per turn. Inscribed in Sylvan: “Feet remember the road, even when the mind forgets.”"
+      },
+      {
+        "name": "Potion of Revivify",
+        "qty": 1,
+        "desc": "This shimmering, golden liquid allows you to cast the Revivify spell on a creature you touch. The creature must have died within the last minute. It returns to life with 1 hit point."
+      },
+      {
+        "name": "Golden fly brooch",
+        "qty": 1
+      },
+      {
+        "name": "Silver coin",
+        "qty": 1
+      },
+      {
+        "name": "Notebook",
+        "qty": 1,
+        "desc": "Only reveals what's written in it when held upside-down."
+      },
+      {
+        "name": "Spectacles",
+        "qty": 1,
+        "desc": "With one oddly long lens and one square lens"
+      },
+      {
+        "name": "Bracers of Archery",
+        "qty": 1,
+        "desc": "While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons."
+      },
+      {
+        "name": "Wanted Poster 1",
+        "qty": 1,
+        "desc": "Wanted! Will of the Feywild. This rapscallion vexes me. Deliver him to me alive and unharmed, and I'll curse one creature whom you name."
+      },
+      {
+        "name": "Wanted Poster 2",
+        "qty": 1,
+        "desc": "Wanted! Will of the Feywild. \"Bring me this imp alive and unharmed, and I'll bury you up to your neck in silver.\""
+      }
+    ]
+  },
+  "traits": [
+    {
+      "name": "Darkvision",
+      "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+    },
+    {
+      "name": "Hellish Resistance",
+      "desc": "You have resistance to fire damage."
+    },
+    {
+      "name": "Devil's Tongue",
+      "desc": "You know the Vicious Mockery cantrip. At 3rd level, you can cast Charm Person as a 2nd-level spell once per long rest. At 5th level, you can cast Enthrall once per long rest. Charisma is your spellcasting ability for these spells."
+    },
+    {
+      "name": "Charm of the Monarch",
+      "desc": "You can sprout a pair of beautiful butterfly wings. As long as you have the wings, you gain a flying speed equal to your walking speed, and you gain a +5 bonus on all Charisma-based ability checks. These effects last for 1 hour. After you use this charm three times, it vanishes from you."
+    }
+  ],
+  "gear": [],
+  "coins": {
+    "pp": 0,
+    "gp": 0,
+    "sp": 1,
+    "cp": 0
+  },
   "infusions": {
     "known_limit": 4,
     "active_limit": 2,
@@ -82,6 +264,4 @@
       "Replicate Magic Item (Bag of Holding)"
     ]
   }
-
-
 }

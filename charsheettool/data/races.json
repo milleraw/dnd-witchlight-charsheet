@@ -1,11 +1,15 @@
 [
   {
-    "index": "Moon Elf",
-    "name": "Moon Elf",
+    "index": "elf",
+    "name": "Elf",
     "speed": 30,
     "ability_bonuses": [
       {
-        "ability_score": { "index": "dex", "name": "DEX", "url": "/api/2014/ability-scores/dex" },
+        "ability_score": {
+          "index": "dex",
+          "name": "DEX",
+          "url": "/api/2014/ability-scores/dex"
+        },
         "bonus": 2
       }
     ],
@@ -14,24 +18,346 @@
     "size": "Medium",
     "size_description": "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium.",
     "starting_proficiencies": [
-      { "index": "skill-perception", "name": "Skill: Perception", "url": "/api/2014/proficiencies/skill-perception" }
+      {
+        "index": "skill-perception",
+        "name": "Skill: Perception",
+        "url": "/api/2014/proficiencies/skill-perception"
+      }
     ],
     "languages": [
-      { "index": "common", "name": "Common", "url": "/api/2014/languages/common" },
-      { "index": "elvish", "name": "Elvish", "url": "/api/2014/languages/elvish" }
+      {
+        "index": "common",
+        "name": "Common",
+        "url": "/api/2014/languages/common"
+      },
+      {
+        "index": "elvish",
+        "name": "Elvish",
+        "url": "/api/2014/languages/elvish"
+      }
     ],
     "language_desc": "You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.",
     "traits": [
-      { "index": "darkvision", "name": "Darkvision", "url": "/api/2014/traits/darkvision" },
-      { "index": "fey-ancestry", "name": "Fey Ancestry", "url": "/api/2014/traits/fey-ancestry" },
-      { "index": "trance", "name": "Trance", "url": "/api/2014/traits/trance" },
-      { "index": "keen-senses", "name": "Keen Senses", "url": "/api/2014/traits/keen-senses" }
+      {
+        "index": "darkvision",
+        "name": "Darkvision",
+        "url": "/api/2014/traits/darkvision",
+        "id": "trait:elf:darkvision"
+      },
+      {
+        "index": "fey-ancestry",
+        "name": "Fey Ancestry",
+        "url": "/api/2014/traits/fey-ancestry",
+        "id": "trait:elf:fey-ancestry"
+      },
+      {
+        "index": "trance",
+        "name": "Trance",
+        "url": "/api/2014/traits/trance",
+        "id": "trait:elf:trance"
+      },
+      {
+        "index": "keen-senses",
+        "name": "Keen Senses",
+        "url": "/api/2014/traits/keen-senses",
+        "id": "trait:elf:keen-senses"
+      }
     ],
     "subraces": [
-      { "index": "high-elf", "name": "High Elf", "url": "/api/2014/subraces/high-elf" }
+      {
+        "name": "Sun Elf",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "int",
+              "name": "INT"
+            },
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Cantrip",
+            "desc": "You know one cantrip of your choice from the Wizard spell list. Intelligence is your spellcasting ability for it.",
+            "id": "trait:sun-elf:cantrip"
+          },
+          {
+            "name": "Elf Weapon Training",
+            "desc": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+            "id": "trait:sun-elf:elf-weapon-training"
+          },
+          {
+            "name": "Extra Language",
+            "desc": "You can read, speak, and write one additional language of your choice.",
+            "id": "trait:sun-elf:extra-language"
+          }
+        ],
+        "language_options": 1,
+        "spells": {},
+        "cantrip_options": {
+          "class": "Wizard",
+          "choose": 1
+        },
+        "proficiencies": {
+          "weapons": [
+            "Longsword",
+            "Shortsword",
+            "Shortbow",
+            "Longbow"
+          ]
+        }
+      },
+      {
+        "name": "Moon Elf",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "int",
+              "name": "INT"
+            },
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Cantrip",
+            "desc": "You know one cantrip of your choice from the Wizard spell list. Intelligence is your spellcasting ability for it.",
+            "id": "trait:moon-elf:cantrip"
+          },
+          {
+            "name": "Elf Weapon Training",
+            "desc": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+            "id": "trait:moon-elf:elf-weapon-training"
+          },
+          {
+            "name": "Extra Language",
+            "desc": "You can read, speak, and write one additional language of your choice.",
+            "id": "trait:moon-elf:extra-language"
+          }
+        ],
+        "language_options": 1,
+        "spells": {},
+        "cantrip_options": {
+          "class": "Wizard",
+          "choose": 1
+        },
+        "proficiencies": {
+          "weapons": [
+            "Longsword",
+            "Shortsword",
+            "Shortbow",
+            "Longbow"
+          ]
+        }
+      },
+      {
+        "name": "Wild Elf",
+        "ability_bonuses": [],
+        "traits": [],
+        "spells": {}
+      },
+      {
+        "name": "High Elf",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "int",
+              "name": "INT"
+            },
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Cantrip",
+            "desc": "You know one cantrip of your choice from the Wizard spell list. Intelligence is your spellcasting ability for it.",
+            "id": "trait:high-elf:cantrip"
+          },
+          {
+            "name": "Elf Weapon Training",
+            "desc": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+            "id": "trait:high-elf:elf-weapon-training"
+          },
+          {
+            "name": "Extra Language",
+            "desc": "You can read, speak, and write one additional language of your choice.",
+            "id": "trait:high-elf:extra-language"
+          }
+        ],
+        "language_options": 1,
+        "spells": {},
+        "cantrip_options": {
+          "class": "Wizard",
+          "choose": 1
+        },
+        "proficiencies": {
+          "weapons": [
+            "Longsword",
+            "Shortsword",
+            "Shortbow",
+            "Longbow"
+          ]
+        }
+      },
+      {
+        "name": "Wood Elf",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "wis",
+              "name": "WIS"
+            },
+            "bonus": 1
+          }
+        ],
+        "speed": 35,
+        "traits": [
+          {
+            "name": "Elf Weapon Training",
+            "desc": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+            "id": "trait:wood-elf:elf-weapon-training"
+          },
+          {
+            "name": "Fleet of Foot",
+            "desc": "Your base walking speed increases to 35 feet.",
+            "id": "trait:wood-elf:fleet-of-foot"
+          },
+          {
+            "name": "Mask of the Wild",
+            "desc": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.",
+            "id": "trait:wood-elf:mask-of-the-wild"
+          }
+        ],
+        "spells": {},
+        "proficiencies": {
+          "weapons": [
+            "Longsword",
+            "Shortsword",
+            "Shortbow",
+            "Longbow"
+          ]
+        }
+      },
+      {
+        "name": "Drow",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "cha",
+              "name": "CHA"
+            },
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Superior Darkvision",
+            "desc": "Your darkvision has a range of 120 feet, instead of 60.",
+            "id": "trait:drow:superior-darkvision"
+          },
+          {
+            "name": "Sunlight Sensitivity",
+            "desc": "You have disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight.",
+            "id": "trait:drow:sunlight-sensitivity"
+          },
+          {
+            "name": "Drow Magic",
+            "desc": "You know the Dancing Lights cantrip. At 3rd level, you can cast Faerie Fire once with this trait and regain the ability to do so when you finish a long rest. At 5th level, you can cast Darkness once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.",
+            "id": "trait:drow:drow-magic"
+          },
+          {
+            "name": "Drow Weapon Training",
+            "desc": "You have proficiency with rapiers, shortswords, and hand crossbows.",
+            "id": "trait:drow:drow-weapon-training"
+          }
+        ],
+        "spells": {
+          "0": [
+            "Dancing Lights"
+          ],
+          "3": [
+            "Faerie Fire"
+          ],
+          "5": [
+            "Darkness"
+          ]
+        },
+        "proficiencies": {
+          "weapons": [
+            "Rapier",
+            "Shortsword",
+            "Hand Crossbow"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Centaur",
+    "index": "centaur",
+    "speed": 40,
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "str",
+          "name": "STR"
+        },
+        "bonus": 2
+      },
+      {
+        "ability_score": {
+          "index": "wis",
+          "name": "WIS"
+        },
+        "bonus": 1
+      }
     ],
-    "url": "/api/2014/races/elf",
-    "updated_at": "2025-04-08T21:14:12.834Z"
+    "size": "Medium",
+    "traits": [
+      {
+        "name": "Fey",
+        "desc": "Your creature type is fey, rather than humanoid.",
+        "id": "trait:centaur:fey"
+      },
+      {
+        "name": "Charge",
+        "desc": "If you move at least 30 feet in a straight line and then hit a target with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack with your hooves.",
+        "id": "trait:centaur:charge"
+      },
+      {
+        "name": "Hooves",
+        "desc": "You are never unarmed. You are proficient with your hooves, which are a melee weapon that deals 1d4 + your Strength modifier bludgeoning damage.",
+        "id": "trait:centaur:hooves"
+      },
+      {
+        "name": "Equine Build",
+        "desc": "You count as one size larger when determining your carrying capacity and the weight you can push or drag. In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.",
+        "id": "trait:centaur:equine-build"
+      }
+    ],
+    "proficiencies": {
+      "skills": [
+        "Survival"
+      ]
+    },
+    "actions": [
+      {
+        "name": "Hooves (Charge Follow-up)",
+        "type": "bonus",
+        "desc": "After Charge conditions are met, you can make one hooves attack as a bonus action.",
+        "source": "Centaur Racial"
+      }
+    ],
+    "languages": [
+      {
+        "index": "common",
+        "name": "Common"
+      },
+      {
+        "index": "sylvan",
+        "name": "Sylvan"
+      }
+    ]
   },
   {
     "index": "Harengon",
@@ -43,18 +369,43 @@
     "size": "Medium or Small",
     "size_description": "You choose your size when you select this race: Medium (average build) or Small (shorter and lighter).",
     "starting_proficiencies": [
-      { "index": "skill-perception", "name": "Skill: Perception", "url": "/api/2014/proficiencies/skill-perception" }
+      {
+        "index": "skill-perception",
+        "name": "Skill: Perception",
+        "url": "/api/2014/proficiencies/skill-perception"
+      }
     ],
     "languages": [
-      { "index": "common", "name": "Common", "url": "/api/2014/languages/common" },
-      { "index": "sylvan", "name": "Sylvan", "url": "/api/2014/languages/sylvan" }
+      {
+        "name": "Common"
+      }
     ],
-    "language_desc": "You can speak, read, and write Common and Sylvan.",
+    "language_desc": "You can speak, read, and write Common and one other language of your choice.",
     "traits": [
-      { "index": "hare-trigger", "name": "Hare-Trigger", "desc": "You can add your proficiency bonus to your initiative rolls." },
-      { "index": "leporine-senses", "name": "Leporine Senses", "desc": "You have proficiency in the Perception skill." },
-      { "index": "lucky-footwork", "name": "Lucky Footwork", "desc": "When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the save, potentially turning it into a success. You can’t use this reaction if your speed is 0." },
-      { "index": "rabbit-hop", "name": "Rabbit Hop", "desc": "As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait a number of times equal to your proficiency bonus per long rest." }
+      {
+        "index": "hare-trigger",
+        "name": "Hare-Trigger",
+        "desc": "You can add your proficiency bonus to your initiative rolls.",
+        "id": "trait:harengon:hare-trigger"
+      },
+      {
+        "index": "leporine-senses",
+        "name": "Leporine Senses",
+        "desc": "You have proficiency in the Perception skill.",
+        "id": "trait:harengon:leporine-senses"
+      },
+      {
+        "index": "lucky-footwork",
+        "name": "Lucky Footwork",
+        "desc": "When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the save, potentially turning it into a success. You can’t use this reaction if your speed is 0.",
+        "id": "trait:harengon:lucky-footwork"
+      },
+      {
+        "index": "rabbit-hop",
+        "name": "Rabbit Hop",
+        "desc": "As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait a number of times equal to your proficiency bonus per long rest.",
+        "id": "trait:harengon:rabbit-hop"
+      }
     ],
     "subraces": [],
     "actions": [
@@ -72,15 +423,32 @@
       }
     ],
     "url": "/api/2014/races/harengon",
-    "updated_at": "2025-08-14T00:00:00.000Z"
+    "updated_at": "2025-08-14T00:00:00.000Z",
+    "ability_score_options": {
+      "type": "flexible_tashas"
+    },
+    "language_options": {
+      "choose": 1
+    },
+    "language_choice_from": [
+      "any"
+    ]
   },
   {
     "index": "dragonborn",
     "name": "Dragonborn",
     "speed": 30,
     "traits": [
-      { "name": "Draconic Ancestry", "desc": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type." },
-      { "name": "Damage Resistance", "desc": "You have resistance to the damage type associated with your draconic ancestry." }
+      {
+        "name": "Draconic Ancestry",
+        "desc": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type.",
+        "id": "trait:dragonborn:draconic-ancestry"
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have resistance to the damage type associated with your draconic ancestry.",
+        "id": "trait:dragonborn:damage-resistance"
+      }
     ],
     "actions": [
       {
@@ -90,6 +458,32 @@
         "desc": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.\n\nWhen you use your breath weapon, each creature in the area of the exhalation must make a saving throw (DC {DC}). A creature takes {DMG} damage on a failed save, and half as much damage on a successful one.\n\nAfter you use your breath weapon, you can’t use it again until you complete a short or long rest.",
         "source": "Dragonborn Racial"
       }
+    ],
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "str",
+          "name": "STR"
+        },
+        "bonus": 2
+      },
+      {
+        "ability_score": {
+          "index": "cha",
+          "name": "CHA"
+        },
+        "bonus": 1
+      }
+    ],
+    "languages": [
+      {
+        "index": "common",
+        "name": "Common"
+      },
+      {
+        "index": "draconic",
+        "name": "Draconic"
+      }
     ]
   },
   {
@@ -97,22 +491,512 @@
     "name": "Tiefling",
     "speed": 30,
     "ability_bonuses": [
-      { "ability_score": { "index": "int", "name": "INT" }, "bonus": 1 },
-      { "ability_score": { "index": "cha", "name": "CHA" }, "bonus": 2 }
+      {
+        "ability_score": {
+          "index": "int",
+          "name": "INT"
+        },
+        "bonus": 1
+      },
+      {
+        "ability_score": {
+          "index": "cha",
+          "name": "CHA"
+        },
+        "bonus": 2
+      }
     ],
     "age": "Tieflings mature at the same rate as humans but live a few years longer.",
     "alignment": "Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.",
     "size": "Medium",
     "size_description": "Tieflings are about the same size and build as humans. Your size is Medium.",
     "languages": [
-      { "index": "common", "name": "Common" },
-      { "index": "infernal", "name": "Infernal" }
+      {
+        "index": "common",
+        "name": "Common"
+      },
+      {
+        "index": "infernal",
+        "name": "Infernal"
+      }
     ],
     "traits": [
-      { "name": "Darkvision", "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray." },
-      { "name": "Hellish Resistance", "desc": "You have resistance to fire damage." },
-      { "name": "Infernal Legacy", "desc": "You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells." }
+      {
+        "name": "Darkvision",
+        "desc": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.",
+        "id": "trait:tiefling:darkvision"
+      },
+      {
+        "name": "Hellish Resistance",
+        "desc": "You have resistance to fire damage.",
+        "id": "trait:tiefling:hellish-resistance"
+      },
+      {
+        "name": "Infernal Legacy",
+        "desc": "You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.",
+        "id": "trait:tiefling:infernal-legacy"
+      }
     ],
-    "url": "/api/2014/races/tiefling"
+    "url": "/api/2014/races/tiefling",
+    "spells": {
+      "0": [
+        "Thaumaturgy"
+      ],
+      "3": [
+        "Hellish Rebuke"
+      ],
+      "5": [
+        "Darkness"
+      ]
+    }
+  },
+  {
+    "name": "Owlfolk",
+    "index": "owlfolk",
+    "speed": 25,
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "wis",
+          "name": "WIS"
+        },
+        "bonus": 2
+      },
+      {
+        "ability_score": {
+          "index": "dex",
+          "name": "DEX"
+        },
+        "bonus": 1
+      }
+    ],
+    "size": "Medium",
+    "starting_proficiencies": [
+      {
+        "name": "Skill: Stealth"
+      }
+    ],
+    "languages": [
+      {
+        "name": "Common"
+      },
+      {
+        "name": "Owlfolk"
+      },
+      {
+        "name": "Auran"
+      }
+    ],
+    "traits": [
+      {
+        "name": "Flight",
+        "desc": "You have a flying speed of 50 feet. To use this speed, you can’t be wearing medium or heavy armor.",
+        "id": "trait:owlfolk:flight"
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 90 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.",
+        "id": "trait:owlfolk:darkvision"
+      },
+      {
+        "name": "Magic Sight",
+        "desc": "Your keen senses can focus to see the presence of magic. You gain the ability to cast the detect magic spell, but only as a ritual. Your spellcasting ability for this spell is your choice of Intelligence or Wisdom. You can also cast this spell normally with any spell slots you have.",
+        "id": "trait:owlfolk:magic-sight"
+      },
+      {
+        "name": "Nimble Flight",
+        "desc": "When you fall, you can use your reaction to make a Dexterity saving throw (DC 10) to stop falling and fly in place until the start of your next turn.",
+        "id": "trait:owlfolk:nimble-flight"
+      },
+      {
+        "name": "Silent Feathers",
+        "desc": "You have proficiency in the Stealth skill.",
+        "id": "trait:owlfolk:silent-feathers"
+      }
+    ],
+    "spells": {
+      "1": [
+        "Detect Magic"
+      ]
+    }
+  },
+  {
+    "name": "Dwarf",
+    "speed": 25,
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "con"
+        },
+        "bonus": 2
+      }
+    ],
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.",
+        "id": "trait:dwarf:darkvision"
+      },
+      {
+        "name": "Dwarven Resilience",
+        "desc": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+        "id": "trait:dwarf:dwarven-resilience"
+      },
+      {
+        "name": "Dwarven Combat Training",
+        "desc": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
+        "id": "trait:dwarf:dwarven-combat-training"
+      },
+      {
+        "name": "Stonecunning",
+        "desc": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
+        "id": "trait:dwarf:stonecunning"
+      }
+    ],
+    "proficiencies": {
+      "tools": [
+        {
+          "choose": 1,
+          "from": [
+            "Smith's Tools",
+            "Brewer's Supplies",
+            "Mason's Tools"
+          ]
+        }
+      ]
+    },
+    "subraces": [
+      {
+        "name": "Mountain Dwarf",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "str"
+            },
+            "bonus": 2
+          }
+        ],
+        "starting_proficiencies": [
+          {
+            "name": "Light armor"
+          },
+          {
+            "name": "Medium armor"
+          }
+        ]
+      },
+      {
+        "name": "Hill Dwarf",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "wis"
+            },
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Dwarven Toughness",
+            "desc": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+          }
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "index": "common",
+        "name": "Common"
+      },
+      {
+        "index": "dwarvish",
+        "name": "Dwarvish"
+      }
+    ]
+  },
+  {
+    "name": "Ratfolk",
+    "speed": 30,
+    "size": "Medium",
+    "age": "Ratfolk reach adulthood at 12 and can live up to 50 years.",
+    "ability_bonuses": [
+      {
+        "ability_score": {
+          "index": "dex"
+        },
+        "bonus": 1
+      },
+      {
+        "ability_score": {
+          "index": "int"
+        },
+        "bonus": 1
+      }
+    ],
+    "languages": [
+      {
+        "name": "Common"
+      },
+      {
+        "name": "Rattus"
+      }
+    ],
+    "traits": [
+      {
+        "name": "Brethren of the Swarm",
+        "desc": "Mice and rats of all types will not show unprovoked hostility towards you unless threatened. Additionally, you can communicate simple ideas with them through squeaking Rattus.",
+        "id": "trait:ratfolk:brethren-of-the-swarm"
+      },
+      {
+        "name": "Keen Senses",
+        "desc": "You have advantage on Wisdom (Perception) checks that involve hearing or smell.",
+        "id": "trait:ratfolk:keen-senses"
+      },
+      {
+        "name": "Scurry",
+        "desc": "You are able to slip and squeeze through small openings. You have advantage on Dexterity (Acrobatics) to fit through tight spaces and squeezing through narrow passages doesn’t cost you extra movement.",
+        "id": "trait:ratfolk:scurry"
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Fancy Rat",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "cha"
+            },
+            "bonus": 1
+          }
+        ],
+        "language_options": {
+          "choose": 2
+        },
+        "proficiencies": {
+          "skills": [
+            "Persuasion",
+            {
+              "choose": 1,
+              "from": [
+                "Acrobatics",
+                "Animal Handling",
+                "Arcana",
+                "Athletics",
+                "Deception",
+                "History",
+                "Insight",
+                "Intimidation",
+                "Investigation",
+                "Medicine",
+                "Nature",
+                "Perception",
+                "Religion",
+                "Sleight of Hand",
+                "Stealth",
+                "Survival"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "Pack Rat",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "str"
+            },
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Appraiser’s Eye",
+            "desc": "You have advantage on Intelligence (Arcana and Investigation) checks to identify objects and their worth."
+          },
+          {
+            "name": "Powerful Build",
+            "desc": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+          }
+        ],
+        "proficiencies": {
+          "tools": [
+            {
+              "choose": 1,
+              "from": [
+                "Alchemist's Supplies",
+                "Brewer's Supplies",
+                "Calligrapher's Supplies",
+                "Carpenter's Tools",
+                "Cartographer's Tools",
+                "Cobbler's Tools",
+                "Cook's Utensils",
+                "Glassblower's Tools",
+                "Jeweler's Tools",
+                "Leatherworker's Tools",
+                "Mason's Tools",
+                "Painter's Supplies",
+                "Potter's Tools",
+                "Smith's Tools",
+                "Tinker's Tools",
+                "Weaver's Tools",
+                "Woodcarver's Tools",
+                "Disguise Kit",
+                "Forgery Kit",
+                "Herbalism Kit",
+                "Navigator's Tools",
+                "Poisoner's Kit",
+                "Thieves' Tools",
+                "Dice Set",
+                "Playing Card Set",
+                "Dragonchess Set"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sewer Rat",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "con"
+            },
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Natural Swimmer",
+            "desc": "You have a swim speed of 30 feet and can hold your breath for 15 minutes."
+          },
+          {
+            "name": "Hardy Constitution",
+            "desc": "You have advantage against poisons and diseases."
+          },
+          {
+            "name": "Tunnel Crawler",
+            "desc": "You have advantage on Wisdom (Survival) to navigate while underground."
+          }
+        ]
+      },
+      {
+        "name": "Water Rat",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "con"
+            },
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Natural Swimmer",
+            "desc": "You have a swim speed of 30 feet and can hold your breath for 15 minutes."
+          },
+          {
+            "name": "Hardy Constitution",
+            "desc": "You have advantage against poisons and diseases."
+          },
+          {
+            "name": "River Runner",
+            "desc": "You have advantage on Wisdom (Survival) to navigate while on or by lakes, ponds, rivers, or shorelines."
+          }
+        ]
+      },
+      {
+        "name": "Wood Rat",
+        "ability_bonuses": [
+          {
+            "ability_score": {
+              "index": "wis"
+            },
+            "bonus": 1
+          }
+        ],
+        "traits": [
+          {
+            "name": "Forest Touch",
+            "desc": "You know the druidcraft cantrip."
+          },
+          {
+            "name": "Stealthy Journeys",
+            "desc": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+          },
+          {
+            "name": "Woodland Tracking",
+            "desc": "You have advantage on Wisdom (Survival) checks to find and gather food, and have advantage on Intelligence (Nature) checks to identify and recall information about beasts, monstrosities, and plants."
+          }
+        ],
+        "spells": {
+          "0": [
+            "Druidcraft"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Satyr",
+    "index": "satyr",
+    "speed": 35,
+    "size": "Medium",
+    "ability_score_options": {
+      "type": "flexible_tashas"
+    },
+    "languages": [
+      {
+        "name": "Common"
+      }
+    ],
+    "language_options": {
+      "choose": 1
+    },
+    "traits": [
+      {
+        "name": "Creature Type",
+        "desc": "You are a Fey.",
+        "id": "trait:satyr:creature-type"
+      },
+      {
+        "name": "Ram",
+        "desc": "You can use your head and horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike.",
+        "id": "trait:satyr:ram"
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "You have advantage on saving throws against spells.",
+        "id": "trait:satyr:magic-resistance"
+      },
+      {
+        "name": "Mirthful Leaps",
+        "desc": "Whenever you make a long jump or a high jump, you can roll a d8 and add the number rolled to the number of feet you cover, even when making a standing jump. This extra distance costs movement as usual.",
+        "id": "trait:satyr:mirthful-leaps"
+      }
+    ],
+    "proficiencies": {
+      "skills": [
+        "Performance",
+        "Persuasion"
+      ],
+      "tools": [
+        {
+          "choose": 1,
+          "from": [
+            "Bagpipes",
+            "Drum",
+            "Dulcimer",
+            "Flute",
+            "Lute",
+            "Lyre",
+            "Horn",
+            "Pan flute",
+            "Shawm",
+            "Viol"
+          ]
+        }
+      ]
+    }
   }
 ]
